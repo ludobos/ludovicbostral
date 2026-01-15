@@ -62,7 +62,44 @@ const translations = {
         "about.text": "CTO with 25+ years scaling streaming platforms globally. R&D Manager at M6 Web where he created M6 Replay (France's leading catch-up TV service), co-founded Afrostream (Y Combinator Summer 2015), scaled Majelan audio streaming platform. Expert in OTT strategy, platform architecture, and team building. Author of Streaming Radar newsletter and co-host of 'On va taper dedans' podcast.",
 
         // Contact
-        "contact.title": "Ready to discuss your project?"
+        "contact.title": "Ready to discuss your project?",
+
+        // Lead Capture
+        "leadCapture.title": "Get a Free 30-Minute Strategy Session",
+        "leadCapture.subtitle": "Discuss your OTT project and get actionable recommendations",
+        "leadCapture.benefit1": "Review your current platform architecture",
+        "leadCapture.benefit2": "Identify optimization opportunities",
+        "leadCapture.benefit3": "Get personalized recommendations",
+        "leadCapture.benefit4": "No obligation, completely free",
+        "leadCapture.badge1": "Y Combinator Alumni",
+        "leadCapture.badge2": "25+ Years Experience",
+        "leadCapture.badge3": "50M+ Users Served",
+
+        // Form
+        "form.fullName": "Full Name *",
+        "form.fullNamePlaceholder": "John Doe",
+        "form.email": "Email Address *",
+        "form.emailPlaceholder": "john@company.com",
+        "form.company": "Company Name",
+        "form.companyPlaceholder": "Your Company",
+        "form.service": "Service Interest *",
+        "form.serviceSelect": "Select a service...",
+        "form.serviceConsulting": "Strategic Consulting",
+        "form.serviceCTO": "Fractional CTO",
+        "form.servicePlacement": "Executive Placement",
+        "form.serviceOther": "Other",
+        "form.budget": "Budget Range *",
+        "form.budgetSelect": "Select budget range...",
+        "form.budget10k": "< €10,000",
+        "form.budget50k": "€10,000 - €50,000",
+        "form.budget100k": "€50,000 - €100,000",
+        "form.budget100kPlus": "> €100,000",
+        "form.budgetNotSure": "Not sure yet",
+        "form.message": "Tell me about your project *",
+        "form.messagePlaceholder": "Describe your streaming platform needs...",
+        "form.submit": "Get Free Consultation",
+        "form.errorRequired": "This field is required",
+        "form.errorEmail": "Please enter a valid email address"
     },
 
     fr: {
@@ -124,7 +161,44 @@ const translations = {
         "about.text": "CTO avec 25+ ans d'expérience dans le scaling de plateformes de streaming à l'échelle mondiale. R&D Manager chez M6 Web où il a créé M6 Replay (service de catch-up TV leader en France), co-fondateur d'Afrostream (Y Combinator Summer 2015), a fait croître la plateforme audio Majelan. Expert en stratégie OTT, architecture de plateforme et constitution d'équipes. Auteur de la newsletter Streaming Radar et co-animateur du podcast 'On va taper dedans'.",
 
         // Contact
-        "contact.title": "Prêt à discuter de votre projet ?"
+        "contact.title": "Prêt à discuter de votre projet ?",
+
+        // Lead Capture
+        "leadCapture.title": "Obtenez une Session Stratégique Gratuite de 30 Minutes",
+        "leadCapture.subtitle": "Discutez de votre projet OTT et recevez des recommandations concrètes",
+        "leadCapture.benefit1": "Revue de votre architecture de plateforme actuelle",
+        "leadCapture.benefit2": "Identification des opportunités d'optimisation",
+        "leadCapture.benefit3": "Recommandations personnalisées",
+        "leadCapture.benefit4": "Sans engagement, totalement gratuit",
+        "leadCapture.badge1": "Y Combinator Alumni",
+        "leadCapture.badge2": "25+ Ans d'Expérience",
+        "leadCapture.badge3": "50M+ Utilisateurs Servis",
+
+        // Form
+        "form.fullName": "Nom Complet *",
+        "form.fullNamePlaceholder": "Jean Dupont",
+        "form.email": "Adresse Email *",
+        "form.emailPlaceholder": "jean@entreprise.com",
+        "form.company": "Nom de l'Entreprise",
+        "form.companyPlaceholder": "Votre Entreprise",
+        "form.service": "Service d'Intérêt *",
+        "form.serviceSelect": "Sélectionnez un service...",
+        "form.serviceConsulting": "Conseil Stratégique",
+        "form.serviceCTO": "CTO à Temps Partiel",
+        "form.servicePlacement": "Recrutement de Dirigeants",
+        "form.serviceOther": "Autre",
+        "form.budget": "Budget *",
+        "form.budgetSelect": "Sélectionnez votre budget...",
+        "form.budget10k": "< 10 000€",
+        "form.budget50k": "10 000€ - 50 000€",
+        "form.budget100k": "50 000€ - 100 000€",
+        "form.budget100kPlus": "> 100 000€",
+        "form.budgetNotSure": "Pas encore sûr",
+        "form.message": "Parlez-moi de votre projet *",
+        "form.messagePlaceholder": "Décrivez les besoins de votre plateforme de streaming...",
+        "form.submit": "Obtenir une Consultation Gratuite",
+        "form.errorRequired": "Ce champ est obligatoire",
+        "form.errorEmail": "Veuillez entrer une adresse email valide"
     },
 
     zh: {
@@ -186,7 +260,44 @@ const translations = {
         "about.text": "拥有25年以上全球流媒体平台扩展经验的CTO。曾任M6 Web研发经理，创建了M6 Replay（法国领先的电视回看服务），Afrostream联合创始人（Y Combinator 2015夏季班），扩展了Majelan音频流媒体平台。在OTT战略、平台架构和团队建设方面拥有专业知识。Streaming Radar时事通讯作者，'On va taper dedans'播客联合主持人。",
 
         // Contact
-        "contact.title": "准备讨论您的项目了吗？"
+        "contact.title": "准备讨论您的项目了吗？",
+
+        // Lead Capture
+        "leadCapture.title": "获取免费30分钟战略咨询",
+        "leadCapture.subtitle": "讨论您的OTT项目并获得可行的建议",
+        "leadCapture.benefit1": "审查您当前的平台架构",
+        "leadCapture.benefit2": "识别优化机会",
+        "leadCapture.benefit3": "获得个性化建议",
+        "leadCapture.benefit4": "无义务，完全免费",
+        "leadCapture.badge1": "Y Combinator校友",
+        "leadCapture.badge2": "25年以上经验",
+        "leadCapture.badge3": "服务50M+用户",
+
+        // Form
+        "form.fullName": "全名 *",
+        "form.fullNamePlaceholder": "张三",
+        "form.email": "电子邮件地址 *",
+        "form.emailPlaceholder": "zhang@company.com",
+        "form.company": "公司名称",
+        "form.companyPlaceholder": "您的公司",
+        "form.service": "服务兴趣 *",
+        "form.serviceSelect": "选择服务...",
+        "form.serviceConsulting": "战略咨询",
+        "form.serviceCTO": "兼职CTO",
+        "form.servicePlacement": "高管招聘",
+        "form.serviceOther": "其他",
+        "form.budget": "预算范围 *",
+        "form.budgetSelect": "选择预算范围...",
+        "form.budget10k": "< €10,000",
+        "form.budget50k": "€10,000 - €50,000",
+        "form.budget100k": "€50,000 - €100,000",
+        "form.budget100kPlus": "> €100,000",
+        "form.budgetNotSure": "尚未确定",
+        "form.message": "告诉我您的项目 *",
+        "form.messagePlaceholder": "描述您的流媒体平台需求...",
+        "form.submit": "获得免费咨询",
+        "form.errorRequired": "此字段为必填项",
+        "form.errorEmail": "请输入有效的电子邮件地址"
     }
 };
 
@@ -241,8 +352,8 @@ class LanguageSwitcher {
     }
 
     updatePageText() {
+        // Update text content elements
         const elements = document.querySelectorAll('[data-i18n]');
-
         elements.forEach(element => {
             const key = element.dataset.i18n;
             const translation = translations[this.currentLang][key];
@@ -251,11 +362,24 @@ class LanguageSwitcher {
                 // Check if element is an input/textarea
                 if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                     element.placeholder = translation;
+                } else if (element.tagName === 'OPTION') {
+                    element.textContent = translation;
                 } else {
                     element.textContent = translation;
                 }
             } else {
                 console.warn(`Translation not found for key: ${key} in language: ${this.currentLang}`);
+            }
+        });
+
+        // Update placeholder elements
+        const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
+        placeholderElements.forEach(element => {
+            const key = element.dataset.i18nPlaceholder;
+            const translation = translations[this.currentLang][key];
+
+            if (translation) {
+                element.placeholder = translation;
             }
         });
     }
@@ -400,16 +524,325 @@ class HeaderScroll {
 }
 
 // ============================================
+// ANALYTICS TRACKING
+// ============================================
+
+class Analytics {
+    constructor() {
+        this.scrollDepthTracked = {
+            25: false,
+            50: false,
+            75: false,
+            100: false
+        };
+        this.formStartTracked = {};
+        this.init();
+    }
+
+    init() {
+        this.trackScrollDepth();
+        this.trackCTAClicks();
+        this.trackFormStarts();
+        this.trackOutboundLinks();
+    }
+
+    // Track scroll depth milestones
+    trackScrollDepth() {
+        let ticking = false;
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const windowHeight = window.innerHeight;
+                    const documentHeight = document.documentElement.scrollHeight;
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+
+                    // Check each milestone
+                    [25, 50, 75, 100].forEach(milestone => {
+                        if (scrollPercent >= milestone && !this.scrollDepthTracked[milestone]) {
+                            this.scrollDepthTracked[milestone] = true;
+                            this.sendEvent('scroll_depth', {
+                                percent: milestone
+                            });
+                        }
+                    });
+
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    }
+
+    // Track CTA button clicks
+    trackCTAClicks() {
+        const ctaSelectors = '.cta-button, .content-cta';
+        document.querySelectorAll(ctaSelectors).forEach(button => {
+            button.addEventListener('click', (e) => {
+                const ctaText = e.target.textContent.trim();
+                const section = this.getParentSection(e.target);
+                const ctaType = e.target.classList.contains('cta-button') ? 'primary' : 'secondary';
+
+                this.sendEvent('cta_click', {
+                    cta_text: ctaText,
+                    cta_location: section,
+                    cta_type: ctaType
+                });
+            });
+        });
+    }
+
+    // Track form starts (first interaction)
+    trackFormStarts() {
+        const forms = document.querySelectorAll('form');
+        forms.forEach(form => {
+            const formId = form.id || 'unnamed-form';
+            const formType = form.querySelector('[name="form_type"]')?.value || 'unknown';
+
+            // Track first focus on any input
+            const inputs = form.querySelectorAll('input, textarea, select');
+            inputs.forEach(input => {
+                input.addEventListener('focus', () => {
+                    if (!this.formStartTracked[formId]) {
+                        this.formStartTracked[formId] = true;
+                        this.sendEvent('form_start', {
+                            form_id: formId,
+                            form_type: formType
+                        });
+                    }
+                }, { once: true });
+            });
+        });
+    }
+
+    // Track outbound link clicks
+    trackOutboundLinks() {
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const url = e.target.href;
+                const hostname = new URL(url).hostname;
+
+                // Only track if it's an external link
+                if (hostname !== window.location.hostname) {
+                    this.sendEvent('outbound_click', {
+                        link_url: url,
+                        link_text: e.target.textContent.trim()
+                    });
+                }
+            });
+        });
+    }
+
+    // Track form submissions
+    trackFormSubmit(formId, formType) {
+        this.sendEvent('form_submit', {
+            form_id: formId,
+            form_type: formType
+        });
+    }
+
+    // Get parent section name
+    getParentSection(element) {
+        const section = element.closest('section');
+        if (section) {
+            return section.className.split(' ')[0] || 'unknown';
+        }
+        return 'unknown';
+    }
+
+    // Send event to Google Analytics and console
+    sendEvent(eventName, params = {}) {
+        // Log to console for debugging
+        console.log(`📊 Analytics Event: ${eventName}`, params);
+
+        // Send to Google Analytics if available
+        if (typeof gtag !== 'undefined') {
+            gtag('event', eventName, params);
+        }
+
+        // Placeholder for Facebook Pixel (to be added in SESSION 5)
+        if (typeof fbq !== 'undefined') {
+            fbq('track', eventName, params);
+        }
+    }
+}
+
+// ============================================
+// CONTACT FORM HANDLING
+// ============================================
+
+class ContactForm {
+    constructor(formId) {
+        this.form = document.getElementById(formId);
+        if (!this.form) return;
+
+        this.formspreeEndpoint = 'YOUR_FORMSPREE_ENDPOINT'; // Replace with actual Formspree endpoint
+        this.submitButton = this.form.querySelector('button[type="submit"]');
+        this.submitText = this.submitButton.querySelector('.submit-text');
+        this.submitLoader = this.submitButton.querySelector('.submit-loader');
+        this.messageContainer = this.form.querySelector('.form-message');
+
+        this.init();
+    }
+
+    init() {
+        this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+
+        // Add real-time validation
+        this.form.querySelectorAll('input, select, textarea').forEach(field => {
+            field.addEventListener('blur', () => this.validateField(field));
+            field.addEventListener('input', () => {
+                // Clear error on input
+                const formGroup = field.closest('.form-group');
+                if (formGroup) {
+                    formGroup.classList.remove('error');
+                    const errorSpan = formGroup.querySelector('.form-error');
+                    if (errorSpan) errorSpan.textContent = '';
+                }
+            });
+        });
+    }
+
+    async handleSubmit(e) {
+        e.preventDefault();
+
+        // Validate all fields
+        if (!this.validateForm()) {
+            return;
+        }
+
+        // Show loading state
+        this.setLoading(true);
+
+        try {
+            const formData = new FormData(this.form);
+
+            // Check if Formspree endpoint is configured
+            if (this.formspreeEndpoint === 'YOUR_FORMSPREE_ENDPOINT') {
+                // Simulate success for demo purposes
+                console.warn('⚠️ Formspree endpoint not configured. Form submission simulated.');
+                await new Promise(resolve => setTimeout(resolve, 1500));
+
+                // Track event
+                if (window.analytics) {
+                    window.analytics.trackFormSubmit(this.form.id, formData.get('form_type'));
+                }
+
+                this.showMessage('success', '✓ Thank you! I\'ll get back to you within 24 hours.');
+                this.form.reset();
+            } else {
+                // Actual Formspree submission
+                const response = await fetch(this.formspreeEndpoint, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Track event
+                    if (window.analytics) {
+                        window.analytics.trackFormSubmit(this.form.id, formData.get('form_type'));
+                    }
+
+                    this.showMessage('success', '✓ Thank you! I\'ll get back to you within 24 hours.');
+                    this.form.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            }
+        } catch (error) {
+            console.error('Form submission error:', error);
+            this.showMessage('error', '✗ Something went wrong. Please try again or email me directly at lbostral@gmail.com');
+        } finally {
+            this.setLoading(false);
+        }
+    }
+
+    validateForm() {
+        let isValid = true;
+        const fields = this.form.querySelectorAll('input[required], select[required], textarea[required]');
+
+        fields.forEach(field => {
+            if (!this.validateField(field)) {
+                isValid = false;
+            }
+        });
+
+        return isValid;
+    }
+
+    validateField(field) {
+        const formGroup = field.closest('.form-group');
+        const errorSpan = formGroup?.querySelector('.form-error');
+        let errorMessage = '';
+
+        // Check if required field is empty
+        if (field.hasAttribute('required') && !field.value.trim()) {
+            errorMessage = translations[window.languageSwitcher?.currentLang || 'en']['form.errorRequired'] || 'This field is required';
+        }
+        // Validate email format
+        else if (field.type === 'email' && field.value.trim()) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(field.value)) {
+                errorMessage = translations[window.languageSwitcher?.currentLang || 'en']['form.errorEmail'] || 'Please enter a valid email address';
+            }
+        }
+
+        if (errorMessage) {
+            formGroup?.classList.add('error');
+            if (errorSpan) errorSpan.textContent = errorMessage;
+            return false;
+        } else {
+            formGroup?.classList.remove('error');
+            if (errorSpan) errorSpan.textContent = '';
+            return true;
+        }
+    }
+
+    setLoading(isLoading) {
+        this.submitButton.disabled = isLoading;
+
+        if (isLoading) {
+            this.submitText.style.display = 'none';
+            this.submitLoader.style.display = 'inline';
+        } else {
+            this.submitText.style.display = 'inline';
+            this.submitLoader.style.display = 'none';
+        }
+    }
+
+    showMessage(type, message) {
+        this.messageContainer.textContent = message;
+        this.messageContainer.className = `form-message ${type}`;
+        this.messageContainer.style.display = 'block';
+
+        // Auto-hide after 5 seconds
+        setTimeout(() => {
+            this.messageContainer.style.display = 'none';
+        }, 5000);
+    }
+}
+
+// ============================================
 // INITIALIZE APP
 // ============================================
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all modules
-    new LanguageSwitcher();
+    window.languageSwitcher = new LanguageSwitcher();
     new ScrollAnimations();
     new SmoothScroll();
     new LazyLoadImages();
     new HeaderScroll();
+
+    // Initialize Analytics
+    window.analytics = new Analytics();
+
+    // Initialize Contact Form
+    new ContactForm('contactForm');
 
     // Log initialization
     console.log('🚀 Ludovic Bostral Consulting Website Initialized');
