@@ -151,6 +151,9 @@ const translations = {
         "exitIntent.submit": "Send Me the Checklist",
         "exitIntent.privacy": "🔒 No spam. Unsubscribe anytime.",
 
+        // Sticky CTA
+        "stickyCTA.text": "Book a Call",
+
         // Results
         "results.title": "Results That Matter",
         "results.stat1.label": "Users Served Globally",
@@ -324,6 +327,9 @@ const translations = {
         "exitIntent.submit": "Envoyez-moi la Checklist",
         "exitIntent.privacy": "🔒 Pas de spam. Désabonnement à tout moment.",
 
+        // Sticky CTA
+        "stickyCTA.text": "Réserver un Appel",
+
         // Results
         "results.title": "Résultats Concrets",
         "results.stat1.label": "Utilisateurs Servis Globalement",
@@ -496,6 +502,9 @@ const translations = {
         "exitIntent.emailPlaceholder": "your@email.com",
         "exitIntent.submit": "发送清单给我",
         "exitIntent.privacy": "🔒 无垃圾邮件。随时取消订阅。",
+
+        // Sticky CTA
+        "stickyCTA.text": "预约通话",
 
         // Results
         "results.title": "成果展示",
@@ -1572,6 +1581,63 @@ class ExitIntentPopup {
 }
 
 // ============================================
+// STICKY CTA BUTTON
+// ============================================
+
+class StickyCTA {
+    constructor() {
+        this.button = document.getElementById('stickyCTA');
+        this.scrollThreshold = 300;
+        this.isVisible = false;
+
+        this.init();
+    }
+
+    init() {
+        // Show/hide on scroll
+        window.addEventListener('scroll', () => this.handleScroll());
+
+        // Track clicks
+        this.button.addEventListener('click', () => this.trackClick());
+
+        // Initial check
+        this.handleScroll();
+    }
+
+    handleScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const shouldShow = scrollTop > this.scrollThreshold;
+
+        if (shouldShow && !this.isVisible) {
+            this.show();
+        } else if (!shouldShow && this.isVisible) {
+            this.hide();
+        }
+    }
+
+    show() {
+        this.button.classList.add('visible');
+        this.isVisible = true;
+    }
+
+    hide() {
+        this.button.classList.remove('visible');
+        this.isVisible = false;
+    }
+
+    trackClick() {
+        if (window.analytics) {
+            window.analytics.sendEvent('sticky_cta_click', {
+                destination: 'google_calendar',
+                url: 'https://calendar.app.google/aE5emVnAv7MwVcZ68'
+            });
+        }
+
+        console.log('📅 Sticky CTA clicked - Google Calendar');
+    }
+}
+
+// ============================================
 // INITIALIZE APP
 // ============================================
 
@@ -1597,6 +1663,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Exit Intent Popup
     new ExitIntentPopup();
+
+    // Initialize Sticky CTA
+    new StickyCTA();
 
     // Log initialization
     console.log('🚀 Ludovic Bostral Consulting Website Initialized');
