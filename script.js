@@ -247,8 +247,8 @@ const translations = {
         "content.newsletter.title": "Streaming Radar",
         "content.newsletter.description": "Analyses hebdomadaires de l'industrie du streaming. Analyse approfondie des tendances OTT, stratégies de plateformes et innovations technologiques. Suivi par des professionnels de Netflix, Amazon Prime Video, Disney+ et autres grands services de streaming.",
         "content.newsletter.cta": "S'abonner",
-        "content.podcast.title": "On va taper dedans",
-        "content.podcast.description": "Podcast français sur Top Chef et les émissions culinaires de compétition",
+        "content.podcast.title": "Podcast Streaming Radar",
+        "content.podcast.description": "Version podcast de la newsletter Streaming Radar, discussions sur les plateformes OTT, la technologie de streaming et les tendances de l'industrie des médias",
         "content.podcast.cta": "Écouter",
 
         // About
@@ -441,8 +441,8 @@ const translations = {
         "content.newsletter.title": "Streaming Radar",
         "content.newsletter.description": "每周流媒体行业深度洞察。深入分析OTT趋势、平台策略和技术创新。Netflix、Amazon Prime Video、Disney+等领先流媒体服务的专业人士关注。",
         "content.newsletter.cta": "订阅",
-        "content.podcast.title": "On va taper dedans",
-        "content.podcast.description": "关于Top Chef和烹饪竞赛节目的法语播客",
+        "content.podcast.title": "Streaming Radar 播客",
+        "content.podcast.description": "Streaming Radar 时事通讯的播客版本，讨论OTT平台、流媒体技术和媒体行业趋势",
         "content.podcast.cta": "收听",
 
         // About
@@ -638,8 +638,8 @@ const translations = {
         "content.newsletter.title": "Streaming Radar",
         "content.newsletter.description": "Análisis semanales sobre la industria del streaming. Análisis en profundidad de tendencias OTT, estrategias de plataforma e innovaciones tecnológicas. Seguido por profesionales de Netflix, Amazon Prime Video, Disney+ y otros servicios de streaming líderes.",
         "content.newsletter.cta": "Suscribirse",
-        "content.podcast.title": "On va taper dedans",
-        "content.podcast.description": "Podcast francés sobre Top Chef y programas de competición culinaria",
+        "content.podcast.title": "Podcast Streaming Radar",
+        "content.podcast.description": "Versión podcast del newsletter Streaming Radar, discutiendo plataformas OTT, tecnología de streaming y tendencias de la industria de medios",
         "content.podcast.cta": "Escuchar",
 
         // About

@@ -9,7 +9,7 @@ This website presents Ludovic Bostral's expertise in streaming technology consul
 - Y Combinator Alumni (Summer 2015)
 - Creator of M6 Replay, Co-founder of Afrostream, CTO at Majelan
 - Author of "Streaming Radar" newsletter
-- Co-host of "On va taper dedans" podcast
+- Host of "Streaming Radar" podcast
 
 ## 📋 Features
 
@@ -249,7 +249,7 @@ Permissions-Policy: geolocation=(), microphone=(), camera=()
 - 📧 Email: lbostral@gmail.com
 - 💼 LinkedIn: [linkedin.com/in/ludovicbostral](https://linkedin.com/in/ludovicbostral)
 - 📰 Newsletter: [streamingradar.substack.com](https://streamingradar.substack.com)
-- 🎙️ Podcast: [On va taper dedans](https://streamingradar.substack.com/podcast)
+- 🎙️ Podcast: [Streaming Radar Podcast](https://streamingradar.substack.com/podcast)
 
 ---
 
