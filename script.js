@@ -16,7 +16,7 @@ const translations = {
         "services.consulting.feature2": "OTT monetization strategy (SVOD/AVOD/FAST)",
         "services.consulting.feature3": "Cloud infrastructure optimization (AWS/GCP)",
         "services.consulting.feature4": "CDN and encoding architecture",
-        "services.consulting.pricing": "From €1,500/day",
+        "services.consulting.pricing": "From €1,000/day",
 
         "services.cto.title": "Fractional CTO Services",
         "services.cto.description": "Part-time strategic technology leadership for media startups and scale-ups",
