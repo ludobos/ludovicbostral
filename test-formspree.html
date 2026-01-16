@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formspree Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        .info-box {
+            background: #f0f7ff;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .info-box strong {
+            color: #667eea;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: 'Arial', sans-serif;
+            transition: all 0.3s ease;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 14px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+        }
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            display: none;
+        }
+        .result.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .result.error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        .logs {
+            margin-top: 20px;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .log-entry {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .log-success { color: #4ade80; }
+        .log-error { color: #f87171; }
+        .log-info { color: #60a5fa; }
+        .log-warning { color: #fbbf24; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Formspree Test</h1>
+        <p class="subtitle">Test de soumission du formulaire Formspree</p>
+
+        <div class="info-box">
+            <strong>Endpoint:</strong> https://formspree.io/f/mzdddplp<br>
+            <strong>Méthode:</strong> POST<br>
+            <strong>Type:</strong> application/json
+        </div>
+
+        <form id="testForm">
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="test@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company" placeholder="Acme Inc.">
+            </div>
+
+            <div class="form-group">
+                <label for="service">Service Interest *</label>
+                <select id="service" name="service" required>
+                    <option value="">Select a service...</option>
+                    <option value="consulting">Strategic Consulting</option>
+                    <option value="fractional-cto">Fractional CTO</option>
+                    <option value="executive-placement">Executive Placement</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="budget">Budget Range *</label>
+                <select id="budget" name="budget" required>
+                    <option value="">Select budget range...</option>
+                    <option value="<10k">< €10,000</option>
+                    <option value="10-50k">€10,000 - €50,000</option>
+                    <option value="50-100k">€50,000 - €100,000</option>
+                    <option value=">100k">> €100,000</option>
+                    <option value="not-sure">Not sure yet</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+            </div>
+
+            <input type="hidden" name="_replyto" id="_replyto">
+            <input type="hidden" name="form_type" value="test_submission">
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+                🚀 Test Formspree
+            </button>
+        </form>
+
+        <div id="result" class="result"></div>
+
+        <div class="logs" id="logs"></div>
+    </div>
+
+    <script>
+        const form = document.getElementById('testForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const resultDiv = document.getElementById('result');
+        const logsDiv = document.getElementById('logs');
+
+        // Sync email to _replyto
+        document.getElementById('email').addEventListener('input', (e) => {
+            document.getElementById('_replyto').value = e.target.value;
+            addLog('info', `_replyto synced: ${e.target.value}`);
+        });
+
+        function addLog(type, message) {
+            const timestamp = new Date().toLocaleTimeString();
+            const logEntry = document.createElement('div');
+            logEntry.className = `log-entry log-${type}`;
+            logEntry.textContent = `[${timestamp}] ${message}`;
+            logsDiv.appendChild(logEntry);
+            logsDiv.scrollTop = logsDiv.scrollHeight;
+        }
+
+        function showResult(type, message) {
+            resultDiv.className = `result ${type}`;
+            resultDiv.textContent = message;
+            resultDiv.style.display = 'block';
+        }
+
+        addLog('info', '🌐 Page de test chargée');
+        addLog('info', '📋 Prêt à tester Formspree');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            addLog('info', '📝 Soumission du formulaire démarrée...');
+            submitBtn.disabled = true;
+            submitBtn.textContent = '⏳ Envoi en cours...';
+            resultDiv.style.display = 'none';
+
+            try {
+                const formData = new FormData(form);
+                const data = {};
+                formData.forEach((value, key) => {
+                    data[key] = value;
+                });
+
+                addLog('info', `📦 Données préparées: ${Object.keys(data).join(', ')}`);
+                addLog('warning', `📧 Email de réponse: ${data._replyto || 'NON DÉFINI!'}`);
+
+                // Test 1: Fetch with FormData
+                addLog('info', '🧪 Test 1: Soumission avec FormData');
+                const response = await fetch('https://formspree.io/f/mzdddplp', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                addLog('info', `📨 Statut HTTP: ${response.status} ${response.statusText}`);
+
+                const responseData = await response.json();
+                addLog('info', `📥 Réponse JSON: ${JSON.stringify(responseData, null, 2)}`);
+
+                if (response.ok) {
+                    addLog('success', '✅ SUCCÈS! Le formulaire a été soumis à Formspree');
+                    showResult('success', '✅ Test réussi! Le formulaire a été soumis avec succès à Formspree. Vérifie ta boîte email.');
+
+                    // Test 2: Vérifier les headers
+                    addLog('info', '🔍 Headers de réponse:');
+                    response.headers.forEach((value, key) => {
+                        addLog('info', `  ${key}: ${value}`);
+                    });
+
+                } else {
+                    addLog('error', `❌ ERREUR HTTP ${response.status}`);
+                    addLog('error', `📄 Détails: ${JSON.stringify(responseData)}`);
+                    showResult('error', `❌ Erreur ${response.status}: ${responseData.error || 'Soumission échouée'}`);
+                }
+
+            } catch (error) {
+                addLog('error', `❌ EXCEPTION: ${error.message}`);
+                addLog('error', `🔍 Stack: ${error.stack}`);
+                showResult('error', `❌ Erreur réseau: ${error.message}`);
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = '🚀 Test Formspree';
+                addLog('info', '🏁 Test terminé');
+            }
+        });
+
+        // Pre-fill with test data
+        setTimeout(() => {
+            document.getElementById('email').value = 'test@example.com';
+            document.getElementById('_replyto').value = 'test@example.com';
+            document.getElementById('fullName').value = 'Test User';
+            document.getElementById('company').value = 'Test Company';
+            document.getElementById('service').value = 'consulting';
+            document.getElementById('budget').value = '10-50k';
+            document.getElementById('message').value = 'This is a test submission from the Formspree test page.';
+            addLog('success', '✅ Formulaire pré-rempli avec des données de test');
+        }, 500);
+    </script>
+</body>
+</html>

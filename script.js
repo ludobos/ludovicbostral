@@ -53,13 +53,13 @@ const translations = {
         "content.newsletter.title": "Streaming Radar",
         "content.newsletter.description": "Weekly insights on the streaming industry. In-depth analysis of OTT trends, platform strategies, and technology innovations. Followed by professionals from Netflix, Amazon Prime Video, Disney+, and other leading streaming services.",
         "content.newsletter.cta": "Subscribe",
-        "content.podcast.title": "On va taper dedans",
-        "content.podcast.description": "French podcast about Top Chef and culinary competition shows",
+        "content.podcast.title": "Streaming Radar Podcast",
+        "content.podcast.description": "Podcast version of Streaming Radar newsletter, discussing OTT platforms, streaming technology, and media industry trends",
         "content.podcast.cta": "Listen",
 
         // About
         "about.title": "About Ludovic",
-        "about.text": "CTO with 25+ years scaling streaming platforms globally. R&D Manager at M6 Web where he created M6 Replay (France's leading catch-up TV service), co-founded Afrostream (Y Combinator Summer 2015), scaled Majelan audio streaming platform. Expert in OTT strategy, platform architecture, and team building. Author of Streaming Radar newsletter and co-host of 'On va taper dedans' podcast.",
+        "about.text": "CTO with 25+ years scaling streaming platforms globally. R&D Manager at M6 Web where he created M6 Replay (France's leading catch-up TV service), co-founded Afrostream (Y Combinator Summer 2015), scaled Majelan audio streaming platform. Expert in OTT strategy, platform architecture, and team building. Author of Streaming Radar newsletter and host of Streaming Radar podcast.",
 
         // Contact
         "contact.title": "Ready to discuss your project?",
@@ -253,7 +253,7 @@ const translations = {
 
         // About
         "about.title": "À Propos de Ludovic",
-        "about.text": "CTO avec 25+ ans d'expérience dans le scaling de plateformes de streaming à l'échelle mondiale. R&D Manager chez M6 Web où il a créé M6 Replay (service de catch-up TV leader en France), co-fondateur d'Afrostream (Y Combinator Summer 2015), a fait croître la plateforme audio Majelan. Expert en stratégie OTT, architecture de plateforme et constitution d'équipes. Auteur de la newsletter Streaming Radar et co-animateur du podcast 'On va taper dedans'.",
+        "about.text": "CTO avec 25+ ans d'expérience dans le scaling de plateformes de streaming à l'échelle mondiale. R&D Manager chez M6 Web où il a créé M6 Replay (service de catch-up TV leader en France), co-fondateur d'Afrostream (Y Combinator Summer 2015), a fait croître la plateforme audio Majelan. Expert en stratégie OTT, architecture de plateforme et constitution d'équipes. Auteur de la newsletter Streaming Radar et animateur du podcast Streaming Radar.",
 
         // Contact
         "contact.title": "Prêt à discuter de votre projet ?",
@@ -447,7 +447,7 @@ const translations = {
 
         // About
         "about.title": "关于Ludovic",
-        "about.text": "拥有25年以上全球流媒体平台扩展经验的CTO。曾任M6 Web研发经理，创建了M6 Replay（法国领先的电视回看服务），Afrostream联合创始人（Y Combinator 2015夏季班），扩展了Majelan音频流媒体平台。在OTT战略、平台架构和团队建设方面拥有专业知识。Streaming Radar时事通讯作者，'On va taper dedans'播客联合主持人。",
+        "about.text": "拥有25年以上全球流媒体平台扩展经验的CTO。曾任M6 Web研发经理，创建了M6 Replay（法国领先的电视回看服务），Afrostream联合创始人（Y Combinator 2015夏季班），扩展了Majelan音频流媒体平台。在OTT战略、平台架构和团队建设方面拥有专业知识。Streaming Radar时事通讯作者，Streaming Radar播客主持人。",
 
         // Contact
         "contact.title": "准备讨论您的项目了吗？",
@@ -644,7 +644,7 @@ const translations = {
 
         // About
         "about.title": "Sobre Ludovic",
-        "about.text": "CTO con más de 25 años escalando plataformas de streaming a nivel mundial. Gerente de I+D en M6 Web donde creó M6 Replay (el servicio líder de TV a la carta de Francia), cofundador de Afrostream (Y Combinator Summer 2015), escaló la plataforma de streaming de audio Majelan. Experto en estrategia OTT, arquitectura de plataforma y construcción de equipos. Autor del newsletter Streaming Radar y co-presentador del podcast 'On va taper dedans'.",
+        "about.text": "CTO con más de 25 años escalando plataformas de streaming a nivel mundial. Gerente de I+D en M6 Web donde creó M6 Replay (el servicio líder de TV a la carta de Francia), cofundador de Afrostream (Y Combinator Summer 2015), escaló la plataforma de streaming de audio Majelan. Experto en estrategia OTT, arquitectura de plataforma y construcción de equipos. Autor del newsletter Streaming Radar y presentador del podcast Streaming Radar.",
 
         // Contact
         "contact.title": "¿Listo para discutir tu proyecto?",
