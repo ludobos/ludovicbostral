@@ -1362,14 +1362,25 @@ class ContactForm {
     }
 
     setLoading(isLoading) {
+        if (!this.submitButton) return;
+
         this.submitButton.disabled = isLoading;
 
-        if (isLoading) {
-            this.submitText.style.display = 'none';
-            this.submitLoader.style.display = 'inline';
+        if (this.submitText && this.submitLoader) {
+            if (isLoading) {
+                this.submitText.style.display = 'none';
+                this.submitLoader.style.display = 'inline';
+            } else {
+                this.submitText.style.display = 'inline';
+                this.submitLoader.style.display = 'none';
+            }
         } else {
-            this.submitText.style.display = 'inline';
-            this.submitLoader.style.display = 'none';
+            // Fallback: change button text if spans not found
+            if (isLoading) {
+                this.submitButton.textContent = '⏳ Sending...';
+            } else {
+                this.submitButton.textContent = 'Get Free Consultation';
+            }
         }
     }
 
