@@ -3,29 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ludovic Bostral - Strategic Technology Consulting for Streaming Platforms. 25+ years building and scaling OTT platforms.">
-    <meta name="keywords" content="streaming, OTT, consulting, CTO, SVOD, AVOD, FAST, technology, Y Combinator">
+    <meta name="description" content="Ludovic Bostral - Strategic Technology Consulting for Streaming Platforms. 25+ years building and scaling OTT platforms. Y Combinator Alumni. $15.5M raised, 50M+ users served.">
+    <meta name="keywords" content="streaming, OTT, consulting, CTO, SVOD, AVOD, FAST, technology, Y Combinator, fractional CTO, streaming platforms, video technology, CDN, DRM, M6 Replay, Afrostream, Majelan">
     <meta name="author" content="Ludovic Bostral">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1A3D5C">
+    <link rel="canonical" href="https://ludovicbostral.com">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Ludovic Bostral - Strategic Technology Consulting">
-    <meta property="og:description" content="25+ years building and scaling OTT platforms">
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./assets/big.jpeg">
+    <meta property="og:url" content="https://ludovicbostral.com">
+    <meta property="og:title" content="Ludovic Bostral - Strategic Technology Consulting for Streaming Platforms">
+    <meta property="og:description" content="25+ years building and scaling OTT platforms. Y Combinator Alumni. Expert in SVOD/AVOD/FAST monetization, platform architecture, and team scaling.">
+    <meta property="og:image" content="https://ludovicbostral.com/assets/big.jpeg">
+    <meta property="og:image:alt" content="Ludovic Bostral - CTO & Strategic Technology Consultant">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Ludovic Bostral Consulting">
 
-    <!-- Structured Data -->
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ludovicbostral.com">
+    <meta name="twitter:title" content="Ludovic Bostral - Strategic Technology Consulting for Streaming Platforms">
+    <meta name="twitter:description" content="25+ years building and scaling OTT platforms. Y Combinator Alumni. Expert in SVOD/AVOD/FAST monetization.">
+    <meta name="twitter:image" content="https://ludovicbostral.com/assets/big.jpeg">
+    <meta name="twitter:image:alt" content="Ludovic Bostral - CTO & Strategic Technology Consultant">
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Ludovic Bostral",
         "jobTitle": "CTO & Strategic Technology Consultant",
-        "description": "Strategic Technology Consulting for Streaming Platforms",
+        "description": "Strategic Technology Consulting for Streaming Platforms. 25+ years building and scaling OTT platforms.",
         "url": "https://ludovicbostral.com",
+        "image": "https://ludovicbostral.com/assets/big.jpeg",
+        "email": "lbostral@gmail.com",
+        "alumniOf": {
+            "@type": "Organization",
+            "name": "Y Combinator",
+            "url": "https://www.ycombinator.com"
+        },
+        "knowsAbout": [
+            "OTT Platforms",
+            "Video Streaming Technology",
+            "SVOD/AVOD/FAST Monetization",
+            "Cloud Infrastructure",
+            "CDN Optimization",
+            "DRM Implementation",
+            "Team Scaling",
+            "Fractional CTO Services"
+        ],
         "sameAs": [
             "https://linkedin.com/in/ludovicbostral",
-            "https://streamingradar.substack.com"
-        ]
+            "https://streamingradar.substack.com",
+            "https://github.com/ludovicbostral"
+        ],
+        "offers": {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "Strategic Technology Consulting",
+                "description": "Consulting services for streaming platforms and OTT technology",
+                "provider": {
+                    "@type": "Person",
+                    "name": "Ludovic Bostral"
+                }
+            }
+        }
     }
     </script>
 
@@ -67,6 +112,8 @@
                     <button class="lang-btn" data-lang="fr">FR</button>
                     <span class="separator">|</span>
                     <button class="lang-btn" data-lang="zh">ZH</button>
+                    <span class="separator">|</span>
+                    <button class="lang-btn" data-lang="es">ES</button>
                 </nav>
             </div>
         </div>
@@ -225,6 +272,11 @@
                         </div>
 
                         <input type="hidden" name="form_type" value="main_contact">
+
+                        <!-- Language Warning (shown only for ZH and ES) -->
+                        <div id="languageWarning" class="form-language-warning" style="display: none;">
+                            <span data-i18n="form.languageWarning">⚠️ Note: I only speak French and English</span>
+                        </div>
 
                         <button type="submit" class="cta-button form-submit" data-i18n="form.submit">
                             <span class="submit-text">Get Free Consultation</span>
@@ -597,6 +649,79 @@
         <span class="sticky-cta-icon">📅</span>
         <span class="sticky-cta-text" data-i18n="stickyCTA.text">Book a Call</span>
     </a>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <h3 class="cookie-consent-title" data-i18n="cookie.title">🍪 Cookie Settings</h3>
+                <p class="cookie-consent-description" data-i18n="cookie.description">
+                    We use cookies to improve your experience and analyze site traffic. You can choose which cookies to accept.
+                </p>
+            </div>
+            <div class="cookie-consent-actions">
+                <button id="cookieAcceptAll" class="cookie-btn cookie-btn-primary" data-i18n="cookie.acceptAll">Accept All</button>
+                <button id="cookieRejectAll" class="cookie-btn cookie-btn-secondary" data-i18n="cookie.rejectAll">Reject All</button>
+                <button id="cookieCustomize" class="cookie-btn cookie-btn-link" data-i18n="cookie.customize">Customize</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div id="cookieSettingsModal" class="cookie-modal">
+        <div class="cookie-modal-overlay"></div>
+        <div class="cookie-modal-content">
+            <h2 class="cookie-modal-title" data-i18n="cookie.settingsTitle">Cookie Settings</h2>
+            <p class="cookie-modal-description" data-i18n="cookie.settingsDescription">
+                Choose which types of cookies you want to accept. Note that blocking some types of cookies may impact your experience.
+            </p>
+
+            <div class="cookie-option">
+                <div class="cookie-option-header">
+                    <label class="cookie-checkbox">
+                        <input type="checkbox" id="cookieEssential" checked disabled>
+                        <span class="cookie-checkmark"></span>
+                        <span class="cookie-label" data-i18n="cookie.essential">Essential Cookies</span>
+                    </label>
+                    <span class="cookie-required" data-i18n="cookie.required">Required</span>
+                </div>
+                <p class="cookie-option-description" data-i18n="cookie.essentialDescription">
+                    Necessary for the website to function properly. Cannot be disabled.
+                </p>
+            </div>
+
+            <div class="cookie-option">
+                <div class="cookie-option-header">
+                    <label class="cookie-checkbox">
+                        <input type="checkbox" id="cookieAnalytics">
+                        <span class="cookie-checkmark"></span>
+                        <span class="cookie-label" data-i18n="cookie.analytics">Analytics Cookies</span>
+                    </label>
+                </div>
+                <p class="cookie-option-description" data-i18n="cookie.analyticsDescription">
+                    Help us understand how visitors interact with our website (Google Analytics, Content Square).
+                </p>
+            </div>
+
+            <div class="cookie-option">
+                <div class="cookie-option-header">
+                    <label class="cookie-checkbox">
+                        <input type="checkbox" id="cookieMarketing">
+                        <span class="cookie-checkmark"></span>
+                        <span class="cookie-label" data-i18n="cookie.marketing">Marketing Cookies</span>
+                    </label>
+                </div>
+                <p class="cookie-option-description" data-i18n="cookie.marketingDescription">
+                    Used to track visitors across websites for marketing purposes.
+                </p>
+            </div>
+
+            <div class="cookie-modal-actions">
+                <button id="cookieSaveSettings" class="cookie-btn cookie-btn-primary" data-i18n="cookie.saveSettings">Save Settings</button>
+                <button id="cookieModalClose" class="cookie-btn cookie-btn-secondary" data-i18n="cookie.close">Close</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="script.js"></script>

@@ -154,6 +154,24 @@ const translations = {
         // Sticky CTA
         "stickyCTA.text": "Book a Call",
 
+        // Cookie Consent
+        "cookie.title": "🍪 Cookie Settings",
+        "cookie.description": "We use cookies to improve your experience and analyze site traffic. You can choose which cookies to accept.",
+        "cookie.acceptAll": "Accept All",
+        "cookie.rejectAll": "Reject All",
+        "cookie.customize": "Customize",
+        "cookie.settingsTitle": "Cookie Settings",
+        "cookie.settingsDescription": "Choose which types of cookies you want to accept. Note that blocking some types of cookies may impact your experience.",
+        "cookie.essential": "Essential Cookies",
+        "cookie.required": "Required",
+        "cookie.essentialDescription": "Necessary for the website to function properly. Cannot be disabled.",
+        "cookie.analytics": "Analytics Cookies",
+        "cookie.analyticsDescription": "Help us understand how visitors interact with our website (Google Analytics, Content Square).",
+        "cookie.marketing": "Marketing Cookies",
+        "cookie.marketingDescription": "Used to track visitors across websites for marketing purposes.",
+        "cookie.saveSettings": "Save Settings",
+        "cookie.close": "Close",
+
         // Results
         "results.title": "Results That Matter",
         "results.stat1.label": "Users Served Globally",
@@ -329,6 +347,24 @@ const translations = {
 
         // Sticky CTA
         "stickyCTA.text": "Réserver un Appel",
+
+        // Cookie Consent
+        "cookie.title": "🍪 Paramètres des Cookies",
+        "cookie.description": "Nous utilisons des cookies pour améliorer votre expérience et analyser le trafic du site. Vous pouvez choisir quels cookies accepter.",
+        "cookie.acceptAll": "Tout Accepter",
+        "cookie.rejectAll": "Tout Refuser",
+        "cookie.customize": "Personnaliser",
+        "cookie.settingsTitle": "Paramètres des Cookies",
+        "cookie.settingsDescription": "Choisissez les types de cookies que vous souhaitez accepter. Notez que le blocage de certains types de cookies peut affecter votre expérience.",
+        "cookie.essential": "Cookies Essentiels",
+        "cookie.required": "Obligatoire",
+        "cookie.essentialDescription": "Nécessaires au bon fonctionnement du site. Ne peuvent pas être désactivés.",
+        "cookie.analytics": "Cookies Analytiques",
+        "cookie.analyticsDescription": "Nous aident à comprendre comment les visiteurs interagissent avec notre site (Google Analytics, Content Square).",
+        "cookie.marketing": "Cookies Marketing",
+        "cookie.marketingDescription": "Utilisés pour suivre les visiteurs sur les sites web à des fins marketing.",
+        "cookie.saveSettings": "Enregistrer les Paramètres",
+        "cookie.close": "Fermer",
 
         // Results
         "results.title": "Résultats Concrets",
@@ -506,6 +542,24 @@ const translations = {
         // Sticky CTA
         "stickyCTA.text": "预约通话",
 
+        // Cookie Consent
+        "cookie.title": "🍪 Cookie设置",
+        "cookie.description": "我们使用Cookie来改善您的体验并分析网站流量。您可以选择接受哪些Cookie。",
+        "cookie.acceptAll": "全部接受",
+        "cookie.rejectAll": "全部拒绝",
+        "cookie.customize": "自定义",
+        "cookie.settingsTitle": "Cookie设置",
+        "cookie.settingsDescription": "选择您想要接受的Cookie类型。请注意，阻止某些类型的Cookie可能会影响您的体验。",
+        "cookie.essential": "必要Cookie",
+        "cookie.required": "必需",
+        "cookie.essentialDescription": "网站正常运行所必需。无法禁用。",
+        "cookie.analytics": "分析Cookie",
+        "cookie.analyticsDescription": "帮助我们了解访问者如何与我们的网站互动（Google Analytics，Content Square）。",
+        "cookie.marketing": "营销Cookie",
+        "cookie.marketingDescription": "用于跨网站跟踪访问者以进行营销。",
+        "cookie.saveSettings": "保存设置",
+        "cookie.close": "关闭",
+
         // Results
         "results.title": "成果展示",
         "results.stat1.label": "全球服务用户数",
@@ -528,7 +582,205 @@ const translations = {
         "testimonials.testimonial3.text": "Ludovic的Streaming Radar时事通讯是OTT领域任何人的必读内容。他对平台策略和变现模型的分析帮助我们从SVOD转向混合AVOD/SVOD模式，收入增长了40%。",
         "testimonials.testimonial3.name": "Alexandre M.",
         "testimonials.testimonial3.role": "产品副总裁，媒体科技公司",
-        "testimonials.partnersLabel": "公司与合作伙伴"
+        "testimonials.partnersLabel": "公司与合作伙伴",
+
+        // Form Language Warning
+        "form.languageWarning": "⚠️ 注意：我只说法语和英语"
+    },
+
+    es: {
+        baseline: "Consultoría Tecnológica Estratégica",
+        "hero.title": "Consultoría Tecnológica Estratégica para Plataformas de Streaming",
+        "hero.subtitle": "Más de 25 años construyendo y escalando plataformas OTT",
+        "cta.contact": "Contáctame",
+
+        // Services
+        "services.consulting.title": "Consultoría Tecnológica Estratégica",
+        "services.consulting.description": "Arquitectura de plataforma, selección de stack tecnológico y estrategia de comercialización para servicios de streaming",
+        "services.consulting.feature1": "Auditorías tecnológicas y recomendaciones",
+        "services.consulting.feature2": "Estrategia de monetización OTT (SVOD/AVOD/FAST)",
+        "services.consulting.feature3": "Optimización de infraestructura cloud (AWS/GCP)",
+        "services.consulting.feature4": "Arquitectura de CDN y codificación",
+        "services.consulting.pricing": "Desde €1,500/día",
+
+        "services.cto.title": "Servicios de CTO Parcial",
+        "services.cto.description": "Liderazgo tecnológico estratégico a tiempo parcial para startups y scale-ups de medios",
+        "services.cto.feature1": "Orientación estratégica continua",
+        "services.cto.feature2": "Estructura de equipo y estrategia de contratación",
+        "services.cto.feature3": "Hoja de ruta tecnológica y priorización",
+        "services.cto.feature4": "Reportes para inversores y junta directiva",
+        "services.cto.pricing": "Retainer personalizado",
+
+        "services.placement.title": "Colocación de Ejecutivos",
+        "services.placement.description": "Identificar y colocar líderes tecnológicos de primer nivel (CTO, VP de Ingeniería, Director de Producto)",
+        "services.placement.feature1": "Historial comprobado en reclutamiento ejecutivo",
+        "services.placement.feature2": "Red profunda en streaming/media tech",
+        "services.placement.feature3": "Evaluación de ajuste cultural",
+        "services.placement.feature4": "Benchmarking de compensación",
+        "services.placement.pricing": "€15-20K por colocación",
+
+        // Social Proof
+        "socialProof.label": "Experiencia incluye",
+        "socialProof.partnerships": "Colaboraciones con",
+
+        // Expertise
+        "expertise.title": "Experiencia Principal",
+        "expertise.item1": "Plataformas OTT (VOD/SVOD/AVOD/FAST)",
+        "expertise.item2": "Tecnología de Video (Codificación, DRM, CDN)",
+        "expertise.item3": "Infraestructura Cloud (AWS, GCP)",
+        "expertise.item4": "Escalado de Equipos",
+        "expertise.item5": "Expansión Internacional",
+        "expertise.item6": "Gestión de P&L",
+        "expertise.item7": "Recaudación de Fondos",
+
+        // Content
+        "content.title": "Liderazgo de Pensamiento",
+        "content.newsletter.title": "Streaming Radar",
+        "content.newsletter.description": "Análisis semanales sobre la industria del streaming. Análisis en profundidad de tendencias OTT, estrategias de plataforma e innovaciones tecnológicas. Seguido por profesionales de Netflix, Amazon Prime Video, Disney+ y otros servicios de streaming líderes.",
+        "content.newsletter.cta": "Suscribirse",
+        "content.podcast.title": "On va taper dedans",
+        "content.podcast.description": "Podcast francés sobre Top Chef y programas de competición culinaria",
+        "content.podcast.cta": "Escuchar",
+
+        // About
+        "about.title": "Sobre Ludovic",
+        "about.text": "CTO con más de 25 años escalando plataformas de streaming a nivel mundial. Gerente de I+D en M6 Web donde creó M6 Replay (el servicio líder de TV a la carta de Francia), cofundador de Afrostream (Y Combinator Summer 2015), escaló la plataforma de streaming de audio Majelan. Experto en estrategia OTT, arquitectura de plataforma y construcción de equipos. Autor del newsletter Streaming Radar y co-presentador del podcast 'On va taper dedans'.",
+
+        // Contact
+        "contact.title": "¿Listo para discutir tu proyecto?",
+
+        // Lead Capture
+        "leadCapture.title": "Obtén una Sesión Estratégica Gratuita de 30 Minutos",
+        "leadCapture.subtitle": "Discute tu proyecto OTT y recibe recomendaciones accionables",
+        "leadCapture.benefit1": "Revisión de tu arquitectura de plataforma actual",
+        "leadCapture.benefit2": "Identificación de oportunidades de optimización",
+        "leadCapture.benefit3": "Recomendaciones personalizadas",
+        "leadCapture.benefit4": "Sin compromiso, completamente gratis",
+        "leadCapture.badge1": "Alumno de Y Combinator",
+        "leadCapture.badge2": "Más de 25 Años de Experiencia",
+        "leadCapture.badge3": "50M+ Usuarios Atendidos",
+
+        // Form
+        "form.fullName": "Nombre Completo *",
+        "form.fullNamePlaceholder": "Juan Pérez",
+        "form.email": "Dirección de Email *",
+        "form.emailPlaceholder": "juan@empresa.com",
+        "form.company": "Nombre de la Empresa",
+        "form.companyPlaceholder": "Tu Empresa",
+        "form.service": "Servicio de Interés *",
+        "form.serviceSelect": "Selecciona un servicio...",
+        "form.serviceConsulting": "Consultoría Estratégica",
+        "form.serviceCTO": "CTO Parcial",
+        "form.servicePlacement": "Colocación de Ejecutivos",
+        "form.serviceOther": "Otro",
+        "form.budget": "Rango de Presupuesto *",
+        "form.budgetSelect": "Selecciona rango de presupuesto...",
+        "form.budget10k": "< €10,000",
+        "form.budget50k": "€10,000 - €50,000",
+        "form.budget100k": "€50,000 - €100,000",
+        "form.budget100kPlus": "> €100,000",
+        "form.budgetNotSure": "Aún no estoy seguro",
+        "form.message": "Cuéntame sobre tu proyecto *",
+        "form.messagePlaceholder": "Describe las necesidades de tu plataforma de streaming...",
+        "form.submit": "Obtener Consulta Gratuita",
+        "form.errorRequired": "Este campo es obligatorio",
+        "form.errorEmail": "Por favor ingresa una dirección de email válida",
+        "form.languageWarning": "⚠️ Nota: Solo hablo francés e inglés",
+
+        // Resources
+        "resources.title": "Recursos Gratuitos",
+        "resources.subtitle": "Descarga herramientas probadas en batalla usadas por plataformas de streaming líderes",
+        "resources.badgePopular": "Más Popular",
+        "resources.cta": "Descargar PDF Gratuito",
+
+        "resources.resource1.title": "Lista de Verificación de Comparación de Proveedores OTT",
+        "resources.resource1.description": "Compara más de 50 proveedores OTT en 15 criterios críticos: rendimiento CDN, soporte DRM, calidad de codificación, profundidad de análisis y más. Ahorra semanas de investigación.",
+        "resources.resource1.feature1": "✓ 50+ proveedores evaluados",
+        "resources.resource1.feature2": "✓ 15 criterios de comparación",
+        "resources.resource1.feature3": "✓ Benchmarks de precios incluidos",
+        "resources.resource1.value": "Valor: €299",
+
+        "resources.resource2.title": "Calculadora de Ingresos SVOD vs AVOD vs FAST",
+        "resources.resource2.description": "Plantilla de Excel para modelar diferentes estrategias de monetización. Ingresa tu tamaño de audiencia, precios e inventario de anuncios para proyectar ingresos en modelos SVOD, AVOD y FAST.",
+        "resources.resource2.feature1": "✓ 3 modelos de monetización",
+        "resources.resource2.feature2": "✓ Proyecciones a 5 años",
+        "resources.resource2.feature3": "✓ Herramienta de comparación de escenarios",
+        "resources.resource2.value": "Valor: €199",
+
+        "resources.resource3.title": "Guía de Contratación de CTO para Startups de Medios",
+        "resources.resource3.description": "Cómo evaluar candidatos técnicos para plataformas de streaming. Incluye más de 50 preguntas de entrevista, señales de alerta a observar y benchmarks de compensación en Europa.",
+        "resources.resource3.feature1": "✓ 50+ preguntas de entrevista",
+        "resources.resource3.feature2": "✓ Marco de evaluación técnica",
+        "resources.resource3.feature3": "✓ Benchmarks salariales EU/US",
+        "resources.resource3.value": "Valor: €249",
+
+        // Modal
+        "modal.title": "Descarga Tu Recurso Gratuito",
+        "modal.description": "Ingresa tu email para recibir acceso instantáneo",
+        "modal.emailPlaceholder": "tu@email.com",
+        "modal.submit": "Envíame el Recurso",
+        "modal.privacy": "🔒 Sin spam. Cancela en cualquier momento. También recibirás actualizaciones ocasionales del newsletter Streaming Radar.",
+        "modal.trust1": "✓ 2,000+ descargas",
+        "modal.trust2": "✓ Usado por profesionales de Netflix, Amazon, Disney+",
+
+        // Exit Intent Popup
+        "exitIntent.title": "¡Espera! No Te Vayas con las Manos Vacías",
+        "exitIntent.subtitle": "Obtén nuestro recurso más popular antes de irte",
+        "exitIntent.badge": "DESCARGA GRATUITA",
+        "exitIntent.offerTitle": "Lista de Verificación de Comparación de Proveedores OTT",
+        "exitIntent.offerDescription": "Compara más de 50 proveedores OTT en 15 criterios críticos. Ahorra semanas de investigación.",
+        "exitIntent.feature1": "✓ 50+ proveedores evaluados",
+        "exitIntent.feature2": "✓ 15 criterios de comparación",
+        "exitIntent.feature3": "✓ Benchmarks de precios incluidos",
+        "exitIntent.value": "Valor: €299 - Tuyo GRATIS",
+        "exitIntent.emailPlaceholder": "tu@email.com",
+        "exitIntent.submit": "Envíame la Lista",
+        "exitIntent.privacy": "🔒 Sin spam. Cancela en cualquier momento.",
+
+        // Sticky CTA
+        "stickyCTA.text": "Reservar una Llamada",
+
+        // Cookie Consent
+        "cookie.title": "🍪 Configuración de Cookies",
+        "cookie.description": "Usamos cookies para mejorar tu experiencia y analizar el tráfico del sitio. Puedes elegir qué cookies aceptar.",
+        "cookie.acceptAll": "Aceptar Todo",
+        "cookie.rejectAll": "Rechazar Todo",
+        "cookie.customize": "Personalizar",
+        "cookie.settingsTitle": "Configuración de Cookies",
+        "cookie.settingsDescription": "Elige qué tipos de cookies deseas aceptar. Ten en cuenta que bloquear algunos tipos de cookies puede afectar tu experiencia.",
+        "cookie.essential": "Cookies Esenciales",
+        "cookie.required": "Requerido",
+        "cookie.essentialDescription": "Necesarias para que el sitio funcione correctamente. No se pueden desactivar.",
+        "cookie.analytics": "Cookies Analíticas",
+        "cookie.analyticsDescription": "Nos ayudan a entender cómo los visitantes interactúan con nuestro sitio (Google Analytics, Content Square).",
+        "cookie.marketing": "Cookies de Marketing",
+        "cookie.marketingDescription": "Usadas para rastrear visitantes en sitios web con fines de marketing.",
+        "cookie.saveSettings": "Guardar Configuración",
+        "cookie.close": "Cerrar",
+
+        // Results
+        "results.title": "Resultados Concretos",
+        "results.stat1.label": "Usuarios Atendidos Globalmente",
+        "results.stat1.detail": "M6 Replay: 0 a 50M usuarios (2008-2013)",
+        "results.stat2.label": "Capital Total Recaudado",
+        "results.stat2.detail": "Afrostream $4M + Majelan $10M + Kessel $1.5M",
+        "results.stat3.label": "Plataformas de Streaming Escaladas",
+        "results.stat3.detail": "M6 Replay, Afrostream, Majelan",
+        "results.stat4.label": "Años de Experiencia",
+        "results.stat4.detail": "Desde 2000, de M6 a Kessel",
+
+        // Testimonials
+        "testimonials.title": "Lo Que Dicen los Clientes",
+        "testimonials.testimonial1.text": "Ludovic nos ayudó a escalar nuestra plataforma de streaming de 0 a 2M de usuarios en 18 meses. Su experiencia técnica en optimización de CDN e implementación de DRM fue crucial. La arquitectura que diseñó manejó 10x el tráfico sin problemas.",
+        "testimonials.testimonial1.name": "Patrick Z.",
+        "testimonials.testimonial1.role": "CEO, Plataforma de Streaming Europea",
+        "testimonials.testimonial2.text": "Trabajar con Ludovic como CTO parcial fue transformador. Reconstruyó nuestro stack tecnológico, estableció mejores prácticas de ingeniería y nos preparó para la expansión internacional. Su visión estratégica va más allá de la tecnología.",
+        "testimonials.testimonial2.name": "Thibaut S.",
+        "testimonials.testimonial2.role": "Fundador, Startup de Streaming de Audio",
+        "testimonials.testimonial3.text": "El newsletter Streaming Radar de Ludovic es lectura esencial para cualquiera en OTT. Su análisis de estrategias de plataforma y modelos de monetización nos ayudó a pivotar de SVOD a híbrido AVOD/SVOD, aumentando ingresos en 40%.",
+        "testimonials.testimonial3.name": "Alexandre M.",
+        "testimonials.testimonial3.role": "VP de Producto, Empresa de Media Tech",
+        "testimonials.partnersLabel": "Empresas y Colaboraciones"
     }
 };
 
@@ -613,6 +865,16 @@ class LanguageSwitcher {
                 element.placeholder = translation;
             }
         });
+
+        // Show/hide language warning for Chinese and Spanish
+        const languageWarning = document.getElementById('languageWarning');
+        if (languageWarning) {
+            if (this.currentLang === 'zh' || this.currentLang === 'es') {
+                languageWarning.style.display = 'block';
+            } else {
+                languageWarning.style.display = 'none';
+            }
+        }
     }
 }
 
@@ -1638,6 +1900,192 @@ class StickyCTA {
 }
 
 // ============================================
+// COOKIE CONSENT (RGPD)
+// ============================================
+
+class CookieConsent {
+    constructor() {
+        this.banner = document.getElementById('cookieConsent');
+        this.modal = document.getElementById('cookieSettingsModal');
+        this.acceptAllBtn = document.getElementById('cookieAcceptAll');
+        this.rejectAllBtn = document.getElementById('cookieRejectAll');
+        this.customizeBtn = document.getElementById('cookieCustomize');
+        this.saveSettingsBtn = document.getElementById('cookieSaveSettings');
+        this.modalCloseBtn = document.getElementById('cookieModalClose');
+        this.modalOverlay = this.modal.querySelector('.cookie-modal-overlay');
+
+        this.analyticsCheckbox = document.getElementById('cookieAnalytics');
+        this.marketingCheckbox = document.getElementById('cookieMarketing');
+
+        this.COOKIE_NAME = 'cookie_consent';
+        this.COOKIE_DURATION = 365; // days
+
+        this.init();
+    }
+
+    init() {
+        // Check if user has already made a choice
+        const consent = this.getConsent();
+
+        if (!consent) {
+            // Show banner after 1 second
+            setTimeout(() => this.showBanner(), 1000);
+        } else {
+            // Apply stored consent
+            this.applyConsent(consent);
+        }
+
+        // Event listeners
+        this.acceptAllBtn.addEventListener('click', () => this.acceptAll());
+        this.rejectAllBtn.addEventListener('click', () => this.rejectAll());
+        this.customizeBtn.addEventListener('click', () => this.openModal());
+        this.saveSettingsBtn.addEventListener('click', () => this.saveCustomSettings());
+        this.modalCloseBtn.addEventListener('click', () => this.closeModal());
+        this.modalOverlay.addEventListener('click', () => this.closeModal());
+    }
+
+    showBanner() {
+        this.banner.classList.add('show');
+    }
+
+    hideBanner() {
+        this.banner.classList.remove('show');
+    }
+
+    openModal() {
+        this.modal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+
+        // Load current settings
+        const consent = this.getConsent();
+        if (consent) {
+            this.analyticsCheckbox.checked = consent.analytics;
+            this.marketingCheckbox.checked = consent.marketing;
+        }
+    }
+
+    closeModal() {
+        this.modal.classList.remove('show');
+        document.body.style.overflow = '';
+    }
+
+    acceptAll() {
+        const consent = {
+            essential: true,
+            analytics: true,
+            marketing: true,
+            timestamp: Date.now()
+        };
+
+        this.saveConsent(consent);
+        this.applyConsent(consent);
+        this.hideBanner();
+
+        console.log('✅ All cookies accepted');
+    }
+
+    rejectAll() {
+        const consent = {
+            essential: true,
+            analytics: false,
+            marketing: false,
+            timestamp: Date.now()
+        };
+
+        this.saveConsent(consent);
+        this.applyConsent(consent);
+        this.hideBanner();
+
+        console.log('❌ Non-essential cookies rejected');
+    }
+
+    saveCustomSettings() {
+        const consent = {
+            essential: true,
+            analytics: this.analyticsCheckbox.checked,
+            marketing: this.marketingCheckbox.checked,
+            timestamp: Date.now()
+        };
+
+        this.saveConsent(consent);
+        this.applyConsent(consent);
+        this.closeModal();
+        this.hideBanner();
+
+        console.log('⚙️ Custom cookie settings saved:', consent);
+    }
+
+    saveConsent(consent) {
+        const expires = new Date();
+        expires.setDate(expires.getDate() + this.COOKIE_DURATION);
+
+        document.cookie = `${this.COOKIE_NAME}=${JSON.stringify(consent)}; expires=${expires.toUTCString()}; path=/; SameSite=Lax`;
+    }
+
+    getConsent() {
+        const cookies = document.cookie.split(';');
+        for (let cookie of cookies) {
+            const [name, value] = cookie.trim().split('=');
+            if (name === this.COOKIE_NAME) {
+                try {
+                    return JSON.parse(decodeURIComponent(value));
+                } catch (e) {
+                    return null;
+                }
+            }
+        }
+        return null;
+    }
+
+    applyConsent(consent) {
+        // Analytics cookies (Google Analytics, Content Square)
+        if (consent.analytics) {
+            this.enableAnalytics();
+        } else {
+            this.disableAnalytics();
+        }
+
+        // Marketing cookies
+        if (consent.marketing) {
+            this.enableMarketing();
+        } else {
+            this.disableMarketing();
+        }
+    }
+
+    enableAnalytics() {
+        // Google Analytics is already loaded in head
+        // Content Square is already loaded in head
+        console.log('📊 Analytics cookies enabled');
+
+        // Track consent
+        if (window.analytics) {
+            window.analytics.sendEvent('cookie_consent', {
+                type: 'analytics',
+                action: 'enabled'
+            });
+        }
+    }
+
+    disableAnalytics() {
+        // Disable Google Analytics tracking
+        window['ga-disable-G-VXBFRGGZV3'] = true;
+
+        console.log('🚫 Analytics cookies disabled');
+    }
+
+    enableMarketing() {
+        // Placeholder for marketing cookies (Facebook Pixel, LinkedIn Insight, etc.)
+        console.log('📢 Marketing cookies enabled');
+    }
+
+    disableMarketing() {
+        // Placeholder for disabling marketing cookies
+        console.log('🚫 Marketing cookies disabled');
+    }
+}
+
+// ============================================
 // INITIALIZE APP
 // ============================================
 
@@ -1666,6 +2114,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Sticky CTA
     new StickyCTA();
+
+    // Initialize Cookie Consent
+    new CookieConsent();
 
     // Log initialization
     console.log('🚀 Ludovic Bostral Consulting Website Initialized');
