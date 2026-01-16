@@ -408,7 +408,7 @@ const translations = {
         "services.consulting.feature2": "OTT变现策略（SVOD/AVOD/FAST）",
         "services.consulting.feature3": "云基础设施优化（AWS/GCP）",
         "services.consulting.feature4": "CDN和编码架构",
-        "services.consulting.pricing": "每日1500欧元起",
+        "services.consulting.pricing": "每日1000欧元起",
 
         "services.cto.title": "兼职CTO服务",
         "services.cto.description": "为媒体初创公司和成长型企业提供兼职战略技术领导服务",
@@ -607,7 +607,7 @@ const translations = {
         "services.consulting.feature2": "Estrategia de monetización OTT (SVOD/AVOD/FAST)",
         "services.consulting.feature3": "Optimización de infraestructura cloud (AWS/GCP)",
         "services.consulting.feature4": "Arquitectura de CDN y codificación",
-        "services.consulting.pricing": "Desde €1,500/día",
+        "services.consulting.pricing": "Desde €1,000/día",
 
         "services.cto.title": "Servicios de CTO Parcial",
         "services.cto.description": "Liderazgo tecnológico estratégico a tiempo parcial para startups y scale-ups de medios",
