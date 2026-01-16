@@ -144,7 +144,7 @@ const translations = {
         "results.stat2.label": "Total Capital Raised",
         "results.stat2.detail": "Afrostream $4M + Majelan $10M + Kessel $1.5M",
         "results.stat3.label": "Streaming Platforms Scaled",
-        "results.stat3.detail": "From 0 to millions of users",
+        "results.stat3.detail": "M6 Replay, Afrostream, Majelan",
         "results.stat4.label": "Years of Experience",
         "results.stat4.detail": "Since 2000, from M6 to Kessel",
 
@@ -303,7 +303,7 @@ const translations = {
         "results.stat2.label": "Capital Total Levé",
         "results.stat2.detail": "Afrostream $4M + Majelan $10M + Kessel $1.5M",
         "results.stat3.label": "Plateformes de Streaming Développées",
-        "results.stat3.detail": "De 0 à des millions d'utilisateurs",
+        "results.stat3.detail": "M6 Replay, Afrostream, Majelan",
         "results.stat4.label": "Années d'Expérience",
         "results.stat4.detail": "Depuis 2000, de M6 à Kessel",
 
@@ -462,7 +462,7 @@ const translations = {
         "results.stat2.label": "累计融资额",
         "results.stat2.detail": "Afrostream $4M + Majelan $10M + Kessel $1.5M",
         "results.stat3.label": "扩展的流媒体平台",
-        "results.stat3.detail": "从0到数百万用户",
+        "results.stat3.detail": "M6 Replay, Afrostream, Majelan",
         "results.stat4.label": "工作年限",
         "results.stat4.detail": "自2000年起，从M6到Kessel",
 
