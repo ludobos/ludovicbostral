@@ -212,7 +212,7 @@ const translations = {
         "services.consulting.feature2": "Stratégie de monétisation OTT (SVOD/AVOD/FAST)",
         "services.consulting.feature3": "Optimisation infrastructure cloud (AWS/GCP)",
         "services.consulting.feature4": "Architecture CDN et encodage",
-        "services.consulting.pricing": "À partir de 1 500€/jour",
+        "services.consulting.pricing": "À partir de 1 000€/jour",
 
         "services.cto.title": "Services de CTO à Temps Partiel",
         "services.cto.description": "Leadership technologique stratégique à temps partiel pour startups et scale-ups média",
