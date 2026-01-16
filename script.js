@@ -99,7 +99,43 @@ const translations = {
         "form.messagePlaceholder": "Describe your streaming platform needs...",
         "form.submit": "Get Free Consultation",
         "form.errorRequired": "This field is required",
-        "form.errorEmail": "Please enter a valid email address"
+        "form.errorEmail": "Please enter a valid email address",
+
+        // Resources
+        "resources.title": "Free Resources",
+        "resources.subtitle": "Download battle-tested tools used by leading streaming platforms",
+        "resources.badgePopular": "Most Popular",
+        "resources.cta": "Download Free PDF",
+
+        "resources.resource1.title": "OTT Platform Vendor Comparison Checklist",
+        "resources.resource1.description": "Compare 50+ OTT vendors across 15 critical criteria: CDN performance, DRM support, encoding quality, analytics depth, and more. Save weeks of research.",
+        "resources.resource1.feature1": "✓ 50+ vendors evaluated",
+        "resources.resource1.feature2": "✓ 15 comparison criteria",
+        "resources.resource1.feature3": "✓ Pricing benchmarks included",
+        "resources.resource1.value": "Value: €299",
+
+        "resources.resource2.title": "SVOD vs AVOD vs FAST Revenue Calculator",
+        "resources.resource2.description": "Excel template to model different monetization strategies. Input your audience size, pricing, and ad inventory to project revenues across SVOD, AVOD, and FAST models.",
+        "resources.resource2.feature1": "✓ 3 monetization models",
+        "resources.resource2.feature2": "✓ 5-year projections",
+        "resources.resource2.feature3": "✓ Scenario comparison tool",
+        "resources.resource2.value": "Value: €199",
+
+        "resources.resource3.title": "CTO Hiring Guide for Media Startups",
+        "resources.resource3.description": "How to evaluate technical candidates for streaming platforms. Includes 50+ interview questions, red flags to watch for, and compensation benchmarks across Europe.",
+        "resources.resource3.feature1": "✓ 50+ interview questions",
+        "resources.resource3.feature2": "✓ Technical assessment framework",
+        "resources.resource3.feature3": "✓ Salary benchmarks EU/US",
+        "resources.resource3.value": "Value: €249",
+
+        // Modal
+        "modal.title": "Download Your Free Resource",
+        "modal.description": "Enter your email to receive instant access",
+        "modal.emailPlaceholder": "your@email.com",
+        "modal.submit": "Send Me the Resource",
+        "modal.privacy": "🔒 No spam. Unsubscribe anytime. You'll also receive occasional updates from Streaming Radar newsletter.",
+        "modal.trust1": "✓ 2,000+ downloads",
+        "modal.trust2": "✓ Used by Netflix, Amazon, Disney+ professionals"
     },
 
     fr: {
@@ -198,7 +234,43 @@ const translations = {
         "form.messagePlaceholder": "Décrivez les besoins de votre plateforme de streaming...",
         "form.submit": "Obtenir une Consultation Gratuite",
         "form.errorRequired": "Ce champ est obligatoire",
-        "form.errorEmail": "Veuillez entrer une adresse email valide"
+        "form.errorEmail": "Veuillez entrer une adresse email valide",
+
+        // Resources
+        "resources.title": "Ressources Gratuites",
+        "resources.subtitle": "Téléchargez des outils éprouvés utilisés par les principales plateformes de streaming",
+        "resources.badgePopular": "Le Plus Populaire",
+        "resources.cta": "Télécharger le PDF Gratuit",
+
+        "resources.resource1.title": "Checklist Comparaison Vendeurs OTT",
+        "resources.resource1.description": "Comparez 50+ fournisseurs OTT selon 15 critères essentiels : performance CDN, support DRM, qualité d'encodage, profondeur analytique, et plus. Économisez des semaines de recherche.",
+        "resources.resource1.feature1": "✓ 50+ vendeurs évalués",
+        "resources.resource1.feature2": "✓ 15 critères de comparaison",
+        "resources.resource1.feature3": "✓ Benchmarks tarifaires inclus",
+        "resources.resource1.value": "Valeur : 299€",
+
+        "resources.resource2.title": "Calculateur Revenus SVOD vs AVOD vs FAST",
+        "resources.resource2.description": "Template Excel pour modéliser différentes stratégies de monétisation. Saisissez votre audience, tarifs et inventaire publicitaire pour projeter les revenus SVOD, AVOD et FAST.",
+        "resources.resource2.feature1": "✓ 3 modèles de monétisation",
+        "resources.resource2.feature2": "✓ Projections sur 5 ans",
+        "resources.resource2.feature3": "✓ Outil de comparaison de scénarios",
+        "resources.resource2.value": "Valeur : 199€",
+
+        "resources.resource3.title": "Guide Recrutement CTO pour Startups Média",
+        "resources.resource3.description": "Comment évaluer les candidats techniques pour plateformes de streaming. Inclut 50+ questions d'entretien, signaux d'alerte et benchmarks salariaux en Europe.",
+        "resources.resource3.feature1": "✓ 50+ questions d'entretien",
+        "resources.resource3.feature2": "✓ Framework d'évaluation technique",
+        "resources.resource3.feature3": "✓ Benchmarks salaires EU/US",
+        "resources.resource3.value": "Valeur : 249€",
+
+        // Modal
+        "modal.title": "Téléchargez Votre Ressource Gratuite",
+        "modal.description": "Entrez votre email pour recevoir un accès instantané",
+        "modal.emailPlaceholder": "votre@email.com",
+        "modal.submit": "Envoyez-moi la Ressource",
+        "modal.privacy": "🔒 Pas de spam. Désabonnement à tout moment. Vous recevrez également des mises à jour occasionnelles de la newsletter Streaming Radar.",
+        "modal.trust1": "✓ 2 000+ téléchargements",
+        "modal.trust2": "✓ Utilisé par des professionnels Netflix, Amazon, Disney+"
     },
 
     zh: {
@@ -297,7 +369,43 @@ const translations = {
         "form.messagePlaceholder": "描述您的流媒体平台需求...",
         "form.submit": "获得免费咨询",
         "form.errorRequired": "此字段为必填项",
-        "form.errorEmail": "请输入有效的电子邮件地址"
+        "form.errorEmail": "请输入有效的电子邮件地址",
+
+        // Resources
+        "resources.title": "免费资源",
+        "resources.subtitle": "下载领先流媒体平台使用的经过实战检验的工具",
+        "resources.badgePopular": "最受欢迎",
+        "resources.cta": "下载免费PDF",
+
+        "resources.resource1.title": "OTT平台供应商对比清单",
+        "resources.resource1.description": "根据15个关键标准比较50多家OTT供应商：CDN性能、DRM支持、编码质量、分析深度等。节省数周研究时间。",
+        "resources.resource1.feature1": "✓ 评估50+供应商",
+        "resources.resource1.feature2": "✓ 15个比较标准",
+        "resources.resource1.feature3": "✓ 包含价格基准",
+        "resources.resource1.value": "价值：€299",
+
+        "resources.resource2.title": "SVOD vs AVOD vs FAST收入计算器",
+        "resources.resource2.description": "Excel模板用于建模不同的变现策略。输入您的受众规模、定价和广告库存，以预测SVOD、AVOD和FAST模式的收入。",
+        "resources.resource2.feature1": "✓ 3种变现模型",
+        "resources.resource2.feature2": "✓ 5年预测",
+        "resources.resource2.feature3": "✓ 场景比较工具",
+        "resources.resource2.value": "价值：€199",
+
+        "resources.resource3.title": "媒体初创公司CTO招聘指南",
+        "resources.resource3.description": "如何评估流媒体平台的技术候选人。包括50多个面试问题、需要注意的危险信号以及欧洲薪酬基准。",
+        "resources.resource3.feature1": "✓ 50+面试问题",
+        "resources.resource3.feature2": "✓ 技术评估框架",
+        "resources.resource3.feature3": "✓ 欧美薪资基准",
+        "resources.resource3.value": "价值：€249",
+
+        // Modal
+        "modal.title": "下载您的免费资源",
+        "modal.description": "输入您的电子邮件以立即获得访问权限",
+        "modal.emailPlaceholder": "your@email.com",
+        "modal.submit": "发送资源给我",
+        "modal.privacy": "🔒 无垃圾邮件。随时取消订阅。您还将收到Streaming Radar时事通讯的偶尔更新。",
+        "modal.trust1": "✓ 2000+次下载",
+        "modal.trust2": "✓ Netflix、Amazon、Disney+专业人士使用"
     }
 };
 
@@ -677,7 +785,7 @@ class ContactForm {
         this.form = document.getElementById(formId);
         if (!this.form) return;
 
-        this.formspreeEndpoint = 'YOUR_FORMSPREE_ENDPOINT'; // Replace with actual Formspree endpoint
+        this.formspreeEndpoint = 'https://formspree.io/f/mzdddplp'; // Formspree endpoint configured
         this.submitButton = this.form.querySelector('button[type="submit"]');
         this.submitText = this.submitButton.querySelector('.submit-text');
         this.submitLoader = this.submitButton.querySelector('.submit-loader');
@@ -827,6 +935,193 @@ class ContactForm {
 }
 
 // ============================================
+// RESOURCE MODAL HANDLING
+// ============================================
+
+class ResourceModal {
+    constructor() {
+        this.modal = document.getElementById('resourceModal');
+        this.form = document.getElementById('resourceForm');
+        this.overlay = this.modal.querySelector('.resource-modal-overlay');
+        this.closeBtn = this.modal.querySelector('.resource-modal-close');
+        this.resourceTypeInput = document.getElementById('resourceType');
+        this.submitButton = this.form.querySelector('button[type="submit"]');
+        this.submitText = this.submitButton.querySelector('.submit-text');
+        this.submitLoader = this.submitButton.querySelector('.submit-loader');
+        this.messageContainer = this.form.querySelector('.form-message');
+        this.formspreeEndpoint = 'https://formspree.io/f/mzdddplp';
+
+        this.init();
+    }
+
+    init() {
+        // Listen to resource CTA clicks
+        document.querySelectorAll('.resource-cta').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const resourceType = e.target.dataset.resource;
+                this.openModal(resourceType);
+            });
+        });
+
+        // Close modal events
+        this.closeBtn.addEventListener('click', () => this.closeModal());
+        this.overlay.addEventListener('click', () => this.closeModal());
+
+        // Form submission
+        this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+
+        // Real-time validation
+        const emailInput = this.form.querySelector('input[type="email"]');
+        emailInput.addEventListener('blur', () => this.validateEmail(emailInput));
+        emailInput.addEventListener('input', () => {
+            const formGroup = emailInput.closest('.form-group');
+            if (formGroup) {
+                formGroup.classList.remove('error');
+                const errorSpan = formGroup.querySelector('.form-error');
+                if (errorSpan) errorSpan.textContent = '';
+            }
+        });
+
+        // ESC key to close
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.modal.style.display === 'flex') {
+                this.closeModal();
+            }
+        });
+    }
+
+    openModal(resourceType) {
+        this.resourceTypeInput.value = resourceType;
+        this.modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent scroll
+
+        // Track event
+        if (window.analytics) {
+            window.analytics.sendEvent('resource_modal_opened', {
+                resource_type: resourceType
+            });
+        }
+
+        // Focus email input
+        setTimeout(() => {
+            this.form.querySelector('input[type="email"]').focus();
+        }, 100);
+    }
+
+    closeModal() {
+        this.modal.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scroll
+        this.form.reset();
+
+        // Clear errors
+        const formGroup = this.form.querySelector('.form-group');
+        if (formGroup) {
+            formGroup.classList.remove('error');
+            const errorSpan = formGroup.querySelector('.form-error');
+            if (errorSpan) errorSpan.textContent = '';
+        }
+
+        // Hide message
+        this.messageContainer.style.display = 'none';
+    }
+
+    async handleSubmit(e) {
+        e.preventDefault();
+
+        const emailInput = this.form.querySelector('input[type="email"]');
+
+        // Validate email
+        if (!this.validateEmail(emailInput)) {
+            return;
+        }
+
+        // Show loading state
+        this.setLoading(true);
+
+        try {
+            const formData = new FormData(this.form);
+            const resourceType = this.resourceTypeInput.value;
+
+            // Submit to Formspree
+            const response = await fetch(this.formspreeEndpoint, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // Track event
+                if (window.analytics) {
+                    window.analytics.sendEvent('resource_downloaded', {
+                        resource_type: resourceType,
+                        email: formData.get('email')
+                    });
+                }
+
+                this.showMessage('success', '✓ Check your email! The resource is on its way.');
+
+                // Close modal after 2 seconds
+                setTimeout(() => {
+                    this.closeModal();
+                }, 2000);
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            console.error('Resource modal submission error:', error);
+            this.showMessage('error', '✗ Something went wrong. Please try again or email me at lbostral@gmail.com');
+        } finally {
+            this.setLoading(false);
+        }
+    }
+
+    validateEmail(emailInput) {
+        const formGroup = emailInput.closest('.form-group');
+        const errorSpan = formGroup?.querySelector('.form-error');
+        let errorMessage = '';
+
+        if (!emailInput.value.trim()) {
+            errorMessage = translations[window.languageSwitcher?.currentLang || 'en']['form.errorRequired'] || 'This field is required';
+        } else {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value)) {
+                errorMessage = translations[window.languageSwitcher?.currentLang || 'en']['form.errorEmail'] || 'Please enter a valid email address';
+            }
+        }
+
+        if (errorMessage) {
+            formGroup?.classList.add('error');
+            if (errorSpan) errorSpan.textContent = errorMessage;
+            return false;
+        } else {
+            formGroup?.classList.remove('error');
+            if (errorSpan) errorSpan.textContent = '';
+            return true;
+        }
+    }
+
+    setLoading(isLoading) {
+        this.submitButton.disabled = isLoading;
+
+        if (isLoading) {
+            this.submitText.style.display = 'none';
+            this.submitLoader.style.display = 'inline';
+        } else {
+            this.submitText.style.display = 'inline';
+            this.submitLoader.style.display = 'none';
+        }
+    }
+
+    showMessage(type, message) {
+        this.messageContainer.textContent = message;
+        this.messageContainer.className = `form-message ${type}`;
+        this.messageContainer.style.display = 'block';
+    }
+}
+
+// ============================================
 // INITIALIZE APP
 // ============================================
 
@@ -843,6 +1138,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Contact Form
     new ContactForm('contactForm');
+
+    // Initialize Resource Modal
+    new ResourceModal();
 
     // Log initialization
     console.log('🚀 Ludovic Bostral Consulting Website Initialized');

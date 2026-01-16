@@ -32,13 +32,12 @@
     <title>Ludovic Bostral - Strategic Technology Consulting</title>
 
     <!-- Google Analytics 4 -->
-    <!-- Replace G-XXXXXXXXXX with your actual GA4 Measurement ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXBFRGGZV3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
+        gtag('config', 'G-VXBFRGGZV3');
     </script>
 
     <!-- Fonts -->
@@ -277,6 +276,67 @@
         </div>
     </section>
 
+    <!-- FREE RESOURCES SECTION -->
+    <section class="resources" id="resources">
+        <div class="container">
+            <h2 class="section-title" data-i18n="resources.title">Free Resources</h2>
+            <p class="section-subtitle" data-i18n="resources.subtitle">Download battle-tested tools used by leading streaming platforms</p>
+
+            <div class="resources-grid">
+
+                <!-- Resource 1: OTT Vendor Checklist -->
+                <div class="resource-card fade-in">
+                    <div class="resource-badge popular" data-i18n="resources.badgePopular">Most Popular</div>
+                    <div class="resource-icon">📋</div>
+                    <h3 class="resource-title" data-i18n="resources.resource1.title">OTT Platform Vendor Comparison Checklist</h3>
+                    <p class="resource-description" data-i18n="resources.resource1.description">Compare 50+ OTT vendors across 15 critical criteria: CDN performance, DRM support, encoding quality, analytics depth, and more. Save weeks of research.</p>
+
+                    <ul class="resource-features">
+                        <li data-i18n="resources.resource1.feature1">✓ 50+ vendors evaluated</li>
+                        <li data-i18n="resources.resource1.feature2">✓ 15 comparison criteria</li>
+                        <li data-i18n="resources.resource1.feature3">✓ Pricing benchmarks included</li>
+                    </ul>
+
+                    <div class="resource-value" data-i18n="resources.resource1.value">Value: €299</div>
+                    <button class="cta-button resource-cta" data-resource="ott-vendor-checklist" data-i18n="resources.cta">Download Free PDF</button>
+                </div>
+
+                <!-- Resource 2: Revenue Calculator -->
+                <div class="resource-card fade-in">
+                    <div class="resource-icon">💰</div>
+                    <h3 class="resource-title" data-i18n="resources.resource2.title">SVOD vs AVOD vs FAST Revenue Calculator</h3>
+                    <p class="resource-description" data-i18n="resources.resource2.description">Excel template to model different monetization strategies. Input your audience size, pricing, and ad inventory to project revenues across SVOD, AVOD, and FAST models.</p>
+
+                    <ul class="resource-features">
+                        <li data-i18n="resources.resource2.feature1">✓ 3 monetization models</li>
+                        <li data-i18n="resources.resource2.feature2">✓ 5-year projections</li>
+                        <li data-i18n="resources.resource2.feature3">✓ Scenario comparison tool</li>
+                    </ul>
+
+                    <div class="resource-value" data-i18n="resources.resource2.value">Value: €199</div>
+                    <button class="cta-button resource-cta" data-resource="revenue-calculator" data-i18n="resources.cta">Get Free Template</button>
+                </div>
+
+                <!-- Resource 3: CTO Hiring Guide -->
+                <div class="resource-card fade-in">
+                    <div class="resource-icon">🎯</div>
+                    <h3 class="resource-title" data-i18n="resources.resource3.title">CTO Hiring Guide for Media Startups</h3>
+                    <p class="resource-description" data-i18n="resources.resource3.description">How to evaluate technical candidates for streaming platforms. Includes 50+ interview questions, red flags to watch for, and compensation benchmarks across Europe.</p>
+
+                    <ul class="resource-features">
+                        <li data-i18n="resources.resource3.feature1">✓ 50+ interview questions</li>
+                        <li data-i18n="resources.resource3.feature2">✓ Technical assessment framework</li>
+                        <li data-i18n="resources.resource3.feature3">✓ Salary benchmarks EU/US</li>
+                    </ul>
+
+                    <div class="resource-value" data-i18n="resources.resource3.value">Value: €249</div>
+                    <button class="cta-button resource-cta" data-resource="cto-hiring-guide" data-i18n="resources.cta">Download Now</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- CONTENT SECTION -->
     <section class="content-section">
         <div class="container">
@@ -348,6 +408,50 @@
             </div>
         </div>
     </footer>
+
+    <!-- RESOURCE MODAL POPUP -->
+    <div id="resourceModal" class="resource-modal" style="display: none;">
+        <div class="resource-modal-overlay"></div>
+        <div class="resource-modal-content">
+            <button class="resource-modal-close" aria-label="Close">&times;</button>
+
+            <div class="resource-modal-icon">📥</div>
+            <h3 class="resource-modal-title" data-i18n="modal.title">Download Your Free Resource</h3>
+            <p class="resource-modal-description" data-i18n="modal.description">Enter your email to receive instant access</p>
+
+            <form id="resourceForm" class="resource-modal-form" novalidate>
+                <div class="form-group">
+                    <input
+                        type="email"
+                        id="resourceEmail"
+                        name="email"
+                        required
+                        data-i18n-placeholder="modal.emailPlaceholder"
+                        placeholder="your@email.com"
+                    >
+                    <span class="form-error"></span>
+                </div>
+
+                <input type="hidden" name="form_type" value="resource_download">
+                <input type="hidden" name="resource" id="resourceType">
+
+                <button type="submit" class="cta-button modal-submit">
+                    <span class="submit-text" data-i18n="modal.submit">Send Me the Resource</span>
+                    <span class="submit-loader" style="display: none;">⏳</span>
+                </button>
+
+                <div class="form-message" style="display: none;"></div>
+            </form>
+
+            <p class="resource-modal-privacy" data-i18n="modal.privacy">🔒 No spam. Unsubscribe anytime. You'll also receive occasional updates from Streaming Radar newsletter.</p>
+
+            <div class="resource-modal-trust">
+                <span class="trust-item" data-i18n="modal.trust1">✓ 2,000+ downloads</span>
+                <span class="trust-separator">•</span>
+                <span class="trust-item" data-i18n="modal.trust2">✓ Used by Netflix, Amazon, Disney+ professionals</span>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="script.js"></script>
