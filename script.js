@@ -795,22 +795,30 @@ class LanguageSwitcher {
     }
 
     init() {
+        console.log('🌐 LanguageSwitcher initialized with language:', this.currentLang);
+
         // Set initial language
         this.setLanguage(this.currentLang);
 
         // Add event listeners to language buttons
-        document.querySelectorAll('.lang-btn').forEach(btn => {
+        const langButtons = document.querySelectorAll('.lang-btn');
+        console.log('🔘 Found', langButtons.length, 'language buttons');
+
+        langButtons.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const lang = e.target.dataset.lang;
+                console.log('🔄 Language button clicked:', lang);
                 this.setLanguage(lang);
             });
         });
     }
 
     setLanguage(lang) {
+        console.log('🌍 Setting language to:', lang);
+
         // Validate language
         if (!translations[lang]) {
-            console.error(`Language ${lang} not found`);
+            console.error(`❌ Language ${lang} not found in translations`);
             return;
         }
 
@@ -818,6 +826,7 @@ class LanguageSwitcher {
 
         // Save to localStorage
         localStorage.setItem('preferred-language', lang);
+        console.log('💾 Language saved to localStorage:', lang);
 
         // Update HTML lang attribute
         document.documentElement.lang = lang;
@@ -827,11 +836,13 @@ class LanguageSwitcher {
             btn.classList.remove('active');
             if (btn.dataset.lang === lang) {
                 btn.classList.add('active');
+                console.log('✅ Active class added to button:', lang);
             }
         });
 
         // Update all text with data-i18n attribute
         this.updatePageText();
+        console.log('✅ Language changed successfully to:', lang);
     }
 
     updatePageText() {
@@ -1200,16 +1211,22 @@ class ContactForm {
     async handleSubmit(e) {
         e.preventDefault();
 
+        console.log('📝 Form submission started');
+
         // Validate all fields
         if (!this.validateForm()) {
+            console.log('❌ Form validation failed');
             return;
         }
+
+        console.log('✅ Form validation passed');
 
         // Show loading state
         this.setLoading(true);
 
         try {
             const formData = new FormData(this.form);
+            console.log('📧 Submitting to Formspree:', this.formspreeEndpoint);
 
             // Check if Formspree endpoint is configured
             if (this.formspreeEndpoint === 'YOUR_FORMSPREE_ENDPOINT') {
@@ -1234,7 +1251,11 @@ class ContactForm {
                     }
                 });
 
+                console.log('📨 Formspree response status:', response.status, response.statusText);
+
                 if (response.ok) {
+                    console.log('✅ Form submitted successfully to Formspree');
+
                     // Track event
                     if (window.analytics) {
                         window.analytics.trackFormSubmit(this.form.id, formData.get('form_type'));
@@ -1243,11 +1264,13 @@ class ContactForm {
                     this.showMessage('success', '✓ Thank you! I\'ll get back to you within 24 hours.');
                     this.form.reset();
                 } else {
-                    throw new Error('Form submission failed');
+                    const errorData = await response.json().catch(() => ({}));
+                    console.error('❌ Formspree error response:', errorData);
+                    throw new Error(`Form submission failed: ${response.status} ${response.statusText}`);
                 }
             }
         } catch (error) {
-            console.error('Form submission error:', error);
+            console.error('❌ Form submission error:', error);
             this.showMessage('error', '✗ Something went wrong. Please try again or email me directly at lbostral@gmail.com');
         } finally {
             this.setLoading(false);
@@ -1319,668 +1342,9 @@ class ContactForm {
     }
 }
 
-// ============================================
-// RESOURCE MODAL HANDLING
-// ============================================
 
-class ResourceModal {
-    constructor() {
-        this.modal = document.getElementById('resourceModal');
-        this.form = document.getElementById('resourceForm');
-        this.overlay = this.modal.querySelector('.resource-modal-overlay');
-        this.closeBtn = this.modal.querySelector('.resource-modal-close');
-        this.resourceTypeInput = document.getElementById('resourceType');
-        this.submitButton = this.form.querySelector('button[type="submit"]');
-        this.submitText = this.submitButton.querySelector('.submit-text');
-        this.submitLoader = this.submitButton.querySelector('.submit-loader');
-        this.messageContainer = this.form.querySelector('.form-message');
-        this.formspreeEndpoint = 'https://formspree.io/f/mzdddplp';
 
-        this.init();
-    }
 
-    init() {
-        // Listen to resource CTA clicks
-        document.querySelectorAll('.resource-cta').forEach(button => {
-            button.addEventListener('click', (e) => {
-                const resourceType = e.target.dataset.resource;
-                this.openModal(resourceType);
-            });
-        });
-
-        // Close modal events
-        this.closeBtn.addEventListener('click', () => this.closeModal());
-        this.overlay.addEventListener('click', () => this.closeModal());
-
-        // Form submission
-        this.form.addEventListener('submit', (e) => this.handleSubmit(e));
-
-        // Real-time validation
-        const emailInput = this.form.querySelector('input[type="email"]');
-        emailInput.addEventListener('blur', () => this.validateEmail(emailInput));
-        emailInput.addEventListener('input', () => {
-            const formGroup = emailInput.closest('.form-group');
-            if (formGroup) {
-                formGroup.classList.remove('error');
-                const errorSpan = formGroup.querySelector('.form-error');
-                if (errorSpan) errorSpan.textContent = '';
-            }
-        });
-
-        // ESC key to close
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && this.modal.style.display === 'flex') {
-                this.closeModal();
-            }
-        });
-    }
-
-    openModal(resourceType) {
-        this.resourceTypeInput.value = resourceType;
-        this.modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden'; // Prevent scroll
-
-        // Track event
-        if (window.analytics) {
-            window.analytics.sendEvent('resource_modal_opened', {
-                resource_type: resourceType
-            });
-        }
-
-        // Focus email input
-        setTimeout(() => {
-            this.form.querySelector('input[type="email"]').focus();
-        }, 100);
-    }
-
-    closeModal() {
-        this.modal.style.display = 'none';
-        document.body.style.overflow = ''; // Restore scroll
-        this.form.reset();
-
-        // Clear errors
-        const formGroup = this.form.querySelector('.form-group');
-        if (formGroup) {
-            formGroup.classList.remove('error');
-            const errorSpan = formGroup.querySelector('.form-error');
-            if (errorSpan) errorSpan.textContent = '';
-        }
-
-        // Hide message
-        this.messageContainer.style.display = 'none';
-    }
-
-    async handleSubmit(e) {
-        e.preventDefault();
-
-        const emailInput = this.form.querySelector('input[type="email"]');
-
-        // Validate email
-        if (!this.validateEmail(emailInput)) {
-            return;
-        }
-
-        // Show loading state
-        this.setLoading(true);
-
-        try {
-            const formData = new FormData(this.form);
-            const resourceType = this.resourceTypeInput.value;
-
-            // Submit to Formspree
-            const response = await fetch(this.formspreeEndpoint, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-
-            if (response.ok) {
-                // Track event
-                if (window.analytics) {
-                    window.analytics.sendEvent('resource_downloaded', {
-                        resource_type: resourceType,
-                        email: formData.get('email')
-                    });
-                }
-
-                this.showMessage('success', '✓ Check your email! The resource is on its way.');
-
-                // Close modal after 2 seconds
-                setTimeout(() => {
-                    this.closeModal();
-                }, 2000);
-            } else {
-                throw new Error('Form submission failed');
-            }
-        } catch (error) {
-            console.error('Resource modal submission error:', error);
-            this.showMessage('error', '✗ Something went wrong. Please try again or email me at lbostral@gmail.com');
-        } finally {
-            this.setLoading(false);
-        }
-    }
-
-    validateEmail(emailInput) {
-        const formGroup = emailInput.closest('.form-group');
-        const errorSpan = formGroup?.querySelector('.form-error');
-        let errorMessage = '';
-
-        if (!emailInput.value.trim()) {
-            errorMessage = translations[window.languageSwitcher?.currentLang || 'en']['form.errorRequired'] || 'This field is required';
-        } else {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(emailInput.value)) {
-                errorMessage = translations[window.languageSwitcher?.currentLang || 'en']['form.errorEmail'] || 'Please enter a valid email address';
-            }
-        }
-
-        if (errorMessage) {
-            formGroup?.classList.add('error');
-            if (errorSpan) errorSpan.textContent = errorMessage;
-            return false;
-        } else {
-            formGroup?.classList.remove('error');
-            if (errorSpan) errorSpan.textContent = '';
-            return true;
-        }
-    }
-
-    setLoading(isLoading) {
-        this.submitButton.disabled = isLoading;
-
-        if (isLoading) {
-            this.submitText.style.display = 'none';
-            this.submitLoader.style.display = 'inline';
-        } else {
-            this.submitText.style.display = 'inline';
-            this.submitLoader.style.display = 'none';
-        }
-    }
-
-    showMessage(type, message) {
-        this.messageContainer.textContent = message;
-        this.messageContainer.className = `form-message ${type}`;
-        this.messageContainer.style.display = 'block';
-    }
-}
-
-// ============================================
-// EXIT INTENT POPUP
-// ============================================
-
-class ExitIntentPopup {
-    constructor() {
-        this.popup = document.getElementById('exitIntentPopup');
-        this.form = document.getElementById('exitIntentForm');
-        this.overlay = this.popup.querySelector('.exit-intent-overlay');
-        this.closeBtn = this.popup.querySelector('.exit-intent-close');
-        this.emailInput = document.getElementById('exitIntentEmail');
-        this.submitButton = this.form.querySelector('.exit-intent-submit');
-        this.submitText = this.submitButton.querySelector('.exit-intent-submit-text');
-        this.submitLoader = this.submitButton.querySelector('.exit-intent-submit-loader');
-        this.messageContainer = this.form.querySelector('.exit-intent-message');
-        this.formspreeEndpoint = 'https://formspree.io/f/mzdddplp';
-
-        // State tracking
-        this.hasShown = sessionStorage.getItem('exitIntentShown') === 'true';
-        this.scrollDepth = 0;
-        this.timeOnPage = 0;
-        this.lastScrollY = 0;
-        this.lastScrollTime = Date.now();
-        this.isMobile = window.innerWidth < 968;
-
-        if (!this.hasShown) {
-            this.init();
-        }
-    }
-
-    init() {
-        // Start time tracking
-        this.startTime = Date.now();
-        setInterval(() => {
-            this.timeOnPage = Math.floor((Date.now() - this.startTime) / 1000);
-        }, 1000);
-
-        // Track scroll depth
-        window.addEventListener('scroll', () => this.trackScrollDepth());
-
-        // Desktop: mouseout towards top
-        if (!this.isMobile) {
-            document.addEventListener('mouseout', (e) => this.handleMouseOut(e));
-        }
-
-        // Mobile: rapid scroll up detection
-        if (this.isMobile) {
-            window.addEventListener('scroll', () => this.handleRapidScrollUp());
-        }
-
-        // Backup trigger: 30 seconds + 500px scroll
-        setInterval(() => this.checkBackupTrigger(), 1000);
-
-        // Close events
-        this.closeBtn.addEventListener('click', () => this.closePopup());
-        this.overlay.addEventListener('click', () => this.closePopup());
-
-        // ESC key to close
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && this.popup.classList.contains('active')) {
-                this.closePopup();
-            }
-        });
-
-        // Form submission
-        this.form.addEventListener('submit', (e) => this.handleSubmit(e));
-    }
-
-    trackScrollDepth() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const scrolled = (scrollTop / scrollHeight) * scrollHeight;
-        this.scrollDepth = Math.max(this.scrollDepth, scrolled);
-        this.lastScrollY = scrollTop;
-    }
-
-    handleMouseOut(e) {
-        // Trigger when mouse leaves towards top of page (exit intent)
-        if (e.clientY < 10 && !this.hasShown && this.scrollDepth > 200) {
-            this.showPopup();
-        }
-    }
-
-    handleRapidScrollUp() {
-        const now = Date.now();
-        const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
-        const scrollDelta = this.lastScrollY - currentScrollY;
-        const timeDelta = now - this.lastScrollTime;
-
-        // Detect rapid scroll up (more than 100px in less than 200ms)
-        if (scrollDelta > 100 && timeDelta < 200 && !this.hasShown && this.scrollDepth > 300) {
-            this.showPopup();
-        }
-
-        this.lastScrollTime = now;
-    }
-
-    checkBackupTrigger() {
-        // Show after 30 seconds if user has scrolled more than 500px
-        if (this.timeOnPage >= 30 && this.scrollDepth > 500 && !this.hasShown) {
-            this.showPopup();
-        }
-    }
-
-    showPopup() {
-        if (this.hasShown) return;
-
-        this.popup.classList.add('active');
-        document.body.style.overflow = 'hidden';
-        this.hasShown = true;
-        sessionStorage.setItem('exitIntentShown', 'true');
-
-        // Track event
-        if (window.analytics) {
-            window.analytics.sendEvent('exit_intent_shown', {
-                trigger_type: this.isMobile ? 'mobile_scroll' : 'mouse_out',
-                time_on_page: this.timeOnPage,
-                scroll_depth: Math.round(this.scrollDepth)
-            });
-        }
-
-        console.log('👋 Exit Intent Popup shown');
-
-        // Focus email input
-        setTimeout(() => {
-            this.emailInput.focus();
-        }, 300);
-    }
-
-    closePopup() {
-        this.popup.classList.remove('active');
-        document.body.style.overflow = '';
-
-        // Track dismissal
-        if (window.analytics) {
-            window.analytics.sendEvent('exit_intent_dismissed', {
-                time_on_page: this.timeOnPage
-            });
-        }
-
-        console.log('👋 Exit Intent Popup dismissed');
-    }
-
-    async handleSubmit(e) {
-        e.preventDefault();
-
-        // Validate email
-        if (!this.validateEmail()) {
-            return;
-        }
-
-        // Show loading state
-        this.setLoading(true);
-
-        try {
-            const formData = new FormData(this.form);
-            formData.append('resource_type', 'exit_intent_checklist');
-
-            // Submit to Formspree
-            const response = await fetch(this.formspreeEndpoint, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-
-            if (response.ok) {
-                // Track conversion
-                if (window.analytics) {
-                    window.analytics.sendEvent('exit_intent_converted', {
-                        email: formData.get('email'),
-                        time_on_page: this.timeOnPage
-                    });
-                }
-
-                this.showMessage('success', '✓ Check your email! The checklist is on its way.');
-
-                console.log('✅ Exit Intent conversion!');
-
-                // Close popup after 3 seconds
-                setTimeout(() => {
-                    this.closePopup();
-                }, 3000);
-            } else {
-                throw new Error('Form submission failed');
-            }
-        } catch (error) {
-            console.error('Exit intent submission error:', error);
-            this.showMessage('error', '✗ Something went wrong. Please try lbostral@gmail.com');
-        } finally {
-            this.setLoading(false);
-        }
-    }
-
-    validateEmail() {
-        const email = this.emailInput.value.trim();
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!email) {
-            this.emailInput.style.borderColor = '#e74c3c';
-            return false;
-        }
-
-        if (!emailRegex.test(email)) {
-            this.emailInput.style.borderColor = '#e74c3c';
-            this.showMessage('error', 'Please enter a valid email address');
-            return false;
-        }
-
-        this.emailInput.style.borderColor = '';
-        return true;
-    }
-
-    setLoading(isLoading) {
-        this.submitButton.disabled = isLoading;
-
-        if (isLoading) {
-            this.submitText.style.display = 'none';
-            this.submitLoader.style.display = 'inline';
-        } else {
-            this.submitText.style.display = 'inline';
-            this.submitLoader.style.display = 'none';
-        }
-    }
-
-    showMessage(type, message) {
-        this.messageContainer.textContent = message;
-        this.messageContainer.className = `exit-intent-message ${type}`;
-        this.messageContainer.style.display = 'block';
-    }
-}
-
-// ============================================
-// STICKY CTA BUTTON
-// ============================================
-
-class StickyCTA {
-    constructor() {
-        this.button = document.getElementById('stickyCTA');
-        this.scrollThreshold = 300;
-        this.isVisible = false;
-
-        this.init();
-    }
-
-    init() {
-        // Show/hide on scroll
-        window.addEventListener('scroll', () => this.handleScroll());
-
-        // Track clicks
-        this.button.addEventListener('click', () => this.trackClick());
-
-        // Initial check
-        this.handleScroll();
-    }
-
-    handleScroll() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const shouldShow = scrollTop > this.scrollThreshold;
-
-        if (shouldShow && !this.isVisible) {
-            this.show();
-        } else if (!shouldShow && this.isVisible) {
-            this.hide();
-        }
-    }
-
-    show() {
-        this.button.classList.add('visible');
-        this.isVisible = true;
-    }
-
-    hide() {
-        this.button.classList.remove('visible');
-        this.isVisible = false;
-    }
-
-    trackClick() {
-        if (window.analytics) {
-            window.analytics.sendEvent('sticky_cta_click', {
-                destination: 'google_calendar',
-                url: 'https://calendar.app.google/aE5emVnAv7MwVcZ68'
-            });
-        }
-
-        console.log('📅 Sticky CTA clicked - Google Calendar');
-    }
-}
-
-// ============================================
-// COOKIE CONSENT (RGPD)
-// ============================================
-
-class CookieConsent {
-    constructor() {
-        this.banner = document.getElementById('cookieConsent');
-        this.modal = document.getElementById('cookieSettingsModal');
-        this.acceptAllBtn = document.getElementById('cookieAcceptAll');
-        this.rejectAllBtn = document.getElementById('cookieRejectAll');
-        this.customizeBtn = document.getElementById('cookieCustomize');
-        this.saveSettingsBtn = document.getElementById('cookieSaveSettings');
-        this.modalCloseBtn = document.getElementById('cookieModalClose');
-        this.modalOverlay = this.modal.querySelector('.cookie-modal-overlay');
-
-        this.analyticsCheckbox = document.getElementById('cookieAnalytics');
-        this.marketingCheckbox = document.getElementById('cookieMarketing');
-
-        this.COOKIE_NAME = 'cookie_consent';
-        this.COOKIE_DURATION = 365; // days
-
-        this.init();
-    }
-
-    init() {
-        // Check if user has already made a choice
-        const consent = this.getConsent();
-
-        if (!consent) {
-            // Show banner after 1 second
-            setTimeout(() => this.showBanner(), 1000);
-        } else {
-            // Apply stored consent
-            this.applyConsent(consent);
-        }
-
-        // Event listeners
-        this.acceptAllBtn.addEventListener('click', () => this.acceptAll());
-        this.rejectAllBtn.addEventListener('click', () => this.rejectAll());
-        this.customizeBtn.addEventListener('click', () => this.openModal());
-        this.saveSettingsBtn.addEventListener('click', () => this.saveCustomSettings());
-        this.modalCloseBtn.addEventListener('click', () => this.closeModal());
-        this.modalOverlay.addEventListener('click', () => this.closeModal());
-    }
-
-    showBanner() {
-        this.banner.classList.add('show');
-    }
-
-    hideBanner() {
-        this.banner.classList.remove('show');
-    }
-
-    openModal() {
-        this.modal.classList.add('show');
-        document.body.style.overflow = 'hidden';
-
-        // Load current settings
-        const consent = this.getConsent();
-        if (consent) {
-            this.analyticsCheckbox.checked = consent.analytics;
-            this.marketingCheckbox.checked = consent.marketing;
-        }
-    }
-
-    closeModal() {
-        this.modal.classList.remove('show');
-        document.body.style.overflow = '';
-    }
-
-    acceptAll() {
-        const consent = {
-            essential: true,
-            analytics: true,
-            marketing: true,
-            timestamp: Date.now()
-        };
-
-        this.saveConsent(consent);
-        this.applyConsent(consent);
-        this.hideBanner();
-
-        console.log('✅ All cookies accepted');
-    }
-
-    rejectAll() {
-        const consent = {
-            essential: true,
-            analytics: false,
-            marketing: false,
-            timestamp: Date.now()
-        };
-
-        this.saveConsent(consent);
-        this.applyConsent(consent);
-        this.hideBanner();
-
-        console.log('❌ Non-essential cookies rejected');
-    }
-
-    saveCustomSettings() {
-        const consent = {
-            essential: true,
-            analytics: this.analyticsCheckbox.checked,
-            marketing: this.marketingCheckbox.checked,
-            timestamp: Date.now()
-        };
-
-        this.saveConsent(consent);
-        this.applyConsent(consent);
-        this.closeModal();
-        this.hideBanner();
-
-        console.log('⚙️ Custom cookie settings saved:', consent);
-    }
-
-    saveConsent(consent) {
-        const expires = new Date();
-        expires.setDate(expires.getDate() + this.COOKIE_DURATION);
-
-        document.cookie = `${this.COOKIE_NAME}=${JSON.stringify(consent)}; expires=${expires.toUTCString()}; path=/; SameSite=Lax`;
-    }
-
-    getConsent() {
-        const cookies = document.cookie.split(';');
-        for (let cookie of cookies) {
-            const [name, value] = cookie.trim().split('=');
-            if (name === this.COOKIE_NAME) {
-                try {
-                    return JSON.parse(decodeURIComponent(value));
-                } catch (e) {
-                    return null;
-                }
-            }
-        }
-        return null;
-    }
-
-    applyConsent(consent) {
-        // Analytics cookies (Google Analytics, Content Square)
-        if (consent.analytics) {
-            this.enableAnalytics();
-        } else {
-            this.disableAnalytics();
-        }
-
-        // Marketing cookies
-        if (consent.marketing) {
-            this.enableMarketing();
-        } else {
-            this.disableMarketing();
-        }
-    }
-
-    enableAnalytics() {
-        // Google Analytics is already loaded in head
-        // Content Square is already loaded in head
-        console.log('📊 Analytics cookies enabled');
-
-        // Track consent
-        if (window.analytics) {
-            window.analytics.sendEvent('cookie_consent', {
-                type: 'analytics',
-                action: 'enabled'
-            });
-        }
-    }
-
-    disableAnalytics() {
-        // Disable Google Analytics tracking
-        window['ga-disable-G-VXBFRGGZV3'] = true;
-
-        console.log('🚫 Analytics cookies disabled');
-    }
-
-    enableMarketing() {
-        // Placeholder for marketing cookies (Facebook Pixel, LinkedIn Insight, etc.)
-        console.log('📢 Marketing cookies enabled');
-    }
-
-    disableMarketing() {
-        // Placeholder for disabling marketing cookies
-        console.log('🚫 Marketing cookies disabled');
-    }
-}
 
 // ============================================
 // INITIALIZE APP
@@ -1999,18 +1363,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Contact Form
     new ContactForm('contactForm');
-
-    // Initialize Resource Modal
-    new ResourceModal();
-
-    // Initialize Exit Intent Popup
-    new ExitIntentPopup();
-
-    // Initialize Sticky CTA
-    new StickyCTA();
-
-    // Initialize Cookie Consent
-    new CookieConsent();
 
     // Log initialization
     console.log('🚀 Ludovic Bostral Consulting Website Initialized');
