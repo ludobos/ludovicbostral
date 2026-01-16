@@ -534,6 +534,54 @@
         </div>
     </div>
 
+    <!-- Exit Intent Popup -->
+    <div id="exitIntentPopup" class="exit-intent-popup">
+        <div class="exit-intent-overlay"></div>
+        <div class="exit-intent-content">
+            <button class="exit-intent-close" aria-label="Close popup">×</button>
+
+            <div class="exit-intent-icon">👋</div>
+
+            <h2 class="exit-intent-title" data-i18n="exitIntent.title">Wait! Don't Leave Empty-Handed</h2>
+            <p class="exit-intent-subtitle" data-i18n="exitIntent.subtitle">Get our most popular resource before you go</p>
+
+            <div class="exit-intent-offer">
+                <div class="exit-intent-offer-badge" data-i18n="exitIntent.badge">FREE DOWNLOAD</div>
+                <h3 class="exit-intent-offer-title" data-i18n="exitIntent.offerTitle">OTT Vendor Comparison Checklist</h3>
+                <p class="exit-intent-offer-description" data-i18n="exitIntent.offerDescription">Compare 50+ OTT vendors across 15 critical criteria. Save weeks of research.</p>
+
+                <ul class="exit-intent-features">
+                    <li data-i18n="exitIntent.feature1">✓ 50+ vendors evaluated</li>
+                    <li data-i18n="exitIntent.feature2">✓ 15 comparison criteria</li>
+                    <li data-i18n="exitIntent.feature3">✓ Pricing benchmarks included</li>
+                </ul>
+
+                <div class="exit-intent-value" data-i18n="exitIntent.value">Value: €299 - Yours FREE</div>
+            </div>
+
+            <form id="exitIntentForm" class="exit-intent-form">
+                <div class="exit-intent-form-group">
+                    <input
+                        type="email"
+                        id="exitIntentEmail"
+                        name="email"
+                        required
+                        placeholder="your@email.com"
+                        data-i18n="exitIntent.emailPlaceholder"
+                    >
+                    <button type="submit" class="exit-intent-submit">
+                        <span class="exit-intent-submit-text" data-i18n="exitIntent.submit">Send Me the Checklist</span>
+                        <span class="exit-intent-submit-loader" style="display: none;">⏳</span>
+                    </button>
+                </div>
+
+                <div class="exit-intent-message" style="display: none;"></div>
+            </form>
+
+            <p class="exit-intent-privacy" data-i18n="exitIntent.privacy">🔒 No spam. Unsubscribe anytime.</p>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="script.js"></script>
 

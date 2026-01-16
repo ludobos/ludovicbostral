@@ -137,6 +137,20 @@ const translations = {
         "modal.trust1": "✓ 2,000+ downloads",
         "modal.trust2": "✓ Used by Netflix, Amazon, Disney+ professionals",
 
+        // Exit Intent Popup
+        "exitIntent.title": "Wait! Don't Leave Empty-Handed",
+        "exitIntent.subtitle": "Get our most popular resource before you go",
+        "exitIntent.badge": "FREE DOWNLOAD",
+        "exitIntent.offerTitle": "OTT Vendor Comparison Checklist",
+        "exitIntent.offerDescription": "Compare 50+ OTT vendors across 15 critical criteria. Save weeks of research.",
+        "exitIntent.feature1": "✓ 50+ vendors evaluated",
+        "exitIntent.feature2": "✓ 15 comparison criteria",
+        "exitIntent.feature3": "✓ Pricing benchmarks included",
+        "exitIntent.value": "Value: €299 - Yours FREE",
+        "exitIntent.emailPlaceholder": "your@email.com",
+        "exitIntent.submit": "Send Me the Checklist",
+        "exitIntent.privacy": "🔒 No spam. Unsubscribe anytime.",
+
         // Results
         "results.title": "Results That Matter",
         "results.stat1.label": "Users Served Globally",
@@ -296,6 +310,20 @@ const translations = {
         "modal.trust1": "✓ 2 000+ téléchargements",
         "modal.trust2": "✓ Utilisé par des professionnels Netflix, Amazon, Disney+",
 
+        // Exit Intent Popup
+        "exitIntent.title": "Attendez ! Ne Partez Pas les Mains Vides",
+        "exitIntent.subtitle": "Obtenez notre ressource la plus populaire avant de partir",
+        "exitIntent.badge": "TÉLÉCHARGEMENT GRATUIT",
+        "exitIntent.offerTitle": "Checklist Comparaison Vendeurs OTT",
+        "exitIntent.offerDescription": "Comparez 50+ fournisseurs OTT selon 15 critères essentiels. Économisez des semaines de recherche.",
+        "exitIntent.feature1": "✓ 50+ vendeurs évalués",
+        "exitIntent.feature2": "✓ 15 critères de comparaison",
+        "exitIntent.feature3": "✓ Benchmarks tarifaires inclus",
+        "exitIntent.value": "Valeur : 299€ - Gratuit pour vous",
+        "exitIntent.emailPlaceholder": "votre@email.com",
+        "exitIntent.submit": "Envoyez-moi la Checklist",
+        "exitIntent.privacy": "🔒 Pas de spam. Désabonnement à tout moment.",
+
         // Results
         "results.title": "Résultats Concrets",
         "results.stat1.label": "Utilisateurs Servis Globalement",
@@ -454,6 +482,20 @@ const translations = {
         "modal.privacy": "🔒 无垃圾邮件。随时取消订阅。您还将收到Streaming Radar时事通讯的偶尔更新。",
         "modal.trust1": "✓ 2000+次下载",
         "modal.trust2": "✓ Netflix、Amazon、Disney+专业人士使用",
+
+        // Exit Intent Popup
+        "exitIntent.title": "等等！别空手离开",
+        "exitIntent.subtitle": "在离开之前获取我们最受欢迎的资源",
+        "exitIntent.badge": "免费下载",
+        "exitIntent.offerTitle": "OTT平台供应商对比清单",
+        "exitIntent.offerDescription": "根据15个关键标准比较50多家OTT供应商。节省数周研究时间。",
+        "exitIntent.feature1": "✓ 评估50+供应商",
+        "exitIntent.feature2": "✓ 15个比较标准",
+        "exitIntent.feature3": "✓ 包含价格基准",
+        "exitIntent.value": "价值：€299 - 免费获取",
+        "exitIntent.emailPlaceholder": "your@email.com",
+        "exitIntent.submit": "发送清单给我",
+        "exitIntent.privacy": "🔒 无垃圾邮件。随时取消订阅。",
 
         // Results
         "results.title": "成果展示",
@@ -1297,6 +1339,239 @@ class ResourceModal {
 }
 
 // ============================================
+// EXIT INTENT POPUP
+// ============================================
+
+class ExitIntentPopup {
+    constructor() {
+        this.popup = document.getElementById('exitIntentPopup');
+        this.form = document.getElementById('exitIntentForm');
+        this.overlay = this.popup.querySelector('.exit-intent-overlay');
+        this.closeBtn = this.popup.querySelector('.exit-intent-close');
+        this.emailInput = document.getElementById('exitIntentEmail');
+        this.submitButton = this.form.querySelector('.exit-intent-submit');
+        this.submitText = this.submitButton.querySelector('.exit-intent-submit-text');
+        this.submitLoader = this.submitButton.querySelector('.exit-intent-submit-loader');
+        this.messageContainer = this.form.querySelector('.exit-intent-message');
+        this.formspreeEndpoint = 'https://formspree.io/f/mzdddplp';
+
+        // State tracking
+        this.hasShown = sessionStorage.getItem('exitIntentShown') === 'true';
+        this.scrollDepth = 0;
+        this.timeOnPage = 0;
+        this.lastScrollY = 0;
+        this.lastScrollTime = Date.now();
+        this.isMobile = window.innerWidth < 968;
+
+        if (!this.hasShown) {
+            this.init();
+        }
+    }
+
+    init() {
+        // Start time tracking
+        this.startTime = Date.now();
+        setInterval(() => {
+            this.timeOnPage = Math.floor((Date.now() - this.startTime) / 1000);
+        }, 1000);
+
+        // Track scroll depth
+        window.addEventListener('scroll', () => this.trackScrollDepth());
+
+        // Desktop: mouseout towards top
+        if (!this.isMobile) {
+            document.addEventListener('mouseout', (e) => this.handleMouseOut(e));
+        }
+
+        // Mobile: rapid scroll up detection
+        if (this.isMobile) {
+            window.addEventListener('scroll', () => this.handleRapidScrollUp());
+        }
+
+        // Backup trigger: 30 seconds + 500px scroll
+        setInterval(() => this.checkBackupTrigger(), 1000);
+
+        // Close events
+        this.closeBtn.addEventListener('click', () => this.closePopup());
+        this.overlay.addEventListener('click', () => this.closePopup());
+
+        // ESC key to close
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.popup.classList.contains('active')) {
+                this.closePopup();
+            }
+        });
+
+        // Form submission
+        this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+    }
+
+    trackScrollDepth() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = (scrollTop / scrollHeight) * scrollHeight;
+        this.scrollDepth = Math.max(this.scrollDepth, scrolled);
+        this.lastScrollY = scrollTop;
+    }
+
+    handleMouseOut(e) {
+        // Trigger when mouse leaves towards top of page (exit intent)
+        if (e.clientY < 10 && !this.hasShown && this.scrollDepth > 200) {
+            this.showPopup();
+        }
+    }
+
+    handleRapidScrollUp() {
+        const now = Date.now();
+        const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollDelta = this.lastScrollY - currentScrollY;
+        const timeDelta = now - this.lastScrollTime;
+
+        // Detect rapid scroll up (more than 100px in less than 200ms)
+        if (scrollDelta > 100 && timeDelta < 200 && !this.hasShown && this.scrollDepth > 300) {
+            this.showPopup();
+        }
+
+        this.lastScrollTime = now;
+    }
+
+    checkBackupTrigger() {
+        // Show after 30 seconds if user has scrolled more than 500px
+        if (this.timeOnPage >= 30 && this.scrollDepth > 500 && !this.hasShown) {
+            this.showPopup();
+        }
+    }
+
+    showPopup() {
+        if (this.hasShown) return;
+
+        this.popup.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        this.hasShown = true;
+        sessionStorage.setItem('exitIntentShown', 'true');
+
+        // Track event
+        if (window.analytics) {
+            window.analytics.sendEvent('exit_intent_shown', {
+                trigger_type: this.isMobile ? 'mobile_scroll' : 'mouse_out',
+                time_on_page: this.timeOnPage,
+                scroll_depth: Math.round(this.scrollDepth)
+            });
+        }
+
+        console.log('👋 Exit Intent Popup shown');
+
+        // Focus email input
+        setTimeout(() => {
+            this.emailInput.focus();
+        }, 300);
+    }
+
+    closePopup() {
+        this.popup.classList.remove('active');
+        document.body.style.overflow = '';
+
+        // Track dismissal
+        if (window.analytics) {
+            window.analytics.sendEvent('exit_intent_dismissed', {
+                time_on_page: this.timeOnPage
+            });
+        }
+
+        console.log('👋 Exit Intent Popup dismissed');
+    }
+
+    async handleSubmit(e) {
+        e.preventDefault();
+
+        // Validate email
+        if (!this.validateEmail()) {
+            return;
+        }
+
+        // Show loading state
+        this.setLoading(true);
+
+        try {
+            const formData = new FormData(this.form);
+            formData.append('resource_type', 'exit_intent_checklist');
+
+            // Submit to Formspree
+            const response = await fetch(this.formspreeEndpoint, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // Track conversion
+                if (window.analytics) {
+                    window.analytics.sendEvent('exit_intent_converted', {
+                        email: formData.get('email'),
+                        time_on_page: this.timeOnPage
+                    });
+                }
+
+                this.showMessage('success', '✓ Check your email! The checklist is on its way.');
+
+                console.log('✅ Exit Intent conversion!');
+
+                // Close popup after 3 seconds
+                setTimeout(() => {
+                    this.closePopup();
+                }, 3000);
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            console.error('Exit intent submission error:', error);
+            this.showMessage('error', '✗ Something went wrong. Please try lbostral@gmail.com');
+        } finally {
+            this.setLoading(false);
+        }
+    }
+
+    validateEmail() {
+        const email = this.emailInput.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!email) {
+            this.emailInput.style.borderColor = '#e74c3c';
+            return false;
+        }
+
+        if (!emailRegex.test(email)) {
+            this.emailInput.style.borderColor = '#e74c3c';
+            this.showMessage('error', 'Please enter a valid email address');
+            return false;
+        }
+
+        this.emailInput.style.borderColor = '';
+        return true;
+    }
+
+    setLoading(isLoading) {
+        this.submitButton.disabled = isLoading;
+
+        if (isLoading) {
+            this.submitText.style.display = 'none';
+            this.submitLoader.style.display = 'inline';
+        } else {
+            this.submitText.style.display = 'inline';
+            this.submitLoader.style.display = 'none';
+        }
+    }
+
+    showMessage(type, message) {
+        this.messageContainer.textContent = message;
+        this.messageContainer.className = `exit-intent-message ${type}`;
+        this.messageContainer.style.display = 'block';
+    }
+}
+
+// ============================================
 // INITIALIZE APP
 // ============================================
 
@@ -1319,6 +1594,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Resource Modal
     new ResourceModal();
+
+    // Initialize Exit Intent Popup
+    new ExitIntentPopup();
 
     // Log initialization
     console.log('🚀 Ludovic Bostral Consulting Website Initialized');
