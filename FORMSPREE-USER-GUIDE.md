@@ -74,25 +74,25 @@ Si la soumission échoue, l'utilisateur voit :
 ### 🇬🇧 English
 ```
 ✗ Something went wrong. Please try again or contact me
-  directly at lbostral@gmail.com
+  directly at ludovic@bostral.com
 ```
 
 ### 🇫🇷 Français
 ```
 ✗ Une erreur s'est produite. Veuillez réessayer ou me
-  contacter directement à lbostral@gmail.com
+  contacter directement à ludovic@bostral.com
 ```
 
 ### 🇨🇳 中文
 ```
 ✗ 出错了。请重试或直接联系我：
-  lbostral@gmail.com
+  ludovic@bostral.com
 ```
 
 ### 🇪🇸 Español
 ```
 ✗ Algo salió mal. Por favor intenta de nuevo o contáctame
-  directamente en lbostral@gmail.com
+  directamente en ludovic@bostral.com
 ```
 
 **Caractéristiques** :

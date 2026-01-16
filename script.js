@@ -101,7 +101,7 @@ const translations = {
         "form.errorRequired": "This field is required",
         "form.errorEmail": "Please enter a valid email address",
         "form.successMessage": "✓ Thank you! Your message has been sent successfully. I'll get back to you within 24 hours.",
-        "form.errorMessage": "✗ Something went wrong. Please try again or contact me directly at lbostral@gmail.com",
+        "form.errorMessage": "✗ Something went wrong. Please try again or contact me directly at ludovic@bostral.com",
 
         // Resources
         "resources.title": "Free Resources",
@@ -297,7 +297,7 @@ const translations = {
         "form.errorRequired": "Ce champ est obligatoire",
         "form.errorEmail": "Veuillez entrer une adresse email valide",
         "form.successMessage": "✓ Merci ! Votre message a été envoyé avec succès. Je vous répondrai dans les 24 heures.",
-        "form.errorMessage": "✗ Une erreur s'est produite. Veuillez réessayer ou me contacter directement à lbostral@gmail.com",
+        "form.errorMessage": "✗ Une erreur s'est produite. Veuillez réessayer ou me contacter directement à ludovic@bostral.com",
 
         // Resources
         "resources.title": "Ressources Gratuites",
@@ -493,7 +493,7 @@ const translations = {
         "form.errorRequired": "此字段为必填项",
         "form.errorEmail": "请输入有效的电子邮件地址",
         "form.successMessage": "✓ 谢谢！您的消息已成功发送。我将在24小时内回复您。",
-        "form.errorMessage": "✗ 出错了。请重试或直接联系我：lbostral@gmail.com",
+        "form.errorMessage": "✗ 出错了。请重试或直接联系我：ludovic@bostral.com",
 
         // Resources
         "resources.title": "免费资源",
@@ -692,7 +692,7 @@ const translations = {
         "form.errorRequired": "Este campo es obligatorio",
         "form.errorEmail": "Por favor ingresa una dirección de email válida",
         "form.successMessage": "✓ ¡Gracias! Tu mensaje ha sido enviado con éxito. Te responderé en 24 horas.",
-        "form.errorMessage": "✗ Algo salió mal. Por favor intenta de nuevo o contáctame directamente en lbostral@gmail.com",
+        "form.errorMessage": "✗ Algo salió mal. Por favor intenta de nuevo o contáctame directamente en ludovic@bostral.com",
         "form.languageWarning": "⚠️ Nota: Solo hablo francés e inglés",
 
         // Resources
@@ -1397,7 +1397,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Log initialization
     console.log('🚀 Ludovic Bostral Consulting Website Initialized');
-    console.log('📧 Contact: lbostral@gmail.com');
+    console.log('📧 Contact: ludovic@bostral.com');
     console.log('🔗 LinkedIn: https://linkedin.com/in/ludovicbostral');
     console.log('📰 Newsletter: https://streamingradar.substack.com');
 });

@@ -149,7 +149,7 @@ Edit the CSS variables in `style.css`:
 
 ### Changing Contact Email
 
-Replace `lbostral@gmail.com` in:
+Replace `ludovic@bostral.com` in:
 - `index.html` (all mailto links)
 - Update footer if needed
 
@@ -246,7 +246,7 @@ Permissions-Policy: geolocation=(), microphone=(), camera=()
 ## 📧 Contact
 
 **Ludovic Bostral**
-- 📧 Email: lbostral@gmail.com
+- 📧 Email: ludovic@bostral.com
 - 💼 LinkedIn: [linkedin.com/in/ludovicbostral](https://linkedin.com/in/ludovicbostral)
 - 📰 Newsletter: [streamingradar.substack.com](https://streamingradar.substack.com)
 - 🎙️ Podcast: [Streaming Radar Podcast](https://streamingradar.substack.com/podcast)

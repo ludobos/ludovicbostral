@@ -63,7 +63,7 @@ this.formspreeEndpoint = 'https://formspree.io/f/YOUR_FORM_ID';
 ### Step 4: Configure Email Notifications
 
 1. In Formspree form settings, go to **Settings > Email Notifications**
-2. Set notification email to: `lbostral@gmail.com`
+2. Set notification email to: `ludovic@bostral.com`
 3. Enable "Send email on new submission"
 4. Customize email template if desired
 
