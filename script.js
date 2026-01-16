@@ -1186,20 +1186,36 @@ class Analytics {
 
 class ContactForm {
     constructor(formId) {
+        console.log('🔧 ContactForm: Initializing with formId:', formId);
         this.form = document.getElementById(formId);
-        if (!this.form) return;
 
-        this.formspreeEndpoint = 'https://formspree.io/f/mzdddplp'; // Formspree endpoint configured
+        if (!this.form) {
+            console.error('❌ ContactForm: Form not found with ID:', formId);
+            return;
+        }
+
+        console.log('✅ ContactForm: Form found');
+
+        this.formspreeEndpoint = 'https://formspree.io/f/mzdddplp';
         this.submitButton = this.form.querySelector('button[type="submit"]');
+
+        if (!this.submitButton) {
+            console.error('❌ ContactForm: Submit button not found');
+            return;
+        }
+
         this.submitText = this.submitButton.querySelector('.submit-text');
         this.submitLoader = this.submitButton.querySelector('.submit-loader');
         this.messageContainer = this.form.querySelector('.form-message');
 
+        console.log('✅ ContactForm: All elements found, calling init()');
         this.init();
     }
 
     init() {
+        console.log('🔧 ContactForm: Adding submit event listener');
         this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+        console.log('✅ ContactForm: Submit event listener attached');
 
         // Add real-time validation
         this.form.querySelectorAll('input, select, textarea').forEach(field => {
