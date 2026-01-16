@@ -1430,6 +1430,90 @@ class ContactForm {
 
 
 
+// ============================================
+// LEGAL MODALS (PRIVACY & TERMS)
+// ============================================
+
+class LegalModals {
+    constructor() {
+        this.privacyModal = document.getElementById('privacyModal');
+        this.termsModal = document.getElementById('termsModal');
+        this.init();
+    }
+
+    init() {
+        // Get all privacy and terms links
+        const privacyLinks = document.querySelectorAll('.privacy-link');
+        const termsLinks = document.querySelectorAll('.terms-link');
+
+        // Attach event listeners to privacy links
+        privacyLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.openModal(this.privacyModal);
+            });
+        });
+
+        // Attach event listeners to terms links
+        termsLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.openModal(this.termsModal);
+            });
+        });
+
+        // Attach close event listeners
+        this.attachCloseEvents(this.privacyModal);
+        this.attachCloseEvents(this.termsModal);
+    }
+
+    openModal(modal) {
+        if (modal) {
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scroll
+
+            // Track modal view in analytics
+            if (window.analytics) {
+                const modalType = modal.id === 'privacyModal' ? 'privacy_policy' : 'terms_of_service';
+                window.analytics.trackCustomEvent('legal_modal_view', {
+                    modal_type: modalType
+                });
+            }
+        }
+    }
+
+    closeModal(modal) {
+        if (modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = ''; // Restore scroll
+        }
+    }
+
+    attachCloseEvents(modal) {
+        if (!modal) return;
+
+        // Close button (X)
+        const closeBtn = modal.querySelector('.legal-modal-close');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => this.closeModal(modal));
+        }
+
+        // Click outside modal content
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                this.closeModal(modal);
+            }
+        });
+
+        // ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'block') {
+                this.closeModal(modal);
+            }
+        });
+    }
+}
+
 
 // ============================================
 // INITIALIZE APP
@@ -1448,6 +1532,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Contact Form
     new ContactForm('contactForm');
+
+    // Initialize Legal Modals
+    new LegalModals();
 
     // Log initialization
     console.log('🚀 Ludovic Bostral Consulting Website Initialized');
