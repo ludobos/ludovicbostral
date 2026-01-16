@@ -1366,7 +1366,9 @@ class ContactForm {
 
         this.submitButton.disabled = isLoading;
 
-        if (this.submitText && this.submitLoader) {
+        // Check if spans exist AND are still in the DOM
+        if (this.submitText && this.submitText.parentNode && this.submitLoader && this.submitLoader.parentNode) {
+            // Spans are in the DOM, use them
             if (isLoading) {
                 this.submitText.style.display = 'none';
                 this.submitLoader.style.display = 'inline';
@@ -1375,11 +1377,36 @@ class ContactForm {
                 this.submitLoader.style.display = 'none';
             }
         } else {
-            // Fallback: change button text if spans not found
+            // Spans don't exist or were destroyed, recreate them
+            this.submitButton.innerHTML = '';
+
+            // Get current language for button text
+            const lang = window.languageSwitcher?.currentLang || 'en';
+            const buttonText = translations[lang]['form.submit'];
+
+            const submitText = document.createElement('span');
+            submitText.className = 'submit-text';
+            submitText.textContent = buttonText;
+
+            const submitLoader = document.createElement('span');
+            submitLoader.className = 'submit-loader';
+            submitLoader.textContent = '⏳';
+            submitLoader.style.display = 'none';
+
+            this.submitButton.appendChild(submitText);
+            this.submitButton.appendChild(submitLoader);
+
+            // Update references
+            this.submitText = submitText;
+            this.submitLoader = submitLoader;
+
+            // Now apply the loading state
             if (isLoading) {
-                this.submitButton.textContent = '⏳ Sending...';
+                this.submitText.style.display = 'none';
+                this.submitLoader.style.display = 'inline';
             } else {
-                this.submitButton.textContent = 'Get Free Consultation';
+                this.submitText.style.display = 'inline';
+                this.submitLoader.style.display = 'none';
             }
         }
     }
