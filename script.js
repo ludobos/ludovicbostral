@@ -1206,6 +1206,19 @@ class ContactForm {
                 }
             });
         });
+
+        // Sync email to _replyto for Formspree
+        const emailField = this.form.querySelector('#email');
+        const replyToField = this.form.querySelector('#_replyto');
+        if (emailField && replyToField) {
+            emailField.addEventListener('input', () => {
+                replyToField.value = emailField.value;
+            });
+            // Initialize with current value if any
+            if (emailField.value) {
+                replyToField.value = emailField.value;
+            }
+        }
     }
 
     async handleSubmit(e) {
