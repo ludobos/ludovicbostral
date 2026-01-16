@@ -46,4 +46,4 @@ If your image file has a different name, update these references:
 
 ---
 
-**Need help?** Contact: lbostral@gmail.com
+**Need help?** Contact: ludovic@bostral.com
