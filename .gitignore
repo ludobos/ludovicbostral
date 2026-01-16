@@ -49,3 +49,6 @@ yarn.lock
 # Backup files
 *.bak
 *.backup
+
+# Netlify
+.netlify/
