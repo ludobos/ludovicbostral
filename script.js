@@ -135,7 +135,31 @@ const translations = {
         "modal.submit": "Send Me the Resource",
         "modal.privacy": "🔒 No spam. Unsubscribe anytime. You'll also receive occasional updates from Streaming Radar newsletter.",
         "modal.trust1": "✓ 2,000+ downloads",
-        "modal.trust2": "✓ Used by Netflix, Amazon, Disney+ professionals"
+        "modal.trust2": "✓ Used by Netflix, Amazon, Disney+ professionals",
+
+        // Results
+        "results.title": "Results That Matter",
+        "results.stat1.label": "Users Served Globally",
+        "results.stat1.detail": "M6 Replay: 0 to 50M users (2008-2013)",
+        "results.stat2.label": "Total Capital Raised",
+        "results.stat2.detail": "Afrostream $4M + Majelan $10M + Kessel $1.5M",
+        "results.stat3.label": "Streaming Platforms Scaled",
+        "results.stat3.detail": "From 0 to millions of users",
+        "results.stat4.label": "Years of Experience",
+        "results.stat4.detail": "Since 2000, from M6 to Kessel",
+
+        // Testimonials
+        "testimonials.title": "What Clients Say",
+        "testimonials.testimonial1.text": "Ludovic helped us scale our streaming platform from 0 to 2M users in 18 months. His technical expertise in CDN optimization and DRM implementation was crucial. The architecture he designed handled 10x traffic without issues.",
+        "testimonials.testimonial1.name": "Patrick Z.",
+        "testimonials.testimonial1.role": "CEO, European Streaming Platform",
+        "testimonials.testimonial2.text": "Working with Ludovic as fractional CTO was transformative. He rebuilt our tech stack, established engineering best practices, and prepared us for international expansion. His strategic vision goes beyond just technology.",
+        "testimonials.testimonial2.name": "Thibaut S.",
+        "testimonials.testimonial2.role": "Founder, Audio Streaming Startup",
+        "testimonials.testimonial3.text": "Ludovic's Streaming Radar newsletter is essential reading for anyone in OTT. His analysis of platform strategies and monetization models helped us pivot from SVOD to hybrid AVOD/SVOD, increasing revenue by 40%.",
+        "testimonials.testimonial3.name": "Alexandre M.",
+        "testimonials.testimonial3.role": "VP Product, Media Tech Company",
+        "testimonials.partnersLabel": "Companies & Partnerships"
     },
 
     fr: {
@@ -270,7 +294,31 @@ const translations = {
         "modal.submit": "Envoyez-moi la Ressource",
         "modal.privacy": "🔒 Pas de spam. Désabonnement à tout moment. Vous recevrez également des mises à jour occasionnelles de la newsletter Streaming Radar.",
         "modal.trust1": "✓ 2 000+ téléchargements",
-        "modal.trust2": "✓ Utilisé par des professionnels Netflix, Amazon, Disney+"
+        "modal.trust2": "✓ Utilisé par des professionnels Netflix, Amazon, Disney+",
+
+        // Results
+        "results.title": "Résultats Concrets",
+        "results.stat1.label": "Utilisateurs Servis Globalement",
+        "results.stat1.detail": "M6 Replay : 0 à 50M d'utilisateurs (2008-2013)",
+        "results.stat2.label": "Capital Total Levé",
+        "results.stat2.detail": "Afrostream $4M + Majelan $10M + Kessel $1.5M",
+        "results.stat3.label": "Plateformes de Streaming Développées",
+        "results.stat3.detail": "De 0 à des millions d'utilisateurs",
+        "results.stat4.label": "Années d'Expérience",
+        "results.stat4.detail": "Depuis 2000, de M6 à Kessel",
+
+        // Testimonials
+        "testimonials.title": "Ce Que Disent Les Clients",
+        "testimonials.testimonial1.text": "Ludovic nous a aidés à développer notre plateforme de streaming de 0 à 2M d'utilisateurs en 18 mois. Son expertise technique en optimisation CDN et implémentation DRM a été cruciale. L'architecture qu'il a conçue a géré un trafic 10x supérieur sans problème.",
+        "testimonials.testimonial1.name": "Patrick Z.",
+        "testimonials.testimonial1.role": "CEO, Plateforme de Streaming Européenne",
+        "testimonials.testimonial2.text": "Travailler avec Ludovic en tant que CTO fractionné a été transformateur. Il a reconstruit notre stack technologique, établi les meilleures pratiques d'ingénierie et nous a préparés pour l'expansion internationale. Sa vision stratégique va au-delà de la technologie.",
+        "testimonials.testimonial2.name": "Thibaut S.",
+        "testimonials.testimonial2.role": "Fondateur, Startup Audio Streaming",
+        "testimonials.testimonial3.text": "La newsletter Streaming Radar de Ludovic est une lecture essentielle pour tous ceux qui travaillent dans l'OTT. Son analyse des stratégies de plateformes et modèles de monétisation nous a aidés à pivoter de SVOD vers un modèle hybride AVOD/SVOD, augmentant nos revenus de 40%.",
+        "testimonials.testimonial3.name": "Alexandre M.",
+        "testimonials.testimonial3.role": "VP Produit, Entreprise Media Tech",
+        "testimonials.partnersLabel": "Entreprises & Partenariats"
     },
 
     zh: {
@@ -405,7 +453,31 @@ const translations = {
         "modal.submit": "发送资源给我",
         "modal.privacy": "🔒 无垃圾邮件。随时取消订阅。您还将收到Streaming Radar时事通讯的偶尔更新。",
         "modal.trust1": "✓ 2000+次下载",
-        "modal.trust2": "✓ Netflix、Amazon、Disney+专业人士使用"
+        "modal.trust2": "✓ Netflix、Amazon、Disney+专业人士使用",
+
+        // Results
+        "results.title": "成果展示",
+        "results.stat1.label": "全球服务用户数",
+        "results.stat1.detail": "M6 Replay：从0到5000万用户（2008-2013）",
+        "results.stat2.label": "累计融资额",
+        "results.stat2.detail": "Afrostream $4M + Majelan $10M + Kessel $1.5M",
+        "results.stat3.label": "扩展的流媒体平台",
+        "results.stat3.detail": "从0到数百万用户",
+        "results.stat4.label": "工作年限",
+        "results.stat4.detail": "自2000年起，从M6到Kessel",
+
+        // Testimonials
+        "testimonials.title": "客户评价",
+        "testimonials.testimonial1.text": "Ludovic帮助我们在18个月内将流媒体平台从0扩展到200万用户。他在CDN优化和DRM实施方面的技术专长至关重要。他设计的架构毫无问题地处理了10倍的流量。",
+        "testimonials.testimonial1.name": "Patrick Z.",
+        "testimonials.testimonial1.role": "CEO，欧洲流媒体平台",
+        "testimonials.testimonial2.text": "与Ludovic作为兼职CTO合作是变革性的。他重建了我们的技术栈，建立了工程最佳实践，并为我们的国际扩张做好了准备。他的战略愿景超越了技术本身。",
+        "testimonials.testimonial2.name": "Thibaut S.",
+        "testimonials.testimonial2.role": "创始人，音频流媒体创业公司",
+        "testimonials.testimonial3.text": "Ludovic的Streaming Radar时事通讯是OTT领域任何人的必读内容。他对平台策略和变现模型的分析帮助我们从SVOD转向混合AVOD/SVOD模式，收入增长了40%。",
+        "testimonials.testimonial3.name": "Alexandre M.",
+        "testimonials.testimonial3.role": "产品副总裁，媒体科技公司",
+        "testimonials.partnersLabel": "公司与合作伙伴"
     }
 };
 
@@ -628,6 +700,109 @@ class HeaderScroll {
 
             lastScroll = currentScroll;
         });
+    }
+}
+
+// ============================================
+// COUNTER ANIMATION
+// ============================================
+
+class CounterAnimation {
+    constructor() {
+        this.counters = [];
+        this.observer = null;
+        this.init();
+    }
+
+    init() {
+        // Find all result numbers
+        const resultNumbers = document.querySelectorAll('.result-number[data-count]');
+
+        resultNumbers.forEach(element => {
+            this.counters.push({
+                element,
+                target: parseInt(element.dataset.count),
+                prefix: element.dataset.prefix || '',
+                suffix: element.dataset.suffix || '',
+                hasAnimated: false
+            });
+        });
+
+        // Create intersection observer
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3
+        };
+
+        this.observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Find counter for this element
+                    const counter = this.counters.find(c => c.element === entry.target);
+                    if (counter && !counter.hasAnimated) {
+                        this.animateCounter(counter);
+                        counter.hasAnimated = true;
+                    }
+                }
+            });
+        }, options);
+
+        // Observe all counter elements
+        this.counters.forEach(counter => {
+            this.observer.observe(counter.element);
+        });
+    }
+
+    animateCounter(counter) {
+        const duration = 2000; // 2 seconds
+        const start = 0;
+        const end = counter.target;
+        const startTime = performance.now();
+
+        const updateCounter = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+
+            // Easing function (easeOutCubic)
+            const easeProgress = 1 - Math.pow(1 - progress, 3);
+
+            const current = Math.floor(start + (end - start) * easeProgress);
+
+            // Format number
+            let displayValue = this.formatNumber(current, counter.target);
+            displayValue = counter.prefix + displayValue + counter.suffix;
+
+            counter.element.textContent = displayValue;
+
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+            } else {
+                // Ensure final value is exact
+                let finalValue = this.formatNumber(end, end);
+                finalValue = counter.prefix + finalValue + counter.suffix;
+                counter.element.textContent = finalValue;
+            }
+        };
+
+        requestAnimationFrame(updateCounter);
+    }
+
+    formatNumber(value, target) {
+        // For millions (50M+)
+        if (target >= 1000000) {
+            const millions = value / 1000000;
+            return millions >= 1 ? Math.floor(millions) : '0';
+        }
+        // For thousands with decimals (15.5M)
+        else if (target >= 100000) {
+            const millions = value / 1000000;
+            return millions >= 0.1 ? (millions).toFixed(1) : '0';
+        }
+        // Regular numbers
+        else {
+            return value.toString();
+        }
     }
 }
 
@@ -1135,6 +1310,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Analytics
     window.analytics = new Analytics();
+
+    // Initialize Counter Animation
+    new CounterAnimation();
 
     // Initialize Contact Form
     new ContactForm('contactForm');
