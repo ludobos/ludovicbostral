@@ -1017,109 +1017,6 @@ class HeaderScroll {
 }
 
 // ============================================
-// COUNTER ANIMATION
-// ============================================
-
-class CounterAnimation {
-    constructor() {
-        this.counters = [];
-        this.observer = null;
-        this.init();
-    }
-
-    init() {
-        // Find all result numbers
-        const resultNumbers = document.querySelectorAll('.result-number[data-count]');
-
-        resultNumbers.forEach(element => {
-            this.counters.push({
-                element,
-                target: parseInt(element.dataset.count),
-                prefix: element.dataset.prefix || '',
-                suffix: element.dataset.suffix || '',
-                hasAnimated: false
-            });
-        });
-
-        // Create intersection observer
-        const options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.3
-        };
-
-        this.observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // Find counter for this element
-                    const counter = this.counters.find(c => c.element === entry.target);
-                    if (counter && !counter.hasAnimated) {
-                        this.animateCounter(counter);
-                        counter.hasAnimated = true;
-                    }
-                }
-            });
-        }, options);
-
-        // Observe all counter elements
-        this.counters.forEach(counter => {
-            this.observer.observe(counter.element);
-        });
-    }
-
-    animateCounter(counter) {
-        const duration = 2000; // 2 seconds
-        const start = 0;
-        const end = counter.target;
-        const startTime = performance.now();
-
-        const updateCounter = (currentTime) => {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-
-            // Easing function (easeOutCubic)
-            const easeProgress = 1 - Math.pow(1 - progress, 3);
-
-            const current = Math.floor(start + (end - start) * easeProgress);
-
-            // Format number
-            let displayValue = this.formatNumber(current, counter.target);
-            displayValue = counter.prefix + displayValue + counter.suffix;
-
-            counter.element.textContent = displayValue;
-
-            if (progress < 1) {
-                requestAnimationFrame(updateCounter);
-            } else {
-                // Ensure final value is exact
-                let finalValue = this.formatNumber(end, end);
-                finalValue = counter.prefix + finalValue + counter.suffix;
-                counter.element.textContent = finalValue;
-            }
-        };
-
-        requestAnimationFrame(updateCounter);
-    }
-
-    formatNumber(value, target) {
-        // For millions (50M+)
-        if (target >= 1000000) {
-            const millions = value / 1000000;
-            return millions >= 1 ? Math.floor(millions) : '0';
-        }
-        // For thousands with decimals (15.5M)
-        else if (target >= 100000) {
-            const millions = value / 1000000;
-            return millions >= 0.1 ? (millions).toFixed(1) : '0';
-        }
-        // Regular numbers
-        else {
-            return value.toString();
-        }
-    }
-}
-
-// ============================================
 // ANALYTICS TRACKING
 // ============================================
 
@@ -2099,9 +1996,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Analytics
     window.analytics = new Analytics();
-
-    // Initialize Counter Animation
-    new CounterAnimation();
 
     // Initialize Contact Form
     new ContactForm('contactForm');
