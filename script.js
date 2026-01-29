@@ -196,7 +196,89 @@ const translations = {
         "testimonials.testimonial3.text": "Ludovic's Streaming Radar newsletter is essential reading for anyone in OTT. His analysis of platform strategies and monetization models helped us pivot from SVOD to hybrid AVOD/SVOD, increasing revenue by 40%.",
         "testimonials.testimonial3.name": "Alexandre M.",
         "testimonials.testimonial3.role": "VP Product, Media Tech Company",
-        "testimonials.partnersLabel": "Companies & Partnerships"
+        "testimonials.partnersLabel": "Companies & Partnerships",
+
+        // Case Studies
+        "caseStudies.title": "Featured Case Studies",
+        "caseStudies.viewStory": "View Full Story →",
+
+        // M6 Replay Card
+        "caseStudies.m6.title": "M6 Replay",
+        "caseStudies.m6.period": "2007-2013 | R&D Manager",
+        "caseStudies.m6.metric1": "monthly users",
+        "caseStudies.m6.metric2": "revenue",
+        "caseStudies.m6.metric3": "in France",
+        "caseStudies.m6.summary": "Led technical strategy for France's leading catch-up TV. Grew M6 Web to €100M revenue. Pioneered HLS streaming, multi-CDN architecture, and first synchronized second-screen experience.",
+
+        // M6 Replay Modal
+        "caseStudies.m6.modal.title": "M6 Replay: Building France's #1 Catch-up TV",
+        "caseStudies.m6.modal.subtitle": "2007-2013 | R&D Manager at M6 Web",
+        "caseStudies.m6.modal.metricLabel1": "Monthly Users",
+        "caseStudies.m6.modal.metricLabel2": "Revenue 2012",
+        "caseStudies.m6.modal.metricLabel3": "Videos/Year",
+        "caseStudies.m6.modal.contextTitle": "The Context",
+        "caseStudies.m6.modal.contextText": "In 2007, M6 Group wanted to launch a catch-up TV service to compete with TF1 and France Télévisions. As R&D Manager, I was tasked with building the technical foundation from scratch and leading the platform's evolution over 6 years.",
+        "caseStudies.m6.modal.challengeTitle": "The Challenge",
+        "caseStudies.m6.modal.challenge1": "Build a scalable video platform from zero",
+        "caseStudies.m6.modal.challenge2": "Support multiple devices (web, mobile, connected TVs, set-top boxes)",
+        "caseStudies.m6.modal.challenge3": "Handle peak traffic during prime-time TV replays",
+        "caseStudies.m6.modal.challenge4": "Implement DRM protection for premium content",
+        "caseStudies.m6.modal.solutionTitle": "The Solution",
+        "caseStudies.m6.modal.solutionText": "Led a team of 5-10 engineers to build a comprehensive video delivery infrastructure. Key innovations included:",
+        "caseStudies.m6.modal.solution1": "Early adoption of HLS streaming (one of the first in France)",
+        "caseStudies.m6.modal.solution2": "Multi-CDN architecture for reliability and cost optimization",
+        "caseStudies.m6.modal.solution3": "First synchronized second-screen experience in French TV",
+        "caseStudies.m6.modal.solution4": "Custom analytics platform for viewer behavior insights",
+        "caseStudies.m6.modal.resultsTitle": "The Results",
+        "caseStudies.m6.modal.result1": "10M monthly users",
+        "caseStudies.m6.modal.result1b": "in 2013",
+        "caseStudies.m6.modal.result2": "€100M revenue",
+        "caseStudies.m6.modal.result2b": "for M6 Web in 2012",
+        "caseStudies.m6.modal.result3": "600M videos viewed",
+        "caseStudies.m6.modal.result3b": "per year in 2012",
+        "caseStudies.m6.modal.result4": "#1 commercial catch-up TV",
+        "caseStudies.m6.modal.result4b": "in France",
+        "caseStudies.m6.modal.sourceLabel": "Source:",
+        "caseStudies.m6.modal.sourceText": "FrenchWeb - M6 Digital Key Figures (2013)",
+
+        // Afrostream Card
+        "caseStudies.afrostream.title": "Afrostream",
+        "caseStudies.afrostream.period": "2015-2017 | Co-Founder & CTO",
+        "caseStudies.afrostream.metric1": "raised",
+        "caseStudies.afrostream.metric2": "countries",
+        "caseStudies.afrostream.metric3": "S15",
+        "caseStudies.afrostream.summary": "Built Europe's first African content SVOD from scratch. Secured Y Combinator, major studio licenses, and telco distribution to 12M households.",
+
+        // Afrostream Modal
+        "caseStudies.afrostream.modal.title": "Afrostream: Europe's First African Content SVOD",
+        "caseStudies.afrostream.modal.subtitle": "2015-2017 | Co-Founder & CTO",
+        "caseStudies.afrostream.modal.metricLabel1": "Total Raised",
+        "caseStudies.afrostream.modal.metricLabel2": "Countries",
+        "caseStudies.afrostream.modal.metricLabel3": "Households Reach",
+        "caseStudies.afrostream.modal.contextTitle": "The Context",
+        "caseStudies.afrostream.modal.contextText": "In 2015, we identified a massive underserved market: 150M+ Africans and African diaspora with no dedicated premium streaming service for African content. We decided to build the \"Netflix for African content.\"",
+        "caseStudies.afrostream.modal.challengeTitle": "The Challenge",
+        "caseStudies.afrostream.modal.challenge1": "Build a full SVOD platform from scratch with limited funding",
+        "caseStudies.afrostream.modal.challenge2": "Secure content licenses from major Hollywood and Nollywood studios",
+        "caseStudies.afrostream.modal.challenge3": "Deploy across 28 countries with varying internet infrastructure",
+        "caseStudies.afrostream.modal.challenge4": "Compete with global giants entering the market",
+        "caseStudies.afrostream.modal.solutionTitle": "The Solution",
+        "caseStudies.afrostream.modal.solutionText": "As CTO, I built the entire technical stack and led fundraising alongside our CEO. Key achievements:",
+        "caseStudies.afrostream.modal.solution1": "Accepted into Y Combinator Summer 2015 batch",
+        "caseStudies.afrostream.modal.solution2": "Secured licenses from Lionsgate, MGM, and major Nollywood producers",
+        "caseStudies.afrostream.modal.solution3": "Built partnerships with Orange, Canal+, and Bouygues Telecom",
+        "caseStudies.afrostream.modal.solution4": "Developed adaptive streaming for low-bandwidth African markets",
+        "caseStudies.afrostream.modal.resultsTitle": "The Results",
+        "caseStudies.afrostream.modal.result1": "€4M raised",
+        "caseStudies.afrostream.modal.result1b": "from VCs and strategic investors",
+        "caseStudies.afrostream.modal.result2": "Y Combinator S15",
+        "caseStudies.afrostream.modal.result2b": "acceptance (top 2% of applicants)",
+        "caseStudies.afrostream.modal.result3": "12M households reach",
+        "caseStudies.afrostream.modal.result3b": "via telco partnerships",
+        "caseStudies.afrostream.modal.result4": "28 countries",
+        "caseStudies.afrostream.modal.result4b": "across Europe and Africa",
+        "caseStudies.afrostream.modal.lessonsTitle": "Key Learnings",
+        "caseStudies.afrostream.modal.lessonsText": "While Afrostream eventually closed due to market timing and competition from global players, the experience provided invaluable lessons in startup building, fundraising, and scaling technology in emerging markets."
     },
 
     fr: {
@@ -392,7 +474,89 @@ const translations = {
         "testimonials.testimonial3.text": "La newsletter Streaming Radar de Ludovic est une lecture essentielle pour tous ceux qui travaillent dans l'OTT. Son analyse des stratégies de plateformes et modèles de monétisation nous a aidés à pivoter de SVOD vers un modèle hybride AVOD/SVOD, augmentant nos revenus de 40%.",
         "testimonials.testimonial3.name": "Alexandre M.",
         "testimonials.testimonial3.role": "VP Produit, Entreprise Media Tech",
-        "testimonials.partnersLabel": "Entreprises & Partenariats"
+        "testimonials.partnersLabel": "Entreprises & Partenariats",
+
+        // Case Studies
+        "caseStudies.title": "Études de Cas",
+        "caseStudies.viewStory": "Voir l'Histoire Complète →",
+
+        // M6 Replay Card
+        "caseStudies.m6.title": "M6 Replay",
+        "caseStudies.m6.period": "2007-2013 | Responsable R&D",
+        "caseStudies.m6.metric1": "utilisateurs/mois",
+        "caseStudies.m6.metric2": "CA",
+        "caseStudies.m6.metric3": "en France",
+        "caseStudies.m6.summary": "Direction de la stratégie technique de la TV de rattrapage leader en France. Croissance de M6 Web jusqu'à 100M€ de CA. Pionnier du streaming HLS, architecture multi-CDN et première expérience second écran synchronisée.",
+
+        // M6 Replay Modal
+        "caseStudies.m6.modal.title": "M6 Replay : Construction de la TV de Rattrapage #1 en France",
+        "caseStudies.m6.modal.subtitle": "2007-2013 | Responsable R&D chez M6 Web",
+        "caseStudies.m6.modal.metricLabel1": "Utilisateurs Mensuels",
+        "caseStudies.m6.modal.metricLabel2": "CA 2012",
+        "caseStudies.m6.modal.metricLabel3": "Vidéos/An",
+        "caseStudies.m6.modal.contextTitle": "Le Contexte",
+        "caseStudies.m6.modal.contextText": "En 2007, le Groupe M6 souhaitait lancer un service de TV de rattrapage pour concurrencer TF1 et France Télévisions. En tant que Responsable R&D, j'ai été chargé de construire les fondations techniques from scratch et de diriger l'évolution de la plateforme pendant 6 ans.",
+        "caseStudies.m6.modal.challengeTitle": "Le Défi",
+        "caseStudies.m6.modal.challenge1": "Construire une plateforme vidéo évolutive à partir de zéro",
+        "caseStudies.m6.modal.challenge2": "Supporter de multiples appareils (web, mobile, TV connectées, box)",
+        "caseStudies.m6.modal.challenge3": "Gérer les pics de trafic pendant les replays prime-time",
+        "caseStudies.m6.modal.challenge4": "Implémenter la protection DRM pour le contenu premium",
+        "caseStudies.m6.modal.solutionTitle": "La Solution",
+        "caseStudies.m6.modal.solutionText": "Direction d'une équipe de 5 à 10 ingénieurs pour construire une infrastructure de diffusion vidéo complète. Innovations clés :",
+        "caseStudies.m6.modal.solution1": "Adoption précoce du streaming HLS (l'un des premiers en France)",
+        "caseStudies.m6.modal.solution2": "Architecture multi-CDN pour la fiabilité et l'optimisation des coûts",
+        "caseStudies.m6.modal.solution3": "Première expérience second écran synchronisée de la TV française",
+        "caseStudies.m6.modal.solution4": "Plateforme d'analytics personnalisée pour les comportements utilisateurs",
+        "caseStudies.m6.modal.resultsTitle": "Les Résultats",
+        "caseStudies.m6.modal.result1": "10M d'utilisateurs mensuels",
+        "caseStudies.m6.modal.result1b": "en 2013",
+        "caseStudies.m6.modal.result2": "100M€ de chiffre d'affaires",
+        "caseStudies.m6.modal.result2b": "pour M6 Web en 2012",
+        "caseStudies.m6.modal.result3": "600M de vidéos vues",
+        "caseStudies.m6.modal.result3b": "par an en 2012",
+        "caseStudies.m6.modal.result4": "TV de rattrapage commerciale #1",
+        "caseStudies.m6.modal.result4b": "en France",
+        "caseStudies.m6.modal.sourceLabel": "Source :",
+        "caseStudies.m6.modal.sourceText": "FrenchWeb - Chiffres clés du numérique chez M6 (2013)",
+
+        // Afrostream Card
+        "caseStudies.afrostream.title": "Afrostream",
+        "caseStudies.afrostream.period": "2015-2017 | Co-Fondateur & CTO",
+        "caseStudies.afrostream.metric1": "levés",
+        "caseStudies.afrostream.metric2": "pays",
+        "caseStudies.afrostream.metric3": "S15",
+        "caseStudies.afrostream.summary": "Construction du premier SVOD européen de contenu africain from scratch. Obtention de Y Combinator, licences de studios majeurs et distribution télécoms vers 12M de foyers.",
+
+        // Afrostream Modal
+        "caseStudies.afrostream.modal.title": "Afrostream : Le Premier SVOD Européen de Contenu Africain",
+        "caseStudies.afrostream.modal.subtitle": "2015-2017 | Co-Fondateur & CTO",
+        "caseStudies.afrostream.modal.metricLabel1": "Total Levé",
+        "caseStudies.afrostream.modal.metricLabel2": "Pays",
+        "caseStudies.afrostream.modal.metricLabel3": "Foyers Atteints",
+        "caseStudies.afrostream.modal.contextTitle": "Le Contexte",
+        "caseStudies.afrostream.modal.contextText": "En 2015, nous avons identifié un marché massif sous-exploité : plus de 150M d'Africains et de diaspora africaine sans service de streaming premium dédié au contenu africain. Nous avons décidé de construire le « Netflix du contenu africain ».",
+        "caseStudies.afrostream.modal.challengeTitle": "Le Défi",
+        "caseStudies.afrostream.modal.challenge1": "Construire une plateforme SVOD complète from scratch avec un financement limité",
+        "caseStudies.afrostream.modal.challenge2": "Obtenir des licences de contenu des grands studios Hollywood et Nollywood",
+        "caseStudies.afrostream.modal.challenge3": "Déployer dans 28 pays avec des infrastructures internet variées",
+        "caseStudies.afrostream.modal.challenge4": "Concurrencer les géants mondiaux entrant sur le marché",
+        "caseStudies.afrostream.modal.solutionTitle": "La Solution",
+        "caseStudies.afrostream.modal.solutionText": "En tant que CTO, j'ai construit l'ensemble de la stack technique et mené la levée de fonds avec notre CEO. Réalisations clés :",
+        "caseStudies.afrostream.modal.solution1": "Accepté dans la promotion Y Combinator Summer 2015",
+        "caseStudies.afrostream.modal.solution2": "Obtention de licences Lionsgate, MGM et producteurs majeurs de Nollywood",
+        "caseStudies.afrostream.modal.solution3": "Partenariats avec Orange, Canal+ et Bouygues Telecom",
+        "caseStudies.afrostream.modal.solution4": "Développement du streaming adaptatif pour les marchés africains à faible bande passante",
+        "caseStudies.afrostream.modal.resultsTitle": "Les Résultats",
+        "caseStudies.afrostream.modal.result1": "4M€ levés",
+        "caseStudies.afrostream.modal.result1b": "auprès de VCs et investisseurs stratégiques",
+        "caseStudies.afrostream.modal.result2": "Y Combinator S15",
+        "caseStudies.afrostream.modal.result2b": "acceptation (top 2% des candidats)",
+        "caseStudies.afrostream.modal.result3": "12M de foyers atteints",
+        "caseStudies.afrostream.modal.result3b": "via partenariats télécoms",
+        "caseStudies.afrostream.modal.result4": "28 pays",
+        "caseStudies.afrostream.modal.result4b": "en Europe et en Afrique",
+        "caseStudies.afrostream.modal.lessonsTitle": "Apprentissages Clés",
+        "caseStudies.afrostream.modal.lessonsText": "Bien qu'Afrostream ait finalement fermé en raison du timing du marché et de la concurrence des acteurs mondiaux, cette expérience a fourni des leçons inestimables en création de startup, levée de fonds et scaling technologique dans les marchés émergents."
     },
 
     zh: {
@@ -591,7 +755,89 @@ const translations = {
         "testimonials.partnersLabel": "公司与合作伙伴",
 
         // Form Language Warning
-        "form.languageWarning": "⚠️ 注意：我只说法语和英语"
+        "form.languageWarning": "⚠️ 注意：我只说法语和英语",
+
+        // Case Studies
+        "caseStudies.title": "精选案例研究",
+        "caseStudies.viewStory": "查看完整故事 →",
+
+        // M6 Replay Card
+        "caseStudies.m6.title": "M6 Replay",
+        "caseStudies.m6.period": "2007-2013 | 研发经理",
+        "caseStudies.m6.metric1": "月活用户",
+        "caseStudies.m6.metric2": "营收",
+        "caseStudies.m6.metric3": "法国第一",
+        "caseStudies.m6.summary": "领导法国领先的电视回看服务的技术战略。将M6 Web营收提升至1亿欧元。开创HLS流媒体、多CDN架构以及首个同步第二屏体验。",
+
+        // M6 Replay Modal
+        "caseStudies.m6.modal.title": "M6 Replay：打造法国第一电视回看服务",
+        "caseStudies.m6.modal.subtitle": "2007-2013 | M6 Web研发经理",
+        "caseStudies.m6.modal.metricLabel1": "月活用户",
+        "caseStudies.m6.modal.metricLabel2": "2012年营收",
+        "caseStudies.m6.modal.metricLabel3": "年播放量",
+        "caseStudies.m6.modal.contextTitle": "背景",
+        "caseStudies.m6.modal.contextText": "2007年，M6集团希望推出电视回看服务，与TF1和法国电视台竞争。作为研发经理，我负责从零开始构建技术基础，并在6年内领导平台的发展。",
+        "caseStudies.m6.modal.challengeTitle": "挑战",
+        "caseStudies.m6.modal.challenge1": "从零开始构建可扩展的视频平台",
+        "caseStudies.m6.modal.challenge2": "支持多种设备（网页、移动端、智能电视、机顶盒）",
+        "caseStudies.m6.modal.challenge3": "处理黄金时段回看的流量峰值",
+        "caseStudies.m6.modal.challenge4": "为优质内容实施DRM保护",
+        "caseStudies.m6.modal.solutionTitle": "解决方案",
+        "caseStudies.m6.modal.solutionText": "带领5-10名工程师团队构建完整的视频分发基础设施。关键创新包括：",
+        "caseStudies.m6.modal.solution1": "率先采用HLS流媒体（法国最早之一）",
+        "caseStudies.m6.modal.solution2": "多CDN架构确保可靠性和成本优化",
+        "caseStudies.m6.modal.solution3": "法国电视首个同步第二屏体验",
+        "caseStudies.m6.modal.solution4": "定制分析平台洞察用户行为",
+        "caseStudies.m6.modal.resultsTitle": "成果",
+        "caseStudies.m6.modal.result1": "1000万月活用户",
+        "caseStudies.m6.modal.result1b": "2013年",
+        "caseStudies.m6.modal.result2": "1亿欧元营收",
+        "caseStudies.m6.modal.result2b": "M6 Web 2012年",
+        "caseStudies.m6.modal.result3": "6亿次视频播放",
+        "caseStudies.m6.modal.result3b": "2012年",
+        "caseStudies.m6.modal.result4": "商业电视回看第一名",
+        "caseStudies.m6.modal.result4b": "在法国",
+        "caseStudies.m6.modal.sourceLabel": "来源：",
+        "caseStudies.m6.modal.sourceText": "FrenchWeb - M6数字关键数据（2013）",
+
+        // Afrostream Card
+        "caseStudies.afrostream.title": "Afrostream",
+        "caseStudies.afrostream.period": "2015-2017 | 联合创始人兼CTO",
+        "caseStudies.afrostream.metric1": "融资",
+        "caseStudies.afrostream.metric2": "国家",
+        "caseStudies.afrostream.metric3": "S15",
+        "caseStudies.afrostream.summary": "从零开始构建欧洲首个非洲内容SVOD。获得Y Combinator、主要工作室授权以及覆盖1200万家庭的电信分发。",
+
+        // Afrostream Modal
+        "caseStudies.afrostream.modal.title": "Afrostream：欧洲首个非洲内容SVOD",
+        "caseStudies.afrostream.modal.subtitle": "2015-2017 | 联合创始人兼CTO",
+        "caseStudies.afrostream.modal.metricLabel1": "总融资额",
+        "caseStudies.afrostream.modal.metricLabel2": "国家",
+        "caseStudies.afrostream.modal.metricLabel3": "覆盖家庭",
+        "caseStudies.afrostream.modal.contextTitle": "背景",
+        "caseStudies.afrostream.modal.contextText": "2015年，我们发现了一个巨大的未开发市场：超过1.5亿非洲人和非洲侨民没有专门的非洲内容高端流媒体服务。我们决定打造「非洲内容的Netflix」。",
+        "caseStudies.afrostream.modal.challengeTitle": "挑战",
+        "caseStudies.afrostream.modal.challenge1": "在有限资金下从零构建完整SVOD平台",
+        "caseStudies.afrostream.modal.challenge2": "从好莱坞和尼莱坞主要工作室获得内容授权",
+        "caseStudies.afrostream.modal.challenge3": "在28个互联网基础设施各异的国家部署",
+        "caseStudies.afrostream.modal.challenge4": "与进入市场的全球巨头竞争",
+        "caseStudies.afrostream.modal.solutionTitle": "解决方案",
+        "caseStudies.afrostream.modal.solutionText": "作为CTO，我构建了整个技术栈，并与CEO一起领导融资。主要成就：",
+        "caseStudies.afrostream.modal.solution1": "入选Y Combinator 2015夏季班",
+        "caseStudies.afrostream.modal.solution2": "获得狮门影业、米高梅和主要尼莱坞制片商授权",
+        "caseStudies.afrostream.modal.solution3": "与Orange、Canal+和Bouygues Telecom建立合作",
+        "caseStudies.afrostream.modal.solution4": "为非洲低带宽市场开发自适应流媒体",
+        "caseStudies.afrostream.modal.resultsTitle": "成果",
+        "caseStudies.afrostream.modal.result1": "融资400万欧元",
+        "caseStudies.afrostream.modal.result1b": "来自风投和战略投资者",
+        "caseStudies.afrostream.modal.result2": "Y Combinator S15",
+        "caseStudies.afrostream.modal.result2b": "入选（前2%申请者）",
+        "caseStudies.afrostream.modal.result3": "覆盖1200万家庭",
+        "caseStudies.afrostream.modal.result3b": "通过电信合作",
+        "caseStudies.afrostream.modal.result4": "28个国家",
+        "caseStudies.afrostream.modal.result4b": "覆盖欧洲和非洲",
+        "caseStudies.afrostream.modal.lessonsTitle": "关键经验",
+        "caseStudies.afrostream.modal.lessonsText": "尽管Afrostream最终因市场时机和全球玩家竞争而关闭，但这段经历为创业构建、融资以及在新兴市场进行技术扩展提供了宝贵的经验教训。"
     },
 
     es: {
@@ -788,7 +1034,89 @@ const translations = {
         "testimonials.testimonial3.text": "El newsletter Streaming Radar de Ludovic es lectura esencial para cualquiera en OTT. Su análisis de estrategias de plataforma y modelos de monetización nos ayudó a pivotar de SVOD a híbrido AVOD/SVOD, aumentando ingresos en 40%.",
         "testimonials.testimonial3.name": "Alexandre M.",
         "testimonials.testimonial3.role": "VP de Producto, Empresa de Media Tech",
-        "testimonials.partnersLabel": "Empresas y Colaboraciones"
+        "testimonials.partnersLabel": "Empresas y Colaboraciones",
+
+        // Case Studies
+        "caseStudies.title": "Casos de Estudio Destacados",
+        "caseStudies.viewStory": "Ver Historia Completa →",
+
+        // M6 Replay Card
+        "caseStudies.m6.title": "M6 Replay",
+        "caseStudies.m6.period": "2007-2013 | Gerente de I+D",
+        "caseStudies.m6.metric1": "usuarios/mes",
+        "caseStudies.m6.metric2": "ingresos",
+        "caseStudies.m6.metric3": "en Francia",
+        "caseStudies.m6.summary": "Lideré la estrategia técnica de la TV a la carta líder de Francia. Crecí M6 Web hasta €100M de ingresos. Pionero en streaming HLS, arquitectura multi-CDN y primera experiencia de segunda pantalla sincronizada.",
+
+        // M6 Replay Modal
+        "caseStudies.m6.modal.title": "M6 Replay: Construyendo la TV a la Carta #1 de Francia",
+        "caseStudies.m6.modal.subtitle": "2007-2013 | Gerente de I+D en M6 Web",
+        "caseStudies.m6.modal.metricLabel1": "Usuarios Mensuales",
+        "caseStudies.m6.modal.metricLabel2": "Ingresos 2012",
+        "caseStudies.m6.modal.metricLabel3": "Videos/Año",
+        "caseStudies.m6.modal.contextTitle": "El Contexto",
+        "caseStudies.m6.modal.contextText": "En 2007, el Grupo M6 quería lanzar un servicio de TV a la carta para competir con TF1 y France Télévisions. Como Gerente de I+D, me encargaron construir la base técnica desde cero y liderar la evolución de la plataforma durante 6 años.",
+        "caseStudies.m6.modal.challengeTitle": "El Desafío",
+        "caseStudies.m6.modal.challenge1": "Construir una plataforma de video escalable desde cero",
+        "caseStudies.m6.modal.challenge2": "Soportar múltiples dispositivos (web, móvil, TVs conectadas, decodificadores)",
+        "caseStudies.m6.modal.challenge3": "Manejar picos de tráfico durante replays de horario estelar",
+        "caseStudies.m6.modal.challenge4": "Implementar protección DRM para contenido premium",
+        "caseStudies.m6.modal.solutionTitle": "La Solución",
+        "caseStudies.m6.modal.solutionText": "Lideré un equipo de 5-10 ingenieros para construir una infraestructura completa de distribución de video. Innovaciones clave incluyeron:",
+        "caseStudies.m6.modal.solution1": "Adopción temprana de streaming HLS (uno de los primeros en Francia)",
+        "caseStudies.m6.modal.solution2": "Arquitectura multi-CDN para confiabilidad y optimización de costos",
+        "caseStudies.m6.modal.solution3": "Primera experiencia de segunda pantalla sincronizada en TV francesa",
+        "caseStudies.m6.modal.solution4": "Plataforma de analytics personalizada para insights de comportamiento",
+        "caseStudies.m6.modal.resultsTitle": "Los Resultados",
+        "caseStudies.m6.modal.result1": "10M usuarios mensuales",
+        "caseStudies.m6.modal.result1b": "en 2013",
+        "caseStudies.m6.modal.result2": "€100M de ingresos",
+        "caseStudies.m6.modal.result2b": "para M6 Web en 2012",
+        "caseStudies.m6.modal.result3": "600M videos vistos",
+        "caseStudies.m6.modal.result3b": "por año en 2012",
+        "caseStudies.m6.modal.result4": "TV a la carta comercial #1",
+        "caseStudies.m6.modal.result4b": "en Francia",
+        "caseStudies.m6.modal.sourceLabel": "Fuente:",
+        "caseStudies.m6.modal.sourceText": "FrenchWeb - Cifras Clave Digitales de M6 (2013)",
+
+        // Afrostream Card
+        "caseStudies.afrostream.title": "Afrostream",
+        "caseStudies.afrostream.period": "2015-2017 | Co-Fundador y CTO",
+        "caseStudies.afrostream.metric1": "recaudados",
+        "caseStudies.afrostream.metric2": "países",
+        "caseStudies.afrostream.metric3": "S15",
+        "caseStudies.afrostream.summary": "Construí el primer SVOD europeo de contenido africano desde cero. Obtuve Y Combinator, licencias de estudios importantes y distribución telco a 12M de hogares.",
+
+        // Afrostream Modal
+        "caseStudies.afrostream.modal.title": "Afrostream: El Primer SVOD Europeo de Contenido Africano",
+        "caseStudies.afrostream.modal.subtitle": "2015-2017 | Co-Fundador y CTO",
+        "caseStudies.afrostream.modal.metricLabel1": "Total Recaudado",
+        "caseStudies.afrostream.modal.metricLabel2": "Países",
+        "caseStudies.afrostream.modal.metricLabel3": "Alcance de Hogares",
+        "caseStudies.afrostream.modal.contextTitle": "El Contexto",
+        "caseStudies.afrostream.modal.contextText": "En 2015, identificamos un mercado masivo desatendido: más de 150M de africanos y diáspora africana sin un servicio de streaming premium dedicado al contenido africano. Decidimos construir el \"Netflix del contenido africano\".",
+        "caseStudies.afrostream.modal.challengeTitle": "El Desafío",
+        "caseStudies.afrostream.modal.challenge1": "Construir una plataforma SVOD completa desde cero con financiamiento limitado",
+        "caseStudies.afrostream.modal.challenge2": "Obtener licencias de contenido de grandes estudios de Hollywood y Nollywood",
+        "caseStudies.afrostream.modal.challenge3": "Desplegar en 28 países con infraestructura de internet variable",
+        "caseStudies.afrostream.modal.challenge4": "Competir con gigantes globales entrando al mercado",
+        "caseStudies.afrostream.modal.solutionTitle": "La Solución",
+        "caseStudies.afrostream.modal.solutionText": "Como CTO, construí todo el stack técnico y lideré la recaudación junto con nuestro CEO. Logros clave:",
+        "caseStudies.afrostream.modal.solution1": "Aceptado en la promoción Y Combinator Summer 2015",
+        "caseStudies.afrostream.modal.solution2": "Obtuve licencias de Lionsgate, MGM y productores importantes de Nollywood",
+        "caseStudies.afrostream.modal.solution3": "Construí asociaciones con Orange, Canal+ y Bouygues Telecom",
+        "caseStudies.afrostream.modal.solution4": "Desarrollé streaming adaptativo para mercados africanos de bajo ancho de banda",
+        "caseStudies.afrostream.modal.resultsTitle": "Los Resultados",
+        "caseStudies.afrostream.modal.result1": "€4M recaudados",
+        "caseStudies.afrostream.modal.result1b": "de VCs e inversores estratégicos",
+        "caseStudies.afrostream.modal.result2": "Y Combinator S15",
+        "caseStudies.afrostream.modal.result2b": "aceptación (top 2% de solicitantes)",
+        "caseStudies.afrostream.modal.result3": "12M hogares de alcance",
+        "caseStudies.afrostream.modal.result3b": "a través de asociaciones telco",
+        "caseStudies.afrostream.modal.result4": "28 países",
+        "caseStudies.afrostream.modal.result4b": "en Europa y África",
+        "caseStudies.afrostream.modal.lessonsTitle": "Aprendizajes Clave",
+        "caseStudies.afrostream.modal.lessonsText": "Aunque Afrostream finalmente cerró debido al timing del mercado y competencia de jugadores globales, la experiencia proporcionó lecciones invaluables en construcción de startups, recaudación de fondos y escalado de tecnología en mercados emergentes."
     }
 };
 
@@ -1428,6 +1756,61 @@ class ContactForm {
 }
 
 // ============================================
+// CASE STUDY MODALS
+// ============================================
+
+class CaseStudyModals {
+    constructor() {
+        this.initModals();
+    }
+
+    initModals() {
+        // Open modal on button click
+        document.querySelectorAll('[data-modal]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const modalId = btn.getAttribute('data-modal');
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+
+                    // Track modal view in analytics
+                    if (window.analytics) {
+                        window.analytics.sendEvent('case_study_modal_view', {
+                            case_study: modalId.replace('-modal', '')
+                        });
+                    }
+                }
+            });
+        });
+
+        // Close modal on close button click
+        document.querySelectorAll('.case-modal-close').forEach(btn => {
+            btn.addEventListener('click', () => this.closeAllModals());
+        });
+
+        // Close modal on overlay click
+        document.querySelectorAll('.case-modal-overlay').forEach(overlay => {
+            overlay.addEventListener('click', () => this.closeAllModals());
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                this.closeAllModals();
+            }
+        });
+    }
+
+    closeAllModals() {
+        document.querySelectorAll('.case-modal').forEach(modal => {
+            modal.classList.remove('active');
+        });
+        document.body.style.overflow = '';
+    }
+}
+
+// ============================================
 // INITIALIZE APP
 // ============================================
 
@@ -1444,6 +1827,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Contact Form
     new ContactForm('contactForm');
+
+    // Initialize Legal Modals
+    new LegalModals();
+
+    // Initialize Case Study Modals
+    new CaseStudyModals();
 
     // Log initialization
     console.log('🚀 Ludovic Bostral Consulting Website Initialized');
