@@ -242,6 +242,36 @@ body {
     margin-bottom: var(--spacing-lg);
 }
 
+.hero-cta-group {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.cta-button-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--border-radius-md);
+    color: var(--color-primary);
+    transition: all var(--transition-fast);
+}
+
+.cta-button-secondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+}
+
+.cta-button-secondary svg {
+    width: 20px;
+    height: 20px;
+}
+
 .hero-image {
     display: flex;
     justify-content: center;
@@ -448,6 +478,34 @@ body {
     gap: var(--spacing-xl);
 }
 
+.content-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.youtube-video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+    background-color: var(--color-secondary);
+}
+
+.youtube-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.youtube-icon {
+    font-size: 2rem;
+    color: #FF0000;
+}
+
 .content-card {
     background-color: var(--color-secondary);
     border-radius: 16px;
@@ -602,6 +660,30 @@ body {
 .footer-tagline {
     font-size: 0.875rem;
     opacity: 0.8;
+}
+
+.footer-legal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: 0.875rem;
+}
+
+.footer-legal a {
+    color: var(--color-white);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity var(--transition-fast);
+}
+
+.footer-legal a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer-legal .separator {
+    opacity: 0.5;
 }
 
 /* ============================================
@@ -854,7 +936,8 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .content-grid {
+    .content-grid,
+    .content-grid-3 {
         grid-template-columns: 1fr;
     }
 
@@ -900,6 +983,10 @@ body {
 
     .hero-subtitle {
         font-size: 1.125rem;
+    }
+
+    .hero-cta-group {
+        justify-content: center;
     }
 
     .header-content {
@@ -973,6 +1060,10 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
     animation: fadeIn 0.3s ease;
+}
+
+.legal-modal.active {
+    display: block;
 }
 
 @keyframes fadeIn {

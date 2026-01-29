@@ -17,7 +17,7 @@ const translations = {
         "services.consulting.feature2": "OTT monetization strategy (SVOD/AVOD/FAST)",
         "services.consulting.feature3": "Cloud infrastructure optimization (AWS/GCP)",
         "services.consulting.feature4": "CDN and encoding architecture",
-        "services.consulting.pricing": "From €1,500/day",
+        "services.consulting.pricing": "From €1,000/day",
 
         "services.cto.title": "Fractional CTO Services",
         "services.cto.description": "Part-time strategic technology leadership for media startups and scale-ups",
@@ -33,7 +33,7 @@ const translations = {
         "services.placement.feature2": "Deep network in streaming/media tech",
         "services.placement.feature3": "Cultural fit assessment",
         "services.placement.feature4": "Compensation benchmarking",
-        "services.placement.pricing": "€15-20K per placement",
+        "services.placement.pricing": "15-20% annual salary or flat fee",
 
         // Social Proof
         "socialProof.label": "Experience includes",
@@ -57,6 +57,9 @@ const translations = {
         "content.podcast.title": "Streaming Radar Podcast",
         "content.podcast.description": "Podcast version of Streaming Radar newsletter, discussing OTT platforms, streaming technology, and media industry trends",
         "content.podcast.cta": "Listen",
+        "content.youtube.title": "YouTube Channel",
+        "content.youtube.description": "Video tutorials on streaming technology, FFmpeg encoding, and OTT platform development",
+        "content.youtube.cta": "Subscribe",
 
         // About
         "about.title": "About Ludovic",
@@ -279,7 +282,11 @@ const translations = {
         "caseStudies.afrostream.modal.result4": "28 countries",
         "caseStudies.afrostream.modal.result4b": "across Europe and Africa",
         "caseStudies.afrostream.modal.lessonsTitle": "Key Learnings",
-        "caseStudies.afrostream.modal.lessonsText": "While Afrostream eventually closed due to market timing and competition from global players, the experience provided invaluable lessons in startup building, fundraising, and scaling technology in emerging markets."
+        "caseStudies.afrostream.modal.lessonsText": "While Afrostream eventually closed due to market timing and competition from global players, the experience provided invaluable lessons in startup building, fundraising, and scaling technology in emerging markets.",
+
+        // Footer
+        "footer.privacy": "Privacy Policy",
+        "footer.terms": "Terms of Service"
     },
 
     fr: {
@@ -296,7 +303,7 @@ const translations = {
         "services.consulting.feature2": "Stratégie de monétisation OTT (SVOD/AVOD/FAST)",
         "services.consulting.feature3": "Optimisation infrastructure cloud (AWS/GCP)",
         "services.consulting.feature4": "Architecture CDN et encodage",
-        "services.consulting.pricing": "À partir de 1 500€/jour",
+        "services.consulting.pricing": "À partir de 1 000€/jour",
 
         "services.cto.title": "Services de CTO à Temps Partiel",
         "services.cto.description": "Leadership technologique stratégique à temps partiel pour startups et scale-ups média",
@@ -312,7 +319,7 @@ const translations = {
         "services.placement.feature2": "Réseau profond dans les technologies streaming/média",
         "services.placement.feature3": "Évaluation de l'adéquation culturelle",
         "services.placement.feature4": "Benchmarking de rémunération",
-        "services.placement.pricing": "15-20K€ par placement",
+        "services.placement.pricing": "15-20% du salaire annuel ou forfait",
 
         // Social Proof
         "socialProof.label": "Expérience comprenant",
@@ -336,6 +343,9 @@ const translations = {
         "content.podcast.title": "Podcast Streaming Radar",
         "content.podcast.description": "Version podcast de la newsletter Streaming Radar, discussions sur les plateformes OTT, la technologie de streaming et les tendances de l'industrie des médias",
         "content.podcast.cta": "Écouter",
+        "content.youtube.title": "Chaîne YouTube",
+        "content.youtube.description": "Tutoriels vidéo sur les technologies de streaming, l'encodage FFmpeg et le développement de plateformes OTT",
+        "content.youtube.cta": "S'abonner",
 
         // About
         "about.title": "À Propos de Ludovic",
@@ -558,7 +568,11 @@ const translations = {
         "caseStudies.afrostream.modal.result4": "28 pays",
         "caseStudies.afrostream.modal.result4b": "en Europe et en Afrique",
         "caseStudies.afrostream.modal.lessonsTitle": "Apprentissages Clés",
-        "caseStudies.afrostream.modal.lessonsText": "Bien qu'Afrostream ait finalement fermé en raison du timing du marché et de la concurrence des acteurs mondiaux, cette expérience a fourni des leçons inestimables en création de startup, levée de fonds et scaling technologique dans les marchés émergents."
+        "caseStudies.afrostream.modal.lessonsText": "Bien qu'Afrostream ait finalement fermé en raison du timing du marché et de la concurrence des acteurs mondiaux, cette expérience a fourni des leçons inestimables en création de startup, levée de fonds et scaling technologique dans les marchés émergents.",
+
+        // Footer
+        "footer.privacy": "Politique de confidentialité",
+        "footer.terms": "Conditions d'utilisation"
     },
 
     zh: {
@@ -575,7 +589,7 @@ const translations = {
         "services.consulting.feature2": "OTT变现策略（SVOD/AVOD/FAST）",
         "services.consulting.feature3": "云基础设施优化（AWS/GCP）",
         "services.consulting.feature4": "CDN和编码架构",
-        "services.consulting.pricing": "每日1500欧元起",
+        "services.consulting.pricing": "每日1000欧元起",
 
         "services.cto.title": "兼职CTO服务",
         "services.cto.description": "为媒体初创公司和成长型企业提供兼职战略技术领导服务",
@@ -591,7 +605,7 @@ const translations = {
         "services.placement.feature2": "流媒体/媒体技术领域深厚人脉",
         "services.placement.feature3": "文化契合度评估",
         "services.placement.feature4": "薪酬基准分析",
-        "services.placement.pricing": "每次安置15-20K欧元",
+        "services.placement.pricing": "年薪15-20%或固定费用",
 
         // Social Proof
         "socialProof.label": "工作经历包括",
@@ -615,6 +629,9 @@ const translations = {
         "content.podcast.title": "Streaming Radar 播客",
         "content.podcast.description": "Streaming Radar 时事通讯的播客版本，讨论OTT平台、流媒体技术和媒体行业趋势",
         "content.podcast.cta": "收听",
+        "content.youtube.title": "YouTube频道",
+        "content.youtube.description": "流媒体技术、FFmpeg编码和OTT平台开发的视频教程",
+        "content.youtube.cta": "订阅",
 
         // About
         "about.title": "关于Ludovic",
@@ -840,7 +857,11 @@ const translations = {
         "caseStudies.afrostream.modal.result4": "28个国家",
         "caseStudies.afrostream.modal.result4b": "覆盖欧洲和非洲",
         "caseStudies.afrostream.modal.lessonsTitle": "关键经验",
-        "caseStudies.afrostream.modal.lessonsText": "尽管Afrostream最终因市场时机和全球玩家竞争而关闭，但这段经历为创业构建、融资以及在新兴市场进行技术扩展提供了宝贵的经验教训。"
+        "caseStudies.afrostream.modal.lessonsText": "尽管Afrostream最终因市场时机和全球玩家竞争而关闭，但这段经历为创业构建、融资以及在新兴市场进行技术扩展提供了宝贵的经验教训。",
+
+        // Footer
+        "footer.privacy": "隐私政策",
+        "footer.terms": "服务条款"
     },
 
     es: {
@@ -857,7 +878,7 @@ const translations = {
         "services.consulting.feature2": "Estrategia de monetización OTT (SVOD/AVOD/FAST)",
         "services.consulting.feature3": "Optimización de infraestructura cloud (AWS/GCP)",
         "services.consulting.feature4": "Arquitectura de CDN y codificación",
-        "services.consulting.pricing": "Desde €1,500/día",
+        "services.consulting.pricing": "Desde €1,000/día",
 
         "services.cto.title": "Servicios de CTO Parcial",
         "services.cto.description": "Liderazgo tecnológico estratégico a tiempo parcial para startups y scale-ups de medios",
@@ -873,7 +894,7 @@ const translations = {
         "services.placement.feature2": "Red profunda en streaming/media tech",
         "services.placement.feature3": "Evaluación de ajuste cultural",
         "services.placement.feature4": "Benchmarking de compensación",
-        "services.placement.pricing": "€15-20K por colocación",
+        "services.placement.pricing": "15-20% salario anual o tarifa fija",
 
         // Social Proof
         "socialProof.label": "Experiencia incluye",
@@ -897,6 +918,9 @@ const translations = {
         "content.podcast.title": "Podcast Streaming Radar",
         "content.podcast.description": "Versión podcast del newsletter Streaming Radar, discutiendo plataformas OTT, tecnología de streaming y tendencias de la industria de medios",
         "content.podcast.cta": "Escuchar",
+        "content.youtube.title": "Canal de YouTube",
+        "content.youtube.description": "Tutoriales en video sobre tecnología de streaming, codificación FFmpeg y desarrollo de plataformas OTT",
+        "content.youtube.cta": "Suscribirse",
 
         // About
         "about.title": "Sobre Ludovic",
@@ -1120,7 +1144,11 @@ const translations = {
         "caseStudies.afrostream.modal.result4": "28 países",
         "caseStudies.afrostream.modal.result4b": "en Europa y África",
         "caseStudies.afrostream.modal.lessonsTitle": "Aprendizajes Clave",
-        "caseStudies.afrostream.modal.lessonsText": "Aunque Afrostream finalmente cerró debido al timing del mercado y competencia de jugadores globales, la experiencia proporcionó lecciones invaluables en construcción de startups, recaudación de fondos y escalado de tecnología en mercados emergentes."
+        "caseStudies.afrostream.modal.lessonsText": "Aunque Afrostream finalmente cerró debido al timing del mercado y competencia de jugadores globales, la experiencia proporcionó lecciones invaluables en construcción de startups, recaudación de fondos y escalado de tecnología en mercados emergentes.",
+
+        // Footer
+        "footer.privacy": "Política de privacidad",
+        "footer.terms": "Términos de servicio"
     }
 };
 
@@ -1405,18 +1433,22 @@ class Analytics {
             75: false,
             100: false
         };
-        this.formStartTracked = {};
+        this.sectionsViewed = new Set();
         this.init();
     }
 
     init() {
         this.trackScrollDepth();
+        this.trackSectionViews();
         this.trackCTAClicks();
-        this.trackFormStarts();
         this.trackOutboundLinks();
+        this.trackServiceInterest();
+        this.trackLinkedInClicks();
     }
 
-    // Track scroll depth milestones
+    // ==========================================
+    // FUNNEL 1: Scroll Depth Tracking
+    // ==========================================
     trackScrollDepth() {
         let ticking = false;
 
@@ -1428,12 +1460,12 @@ class Analytics {
                     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                     const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-                    // Check each milestone
                     [25, 50, 75, 100].forEach(milestone => {
                         if (scrollPercent >= milestone && !this.scrollDepthTracked[milestone]) {
                             this.scrollDepthTracked[milestone] = true;
                             this.sendEvent('scroll_depth', {
-                                percent: milestone
+                                percent: milestone,
+                                page_path: window.location.pathname
                             });
                         }
                     });
@@ -1445,95 +1477,210 @@ class Analytics {
         });
     }
 
-    // Track CTA button clicks
+    // ==========================================
+    // FUNNEL 2: Section View Tracking (Intersection Observer)
+    // ==========================================
+    trackSectionViews() {
+        const sections = document.querySelectorAll('section[class]');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const sectionName = entry.target.className.split(' ')[0];
+
+                    if (!this.sectionsViewed.has(sectionName)) {
+                        this.sectionsViewed.add(sectionName);
+                        this.sendEvent('section_view', {
+                            section_name: sectionName,
+                            section_id: entry.target.id || 'none'
+                        });
+                    }
+                }
+            });
+        }, {
+            threshold: 0.3 // 30% visible
+        });
+
+        sections.forEach(section => observer.observe(section));
+    }
+
+    // ==========================================
+    // FUNNEL 3: CTA Click Tracking with Labels
+    // ==========================================
     trackCTAClicks() {
-        const ctaSelectors = '.cta-button, .content-cta';
-        document.querySelectorAll(ctaSelectors).forEach(button => {
+        // Primary CTAs (Book a Call / Contact Me)
+        document.querySelectorAll('.cta-button, .header-cta, .content-cta').forEach(button => {
             button.addEventListener('click', (e) => {
-                const ctaText = e.target.textContent.trim();
-                const section = this.getParentSection(e.target);
-                const ctaType = e.target.classList.contains('cta-button') ? 'primary' : 'secondary';
+                const location = this.getCTALocation(e.target);
+                const isCalLink = e.target.closest('a')?.href?.includes('cal.com');
 
                 this.sendEvent('cta_click', {
-                    cta_text: ctaText,
-                    cta_location: section,
-                    cta_type: ctaType
+                    cta_text: e.target.textContent.trim().substring(0, 50),
+                    cta_location: location,
+                    cta_type: isCalLink ? 'book_call' : 'other',
+                    cta_destination: e.target.closest('a')?.href || 'none'
+                });
+
+                // Conversion event for Cal.com clicks
+                if (isCalLink) {
+                    this.sendEvent('begin_booking', {
+                        booking_source: location
+                    });
+                }
+            });
+        });
+
+        // Case Study CTAs
+        document.querySelectorAll('.case-study-cta').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const caseStudy = e.target.closest('.case-study-card')?.dataset.case || 'unknown';
+                this.sendEvent('case_study_click', {
+                    case_study: caseStudy,
+                    action: 'open_modal'
                 });
             });
         });
     }
 
-    // Track form starts (first interaction)
-    trackFormStarts() {
-        const forms = document.querySelectorAll('form');
-        forms.forEach(form => {
-            const formId = form.id || 'unnamed-form';
-            const formType = form.querySelector('[name="form_type"]')?.value || 'unknown';
+    getCTALocation(element) {
+        // Check specific locations
+        if (element.closest('.hero')) return 'hero';
+        if (element.closest('.header')) return 'header';
+        if (element.closest('.footer')) return 'footer';
+        if (element.closest('.contact')) return 'contact_section';
+        if (element.closest('.content-section')) return 'content_section';
+        if (element.closest('.case-studies')) return 'case_studies';
 
-            // Track first focus on any input
-            const inputs = form.querySelectorAll('input, textarea, select');
-            inputs.forEach(input => {
-                input.addEventListener('focus', () => {
-                    if (!this.formStartTracked[formId]) {
-                        this.formStartTracked[formId] = true;
-                        this.sendEvent('form_start', {
-                            form_id: formId,
-                            form_type: formType
-                        });
-                    }
-                }, { once: true });
+        const section = element.closest('section');
+        return section?.className.split(' ')[0] || 'unknown';
+    }
+
+    // ==========================================
+    // FUNNEL 4: Service Interest Tracking
+    // ==========================================
+    trackServiceInterest() {
+        document.querySelectorAll('.service-card').forEach(card => {
+            // Track hover (engagement)
+            let hoverTimeout;
+            card.addEventListener('mouseenter', () => {
+                hoverTimeout = setTimeout(() => {
+                    const serviceTitle = card.querySelector('.service-title')?.textContent.trim() || 'unknown';
+                    this.sendEvent('service_interest', {
+                        service_name: this.getServiceSlug(serviceTitle),
+                        interaction_type: 'hover'
+                    });
+                }, 1500); // 1.5s hover = interest
+            });
+
+            card.addEventListener('mouseleave', () => {
+                clearTimeout(hoverTimeout);
             });
         });
     }
 
-    // Track outbound link clicks
+    getServiceSlug(title) {
+        if (title.toLowerCase().includes('consulting')) return 'consulting';
+        if (title.toLowerCase().includes('cto')) return 'fractional_cto';
+        if (title.toLowerCase().includes('placement')) return 'executive_placement';
+        return 'unknown';
+    }
+
+    // ==========================================
+    // FUNNEL 5: Outbound Link Tracking (categorized)
+    // ==========================================
     trackOutboundLinks() {
         document.querySelectorAll('a[href^="http"]').forEach(link => {
             link.addEventListener('click', (e) => {
-                const url = e.target.href;
+                const anchor = e.target.closest('a');
+                if (!anchor) return;
+
+                const url = anchor.href;
                 const hostname = new URL(url).hostname;
 
-                // Only track if it's an external link
-                if (hostname !== window.location.hostname) {
-                    this.sendEvent('outbound_click', {
-                        link_url: url,
-                        link_text: e.target.textContent.trim()
-                    });
+                if (hostname === window.location.hostname) return;
+
+                const destination = this.categorizeOutboundLink(url);
+                const section = this.getCTALocation(anchor);
+
+                this.sendEvent('outbound_click', {
+                    link_url: url,
+                    link_destination: destination,
+                    link_section: section
+                });
+
+                // Specific events for key destinations
+                if (destination === 'substack') {
+                    this.sendEvent('newsletter_click', { source: section });
+                }
+                if (destination === 'youtube') {
+                    this.sendEvent('youtube_click', { source: section });
+                }
+                if (destination === 'cal_com') {
+                    this.sendEvent('booking_click', { source: section });
                 }
             });
         });
     }
 
-    // Track form submissions
-    trackFormSubmit(formId, formType) {
-        this.sendEvent('form_submit', {
-            form_id: formId,
-            form_type: formType
+    categorizeOutboundLink(url) {
+        if (url.includes('linkedin.com')) return 'linkedin';
+        if (url.includes('substack.com')) return 'substack';
+        if (url.includes('cal.com')) return 'cal_com';
+        if (url.includes('youtube.com') || url.includes('youtu.be')) return 'youtube';
+        if (url.includes('github.com')) return 'github';
+        if (url.includes('twitter.com') || url.includes('x.com')) return 'twitter';
+        return 'other';
+    }
+
+    // ==========================================
+    // FUNNEL 6: LinkedIn Click Tracking
+    // ==========================================
+    trackLinkedInClicks() {
+        document.querySelectorAll('a[href*="linkedin.com"], .cta-button-secondary').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const location = this.getCTALocation(e.target);
+                this.sendEvent('social_click', {
+                    platform: 'linkedin',
+                    click_location: location
+                });
+            });
         });
     }
 
-    // Get parent section name
-    getParentSection(element) {
-        const section = element.closest('section');
-        if (section) {
-            return section.className.split(' ')[0] || 'unknown';
-        }
-        return 'unknown';
+    // ==========================================
+    // Case Study Modal Tracking (called from CaseStudyModals)
+    // ==========================================
+    trackCaseStudyModalOpen(caseStudy) {
+        this.sendEvent('case_study_modal_open', {
+            case_study: caseStudy
+        });
     }
 
-    // Send event to Google Analytics and console
-    sendEvent(eventName, params = {}) {
-        // Log to console for debugging
-        console.log(`📊 Analytics Event: ${eventName}`, params);
+    trackCaseStudyModalScroll(caseStudy, percent) {
+        this.sendEvent('case_study_modal_scroll', {
+            case_study: caseStudy,
+            scroll_percent: percent
+        });
+    }
 
-        // Send to Google Analytics if available
+    // ==========================================
+    // Utility: Send Event
+    // ==========================================
+    sendEvent(eventName, params = {}) {
+        // Add timestamp
+        params.event_timestamp = new Date().toISOString();
+
+        // Log to console for debugging
+        console.log(`📊 GA Event: ${eventName}`, params);
+
+        // Send to Google Analytics 4
         if (typeof gtag !== 'undefined') {
             gtag('event', eventName, params);
         }
 
-        // Placeholder for Facebook Pixel (to be added in SESSION 5)
+        // Facebook Pixel (if available)
         if (typeof fbq !== 'undefined') {
-            fbq('track', eventName, params);
+            fbq('trackCustom', eventName, params);
         }
     }
 }
@@ -1786,11 +1933,79 @@ class ContactForm {
 }
 
 // ============================================
+// LEGAL MODALS
+// ============================================
+
+class LegalModals {
+    constructor() {
+        this.privacyModal = document.getElementById('privacyModal');
+        this.termsModal = document.getElementById('termsModal');
+        this.privacyLink = document.getElementById('privacyLink');
+        this.termsLink = document.getElementById('termsLink');
+        this.init();
+    }
+
+    init() {
+        // Open privacy modal
+        if (this.privacyLink) {
+            this.privacyLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.openModal(this.privacyModal);
+            });
+        }
+
+        // Open terms modal
+        if (this.termsLink) {
+            this.termsLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.openModal(this.termsModal);
+            });
+        }
+
+        // Close modals on close button click
+        document.querySelectorAll('.legal-modal-close').forEach(btn => {
+            btn.addEventListener('click', () => this.closeAllModals());
+        });
+
+        // Close modals on click outside content
+        document.querySelectorAll('.legal-modal').forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    this.closeAllModals();
+                }
+            });
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                this.closeAllModals();
+            }
+        });
+    }
+
+    openModal(modal) {
+        if (modal) {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    closeAllModals() {
+        document.querySelectorAll('.legal-modal').forEach(modal => {
+            modal.classList.remove('active');
+        });
+        document.body.style.overflow = '';
+    }
+}
+
+// ============================================
 // CASE STUDY MODALS
 // ============================================
 
 class CaseStudyModals {
     constructor() {
+        this.modalScrollTracked = {};
         this.initModals();
     }
 
@@ -1804,12 +2019,15 @@ class CaseStudyModals {
                     modal.classList.add('active');
                     document.body.style.overflow = 'hidden';
 
-                    // Track modal view in analytics
+                    const caseStudy = modalId.replace('-modal', '');
+
+                    // Track modal open in analytics
                     if (window.analytics) {
-                        window.analytics.sendEvent('case_study_modal_view', {
-                            case_study: modalId.replace('-modal', '')
-                        });
+                        window.analytics.trackCaseStudyModalOpen(caseStudy);
                     }
+
+                    // Initialize scroll tracking for this modal
+                    this.initModalScrollTracking(modal, caseStudy);
                 }
             });
         });
@@ -1830,6 +2048,42 @@ class CaseStudyModals {
                 this.closeAllModals();
             }
         });
+    }
+
+    initModalScrollTracking(modal, caseStudy) {
+        const modalBody = modal.querySelector('.case-modal-body');
+        if (!modalBody) return;
+
+        // Reset tracking for this modal
+        this.modalScrollTracked[caseStudy] = { 50: false, 100: false };
+
+        const handleScroll = () => {
+            const scrollTop = modalBody.scrollTop;
+            const scrollHeight = modalBody.scrollHeight - modalBody.clientHeight;
+            const scrollPercent = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 100;
+
+            // Track 50% scroll
+            if (scrollPercent >= 50 && !this.modalScrollTracked[caseStudy][50]) {
+                this.modalScrollTracked[caseStudy][50] = true;
+                if (window.analytics) {
+                    window.analytics.trackCaseStudyModalScroll(caseStudy, 50);
+                }
+            }
+
+            // Track 100% scroll (read complete)
+            if (scrollPercent >= 95 && !this.modalScrollTracked[caseStudy][100]) {
+                this.modalScrollTracked[caseStudy][100] = true;
+                if (window.analytics) {
+                    window.analytics.trackCaseStudyModalScroll(caseStudy, 100);
+                    // Special event: case study fully read
+                    window.analytics.sendEvent('case_study_complete', {
+                        case_study: caseStudy
+                    });
+                }
+            }
+        };
+
+        modalBody.addEventListener('scroll', handleScroll);
     }
 
     closeAllModals() {
@@ -1854,9 +2108,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Analytics
     window.analytics = new Analytics();
-
-    // Initialize Contact Form
-    new ContactForm('contactForm');
 
     // Initialize Legal Modals
     new LegalModals();

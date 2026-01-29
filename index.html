@@ -138,7 +138,12 @@
                 <div class="hero-text">
                     <h2 class="hero-title" data-i18n="hero.title">Strategic Technology Consulting for Streaming Platforms</h2>
                     <p class="hero-subtitle" data-i18n="hero.subtitle">25+ years building and scaling OTT platforms</p>
-                    <a href="https://cal.com/ludovic-bostral-ludobos-idg16l/30min" target="_blank" rel="noopener noreferrer" class="cta-button cal-link" data-i18n="cta.contact">Contact Me</a>
+                    <div class="hero-cta-group">
+                        <a href="https://cal.com/ludovic-bostral-ludobos-idg16l/30min" target="_blank" rel="noopener noreferrer" class="cta-button cal-link" data-i18n="cta.contact">Contact Me</a>
+                        <a href="https://linkedin.com/in/ludovicbostral" target="_blank" rel="noopener noreferrer" class="cta-button-secondary" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="hero-image">
                     <img src="./assets/big.jpeg" alt="Streaming Radar Logo" loading="lazy">
@@ -163,7 +168,7 @@
                         <li data-i18n="services.consulting.feature3">Cloud infrastructure optimization (AWS/GCP)</li>
                         <li data-i18n="services.consulting.feature4">CDN and encoding architecture</li>
                     </ul>
-                    <p class="service-pricing" data-i18n="services.consulting.pricing">From €1,500/day</p>
+                    <p class="service-pricing" data-i18n="services.consulting.pricing">From €1,000/day</p>
                 </div>
 
                 <!-- Service 2 -->
@@ -191,7 +196,7 @@
                         <li data-i18n="services.placement.feature3">Cultural fit assessment</li>
                         <li data-i18n="services.placement.feature4">Compensation benchmarking</li>
                     </ul>
-                    <p class="service-pricing" data-i18n="services.placement.pricing">€15-20K per placement</p>
+                    <p class="service-pricing" data-i18n="services.placement.pricing">15-20% annual salary or flat fee</p>
                 </div>
 
             </div>
@@ -262,113 +267,6 @@
         </div>
     </section>
 
-    <!-- LEAD CAPTURE SECTION -->
-    <section class="lead-capture" id="lead-capture">
-        <div class="container">
-            <div class="lead-capture-grid">
-
-                <!-- Left Column: Benefits -->
-                <div class="lead-capture-content">
-                    <h2 class="lead-capture-title" data-i18n="leadCapture.title">Get a Free 30-Minute Strategy Session</h2>
-                    <p class="lead-capture-subtitle" data-i18n="leadCapture.subtitle">Discuss your OTT project and get actionable recommendations</p>
-
-                    <ul class="lead-capture-benefits">
-                        <li data-i18n="leadCapture.benefit1">Review your current platform architecture</li>
-                        <li data-i18n="leadCapture.benefit2">Identify optimization opportunities</li>
-                        <li data-i18n="leadCapture.benefit3">Get personalized recommendations</li>
-                        <li data-i18n="leadCapture.benefit4">No obligation, completely free</li>
-                    </ul>
-
-                    <div class="trust-badges">
-                        <div class="trust-badge">
-                            <span class="badge-icon">🚀</span>
-                            <span class="badge-text" data-i18n="leadCapture.badge1">Y Combinator Alumni</span>
-                        </div>
-                        <div class="trust-badge">
-                            <span class="badge-icon">⭐</span>
-                            <span class="badge-text" data-i18n="leadCapture.badge2">25+ Years Experience</span>
-                        </div>
-                        <div class="trust-badge">
-                            <span class="badge-icon">👥</span>
-                            <span class="badge-text" data-i18n="leadCapture.badge3">50M+ Users Served</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column: Form -->
-                <div class="lead-capture-form-wrapper">
-                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/mzdddplp" method="POST" novalidate>
-
-                        <div class="form-group">
-                            <label for="fullName" data-i18n="form.fullName">Full Name *</label>
-                            <input type="text" id="fullName" name="fullName" required data-i18n-placeholder="form.fullNamePlaceholder">
-                            <span class="form-error"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email" data-i18n="form.email">Email Address *</label>
-                            <input type="email" id="email" name="email" required data-i18n-placeholder="form.emailPlaceholder">
-                            <input type="hidden" name="_replyto" id="_replyto">
-                            <span class="form-error"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="company" data-i18n="form.company">Company Name</label>
-                            <input type="text" id="company" name="company" data-i18n-placeholder="form.companyPlaceholder">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="service" data-i18n="form.service">Service Interest *</label>
-                            <select id="service" name="service" required>
-                                <option value="" data-i18n="form.serviceSelect">Select a service...</option>
-                                <option value="consulting" data-i18n="form.serviceConsulting">Strategic Consulting</option>
-                                <option value="fractional-cto" data-i18n="form.serviceCTO">Fractional CTO</option>
-                                <option value="executive-placement" data-i18n="form.servicePlacement">Executive Placement</option>
-                                <option value="other" data-i18n="form.serviceOther">Other</option>
-                            </select>
-                            <span class="form-error"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="budget" data-i18n="form.budget">Budget Range *</label>
-                            <select id="budget" name="budget" required>
-                                <option value="" data-i18n="form.budgetSelect">Select budget range...</option>
-                                <option value="<10k" data-i18n="form.budget10k">< €10,000</option>
-                                <option value="10-50k" data-i18n="form.budget50k">€10,000 - €50,000</option>
-                                <option value="50-100k" data-i18n="form.budget100k">€50,000 - €100,000</option>
-                                <option value=">100k" data-i18n="form.budget100kPlus">> €100,000</option>
-                                <option value="not-sure" data-i18n="form.budgetNotSure">Not sure yet</option>
-                            </select>
-                            <span class="form-error"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message" data-i18n="form.message">Tell me about your project *</label>
-                            <textarea id="message" name="message" rows="4" required data-i18n-placeholder="form.messagePlaceholder"></textarea>
-                            <span class="form-error"></span>
-                        </div>
-
-                        <input type="hidden" name="form_type" value="main_contact">
-                        <input type="hidden" name="_subject" value="New Lead from Ludovic Bostral Consulting Website">
-
-                        <!-- Language Warning (shown only for ZH and ES) -->
-                        <div id="languageWarning" class="form-language-warning" style="display: none;">
-                            <span data-i18n="form.languageWarning">⚠️ Note: I only speak French and English</span>
-                        </div>
-
-                        <button type="submit" class="cta-button form-submit" data-i18n="form.submit">
-                            <span class="submit-text">Get Free Consultation</span>
-                            <span class="submit-loader" style="display: none;">⏳</span>
-                        </button>
-
-                        <div class="form-message" style="display: none;"></div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
     <!-- EXPERTISE SECTION -->
     <section class="expertise">
         <div class="container">
@@ -390,7 +288,7 @@
         <div class="container">
             <h2 class="section-title" data-i18n="content.title">Thought Leadership</h2>
 
-            <div class="content-grid">
+            <div class="content-grid content-grid-3">
 
                 <!-- Newsletter -->
                 <div class="content-card fade-in">
@@ -400,6 +298,26 @@
                     </div>
                     <p class="content-description" data-i18n="content.newsletter.description">Weekly insights on the streaming industry. In-depth analysis of OTT trends, platform strategies, and technology innovations. Followed by professionals from Netflix, Amazon Prime Video, Disney+, and other leading streaming services.</p>
                     <a href="https://streamingradar.substack.com" target="_blank" rel="noopener noreferrer" class="content-cta" data-i18n="content.newsletter.cta">Subscribe</a>
+                </div>
+
+                <!-- YouTube -->
+                <div class="content-card fade-in">
+                    <div class="content-card-header">
+                        <div class="youtube-icon">▶️</div>
+                        <h3 data-i18n="content.youtube.title">YouTube Channel</h3>
+                    </div>
+                    <div class="youtube-video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/D9PeeZSI9Kk"
+                            title="FFmpeg Tutorial"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <p class="content-description" data-i18n="content.youtube.description">Video tutorials on streaming technology, FFmpeg encoding, and OTT platform development</p>
+                    <a href="https://www.youtube.com/@streamingradar" target="_blank" rel="noopener noreferrer" class="content-cta" data-i18n="content.youtube.cta">Subscribe</a>
                 </div>
 
                 <!-- Podcast -->
@@ -447,6 +365,11 @@
         <div class="container">
             <div class="footer-content">
                 <p>&copy; 2026 Ludovic Bostral. All rights reserved.</p>
+                <p class="footer-legal">
+                    <a href="#" id="privacyLink" data-i18n="footer.privacy">Privacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="#" id="termsLink" data-i18n="footer.terms">Terms of Service</a>
+                </p>
                 <p class="footer-tagline">Made with ❤️ in Nantes, France</p>
             </div>
         </div>
