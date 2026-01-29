@@ -1,3 +1,10 @@
+# Claude Code local settings
+.claude/
+
+# Test files
+test-*.html
+test-*.js
+
 # macOS
 .DS_Store
 .AppleDouble
