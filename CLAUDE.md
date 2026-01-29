@@ -84,3 +84,4 @@ Use existing variables from `:root` in style.css:
 - Newsletter: https://streamingradar.substack.com
 - Calendar: https://calendar.app.google/link
 - Email: ludovic@bostral.com
+# 2026-01-29
