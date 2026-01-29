@@ -163,6 +163,7 @@ body {
 }
 
 .header-cta {
+    display: inline-block;
     background-color: var(--color-accent);
     color: var(--color-white);
     padding: 0.6rem 1.2rem;
