@@ -5,6 +5,7 @@
 const translations = {
     en: {
         baseline: "Strategic Technology Consulting",
+        "header.bookCall": "Book a Call",
         "hero.title": "Strategic Technology Consulting for Streaming Platforms",
         "hero.subtitle": "25+ years building and scaling OTT platforms",
         "cta.contact": "Contact Me",
@@ -283,6 +284,7 @@ const translations = {
 
     fr: {
         baseline: "Conseil Stratégique en Technologies",
+        "header.bookCall": "Réserver un Appel",
         "hero.title": "Conseil Stratégique en Technologies pour Plateformes de Streaming",
         "hero.subtitle": "25+ ans d'expérience dans la création et le scaling de plateformes OTT",
         "cta.contact": "Me Contacter",
@@ -561,6 +563,7 @@ const translations = {
 
     zh: {
         baseline: "战略技术咨询",
+        "header.bookCall": "预约通话",
         "hero.title": "流媒体平台战略技术咨询",
         "hero.subtitle": "25年以上OTT平台搭建与扩展经验",
         "cta.contact": "联系我",
@@ -842,6 +845,7 @@ const translations = {
 
     es: {
         baseline: "Consultoría Tecnológica Estratégica",
+        "header.bookCall": "Reservar Llamada",
         "hero.title": "Consultoría Tecnológica Estratégica para Plataformas de Streaming",
         "hero.subtitle": "Más de 25 años construyendo y escalando plataformas OTT",
         "cta.contact": "Contáctame",
