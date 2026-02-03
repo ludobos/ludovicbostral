@@ -116,6 +116,7 @@
                     <p class="baseline" data-i18n="baseline">Strategic Technology Consulting</p>
                 </div>
                 <div class="header-actions">
+                    <a href="#insights" class="header-link" data-i18n="header.predictions">2026 Predictions</a>
                     <nav class="language-switcher">
                         <button class="lang-btn active" data-lang="en">EN</button>
                         <span class="separator">|</span>
@@ -202,6 +203,84 @@
             </div>
         </div>
     </section>
+
+    <!-- INSIGHTS / STREAMING PREDICTIONS SECTION -->
+    <section class="insights" id="insights">
+        <div class="container">
+            <div class="insights-content">
+                <div class="insights-text">
+                    <span class="insights-badge" data-i18n="insights.badge">2026</span>
+                    <h2 class="insights-title" data-i18n="insights.title">Streaming Predictions 2020-2026</h2>
+                    <p class="insights-subtitle" data-i18n="insights.subtitle">12+ predictions verified over 5 years. Discover my bold bets for 2026.</p>
+
+                    <div class="insights-stats">
+                        <div class="insights-stat">
+                            <span class="insights-stat-number">12+</span>
+                            <span class="insights-stat-label" data-i18n="insights.stat1">Verified predictions</span>
+                        </div>
+                        <div class="insights-stat">
+                            <span class="insights-stat-number">5</span>
+                            <span class="insights-stat-label" data-i18n="insights.stat2">Years of analysis</span>
+                        </div>
+                        <div class="insights-stat">
+                            <span class="insights-stat-number">3</span>
+                            <span class="insights-stat-label" data-i18n="insights.stat3">Bold bets 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="insights-preview">
+                        <h4 data-i18n="insights.previewTitle">2026 Predictions Preview:</h4>
+                        <ul class="insights-predictions-list">
+                            <li data-i18n="insights.prediction1">Creators × French Telecom Operators</li>
+                            <li data-i18n="insights.prediction2">AI Agents buy 30% CTV Ads</li>
+                            <li data-i18n="insights.prediction3">Big 5 acquires micro-drama app</li>
+                        </ul>
+                    </div>
+
+                    <a href="streaming-predictions-en.html" id="readPredictionsBtn" class="cta-button insights-cta" data-i18n="insights.ctaRead">Read Full Analysis</a>
+                </div>
+            </div>
+        </div>
+        <!-- Sticky Download PDF bar -->
+        <div class="insights-sticky-bar">
+            <div class="container">
+                <span data-i18n="insights.stickyText">Want the PDF version?</span>
+                <button class="insights-sticky-btn" id="downloadTrackRecordBtn" data-i18n="insights.ctaDownload">Download PDF</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Predictions Lead Capture Modal -->
+    <div class="lead-modal" id="trackRecordModal">
+        <div class="lead-modal-overlay"></div>
+        <div class="lead-modal-content">
+            <button class="lead-modal-close">&times;</button>
+            <div class="lead-modal-body">
+                <h2 data-i18n="insights.modal.title">Download the Full Analysis (PDF)</h2>
+                <p class="lead-modal-subtitle" data-i18n="insights.modal.subtitle">12+ verified predictions + 3 bold bets for 2026</p>
+
+                <form id="trackRecordForm" class="lead-modal-form">
+                    <div class="form-group">
+                        <label for="trackRecordEmail" data-i18n="insights.modal.emailLabel">Email Address *</label>
+                        <input type="email" id="trackRecordEmail" name="email" required placeholder="your@email.com">
+                        <span class="form-error" id="trackRecordEmailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="trackRecordName" data-i18n="insights.modal.nameLabel">First Name (optional)</label>
+                        <input type="text" id="trackRecordName" name="name" placeholder="John">
+                    </div>
+                    <input type="hidden" name="source" value="predictions_pdf">
+                    <input type="hidden" name="language" id="trackRecordLanguage" value="en">
+                    <button type="submit" class="cta-button lead-modal-submit" data-i18n="insights.modal.submit">Send Me the PDF</button>
+                </form>
+
+                <div class="lead-modal-trust">
+                    <span data-i18n="insights.modal.trust1">🔒 No spam</span>
+                    <span data-i18n="insights.modal.trust2">📧 Instant download</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- CASE STUDIES SECTION -->
     <section class="case-studies" id="case-studies">
@@ -589,6 +668,8 @@
 
                 <h3 data-i18n="caseStudies.afrostream.modal.lessonsTitle">Key Learnings</h3>
                 <p data-i18n="caseStudies.afrostream.modal.lessonsText">While Afrostream eventually closed due to market timing and competition from global players, the experience provided invaluable lessons in startup building, fundraising, and scaling technology in emerging markets.</p>
+
+                <p class="modal-source"><a href="https://www.crunchbase.com/organization/afrostream" target="_blank" rel="noopener noreferrer" data-i18n="caseStudies.afrostream.modal.crunchbase">View on Crunchbase →</a></p>
             </div>
         </div>
     </div>

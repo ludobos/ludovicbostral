@@ -6,6 +6,7 @@ const translations = {
     en: {
         baseline: "Strategic Technology Consulting",
         "header.bookCall": "Book a Call",
+        "header.predictions": "2026 Predictions",
         "hero.title": "Strategic Technology Consulting for Streaming Platforms",
         "hero.subtitle": "25+ years building and scaling OTT platforms",
         "cta.contact": "Contact Me",
@@ -283,6 +284,30 @@ const translations = {
         "caseStudies.afrostream.modal.result4b": "across Europe and Africa",
         "caseStudies.afrostream.modal.lessonsTitle": "Key Learnings",
         "caseStudies.afrostream.modal.lessonsText": "While Afrostream eventually closed due to market timing and competition from global players, the experience provided invaluable lessons in startup building, fundraising, and scaling technology in emerging markets.",
+        "caseStudies.afrostream.modal.crunchbase": "View on Crunchbase →",
+
+        // Insights / Streaming Predictions
+        "insights.badge": "2026",
+        "insights.title": "Streaming Predictions 2020-2026",
+        "insights.subtitle": "12+ predictions verified over 5 years. Discover my bold bets for 2026.",
+        "insights.stat1": "Verified predictions",
+        "insights.stat2": "Years of analysis",
+        "insights.stat3": "Bold bets 2026",
+        "insights.previewTitle": "2026 Predictions Preview:",
+        "insights.prediction1": "Creators × French Telecom Operators",
+        "insights.prediction2": "AI Agents buy 30% CTV Ads",
+        "insights.prediction3": "Big 5 acquires micro-drama app",
+        "insights.ctaRead": "Read Full Analysis",
+        "insights.ctaDownload": "Download PDF",
+        "insights.stickyText": "Want the PDF version?",
+        "insights.modal.title": "Download the Full Analysis (PDF)",
+        "insights.modal.subtitle": "12+ verified predictions + 3 bold bets for 2026",
+        "insights.modal.emailLabel": "Email Address *",
+        "insights.modal.nameLabel": "First Name (optional)",
+        "insights.modal.submit": "Download PDF",
+        "insights.modal.trust1": "🔒 No spam",
+        "insights.modal.trust2": "📧 Instant download",
+        "insights.modal.success": "✓ Check your inbox! The PDF is on its way.",
 
         // Footer
         "footer.privacy": "Privacy Policy",
@@ -292,6 +317,7 @@ const translations = {
     fr: {
         baseline: "Conseil Stratégique en Technologies",
         "header.bookCall": "Réserver un Appel",
+        "header.predictions": "Prédictions 2026",
         "hero.title": "Conseil Stratégique en Technologies pour Plateformes de Streaming",
         "hero.subtitle": "25+ ans d'expérience dans la création et le scaling de plateformes OTT",
         "cta.contact": "Me Contacter",
@@ -569,6 +595,30 @@ const translations = {
         "caseStudies.afrostream.modal.result4b": "en Europe et en Afrique",
         "caseStudies.afrostream.modal.lessonsTitle": "Apprentissages Clés",
         "caseStudies.afrostream.modal.lessonsText": "Bien qu'Afrostream ait finalement fermé en raison du timing du marché et de la concurrence des acteurs mondiaux, cette expérience a fourni des leçons inestimables en création de startup, levée de fonds et scaling technologique dans les marchés émergents.",
+        "caseStudies.afrostream.modal.crunchbase": "Voir sur Crunchbase →",
+
+        // Insights / Streaming Predictions
+        "insights.badge": "2026",
+        "insights.title": "Prédictions Streaming 2020-2026",
+        "insights.subtitle": "12+ prédictions vérifiées sur 5 ans. Découvrez mes paris audacieux pour 2026.",
+        "insights.stat1": "Prédictions vérifiées",
+        "insights.stat2": "Années d'analyse",
+        "insights.stat3": "Paris audacieux 2026",
+        "insights.previewTitle": "Aperçu des prédictions 2026 :",
+        "insights.prediction1": "Créateurs × Opérateurs Télécoms français",
+        "insights.prediction2": "Agents IA achètent 30% des pubs CTV",
+        "insights.prediction3": "Big 5 rachète une app de micro-drama",
+        "insights.ctaRead": "Lire l'analyse complète",
+        "insights.ctaDownload": "Télécharger le PDF",
+        "insights.stickyText": "Vous préférez le PDF ?",
+        "insights.modal.title": "Télécharger l'analyse complète (PDF)",
+        "insights.modal.subtitle": "12+ prédictions vérifiées + 3 paris audacieux 2026",
+        "insights.modal.emailLabel": "Adresse email *",
+        "insights.modal.nameLabel": "Prénom (optionnel)",
+        "insights.modal.submit": "Télécharger le PDF",
+        "insights.modal.trust1": "🔒 Pas de spam",
+        "insights.modal.trust2": "📧 Téléchargement instantané",
+        "insights.modal.success": "✓ Vérifiez votre boîte mail ! Le PDF est en route.",
 
         // Footer
         "footer.privacy": "Politique de confidentialité",
@@ -578,6 +628,7 @@ const translations = {
     zh: {
         baseline: "战略技术咨询",
         "header.bookCall": "预约通话",
+        "header.predictions": "2026预测",
         "hero.title": "流媒体平台战略技术咨询",
         "hero.subtitle": "25年以上OTT平台搭建与扩展经验",
         "cta.contact": "联系我",
@@ -858,6 +909,30 @@ const translations = {
         "caseStudies.afrostream.modal.result4b": "覆盖欧洲和非洲",
         "caseStudies.afrostream.modal.lessonsTitle": "关键经验",
         "caseStudies.afrostream.modal.lessonsText": "尽管Afrostream最终因市场时机和全球玩家竞争而关闭，但这段经历为创业构建、融资以及在新兴市场进行技术扩展提供了宝贵的经验教训。",
+        "caseStudies.afrostream.modal.crunchbase": "在Crunchbase查看 →",
+
+        // Insights / Streaming Predictions
+        "insights.badge": "2026",
+        "insights.title": "流媒体预测 2020-2026",
+        "insights.subtitle": "5年内12+预测已验证。探索我2026年的大胆预测。",
+        "insights.stat1": "已验证预测",
+        "insights.stat2": "年度分析",
+        "insights.stat3": "2026大胆预测",
+        "insights.previewTitle": "2026年预测预览：",
+        "insights.prediction1": "创作者 × 法国电信运营商",
+        "insights.prediction2": "AI代理购买30% CTV广告",
+        "insights.prediction3": "Big 5收购微短剧应用",
+        "insights.ctaRead": "阅读完整分析",
+        "insights.ctaDownload": "下载PDF",
+        "insights.stickyText": "需要PDF版本？",
+        "insights.modal.title": "下载完整分析 (PDF)",
+        "insights.modal.subtitle": "12+已验证预测 + 3个2026大胆预测",
+        "insights.modal.emailLabel": "邮箱地址 *",
+        "insights.modal.nameLabel": "名字（选填）",
+        "insights.modal.submit": "下载PDF",
+        "insights.modal.trust1": "🔒 无垃圾邮件",
+        "insights.modal.trust2": "📧 即时下载",
+        "insights.modal.success": "✓ 请查收邮件！PDF已发送。",
 
         // Footer
         "footer.privacy": "隐私政策",
@@ -867,6 +942,7 @@ const translations = {
     es: {
         baseline: "Consultoría Tecnológica Estratégica",
         "header.bookCall": "Reservar Llamada",
+        "header.predictions": "Predicciones 2026",
         "hero.title": "Consultoría Tecnológica Estratégica para Plataformas de Streaming",
         "hero.subtitle": "Más de 25 años construyendo y escalando plataformas OTT",
         "cta.contact": "Contáctame",
@@ -1145,6 +1221,30 @@ const translations = {
         "caseStudies.afrostream.modal.result4b": "en Europa y África",
         "caseStudies.afrostream.modal.lessonsTitle": "Aprendizajes Clave",
         "caseStudies.afrostream.modal.lessonsText": "Aunque Afrostream finalmente cerró debido al timing del mercado y competencia de jugadores globales, la experiencia proporcionó lecciones invaluables en construcción de startups, recaudación de fondos y escalado de tecnología en mercados emergentes.",
+        "caseStudies.afrostream.modal.crunchbase": "Ver en Crunchbase →",
+
+        // Insights / Streaming Predictions
+        "insights.badge": "2026",
+        "insights.title": "Predicciones Streaming 2020-2026",
+        "insights.subtitle": "12+ predicciones verificadas en 5 años. Descubre mis apuestas audaces para 2026.",
+        "insights.stat1": "Predicciones verificadas",
+        "insights.stat2": "Años de análisis",
+        "insights.stat3": "Apuestas audaces 2026",
+        "insights.previewTitle": "Vista previa predicciones 2026:",
+        "insights.prediction1": "Creadores × Operadores Telecom franceses",
+        "insights.prediction2": "Agentes IA compran 30% publicidad CTV",
+        "insights.prediction3": "Big 5 adquiere app de micro-drama",
+        "insights.ctaRead": "Leer análisis completo",
+        "insights.ctaDownload": "Descargar PDF",
+        "insights.stickyText": "¿Prefieres el PDF?",
+        "insights.modal.title": "Descargar el análisis completo (PDF)",
+        "insights.modal.subtitle": "12+ predicciones verificadas + 3 apuestas audaces 2026",
+        "insights.modal.emailLabel": "Dirección de email *",
+        "insights.modal.nameLabel": "Nombre (opcional)",
+        "insights.modal.submit": "Descargar PDF",
+        "insights.modal.trust1": "🔒 Sin spam",
+        "insights.modal.trust2": "📧 Descarga instantánea",
+        "insights.modal.success": "✓ ¡Revisa tu bandeja de entrada! El PDF está en camino.",
 
         // Footer
         "footer.privacy": "Política de privacidad",
@@ -1214,7 +1314,17 @@ class LanguageSwitcher {
         // Update Cal.com links with locale
         this.updateCalLinks(lang);
 
+        // Update predictions page link
+        if (window.predictionsManager) {
+            window.predictionsManager.updateReadLink();
+        }
+
         console.log('✅ Language changed successfully to:', lang);
+    }
+
+    // Getter for current language (for other modules)
+    get currentLanguage() {
+        return this.currentLang;
     }
 
     updateCalLinks(lang) {
@@ -2095,6 +2205,163 @@ class CaseStudyModals {
 }
 
 // ============================================
+// PREDICTIONS MODAL & LINK MANAGEMENT
+// ============================================
+
+class PredictionsManager {
+    constructor() {
+        this.modal = document.getElementById('trackRecordModal');
+        this.downloadBtn = document.getElementById('downloadTrackRecordBtn');
+        this.readBtn = document.getElementById('readPredictionsBtn');
+        this.closeBtn = this.modal?.querySelector('.lead-modal-close');
+        this.overlay = this.modal?.querySelector('.lead-modal-overlay');
+        this.form = document.getElementById('trackRecordForm');
+        this.languageInput = document.getElementById('trackRecordLanguage');
+
+        this.pdfUrls = {
+            en: 'streaming-predictions-en.pdf',
+            fr: 'streaming-predictions-fr.pdf',
+            zh: 'streaming-predictions-zh.pdf',
+            es: 'streaming-predictions-es.pdf'
+        };
+
+        this.htmlUrls = {
+            en: 'streaming-predictions-en.html',
+            fr: 'streaming-predictions-fr.html',
+            zh: 'streaming-predictions-zh.html',
+            es: 'streaming-predictions-es.html'
+        };
+
+        this.init();
+    }
+
+    init() {
+        // Open modal on download button click
+        this.downloadBtn?.addEventListener('click', () => this.openModal());
+
+        // Close modal
+        this.closeBtn?.addEventListener('click', () => this.closeModal());
+        this.overlay?.addEventListener('click', () => this.closeModal());
+
+        // Close on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.modal?.classList.contains('active')) {
+                this.closeModal();
+            }
+        });
+
+        // Handle form submission
+        this.form?.addEventListener('submit', (e) => this.handleSubmit(e));
+
+        // Update read link when language changes
+        this.updateReadLink();
+    }
+
+    updateReadLink() {
+        const currentLang = window.languageSwitcher?.currentLanguage || 'en';
+        if (this.readBtn) {
+            this.readBtn.href = this.htmlUrls[currentLang] || this.htmlUrls.en;
+        }
+    }
+
+    openModal() {
+        if (!this.modal) return;
+
+        // Update language input based on current language
+        const currentLang = window.languageSwitcher?.currentLanguage || 'en';
+        if (this.languageInput) {
+            this.languageInput.value = currentLang;
+        }
+
+        this.modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+
+        // Track modal open
+        if (typeof gtag === 'function') {
+            gtag('event', 'predictions_modal_open', {
+                'event_category': 'engagement',
+                'event_label': currentLang
+            });
+        }
+    }
+
+    closeModal() {
+        if (!this.modal) return;
+        this.modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    async handleSubmit(e) {
+        e.preventDefault();
+
+        const email = document.getElementById('trackRecordEmail')?.value;
+        const name = document.getElementById('trackRecordName')?.value || '';
+        const language = this.languageInput?.value || 'en';
+        const submitBtn = this.form.querySelector('button[type="submit"]');
+
+        // Disable button
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = '...';
+        }
+
+        // Download PDF immediately
+        this.downloadPdf(language);
+
+        // Track in GA
+        if (typeof gtag === 'function') {
+            gtag('event', 'download_predictions_pdf', {
+                'event_category': 'lead_generation',
+                'event_label': language,
+                'value': 1
+            });
+        }
+
+        // Send to Formspree in background
+        const formData = new FormData();
+        formData.append('email', email);
+        formData.append('name', name);
+        formData.append('language', language);
+        formData.append('source', 'predictions_pdf_download_homepage');
+        formData.append('_subject', `Predictions PDF Download - ${language.toUpperCase()}`);
+
+        fetch('https://formspree.io/f/mzdddplp', {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        }).then(res => console.log('Formspree:', res.status)).catch(err => console.error('Formspree error:', err));
+
+        // Show success message
+        const successMsg = translations[language]?.['insights.modal.success'] || '✓ PDF downloaded!';
+        this.showSuccess(successMsg);
+
+        // Close modal after delay
+        setTimeout(() => this.closeModal(), 2000);
+    }
+
+    downloadPdf(language) {
+        const pdfUrl = this.pdfUrls[language] || this.pdfUrls.en;
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = pdfUrl;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+    showSuccess(message) {
+        const formBody = this.modal.querySelector('.lead-modal-body');
+        if (formBody) {
+            formBody.innerHTML = `
+                <div class="lead-modal-success">
+                    <p style="font-size: 1.2rem; color: var(--color-accent); text-align: center;">${message}</p>
+                </div>
+            `;
+        }
+    }
+}
+
+// ============================================
 // INITIALIZE APP
 // ============================================
 
@@ -2114,6 +2381,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Case Study Modals
     new CaseStudyModals();
+
+    // Initialize Predictions Modal & Links
+    window.predictionsManager = new PredictionsManager();
 
     // Log initialization
     console.log('🚀 Ludovic Bostral Consulting Website Initialized');

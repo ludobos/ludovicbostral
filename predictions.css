@@ -1,0 +1,161 @@
+/* Predictions Pages - Shared Styles */
+
+/* Header */
+.page-header {
+    background: #1A3D5C;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.back-link {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+.back-link:hover { color: #fff; }
+.header-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Sticky Download Button */
+.sticky-download {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #1A3D5C 0%, #0f2942 100%);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    z-index: 1000;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+}
+.sticky-download span {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.95rem;
+}
+.sticky-download button {
+    background: #DA7746;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.sticky-download button:hover {
+    background: #c85a1e;
+    transform: translateY(-2px);
+}
+
+/* Modal */
+.pdf-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px);
+}
+.pdf-modal.active {
+    display: flex;
+}
+.pdf-modal-content {
+    background: #fff;
+    border-radius: 16px;
+    max-width: 450px;
+    width: 90%;
+    padding: 40px;
+    position: relative;
+    animation: slideDown 0.3s ease;
+}
+.pdf-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+}
+.pdf-modal h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #1A3D5C;
+}
+.pdf-modal p {
+    margin: 0 0 25px 0;
+    color: #666;
+    font-size: 0.95em;
+}
+.pdf-modal input[type="email"] {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 1em;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.2s;
+    margin-bottom: 15px;
+}
+.pdf-modal input[type="email"]:focus {
+    border-color: #4A90E2;
+}
+.pdf-modal button[type="submit"] {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 1em;
+    font-weight: 600;
+    background: #DA7746;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.pdf-modal button[type="submit"]:hover {
+    background: #c85a1e;
+}
+.pdf-modal .privacy {
+    margin: 15px 0 0 0;
+    font-size: 0.8em;
+    color: #999;
+    text-align: center;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Body padding for sticky bar */
+body {
+    padding-bottom: 80px;
+}
+
+/* Print styles */
+@media print {
+    .page-header,
+    .sticky-download,
+    .pdf-modal { display: none !important; }
+    body { padding-bottom: 0; }
+}
