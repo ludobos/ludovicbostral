@@ -82,6 +82,6 @@ Use existing variables from `:root` in style.css:
 ## External Links
 - LinkedIn: https://linkedin.com/in/ludovicbostral
 - Newsletter: https://streamingradar.substack.com
-- Calendar: https://calendar.app.google/link
+- Calendar: https://www.bostral.com/call (redirects to cal.com with language detection)
 - Email: ludovic@bostral.com
 # 2026-01-29

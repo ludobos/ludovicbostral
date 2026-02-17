@@ -1328,24 +1328,9 @@ class LanguageSwitcher {
     }
 
     updateCalLinks(lang) {
-        const calBaseUrl = 'https://cal.com/ludovic-bostral-ludobos-idg16l';
-        const slugMap = {
-            'en': '30min-en',
-            'fr': '30min-fr',
-            'zh': '30min-zh',
-            'es': '30min-es'
-        };
-        const localeMap = {
-            'en': 'en',
-            'fr': 'fr',
-            'zh': 'zh-CN',
-            'es': 'es'
-        };
-        const slug = slugMap[lang] || '30min-en';
-        const locale = localeMap[lang] || 'en';
-
+        const callUrl = `/call${lang !== 'en' ? '?lang=' + lang : ''}`;
         document.querySelectorAll('.cal-link').forEach(link => {
-            link.href = `${calBaseUrl}/${slug}?locale=${locale}`;
+            link.href = callUrl;
         });
     }
 
