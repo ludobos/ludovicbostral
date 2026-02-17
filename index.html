@@ -116,7 +116,7 @@
                     <p class="baseline" data-i18n="baseline">Strategic Technology Consulting</p>
                 </div>
                 <div class="header-actions">
-                    <a href="#insights" class="header-link" data-i18n="header.predictions">2026 Predictions</a>
+                    <a href="streaming-predictions-en.html" class="header-link predictions-link" data-i18n="header.predictions">2026 Predictions</a>
                     <nav class="language-switcher">
                         <button class="lang-btn active" data-lang="en">EN</button>
                         <span class="separator">|</span>
@@ -148,6 +148,46 @@
                 </div>
                 <div class="hero-image">
                     <img src="./assets/big.jpeg" alt="Streaming Radar Logo" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STREAMING LENS SECTION -->
+    <section class="lens" id="lens">
+        <div class="container">
+            <div class="lens-content">
+                <div class="lens-header">
+                    <span class="lens-badge" data-i18n="lens.badge">NEW</span>
+                    <h2 class="lens-tagline" data-i18n="lens.tagline">See streaming before it moves</h2>
+                    <p class="lens-subtitle" data-i18n="lens.subtitle">Decision-grade research reports for streaming & OTT professionals</p>
+                </div>
+                <div class="lens-reports">
+                    <div class="lens-card fade-in">
+                        <div class="lens-card-status lens-status-live" data-i18n="lens.report1.status">TEASER FEB 22</div>
+                        <h3 class="lens-card-title" data-i18n="lens.report1.title">Vertical Invasion 2026</h3>
+                        <p class="lens-card-desc" data-i18n="lens.report1.desc">The $11B micro-drama market. Production economics, IP velocity, FAST channels, and why niche beats mass.</p>
+                        <div class="lens-card-stats">
+                            <span>344 pages</span>
+                            <span>27 chapters</span>
+                            <span>94 sources</span>
+                            <span>1,000+ datapoints</span>
+                        </div>
+                    </div>
+                    <div class="lens-card fade-in">
+                        <div class="lens-card-status lens-status-soon" data-i18n="lens.report2.status">TEASER MARCH</div>
+                        <h3 class="lens-card-title" data-i18n="lens.report2.title">Africa Streaming 2026</h3>
+                        <p class="lens-card-desc" data-i18n="lens.report2.desc">The $4.68B OTT market. Payment architecture, content economics, telco bundling across 34 markets.</p>
+                        <div class="lens-card-stats">
+                            <span>506+ pages</span>
+                            <span>17 chapters</span>
+                            <span>95+ sources</span>
+                            <span>2,900+ datapoints</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lens-cta-group">
+                    <a href="https://lens.streaming-radar.com" target="_blank" rel="noopener noreferrer" class="cta-button lens-cta" data-i18n="lens.cta">Explore Reports</a>
                 </div>
             </div>
         </div>
@@ -203,84 +243,6 @@
             </div>
         </div>
     </section>
-
-    <!-- INSIGHTS / STREAMING PREDICTIONS SECTION -->
-    <section class="insights" id="insights">
-        <div class="container">
-            <div class="insights-content">
-                <div class="insights-text">
-                    <span class="insights-badge" data-i18n="insights.badge">2026</span>
-                    <h2 class="insights-title" data-i18n="insights.title">Streaming Predictions 2020-2026</h2>
-                    <p class="insights-subtitle" data-i18n="insights.subtitle">12+ predictions verified over 5 years. Discover my bold bets for 2026.</p>
-
-                    <div class="insights-stats">
-                        <div class="insights-stat">
-                            <span class="insights-stat-number">12+</span>
-                            <span class="insights-stat-label" data-i18n="insights.stat1">Verified predictions</span>
-                        </div>
-                        <div class="insights-stat">
-                            <span class="insights-stat-number">5</span>
-                            <span class="insights-stat-label" data-i18n="insights.stat2">Years of analysis</span>
-                        </div>
-                        <div class="insights-stat">
-                            <span class="insights-stat-number">3</span>
-                            <span class="insights-stat-label" data-i18n="insights.stat3">Bold bets 2026</span>
-                        </div>
-                    </div>
-
-                    <div class="insights-preview">
-                        <h4 data-i18n="insights.previewTitle">2026 Predictions Preview:</h4>
-                        <ul class="insights-predictions-list">
-                            <li data-i18n="insights.prediction1">Creators × French Telecom Operators</li>
-                            <li data-i18n="insights.prediction2">AI Agents buy 30% CTV Ads</li>
-                            <li data-i18n="insights.prediction3">Big 5 acquires micro-drama app</li>
-                        </ul>
-                    </div>
-
-                    <a href="streaming-predictions-en.html" id="readPredictionsBtn" class="cta-button insights-cta" data-i18n="insights.ctaRead">Read Full Analysis</a>
-                </div>
-            </div>
-        </div>
-        <!-- Sticky Download PDF bar -->
-        <div class="insights-sticky-bar">
-            <div class="container">
-                <span data-i18n="insights.stickyText">Want the PDF version?</span>
-                <button class="insights-sticky-btn" id="downloadTrackRecordBtn" data-i18n="insights.ctaDownload">Download PDF</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Predictions Lead Capture Modal -->
-    <div class="lead-modal" id="trackRecordModal">
-        <div class="lead-modal-overlay"></div>
-        <div class="lead-modal-content">
-            <button class="lead-modal-close">&times;</button>
-            <div class="lead-modal-body">
-                <h2 data-i18n="insights.modal.title">Download the Full Analysis (PDF)</h2>
-                <p class="lead-modal-subtitle" data-i18n="insights.modal.subtitle">12+ verified predictions + 3 bold bets for 2026</p>
-
-                <form id="trackRecordForm" class="lead-modal-form">
-                    <div class="form-group">
-                        <label for="trackRecordEmail" data-i18n="insights.modal.emailLabel">Email Address *</label>
-                        <input type="email" id="trackRecordEmail" name="email" required placeholder="your@email.com">
-                        <span class="form-error" id="trackRecordEmailError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="trackRecordName" data-i18n="insights.modal.nameLabel">First Name (optional)</label>
-                        <input type="text" id="trackRecordName" name="name" placeholder="John">
-                    </div>
-                    <input type="hidden" name="source" value="predictions_pdf">
-                    <input type="hidden" name="language" id="trackRecordLanguage" value="en">
-                    <button type="submit" class="cta-button lead-modal-submit" data-i18n="insights.modal.submit">Send Me the PDF</button>
-                </form>
-
-                <div class="lead-modal-trust">
-                    <span data-i18n="insights.modal.trust1">🔒 No spam</span>
-                    <span data-i18n="insights.modal.trust2">📧 Instant download</span>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- CASE STUDIES SECTION -->
     <section class="case-studies" id="case-studies">
@@ -342,22 +304,6 @@
                     <button class="case-study-cta" data-modal="afrostream-modal" data-i18n="caseStudies.viewStory">View Full Story →</button>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- EXPERTISE SECTION -->
-    <section class="expertise">
-        <div class="container">
-            <h2 class="section-title" data-i18n="expertise.title">Core Expertise</h2>
-            <div class="expertise-grid">
-                <div class="expertise-item fade-in" data-i18n="expertise.item1">OTT Platforms (VOD/SVOD/AVOD/FAST)</div>
-                <div class="expertise-item fade-in" data-i18n="expertise.item2">Video Technology (Encoding, DRM, CDN)</div>
-                <div class="expertise-item fade-in" data-i18n="expertise.item3">Cloud Infrastructure (AWS, GCP)</div>
-                <div class="expertise-item fade-in" data-i18n="expertise.item4">Team Scaling</div>
-                <div class="expertise-item fade-in" data-i18n="expertise.item5">International Expansion</div>
-                <div class="expertise-item fade-in" data-i18n="expertise.item6">P&L Management</div>
-                <div class="expertise-item fade-in" data-i18n="expertise.item7">Fundraising</div>
             </div>
         </div>
     </section>
@@ -481,7 +427,7 @@
                 </ul>
 
                 <h3>3. Data Storage and Processing</h3>
-                <p>Your data is processed via Formspree (a third-party form service) and stored securely. We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
+                <p>Your data is processed via Supabase (a secure cloud platform) and stored securely. We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
 
                 <h3>4. Analytics</h3>
                 <p>This website uses Google Analytics and ContentSquare to understand how visitors use our site. These services collect anonymized data about your visit, including pages viewed, time spent, and general location. No personally identifiable information is collected through these tools.</p>

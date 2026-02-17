@@ -93,21 +93,27 @@
                 'funnel_step': 3
             });
 
-            // Send to Formspree
-            const formData = new FormData();
-            formData.append('email', email);
-            formData.append('source', 'predictions_pdf_page_' + window.PRED_LANG);
-            formData.append('language', window.PRED_LANG);
-            formData.append('_subject', 'PDF Download - ' + window.PRED_LANG.toUpperCase());
-
-            fetch('https://formspree.io/f/mzdddplp', {
+            // Send to Supabase lens-notify
+            fetch('https://facllabxmlvvmakixprt.supabase.co/functions/v1/lens-notify', {
                 method: 'POST',
-                body: formData,
-                headers: { 'Accept': 'application/json' }
+                headers: {
+                    'Content-Type': 'application/json',
+                    'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZhY2xsYWJ4bWx2dm1ha2l4cHJ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA1NTU0NzIsImV4cCI6MjA4NjEzMTQ3Mn0.8DPjjexOMz16h9FfaiBTCbZ8YHZG4yqQybn0nGktRZo',
+                    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZhY2xsYWJ4bWx2dm1ha2l4cHJ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA1NTU0NzIsImV4cCI6MjA4NjEzMTQ3Mn0.8DPjjexOMz16h9FfaiBTCbZ8YHZG4yqQybn0nGktRZo'
+                },
+                body: JSON.stringify({
+                    email: email,
+                    interest: 'predictions',
+                    source: 'predictions_pdf_page_' + window.PRED_LANG,
+                    metadata: {
+                        lang: window.PRED_LANG,
+                        referrer: document.referrer || 'direct'
+                    }
+                })
             }).then(res => {
-                console.log('Formspree:', res.status);
+                console.log('Supabase:', res.status);
             }).catch(err => {
-                console.error('Formspree error:', err);
+                console.error('Supabase error:', err);
             });
 
             // Track lead

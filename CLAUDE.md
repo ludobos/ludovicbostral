@@ -7,7 +7,7 @@ Single-page site with multi-language support (EN/FR/ZH/ES).
 ## Tech Stack
 - **Frontend**: Vanilla HTML/CSS/JS (no framework)
 - **Hosting**: GitHub Pages
-- **Form**: Formspree
+- **Form**: Supabase Edge Function (lens-notify) + Resend emails
 - **Analytics**: Google Analytics, ContentSquare
 
 ## File Structure

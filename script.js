@@ -11,6 +11,18 @@ const translations = {
         "hero.subtitle": "25+ years building and scaling OTT platforms",
         "cta.contact": "Contact Me",
 
+        // Streaming Lens
+        "lens.badge": "NEW",
+        "lens.tagline": "See streaming before it moves",
+        "lens.subtitle": "Decision-grade research reports for streaming & OTT professionals",
+        "lens.report1.status": "TEASER FEB 22",
+        "lens.report1.title": "Vertical Invasion 2026",
+        "lens.report1.desc": "The $11B micro-drama market. Production economics, IP velocity, FAST channels, and why niche beats mass.",
+        "lens.report2.status": "TEASER MARCH",
+        "lens.report2.title": "Africa Streaming 2026",
+        "lens.report2.desc": "The $4.68B OTT market. Payment architecture, content economics, telco bundling across 34 markets.",
+        "lens.cta": "Explore Reports",
+
         // Services
         "services.consulting.title": "Strategic Technology Consulting",
         "services.consulting.description": "Platform architecture, technology stack selection, and go-to-market strategy for streaming services",
@@ -322,6 +334,18 @@ const translations = {
         "hero.subtitle": "25+ ans d'expérience dans la création et le scaling de plateformes OTT",
         "cta.contact": "Me Contacter",
 
+        // Streaming Lens
+        "lens.badge": "NOUVEAU",
+        "lens.tagline": "Voir le streaming avant qu'il ne bouge",
+        "lens.subtitle": "Rapports de recherche stratégique pour les professionnels du streaming & OTT",
+        "lens.report1.status": "TEASER 22 FÉV",
+        "lens.report1.title": "Vertical Invasion 2026",
+        "lens.report1.desc": "Le marché du micro-drama à $11Mds. Économie de production, vélocité IP, chaînes FAST et pourquoi la niche bat le mass market.",
+        "lens.report2.status": "TEASER MARS",
+        "lens.report2.title": "Africa Streaming 2026",
+        "lens.report2.desc": "Le marché OTT à $4,68Mds. Architecture de paiement, économie du contenu, bundling télécom sur 34 marchés.",
+        "lens.cta": "Explorer les rapports",
+
         // Services
         "services.consulting.title": "Conseil Stratégique en Technologies",
         "services.consulting.description": "Architecture de plateforme, sélection de stack technologique et stratégie go-to-market pour services de streaming",
@@ -632,6 +656,18 @@ const translations = {
         "hero.title": "流媒体平台战略技术咨询",
         "hero.subtitle": "25年以上OTT平台搭建与扩展经验",
         "cta.contact": "联系我",
+
+        // Streaming Lens
+        "lens.badge": "全新",
+        "lens.tagline": "洞察流媒体趋势，抢占先机",
+        "lens.subtitle": "面向流媒体与OTT专业人士的决策级研究报告",
+        "lens.report1.status": "预告 2月22日",
+        "lens.report1.title": "Vertical Invasion 2026",
+        "lens.report1.desc": "110亿美元微短剧市场。制作经济学、IP速度、FAST频道，以及为什么利基市场胜过大众市场。",
+        "lens.report2.status": "预告 3月",
+        "lens.report2.title": "Africa Streaming 2026",
+        "lens.report2.desc": "46.8亿美元OTT市场。支付架构、内容经济学、电信捆绑，覆盖34个市场。",
+        "lens.cta": "探索报告",
 
         // Services
         "services.consulting.title": "战略技术咨询",
@@ -946,6 +982,18 @@ const translations = {
         "hero.title": "Consultoría Tecnológica Estratégica para Plataformas de Streaming",
         "hero.subtitle": "Más de 25 años construyendo y escalando plataformas OTT",
         "cta.contact": "Contáctame",
+
+        // Streaming Lens
+        "lens.badge": "NUEVO",
+        "lens.tagline": "Ve el streaming antes de que se mueva",
+        "lens.subtitle": "Informes de investigación estratégica para profesionales del streaming y OTT",
+        "lens.report1.status": "TEASER 22 FEB",
+        "lens.report1.title": "Vertical Invasion 2026",
+        "lens.report1.desc": "El mercado de micro-drama de $11B. Economía de producción, velocidad IP, canales FAST y por qué el nicho vence al mercado masivo.",
+        "lens.report2.status": "TEASER MARZO",
+        "lens.report2.title": "Africa Streaming 2026",
+        "lens.report2.desc": "El mercado OTT de $4.68B. Arquitectura de pagos, economía del contenido, bundling telecom en 34 mercados.",
+        "lens.cta": "Explorar informes",
 
         // Services
         "services.consulting.title": "Consultoría Tecnológica Estratégica",
@@ -1314,10 +1362,8 @@ class LanguageSwitcher {
         // Update Cal.com links with locale
         this.updateCalLinks(lang);
 
-        // Update predictions page link
-        if (window.predictionsManager) {
-            window.predictionsManager.updateReadLink();
-        }
+        // Update predictions header link
+        this.updatePredictionsLink(lang);
 
         console.log('✅ Language changed successfully to:', lang);
     }
@@ -1331,6 +1377,18 @@ class LanguageSwitcher {
         const callUrl = `/call${lang !== 'en' ? '?lang=' + lang : ''}`;
         document.querySelectorAll('.cal-link').forEach(link => {
             link.href = callUrl;
+        });
+    }
+
+    updatePredictionsLink(lang) {
+        const predictionsUrls = {
+            en: 'streaming-predictions-en.html',
+            fr: 'streaming-predictions-fr.html',
+            zh: 'streaming-predictions-zh.html',
+            es: 'streaming-predictions-es.html'
+        };
+        document.querySelectorAll('.predictions-link').forEach(link => {
+            link.href = predictionsUrls[lang] || predictionsUrls.en;
         });
     }
 
@@ -1796,7 +1854,8 @@ class ContactForm {
 
         console.log('✅ ContactForm: Form found');
 
-        this.formspreeEndpoint = 'https://formspree.io/f/mzdddplp';
+        this.supabaseUrl = 'https://facllabxmlvvmakixprt.supabase.co/functions/v1/lens-notify';
+        this.supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZhY2xsYWJ4bWx2dm1ha2l4cHJ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA1NTU0NzIsImV4cCI6MjA4NjEzMTQ3Mn0.8DPjjexOMz16h9FfaiBTCbZ8YHZG4yqQybn0nGktRZo';
         this.submitButton = this.form.querySelector('button[type="submit"]');
 
         if (!this.submitButton) {
@@ -1831,18 +1890,6 @@ class ContactForm {
             });
         });
 
-        // Sync email to _replyto for Formspree
-        const emailField = this.form.querySelector('#email');
-        const replyToField = this.form.querySelector('#_replyto');
-        if (emailField && replyToField) {
-            emailField.addEventListener('input', () => {
-                replyToField.value = emailField.value;
-            });
-            // Initialize with current value if any
-            if (emailField.value) {
-                replyToField.value = emailField.value;
-            }
-        }
     }
 
     async handleSubmit(e) {
@@ -1863,53 +1910,41 @@ class ContactForm {
 
         try {
             const formData = new FormData(this.form);
-            console.log('📧 Submitting to Formspree:', this.formspreeEndpoint);
+            const lang = window.languageSwitcher?.currentLang || 'en';
+            console.log('📧 Submitting to Supabase lens-notify');
 
-            // Check if Formspree endpoint is configured
-            if (this.formspreeEndpoint === 'YOUR_FORMSPREE_ENDPOINT') {
-                // Simulate success for demo purposes
-                console.warn('⚠️ Formspree endpoint not configured. Form submission simulated.');
-                await new Promise(resolve => setTimeout(resolve, 1500));
-
-                // Track event
-                if (window.analytics) {
-                    window.analytics.trackFormSubmit(this.form.id, formData.get('form_type'));
-                }
-
-                const lang = window.languageSwitcher?.currentLang || 'en';
-                const successMessage = translations[lang]['form.successMessage'];
-                this.showMessage('success', successMessage);
-                this.form.reset();
-            } else {
-                // Actual Formspree submission
-                const response = await fetch(this.formspreeEndpoint, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
+            const response = await fetch(this.supabaseUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'apikey': this.supabaseKey,
+                    'Authorization': 'Bearer ' + this.supabaseKey
+                },
+                body: JSON.stringify({
+                    email: formData.get('email'),
+                    interest: 'contact',
+                    source: 'bostral-contact',
+                    metadata: {
+                        lang: lang,
+                        name: formData.get('name') || '',
+                        company: formData.get('company') || '',
+                        service: formData.get('service') || '',
+                        message: formData.get('message') || '',
+                        referrer: document.referrer || 'direct'
                     }
-                });
+                })
+            });
 
-                console.log('📨 Formspree response status:', response.status, response.statusText);
+            console.log('📨 Supabase response status:', response.status);
 
-                if (response.ok) {
-                    console.log('✅ Form submitted successfully to Formspree');
-
-                    // Track event
-                    if (window.analytics) {
-                        window.analytics.trackFormSubmit(this.form.id, formData.get('form_type'));
-                    }
-
-                    const lang = window.languageSwitcher?.currentLang || 'en';
-                    const successMessage = translations[lang]['form.successMessage'];
-                    this.showMessage('success', successMessage);
-                    this.form.reset();
-                } else {
-                    const errorData = await response.json().catch(() => ({}));
-                    console.error('❌ Formspree error response:', errorData);
-                    throw new Error(`Form submission failed: ${response.status} ${response.statusText}`);
-                }
+            // Track event
+            if (window.analytics) {
+                window.analytics.trackFormSubmit(this.form.id, formData.get('form_type'));
             }
+
+            const successMessage = translations[lang]['form.successMessage'];
+            this.showMessage('success', successMessage);
+            this.form.reset();
         } catch (error) {
             console.error('❌ Form submission error:', error);
             const lang = window.languageSwitcher?.currentLang || 'en';
@@ -2190,163 +2225,6 @@ class CaseStudyModals {
 }
 
 // ============================================
-// PREDICTIONS MODAL & LINK MANAGEMENT
-// ============================================
-
-class PredictionsManager {
-    constructor() {
-        this.modal = document.getElementById('trackRecordModal');
-        this.downloadBtn = document.getElementById('downloadTrackRecordBtn');
-        this.readBtn = document.getElementById('readPredictionsBtn');
-        this.closeBtn = this.modal?.querySelector('.lead-modal-close');
-        this.overlay = this.modal?.querySelector('.lead-modal-overlay');
-        this.form = document.getElementById('trackRecordForm');
-        this.languageInput = document.getElementById('trackRecordLanguage');
-
-        this.pdfUrls = {
-            en: 'streaming-predictions-en.pdf',
-            fr: 'streaming-predictions-fr.pdf',
-            zh: 'streaming-predictions-zh.pdf',
-            es: 'streaming-predictions-es.pdf'
-        };
-
-        this.htmlUrls = {
-            en: 'streaming-predictions-en.html',
-            fr: 'streaming-predictions-fr.html',
-            zh: 'streaming-predictions-zh.html',
-            es: 'streaming-predictions-es.html'
-        };
-
-        this.init();
-    }
-
-    init() {
-        // Open modal on download button click
-        this.downloadBtn?.addEventListener('click', () => this.openModal());
-
-        // Close modal
-        this.closeBtn?.addEventListener('click', () => this.closeModal());
-        this.overlay?.addEventListener('click', () => this.closeModal());
-
-        // Close on Escape
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && this.modal?.classList.contains('active')) {
-                this.closeModal();
-            }
-        });
-
-        // Handle form submission
-        this.form?.addEventListener('submit', (e) => this.handleSubmit(e));
-
-        // Update read link when language changes
-        this.updateReadLink();
-    }
-
-    updateReadLink() {
-        const currentLang = window.languageSwitcher?.currentLanguage || 'en';
-        if (this.readBtn) {
-            this.readBtn.href = this.htmlUrls[currentLang] || this.htmlUrls.en;
-        }
-    }
-
-    openModal() {
-        if (!this.modal) return;
-
-        // Update language input based on current language
-        const currentLang = window.languageSwitcher?.currentLanguage || 'en';
-        if (this.languageInput) {
-            this.languageInput.value = currentLang;
-        }
-
-        this.modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-
-        // Track modal open
-        if (typeof gtag === 'function') {
-            gtag('event', 'predictions_modal_open', {
-                'event_category': 'engagement',
-                'event_label': currentLang
-            });
-        }
-    }
-
-    closeModal() {
-        if (!this.modal) return;
-        this.modal.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-
-    async handleSubmit(e) {
-        e.preventDefault();
-
-        const email = document.getElementById('trackRecordEmail')?.value;
-        const name = document.getElementById('trackRecordName')?.value || '';
-        const language = this.languageInput?.value || 'en';
-        const submitBtn = this.form.querySelector('button[type="submit"]');
-
-        // Disable button
-        if (submitBtn) {
-            submitBtn.disabled = true;
-            submitBtn.textContent = '...';
-        }
-
-        // Download PDF immediately
-        this.downloadPdf(language);
-
-        // Track in GA
-        if (typeof gtag === 'function') {
-            gtag('event', 'download_predictions_pdf', {
-                'event_category': 'lead_generation',
-                'event_label': language,
-                'value': 1
-            });
-        }
-
-        // Send to Formspree in background
-        const formData = new FormData();
-        formData.append('email', email);
-        formData.append('name', name);
-        formData.append('language', language);
-        formData.append('source', 'predictions_pdf_download_homepage');
-        formData.append('_subject', `Predictions PDF Download - ${language.toUpperCase()}`);
-
-        fetch('https://formspree.io/f/mzdddplp', {
-            method: 'POST',
-            body: formData,
-            headers: { 'Accept': 'application/json' }
-        }).then(res => console.log('Formspree:', res.status)).catch(err => console.error('Formspree error:', err));
-
-        // Show success message
-        const successMsg = translations[language]?.['insights.modal.success'] || '✓ PDF downloaded!';
-        this.showSuccess(successMsg);
-
-        // Close modal after delay
-        setTimeout(() => this.closeModal(), 2000);
-    }
-
-    downloadPdf(language) {
-        const pdfUrl = this.pdfUrls[language] || this.pdfUrls.en;
-        const link = document.createElement('a');
-        link.href = pdfUrl;
-        link.download = pdfUrl;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
-
-    showSuccess(message) {
-        const formBody = this.modal.querySelector('.lead-modal-body');
-        if (formBody) {
-            formBody.innerHTML = `
-                <div class="lead-modal-success">
-                    <p style="font-size: 1.2rem; color: var(--color-accent); text-align: center;">${message}</p>
-                </div>
-            `;
-        }
-    }
-}
-
-// ============================================
 // INITIALIZE APP
 // ============================================
 
@@ -2366,9 +2244,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Case Study Modals
     new CaseStudyModals();
-
-    // Initialize Predictions Modal & Links
-    window.predictionsManager = new PredictionsManager();
 
     // Log initialization
     console.log('🚀 Ludovic Bostral Consulting Website Initialized');
