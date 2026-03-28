@@ -1879,6 +1879,32 @@ class Analytics {
 }
 
 // ============================================
+// ESSAY DOWNLOAD TRACKING
+// ============================================
+
+(function () {
+    var NOTIFY_URL = 'https://facllabxmlvvmakixprt.supabase.co/functions/v1/lens-notify';
+    document.addEventListener('click', function (e) {
+        var link = e.target.closest('a[href$=".pdf"][download], a[href$=".epub"][download]');
+        if (!link) return;
+        var href = link.getAttribute('href') || '';
+        var file = href.split('/').pop() || href;
+        try {
+            fetch(NOTIFY_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    action: 'notify-download',
+                    file: file,
+                    page: window.location.pathname || window.location.href,
+                    referrer: document.referrer || 'direct'
+                })
+            }).catch(function () {});
+        } catch (e) {}
+    });
+})();
+
+// ============================================
 // CONTACT FORM HANDLING
 // ============================================
 

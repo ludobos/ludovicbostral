@@ -79,10 +79,36 @@
     updateProgress();
   }
 
+  // --- Download Tracking ---
+  function initDownloadTracking() {
+    var NOTIFY_URL = 'https://facllabxmlvvmakixprt.supabase.co/functions/v1/lens-notify';
+    var links = document.querySelectorAll('a[download], a[href$=".pdf"], a[href$=".epub"]');
+
+    links.forEach(function (link) {
+      link.addEventListener('click', function () {
+        var href = link.getAttribute('href') || '';
+        var file = href.split('/').pop() || href;
+        try {
+          fetch(NOTIFY_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              action: 'notify-download',
+              file: file,
+              page: window.location.pathname || window.location.href,
+              referrer: document.referrer || 'direct'
+            })
+          }).catch(function () {});
+        } catch (e) {}
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     initDarkMode();
     initTOC();
     initKeyboardNav();
     initScrollProgress();
+    initDownloadTracking();
   });
 })();
