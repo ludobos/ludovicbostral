@@ -6,6 +6,7 @@ const translations = {
     en: {
         baseline: "Strategic Technology Consulting",
         "header.bookCall": "Book a Call",
+        "header.essays": "Essays",
         "header.predictions": "2026 Predictions",
         "hero.title": "Strategic Technology Consulting for Streaming Platforms",
         "hero.subtitle": "25+ years building and scaling OTT platforms",
@@ -329,6 +330,7 @@ const translations = {
     fr: {
         baseline: "Conseil Stratégique en Technologies",
         "header.bookCall": "Réserver un Appel",
+        "header.essays": "Essais",
         "header.predictions": "Prédictions 2026",
         "hero.title": "Conseil Stratégique en Technologies pour Plateformes de Streaming",
         "hero.subtitle": "25+ ans d'expérience dans la création et le scaling de plateformes OTT",
@@ -652,6 +654,7 @@ const translations = {
     zh: {
         baseline: "战略技术咨询",
         "header.bookCall": "预约通话",
+        "header.essays": "随笔",
         "header.predictions": "2026预测",
         "hero.title": "流媒体平台战略技术咨询",
         "hero.subtitle": "25年以上OTT平台搭建与扩展经验",
@@ -978,6 +981,7 @@ const translations = {
     es: {
         baseline: "Consultoría Tecnológica Estratégica",
         "header.bookCall": "Reservar Llamada",
+        "header.essays": "Ensayos",
         "header.predictions": "Predicciones 2026",
         "hero.title": "Consultoría Tecnológica Estratégica para Plataformas de Streaming",
         "hero.subtitle": "Más de 25 años construyendo y escalando plataformas OTT",
