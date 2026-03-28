@@ -2031,6 +2031,106 @@ body {
 }
 
 /* ============================================
+   ESSAYS HIGHLIGHT SECTION
+   ============================================ */
+
+.essays-highlight {
+    padding: var(--spacing-xl) 0;
+    background: #faf8f5;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.essays-highlight-content {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.essays-highlight-badge {
+    display: inline-block;
+    font-family: var(--font-primary);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8b4513;
+    background: rgba(139, 69, 19, 0.1);
+    padding: 4px 12px;
+    border-radius: 3px;
+    margin-bottom: 16px;
+}
+
+.essays-highlight-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.8rem;
+    line-height: 1.25;
+    color: var(--color-text-dark);
+    margin-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.essays-highlight-subtitle {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-light);
+    margin-bottom: 16px;
+}
+
+.essays-highlight-meta {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 24px;
+}
+
+.essays-highlight-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.essays-cta {
+    background: #8b4513;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.essays-cta:hover {
+    opacity: 0.9;
+    color: #fff;
+}
+
+.essays-download {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 1px;
+}
+
+.essays-download:hover {
+    color: var(--color-text-dark);
+}
+
+@media (max-width: 768px) {
+    .essays-highlight-title {
+        font-size: 1.4rem;
+    }
+
+    .essays-highlight-actions {
+        flex-wrap: wrap;
+    }
+}
+
+/* ============================================
    PRINT STYLES
    ============================================ */
 

@@ -24,6 +24,15 @@ const translations = {
         "lens.report2.desc": "The $4.68B OTT market. Payment architecture, content economics, telco bundling across 34 markets.",
         "lens.cta": "Explore Reports",
 
+        // Essays
+        "essays.badge": "ESSAY",
+        "essays.title": "Is France a Sporting Nation?",
+        "essays.subtitle": "The French sports system spends more public money than any European country, trains 17.2 million athletes, and yet cannot produce individual world champions. An in-depth essay on why the system trains everywhere and elevates nowhere.",
+        "essays.meta": "8 chapters · ~3h read · 45,000 words",
+        "essays.cta": "Read the Essay",
+        "essays.pdf": "PDF",
+        "essays.epub": "ePub",
+
         // Services
         "services.consulting.title": "Strategic Technology Consulting",
         "services.consulting.description": "Platform architecture, technology stack selection, and go-to-market strategy for streaming services",
@@ -348,6 +357,15 @@ const translations = {
         "lens.report2.desc": "Le marché OTT à $4,68Mds. Architecture de paiement, économie du contenu, bundling télécom sur 34 marchés.",
         "lens.cta": "Explorer les rapports",
 
+        // Essais
+        "essays.badge": "ESSAI",
+        "essays.title": "La France est-elle un pays de sport ?",
+        "essays.subtitle": "Le système sportif français dépense plus d'argent public que n'importe quel pays européen, forme 17,2 millions de licenciés, et ne parvient pas à produire des champions individuels de rang mondial. Un essai de fond sur un système qui forme partout et n'élève nulle part.",
+        "essays.meta": "8 chapitres · ~3h de lecture · 45 000 mots",
+        "essays.cta": "Lire l'essai",
+        "essays.pdf": "PDF",
+        "essays.epub": "ePub",
+
         // Services
         "services.consulting.title": "Conseil Stratégique en Technologies",
         "services.consulting.description": "Architecture de plateforme, sélection de stack technologique et stratégie go-to-market pour services de streaming",
@@ -671,6 +689,15 @@ const translations = {
         "lens.report2.title": "Africa Streaming 2026",
         "lens.report2.desc": "46.8亿美元OTT市场。支付架构、内容经济学、电信捆绑，覆盖34个市场。",
         "lens.cta": "探索报告",
+
+        // 随笔
+        "essays.badge": "随笔",
+        "essays.title": "法国是体育强国吗？",
+        "essays.subtitle": "法国体育体制的公共投入居欧洲之首，培养了1720万持证运动员，却无法产出世界级个人冠军。一篇深度分析：为何这个体制处处培训，却无处提升。",
+        "essays.meta": "8章 · 约3小时阅读 · 45,000字",
+        "essays.cta": "阅读随笔",
+        "essays.pdf": "PDF",
+        "essays.epub": "ePub",
 
         // Services
         "services.consulting.title": "战略技术咨询",
@@ -998,6 +1025,15 @@ const translations = {
         "lens.report2.title": "Africa Streaming 2026",
         "lens.report2.desc": "El mercado OTT de $4.68B. Arquitectura de pagos, economía del contenido, bundling telecom en 34 mercados.",
         "lens.cta": "Explorar informes",
+
+        // Ensayos
+        "essays.badge": "ENSAYO",
+        "essays.title": "¿Es Francia una nación deportiva?",
+        "essays.subtitle": "El sistema deportivo francés gasta más dinero público que cualquier país europeo, forma a 17,2 millones de atletas, y sin embargo no logra producir campeones individuales de talla mundial. Un ensayo sobre por qué el sistema forma en todas partes y no eleva en ninguna.",
+        "essays.meta": "8 capítulos · ~3h de lectura · 45.000 palabras",
+        "essays.cta": "Leer el ensayo",
+        "essays.pdf": "PDF",
+        "essays.epub": "ePub",
 
         // Services
         "services.consulting.title": "Consultoría Tecnológica Estratégica",
