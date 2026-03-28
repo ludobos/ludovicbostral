@@ -86,47 +86,38 @@
 <body>
 
   <!-- Progress bar -->
-  <div class="progress-bar" id="progressBar" role="navigation" aria-label="Navigation de l'essai">
-    <div class="progress-bar__inner">
-      <div class="progress-bar__left">
-        <a href="la-france-est-elle-un-pays-de-sport.pdf" download class="progress-bar__download">PDF</a>
-        <span class="progress-bar__sep">·</span>
-        <a href="la-france-est-elle-un-pays-de-sport.epub" download class="progress-bar__download">ePub</a>
-      </div>
-      <div class="progress-bar__center">
-        <button class="toc-toggle" id="tocToggle" aria-expanded="false" aria-controls="tocOverlay">
-          La France est-elle un pays de sport ?
-        </button>
-      </div>
-      <div class="progress-bar__right">
-        <button class="dark-toggle" id="darkToggle" aria-label="Basculer mode sombre" title="Mode sombre">◑</button>
-      </div>
+  <header class="progress-bar">
+    <div class="progress-bar__download">
+      <a href="la-france-est-elle-un-pays-de-sport.pdf" download>PDF</a> ·
+      <a href="la-france-est-elle-un-pays-de-sport.epub" download>ePub</a>
     </div>
-    <div class="progress-bar__track">
-      <div class="progress-bar__fill" id="progressFill"></div>
-    </div>
-  </div>
+    <span class="progress-bar__text" role="button" tabindex="0" aria-label="Table des matières">
+      La France est-elle un pays de sport ?
+    </span>
+    <button class="progress-bar__dark-toggle" aria-label="Mode sombre"></button>
+    <div class="progress-bar__track"><div class="progress-bar__fill" style="width: 0%"></div></div>
+  </header>
 
   <!-- TOC overlay -->
-  <div class="toc-overlay" id="tocOverlay" role="dialog" aria-modal="true" aria-label="Table des matières" hidden>
-    <div class="toc-overlay__backdrop" id="tocBackdrop"></div>
-    <nav class="toc-overlay__panel">
-      <div class="toc-overlay__header">
-        <h2 class="toc-overlay__title">La France est-elle un pays de sport ?</h2>
-        <button class="toc-overlay__close" id="tocClose" aria-label="Fermer la table des matières">✕</button>
+  <div class="toc-overlay" role="dialog" aria-label="Table des matières">
+    <div class="toc-overlay__content">
+      <div class="toc-overlay__title">La France est-elle un pays de sport ?</div>
+      <ul class="toc-overlay__list">
+        <li><a href="1-definition.html"><span>Ch.1 · Qu'est-ce qu'un pays de sport ?</span><span class="toc-time">15 min</span></a></li>
+        <li><a href="2-densite.html"><span>Ch.2 · La densité française</span><span class="toc-time">14 min</span></a></li>
+        <li><a href="3-puissance-collective.html"><span>Ch.3 · La puissance collective</span><span class="toc-time">16 min</span></a></li>
+        <li><a href="4-desert-individuel.html"><span>Ch.4 · Le désert individuel et ses exceptions</span><span class="toc-time">33 min</span></a></li>
+        <li><a href="5-france-forme.html"><span>Ch.5 · La France forme, l'étranger élève</span><span class="toc-time">17 min</span></a></li>
+        <li><a href="6-calque-educatif.html"><span>Ch.6 · Le calque éducatif</span><span class="toc-time">35 min</span></a></li>
+        <li><a href="7-comment-tweaker.html"><span>Ch.7 · Comment tweaker le système</span><span class="toc-time">36 min</span></a></li>
+        <li><a href="8-conclusion.html"><span>Ch.8 · Conclusion : Un pays de sport, pas encore</span><span class="toc-time">8 min</span></a></li>
+        <li><a href="bibliographie.html"><span>Bibliographie</span><span class="toc-time">2 min</span></a></li>
+      </ul>
+      <div class="toc-overlay__download">
+        Télécharger : <a href="la-france-est-elle-un-pays-de-sport.pdf" download>PDF</a> ·
+        <a href="la-france-est-elle-un-pays-de-sport.epub" download>ePub</a>
       </div>
-      <ol class="toc-overlay__list">
-        <li><a href="1-definition.html">Ch.1 · Qu'est-ce qu'un pays de sport ?<span class="toc-time">15 min</span></a></li>
-        <li><a href="2-densite.html">Ch.2 · La densité française<span class="toc-time">14 min</span></a></li>
-        <li><a href="3-puissance-collective.html">Ch.3 · La puissance collective<span class="toc-time">16 min</span></a></li>
-        <li><a href="4-desert-individuel.html">Ch.4 · Le désert individuel et ses exceptions<span class="toc-time">33 min</span></a></li>
-        <li><a href="5-france-forme.html">Ch.5 · La France forme, l'étranger élève<span class="toc-time">17 min</span></a></li>
-        <li><a href="6-calque-educatif.html">Ch.6 · Le calque éducatif<span class="toc-time">35 min</span></a></li>
-        <li><a href="7-comment-tweaker.html">Ch.7 · Comment tweaker le système<span class="toc-time">36 min</span></a></li>
-        <li><a href="8-conclusion.html">Ch.8 · Conclusion : Un pays de sport, pas encore<span class="toc-time">8 min</span></a></li>
-        <li><a href="bibliographie.html">Bibliographie<span class="toc-time">2 min</span></a></li>
-      </ol>
-    </nav>
+    </div>
   </div>
 
   <!-- Main content -->

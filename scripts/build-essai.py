@@ -359,8 +359,9 @@ def render_page(ch: dict, body_html: str, reading_times: dict) -> str:
     schema1 = schema_article(ch, chapter_url, description)
     schema2 = schema_breadcrumb(ch, chapter_url)
 
-    # PDF download URL
-    pdf_url = f"{BASE_URL}/la-france-est-elle-un-pays-de-sport.pdf"
+    # Download URLs (relative for file:// compatibility)
+    pdf_url = "la-france-est-elle-un-pays-de-sport.pdf"
+    epub_url = "la-france-est-elle-un-pays-de-sport.epub"
 
     # Page title for <title> tag
     page_title = f"{escaped_title} — {escaped_essay_title}"
@@ -406,38 +407,30 @@ def render_page(ch: dict, body_html: str, reading_times: dict) -> str:
 <body>
 
   <!-- Progress bar -->
-  <div class="progress-bar" id="progressBar" role="navigation" aria-label="Navigation de l'essai">
-    <div class="progress-bar__inner">
-      <div class="progress-bar__left">
-        {prev_btn}
-      </div>
-      <div class="progress-bar__center">
-        <button class="toc-toggle" id="tocToggle" aria-expanded="false" aria-controls="tocOverlay">
-          {chapter_label}
-        </button>
-      </div>
-      <div class="progress-bar__right">
-        <a href="{pdf_url}" class="progress-bar__download" aria-label="Télécharger en PDF">PDF</a>
-        <button class="dark-toggle" id="darkToggle" aria-label="Basculer mode sombre" title="Mode sombre">◑</button>
-      </div>
+  <header class="progress-bar">
+    <div class="progress-bar__download">
+      <a href="{pdf_url}" download>PDF</a> ·
+      <a href="{epub_url}" download>ePub</a>
     </div>
-    <div class="progress-bar__track">
-      <div class="progress-bar__fill" id="progressFill"></div>
-    </div>
-  </div>
+    <span class="progress-bar__text" role="button" tabindex="0" aria-label="Ouvrir la table des matières">
+      {chapter_label}
+    </span>
+    <button class="progress-bar__dark-toggle" aria-label="Mode sombre"></button>
+    <div class="progress-bar__track"><div class="progress-bar__fill"></div></div>
+  </header>
 
   <!-- TOC overlay -->
-  <div class="toc-overlay" id="tocOverlay" role="dialog" aria-modal="true" aria-label="Table des matières" hidden>
-    <div class="toc-overlay__backdrop" id="tocBackdrop"></div>
-    <nav class="toc-overlay__panel">
-      <div class="toc-overlay__header">
-        <h2 class="toc-overlay__title">{escaped_essay_title}</h2>
-        <button class="toc-overlay__close" id="tocClose" aria-label="Fermer la table des matières">✕</button>
-      </div>
-      <ol class="toc-overlay__list">
+  <div class="toc-overlay" role="dialog" aria-label="Table des matières">
+    <div class="toc-overlay__content">
+      <div class="toc-overlay__title">{escaped_essay_title}</div>
+      <ul class="toc-overlay__list">
 {toc}
-      </ol>
-    </nav>
+      </ul>
+      <div class="toc-overlay__download">
+        Télécharger : <a href="{pdf_url}" download>PDF</a> ·
+        <a href="{epub_url}" download>ePub</a>
+      </div>
+    </div>
   </div>
 
   <!-- Main article -->
@@ -481,8 +474,9 @@ def render_page(ch: dict, body_html: str, reading_times: dict) -> str:
       <a href="https://www.linkedin.com/in/ludovicbostral">{AUTHOR}</a> · {DATE}
     </p>
     <p>
-      <a href="{essay_url}">Retour à l'essai</a> ·
-      <a href="{pdf_url}">Télécharger le PDF</a>
+      <a href="index.html">Retour à l'essai</a> ·
+      <a href="{pdf_url}" download>PDF</a> ·
+      <a href="{epub_url}" download>ePub</a>
     </p>
   </footer>
 
