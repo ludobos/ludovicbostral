@@ -13,7 +13,7 @@ const { title, intro, lensLink, careerTitle, career, also, alsoLinks } = Astro.p
 <section id="profile" class="profile">
   <div class="container container--narrow">
     <h2>{title}</h2>
-    <p class="profile__intro">{intro}</p>
+    <p class="profile__intro" set:html={intro} />
     <a href={lensLink.url} class="profile__lens-link">{lensLink.text} &rarr;</a>
 
     <h3 class="profile__career-title">{careerTitle}</h3>

@@ -146,7 +146,7 @@
 
 /* ==================== HERO ==================== */
 .hero {
-  padding: 120px 0 var(--section-padding);
+  padding: 120px 0 48px;
 }
 
 .hero__micro {

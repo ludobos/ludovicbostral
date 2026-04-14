@@ -8,17 +8,18 @@
     "name": "Ludovic Bostral",
     "tagline": "I analyze streaming markets, build data-driven playbooks, and help teams execute them.",
     "context": "Founder of Streaming Radar. 25 years of hands-on experience in streaming, from M6 Replay to emerging markets.",
-    "ctaPrimary": { "text": "View reports on Lens", "url": "https://lens.streaming-radar.com" },
+    "ctaPrimary": { "text": "View reports on Lens", "url": "https://lens.streaming-radar.com/" },
     "ctaSecondary": { "text": "Book a call", "url": "/call" },
     "location": "Nantes, France"
   },
   "profile": {
     "title": "What I do",
-    "intro": "I publish streaming intelligence reports on Lens: piracy, sports, Central & Eastern Europe, Africa, video infrastructure. This data feeds into concrete playbooks - launch strategy, positioning, pricing, distribution - that I then help teams deploy on the ground.",
-    "lensLink": { "text": "Explore reports on Lens", "url": "https://lens.streaming-radar.com" },
+    "intro": "I publish streaming intelligence reports on <a href=\"https://lens.streaming-radar.com/\">Lens</a>: <a href=\"https://lens.streaming-radar.com/vertical-invasion-2026\">Vertical Invasion</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-2026\">Africa Streaming</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-landscape\">Africa Landscape</a>, <a href=\"https://lens.streaming-radar.com/vertical-drama-market-2026\">Vertical Drama Market</a>. All data is programmatically accessible via the <a href=\"https://lens.streaming-radar.com/mcp\">MCP server</a>. This data feeds into concrete playbooks - launch strategy, positioning, pricing, distribution - that I then help teams deploy on the ground.",
+    "lensLink": { "text": "Explore all reports on Lens", "url": "https://lens.streaming-radar.com/" },
     "careerTitle": "Track record",
     "career": [
       { "period": "2023-now", "company": "Streaming Radar", "role": "Founder", "detail": "Reports, data, MCP, newsletter" },
+      { "period": "2024-now", "company": "Vertical Drama", "role": "Founder", "detail": "verticaldrama.tv" },
       { "period": "2021-2023", "company": "TRACE+", "role": "CTO", "detail": "Afro-urban SVOD, 40+ countries" },
       { "period": "2019-2021", "company": "Kessel", "role": "CTO", "detail": "Audiovisual rights management" },
       { "period": "2017-2019", "company": "Pixagility", "role": "VP Engineering", "detail": "Cloud transcoding and video delivery" },
@@ -29,7 +30,7 @@
     "also": "I also write long-form essays and a weekly streaming newsletter.",
     "alsoLinks": [
       { "text": "Essays", "url": "/essais/" },
-      { "text": "Newsletter", "url": "https://www.streaming-radar.com" }
+      { "text": "Newsletter", "url": "https://www.streaming-radar.com/" }
     ]
   },
   "contact": {
@@ -43,7 +44,7 @@
   },
   "nav": {
     "reports": "Reports",
-    "reportsUrl": "https://lens.streaming-radar.com",
+    "reportsUrl": "https://lens.streaming-radar.com/",
     "contact": "Contact"
   },
   "footer": {

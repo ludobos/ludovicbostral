@@ -29,6 +29,6 @@
 
   --max-width-text: 680px;
   --max-width-grid: 1120px;
-  --section-padding: 96px;
-  --section-padding-mobile: 64px;
+  --section-padding: 64px;
+  --section-padding-mobile: 48px;
 }
