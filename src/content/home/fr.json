@@ -1,0 +1,214 @@
+{
+  "lang": "fr",
+  "meta": {
+    "title": "Ludovic Bostral - Streaming intelligence & advisory",
+    "description": "Fondateur de Streaming Radar. Rapports d'intelligence, essais et conseil pour l'industrie du streaming et de l'OTT."
+  },
+  "hero": {
+    "h1Line1": "Je construis l'intelligence",
+    "h1Line2": "du streaming.",
+    "subtitle": "Fondateur de Streaming Radar. Rapports, données, outils et conseil pour l'industrie du streaming et de l'OTT.",
+    "micro": "Nantes, France"
+  },
+  "now": {
+    "title": "Now",
+    "subtitle": "Ce sur quoi je travaille en ce moment.",
+    "lastUpdated": "Dernière mise à jour avril 2026",
+    "items": [
+      {
+        "text": "Publication du rapport Video Intelligence sur lens.streaming-radar.com",
+        "date": "Q2 2026"
+      },
+      {
+        "text": "Expansion de l'infrastructure MCP pour les données streaming",
+        "date": "En cours"
+      },
+      {
+        "text": "Essai en cours : économie de l'attention et plateformes sportives",
+        "date": "Q2 2026"
+      },
+      {
+        "text": "Newsletter Streaming Radar : couverture hebdomadaire de l'industrie",
+        "date": "Hebdo"
+      }
+    ]
+  },
+  "reports": {
+    "title": "Rapports d'intelligence",
+    "subtitle": "Publiés sur",
+    "subtitleLink": "lens.streaming-radar.com",
+    "ctaText": "Explorer sur Lens",
+    "ctaUrl": "https://lens.streaming-radar.com",
+    "cards": [
+      {
+        "status": "LIVE",
+        "title": "Piracy Intelligence",
+        "pitch": "Cartographie du piratage IPTV, sites de streaming illégal et écosystèmes de contrefaçon à travers 50 pays.",
+        "meta": "162 pages - 1 200+ datapoints - 85 sources",
+        "url": "https://lens.streaming-radar.com/reports/piracy"
+      },
+      {
+        "status": "LIVE",
+        "title": "Sports Streaming Intelligence",
+        "pitch": "Droits sportifs, stratégies de distribution et modèles D2C des diffuseurs à travers les marchés clés.",
+        "meta": "148 pages - 900+ datapoints - 72 sources",
+        "url": "https://lens.streaming-radar.com/reports/sports"
+      },
+      {
+        "status": "IN UPDATE",
+        "title": "Central & Eastern Europe",
+        "pitch": "Paysage concurrentiel et dynamiques de marché du streaming en Europe centrale et orientale.",
+        "meta": "134 pages - 800+ datapoints - 65 sources",
+        "url": "https://lens.streaming-radar.com/reports/ce"
+      },
+      {
+        "status": "PIPELINE",
+        "title": "Africa Streaming Intelligence",
+        "pitch": "Marchés émergents, infrastructure mobile-first et stratégies de contenu local en Afrique.",
+        "meta": "En préparation - 40+ pays couverts",
+        "url": "https://lens.streaming-radar.com/reports/africa"
+      },
+      {
+        "status": "PIPELINE",
+        "title": "Video Intelligence",
+        "pitch": "Vue transversale : technologie vidéo, CDN, encodage et infrastructure de diffusion à l'échelle.",
+        "meta": "En préparation - publication Q2 2026",
+        "url": "https://lens.streaming-radar.com/reports/vi"
+      }
+    ]
+  },
+  "writing": {
+    "title": "Écriture",
+    "essays": {
+      "label": "Essais long-form",
+      "items": [
+        {
+          "title": "La France est-elle un pays de sport ?",
+          "readUrl": "/essais/la-france-est-elle-un-pays-de-sport/",
+          "pdfUrl": "/essais/la-france-est-elle-un-pays-de-sport/la-france-est-elle-un-pays-de-sport.pdf",
+          "epubUrl": "/essais/la-france-est-elle-un-pays-de-sport/la-france-est-elle-un-pays-de-sport.epub"
+        }
+      ]
+    },
+    "newsletter": {
+      "label": "Newsletter Streaming Radar",
+      "text": "Couverture hebdomadaire de l'industrie du streaming : tendances, deals et données.",
+      "ctaText": "Lire sur streaming-radar.com",
+      "ctaUrl": "https://www.streaming-radar.com"
+    },
+    "ludoTries": {
+      "label": "Ludo Tries Things",
+      "text": "Expérimentations personnelles, outils et réflexions hors du streaming.",
+      "ctaText": "Bientôt disponible",
+      "ctaUrl": "TODO_LUDO_TRIES_THINGS_URL"
+    }
+  },
+  "trackRecord": {
+    "title": "25 ans dans le streaming",
+    "maltLink": {
+      "text": "CV détaillé sur Malt",
+      "url": "https://www.malt.fr/profile/ludovicbostral"
+    },
+    "entries": [
+      {
+        "period": "2023-present",
+        "company": "Streaming Radar",
+        "role": "Fondateur",
+        "highlight": "Plateforme d'intelligence streaming : rapports, données, MCP, newsletter."
+      },
+      {
+        "period": "2021-2023",
+        "company": "TRACE+",
+        "role": "CTO",
+        "highlight": "Lancement de la plateforme SVOD afro-urbaine dans 40+ pays."
+      },
+      {
+        "period": "2019-2021",
+        "company": "Kessel",
+        "role": "CTO",
+        "highlight": "Plateforme SaaS de gestion de droits audiovisuels pour distributeurs."
+      },
+      {
+        "period": "2017-2019",
+        "company": "Pixagility",
+        "role": "VP Engineering",
+        "highlight": "Infrastructure cloud de transcodage et livraison vidéo à grande échelle."
+      },
+      {
+        "period": "2015-2017",
+        "company": "Majelan",
+        "role": "CTO",
+        "highlight": "Application de découverte de podcasts avec recommandation algorithmique."
+      },
+      {
+        "period": "2014-2015",
+        "company": "Afrostream",
+        "role": "CTO & Co-fondateur",
+        "highlight": "Premier service SVOD dédié au contenu afro dans les marchés francophones."
+      },
+      {
+        "period": "2001-2014",
+        "company": "M6 Replay",
+        "role": "Lead Developer puis Architecte",
+        "highlight": "Construction et évolution de la plateforme de replay du groupe M6."
+      }
+    ]
+  },
+  "stack": {
+    "title": "Ce qui fait tourner Streaming Radar",
+    "intro": "L'intelligence streaming repose sur une combinaison de collecte automatisée, d'analyse structurée et de diffusion programmable.",
+    "items": [
+      { "name": "MCP Server", "description": "Accès programmatique à l'ensemble des données Streaming Radar via le protocole Model Context" },
+      { "name": "Lens", "description": "Plateforme de publication des rapports avec visualisations interactives et export" },
+      { "name": "Signal Engine", "description": "Veille automatisée sur 200+ sources, classement et promotion des signaux" },
+      { "name": "Supabase", "description": "Backend PostgreSQL, Edge Functions et stockage des datapoints" },
+      { "name": "Astro + Vercel", "description": "Sites statiques performants pour la publication et la diffusion" },
+      { "name": "Claude Code", "description": "Agent de développement intégré pour la construction et la maintenance de l'infrastructure" }
+    ],
+    "mcpLink": {
+      "text": "Explorer le serveur MCP sur Lens",
+      "url": "https://lens.streaming-radar.com/mcp"
+    }
+  },
+  "advisory": {
+    "title": "Comment je travaille avec les équipes",
+    "pillars": [
+      {
+        "label": "DATA INTELLIGENCE",
+        "text": "J'apporte les données de Streaming Radar directement dans vos processus de décision. Paysage concurrentiel, benchmarks tarifaires, dynamiques de piratage, données sportives : tout est structuré, sourcé et actualisable."
+      },
+      {
+        "label": "PLAYBOOKS",
+        "text": "Stratégies de lancement, positionnement produit, architecture technique : je construis des playbooks actionnables adossés aux données, pas des decks génériques."
+      },
+      {
+        "label": "FIELD EXPERIENCE",
+        "text": "25 ans à construire et opérer des plateformes de streaming, du replay M6 aux marchés émergents. Je connais les contraintes réelles de livraison, d'échelle et de monétisation."
+      }
+    ],
+    "closing": "Inbound uniquement. Par introduction ou via /call."
+  },
+  "contact": {
+    "title": "Contact",
+    "ctaText": "Réserver un appel",
+    "ctaUrl": "/call",
+    "email": "ludovic@streaming-radar.com",
+    "linkedinText": "LinkedIn",
+    "linkedinUrl": "https://linkedin.com/in/ludovicbostral",
+    "newsletterText": "Newsletter",
+    "newsletterUrl": "https://www.streaming-radar.com",
+    "location": "Nantes, France"
+  },
+  "nav": {
+    "now": "Now",
+    "writing": "Écriture",
+    "trackRecord": "Parcours",
+    "stack": "Stack",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "2026 Ludovic Bostral",
+    "privacy": "Confidentialité",
+    "terms": "Mentions légales"
+  }
+}
