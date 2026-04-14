@@ -1,16 +1,16 @@
 ---
-import Base from '../layouts/Base.astro';
-import Hero from '../components/Hero.astro';
-import Now from '../components/Now.astro';
-import Reports from '../components/Reports.astro';
-import Writing from '../components/Writing.astro';
-import TrackRecord from '../components/TrackRecord.astro';
-import Stack from '../components/Stack.astro';
-import Advisory from '../components/Advisory.astro';
-import Contact from '../components/Contact.astro';
-import { getHomeContent } from '../utils/i18n';
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import Now from '../../components/Now.astro';
+import Reports from '../../components/Reports.astro';
+import Writing from '../../components/Writing.astro';
+import TrackRecord from '../../components/TrackRecord.astro';
+import Stack from '../../components/Stack.astro';
+import Advisory from '../../components/Advisory.astro';
+import Contact from '../../components/Contact.astro';
+import { getHomeContent } from '../../utils/i18n';
 
-const lang = 'fr';
+const lang = 'en';
 const c = getHomeContent(lang);
 ---
 <Base title={c.meta.title} description={c.meta.description} lang={lang}>
