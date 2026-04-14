@@ -6,17 +6,13 @@ const { lang } = Astro.props;
 
 const content = await import(`../content/home/${lang}.json`);
 const nav = content.default?.nav || content.nav;
-const prefix = lang === 'fr' ? '' : '/en';
 ---
 <header class="site-header" id="site-header">
   <div class="container site-header__inner">
     <a href={lang === 'fr' ? '/' : '/en/'} class="site-header__logo">LUDOVIC BOSTRAL</a>
     <nav class="site-header__nav">
-      <a href={`${prefix}/#now`}>{nav.now}</a>
-      <a href={`${prefix}/#writing`}>{nav.writing}</a>
-      <a href={`${prefix}/#track-record`}>{nav.trackRecord}</a>
-      <a href={`${prefix}/#stack`}>{nav.stack}</a>
-      <a href={`${prefix}/#contact`}>{nav.contact}</a>
+      <a href={nav.reportsUrl}>{nav.reports}</a>
+      <a href="#contact">{nav.contact}</a>
     </nav>
     <a href={lang === 'fr' ? '/en/' : '/'} class="site-header__lang">
       {lang === 'fr' ? 'EN' : 'FR'}

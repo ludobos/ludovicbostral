@@ -1,19 +1,23 @@
 ---
 interface Props {
-  h1Line1: string;
-  h1Line2: string;
-  subtitle: string;
-  micro: string;
+  name: string;
+  tagline: string;
+  context: string;
+  ctaPrimary: { text: string; url: string };
+  ctaSecondary: { text: string; url: string };
+  location: string;
 }
-const { h1Line1, h1Line2, subtitle, micro } = Astro.props;
+const { name, tagline, context, ctaPrimary, ctaSecondary, location } = Astro.props;
 ---
 <section class="hero">
   <div class="container">
-    <h1 class="hero__title">
-      {h1Line1}<br>
-      <span class="hero__title--light">{h1Line2}</span>
-    </h1>
-    <p class="hero__subtitle">{subtitle}</p>
-    <p class="hero__micro mono">{micro}</p>
+    <p class="hero__micro mono">{location}</p>
+    <h1 class="hero__name">{name}</h1>
+    <p class="hero__tagline">{tagline}</p>
+    <p class="hero__context">{context}</p>
+    <div class="hero__ctas">
+      <a href={ctaPrimary.url} class="hero__cta-primary">{ctaPrimary.text}</a>
+      <a href={ctaSecondary.url} class="hero__cta-secondary">{ctaSecondary.text}</a>
+    </div>
   </div>
 </section>

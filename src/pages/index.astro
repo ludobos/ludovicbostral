@@ -1,12 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Hero from '../components/Hero.astro';
-import Now from '../components/Now.astro';
-import Reports from '../components/Reports.astro';
-import Writing from '../components/Writing.astro';
-import TrackRecord from '../components/TrackRecord.astro';
-import Stack from '../components/Stack.astro';
-import Advisory from '../components/Advisory.astro';
+import Profile from '../components/Profile.astro';
 import Contact from '../components/Contact.astro';
 import { getHomeContent } from '../utils/i18n';
 
@@ -14,12 +9,7 @@ const lang = 'fr';
 const c = getHomeContent(lang);
 ---
 <Base title={c.meta.title} description={c.meta.description} lang={lang}>
-  <Hero h1Line1={c.hero.h1Line1} h1Line2={c.hero.h1Line2} subtitle={c.hero.subtitle} micro={c.hero.micro} />
-  <Now title={c.now.title} subtitle={c.now.subtitle} lastUpdated={c.now.lastUpdated} items={c.now.items} />
-  <Reports title={c.reports.title} subtitle={c.reports.subtitle} subtitleLink={c.reports.subtitleLink} ctaText={c.reports.ctaText} ctaUrl={c.reports.ctaUrl} cards={c.reports.cards} />
-  <Writing title={c.writing.title} essays={c.writing.essays} newsletter={c.writing.newsletter} ludoTries={c.writing.ludoTries} />
-  <TrackRecord title={c.trackRecord.title} maltLink={c.trackRecord.maltLink} entries={c.trackRecord.entries} />
-  <Stack title={c.stack.title} intro={c.stack.intro} items={c.stack.items} mcpLink={c.stack.mcpLink} />
-  <Advisory title={c.advisory.title} pillars={c.advisory.pillars} closing={c.advisory.closing} />
-  <Contact title={c.contact.title} ctaText={c.contact.ctaText} ctaUrl={c.contact.ctaUrl} email={c.contact.email} linkedinText={c.contact.linkedinText} linkedinUrl={c.contact.linkedinUrl} newsletterText={c.contact.newsletterText} newsletterUrl={c.contact.newsletterUrl} location={c.contact.location} />
+  <Hero name={c.hero.name} tagline={c.hero.tagline} context={c.hero.context} ctaPrimary={c.hero.ctaPrimary} ctaSecondary={c.hero.ctaSecondary} location={c.hero.location} />
+  <Profile title={c.profile.title} intro={c.profile.intro} lensLink={c.profile.lensLink} careerTitle={c.profile.careerTitle} career={c.profile.career} also={c.profile.also} alsoLinks={c.profile.alsoLinks} />
+  <Contact title={c.contact.title} ctaText={c.contact.ctaText} ctaUrl={c.contact.ctaUrl} email={c.contact.email} linkedinText={c.contact.linkedinText} linkedinUrl={c.contact.linkedinUrl} location={c.contact.location} />
 </Base>

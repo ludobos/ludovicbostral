@@ -2,191 +2,35 @@
   "lang": "en",
   "meta": {
     "title": "Ludovic Bostral - Streaming intelligence & advisory",
-    "description": "Founder of Streaming Radar. Intelligence reports, essays and advisory for the streaming and OTT industry."
+    "description": "Streaming analyst. Intelligence reports, data-driven playbooks and operational execution."
   },
   "hero": {
-    "h1Line1": "I build streaming",
-    "h1Line2": "intelligence.",
-    "subtitle": "Founder of Streaming Radar. Reports, data, tools and advisory for the streaming and OTT industry.",
-    "micro": "Nantes, France"
+    "name": "Ludovic Bostral",
+    "tagline": "I analyze streaming markets, build data-driven playbooks, and help teams execute them.",
+    "context": "Founder of Streaming Radar. 25 years of hands-on experience in streaming, from M6 Replay to emerging markets.",
+    "ctaPrimary": { "text": "View reports on Lens", "url": "https://lens.streaming-radar.com" },
+    "ctaSecondary": { "text": "Book a call", "url": "/call" },
+    "location": "Nantes, France"
   },
-  "now": {
-    "title": "Now",
-    "subtitle": "What I'm working on right now.",
-    "lastUpdated": "Last updated April 2026",
-    "items": [
-      {
-        "text": "Publishing the Video Intelligence report on lens.streaming-radar.com",
-        "date": "Q2 2026"
-      },
-      {
-        "text": "Expanding MCP infrastructure for streaming data",
-        "date": "Ongoing"
-      },
-      {
-        "text": "Essay in progress: attention economy and sports platforms",
-        "date": "Q2 2026"
-      },
-      {
-        "text": "Streaming Radar newsletter: weekly industry coverage",
-        "date": "Weekly"
-      }
-    ]
-  },
-  "reports": {
-    "title": "Intelligence reports",
-    "subtitle": "Published on",
-    "subtitleLink": "lens.streaming-radar.com",
-    "ctaText": "Explore on Lens",
-    "ctaUrl": "https://lens.streaming-radar.com",
-    "cards": [
-      {
-        "status": "LIVE",
-        "title": "Piracy Intelligence",
-        "pitch": "Mapping IPTV piracy, illegal streaming sites and counterfeit ecosystems across 50 countries.",
-        "meta": "162 pages - 1,200+ datapoints - 85 sources",
-        "url": "https://lens.streaming-radar.com/reports/piracy"
-      },
-      {
-        "status": "LIVE",
-        "title": "Sports Streaming Intelligence",
-        "pitch": "Sports rights, distribution strategies and D2C models of broadcasters across key markets.",
-        "meta": "148 pages - 900+ datapoints - 72 sources",
-        "url": "https://lens.streaming-radar.com/reports/sports"
-      },
-      {
-        "status": "IN UPDATE",
-        "title": "Central & Eastern Europe",
-        "pitch": "Competitive landscape and streaming market dynamics in Central and Eastern Europe.",
-        "meta": "134 pages - 800+ datapoints - 65 sources",
-        "url": "https://lens.streaming-radar.com/reports/ce"
-      },
-      {
-        "status": "PIPELINE",
-        "title": "Africa Streaming Intelligence",
-        "pitch": "Emerging markets, mobile-first infrastructure and local content strategies in Africa.",
-        "meta": "In preparation - 40+ countries covered",
-        "url": "https://lens.streaming-radar.com/reports/africa"
-      },
-      {
-        "status": "PIPELINE",
-        "title": "Video Intelligence",
-        "pitch": "Cross-cutting view: video technology, CDN, encoding and delivery infrastructure at scale.",
-        "meta": "In preparation - Q2 2026 publication",
-        "url": "https://lens.streaming-radar.com/reports/vi"
-      }
-    ]
-  },
-  "writing": {
-    "title": "Writing",
-    "essays": {
-      "label": "Long-form essays",
-      "items": [
-        {
-          "title": "La France est-elle un pays de sport ?",
-          "readUrl": "/essais/la-france-est-elle-un-pays-de-sport/",
-          "pdfUrl": "/essais/la-france-est-elle-un-pays-de-sport/la-france-est-elle-un-pays-de-sport.pdf",
-          "epubUrl": "/essais/la-france-est-elle-un-pays-de-sport/la-france-est-elle-un-pays-de-sport.epub"
-        }
-      ]
-    },
-    "newsletter": {
-      "label": "Streaming Radar Newsletter",
-      "text": "Weekly streaming industry coverage: trends, deals and data.",
-      "ctaText": "Read on streaming-radar.com",
-      "ctaUrl": "https://www.streaming-radar.com"
-    },
-    "ludoTries": {
-      "label": "Ludo Tries Things",
-      "text": "Personal experiments, tools and reflections beyond streaming.",
-      "ctaText": "Coming soon",
-      "ctaUrl": "TODO_LUDO_TRIES_THINGS_URL"
-    }
-  },
-  "trackRecord": {
-    "title": "25 years in streaming",
-    "maltLink": {
-      "text": "Detailed CV on Malt",
-      "url": "https://www.malt.fr/profile/ludovicbostral"
-    },
-    "entries": [
-      {
-        "period": "2023-present",
-        "company": "Streaming Radar",
-        "role": "Founder",
-        "highlight": "Streaming intelligence platform: reports, data, MCP, newsletter."
-      },
-      {
-        "period": "2021-2023",
-        "company": "TRACE+",
-        "role": "CTO",
-        "highlight": "Launched the afro-urban SVOD platform in 40+ countries."
-      },
-      {
-        "period": "2019-2021",
-        "company": "Kessel",
-        "role": "CTO",
-        "highlight": "SaaS platform for audiovisual rights management for distributors."
-      },
-      {
-        "period": "2017-2019",
-        "company": "Pixagility",
-        "role": "VP Engineering",
-        "highlight": "Cloud transcoding and video delivery infrastructure at scale."
-      },
-      {
-        "period": "2015-2017",
-        "company": "Majelan",
-        "role": "CTO",
-        "highlight": "Podcast discovery app with algorithmic recommendation."
-      },
-      {
-        "period": "2014-2015",
-        "company": "Afrostream",
-        "role": "CTO & Co-founder",
-        "highlight": "First SVOD service dedicated to afro content in francophone markets."
-      },
-      {
-        "period": "2001-2014",
-        "company": "M6 Replay",
-        "role": "Lead Developer then Architect",
-        "highlight": "Built and evolved the replay platform for the M6 broadcasting group."
-      }
-    ]
-  },
-  "stack": {
-    "title": "What powers Streaming Radar",
-    "intro": "Streaming intelligence relies on a combination of automated collection, structured analysis and programmable distribution.",
-    "items": [
-      { "name": "MCP Server", "description": "Programmatic access to all Streaming Radar data via the Model Context Protocol" },
-      { "name": "Lens", "description": "Report publishing platform with interactive visualizations and export" },
-      { "name": "Signal Engine", "description": "Automated monitoring across 200+ sources, signal ranking and promotion" },
-      { "name": "Supabase", "description": "PostgreSQL backend, Edge Functions and datapoint storage" },
-      { "name": "Astro + Vercel", "description": "Performant static sites for publishing and distribution" },
-      { "name": "Claude Code", "description": "Integrated development agent for building and maintaining the infrastructure" }
+  "profile": {
+    "title": "What I do",
+    "intro": "I publish streaming intelligence reports on Lens: piracy, sports, Central & Eastern Europe, Africa, video infrastructure. This data feeds into concrete playbooks - launch strategy, positioning, pricing, distribution - that I then help teams deploy on the ground.",
+    "lensLink": { "text": "Explore reports on Lens", "url": "https://lens.streaming-radar.com" },
+    "careerTitle": "Track record",
+    "career": [
+      { "period": "2023-now", "company": "Streaming Radar", "role": "Founder", "detail": "Reports, data, MCP, newsletter" },
+      { "period": "2021-2023", "company": "TRACE+", "role": "CTO", "detail": "Afro-urban SVOD, 40+ countries" },
+      { "period": "2019-2021", "company": "Kessel", "role": "CTO", "detail": "Audiovisual rights management" },
+      { "period": "2017-2019", "company": "Pixagility", "role": "VP Engineering", "detail": "Cloud transcoding and video delivery" },
+      { "period": "2015-2017", "company": "Majelan", "role": "CTO", "detail": "Podcast discovery" },
+      { "period": "2014-2015", "company": "Afrostream", "role": "CTO", "detail": "First francophone afro SVOD" },
+      { "period": "2001-2014", "company": "M6 Replay", "role": "Dev then Architect", "detail": "13 years" }
     ],
-    "mcpLink": {
-      "text": "Explore the MCP server on Lens",
-      "url": "https://lens.streaming-radar.com/mcp"
-    }
-  },
-  "advisory": {
-    "title": "How I work with teams",
-    "pillars": [
-      {
-        "label": "DATA INTELLIGENCE",
-        "text": "I bring Streaming Radar data directly into your decision processes. Competitive landscape, pricing benchmarks, piracy dynamics, sports data: everything is structured, sourced and updatable."
-      },
-      {
-        "label": "PLAYBOOKS",
-        "text": "Launch strategies, product positioning, technical architecture: I build actionable playbooks backed by data, not generic decks."
-      },
-      {
-        "label": "FIELD EXPERIENCE",
-        "text": "25 years building and operating streaming platforms, from M6 replay to emerging markets. I know the real constraints of delivery, scale and monetization."
-      }
-    ],
-    "closing": "Inbound only. By introduction or via /call."
+    "also": "I also write long-form essays and a weekly streaming newsletter.",
+    "alsoLinks": [
+      { "text": "Essays", "url": "/essais/" },
+      { "text": "Newsletter", "url": "https://www.streaming-radar.com" }
+    ]
   },
   "contact": {
     "title": "Get in touch",
@@ -195,20 +39,17 @@
     "email": "ludovic@streaming-radar.com",
     "linkedinText": "LinkedIn",
     "linkedinUrl": "https://linkedin.com/in/ludovicbostral",
-    "newsletterText": "Newsletter",
-    "newsletterUrl": "https://www.streaming-radar.com",
     "location": "Nantes, France"
   },
   "nav": {
-    "now": "Now",
-    "writing": "Writing",
-    "trackRecord": "Track record",
-    "stack": "Stack",
+    "reports": "Reports",
+    "reportsUrl": "https://lens.streaming-radar.com",
     "contact": "Contact"
   },
   "footer": {
     "copyright": "2026 Ludovic Bostral",
     "privacy": "Privacy",
-    "terms": "Terms"
+    "terms": "Terms",
+    "essais": "Essays"
   }
 }
