@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320">
+
+  <!-- Title -->
+  <text x="340" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="700" fill="currentColor">Quatre modèles, quatre philosophies</text>
+
+  <!-- Grid definitions -->
+  <!-- Columns: 0=label(0-180), 1=France(180-300), 2=USA(300-420), 3=Chine(420-540), 4=UK(540-660) -->
+  <!-- Rows: header(44-84), r1(84-134), r2(134-184), r3(184-234), r4(234-284) -->
+
+  <!-- GRID LINES (light, currentColor) -->
+  <!-- Horizontal lines -->
+  <line x1="20" y1="44" x2="660" y2="44" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="20" y1="84" x2="660" y2="84" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="20" y1="134" x2="660" y2="134" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="20" y1="184" x2="660" y2="184" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="20" y1="234" x2="660" y2="234" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="20" y1="284" x2="660" y2="284" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Vertical lines -->
+  <line x1="20" y1="44" x2="20" y2="284" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="180" y1="44" x2="180" y2="284" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="300" y1="44" x2="300" y2="284" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="420" y1="44" x2="420" y2="284" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="540" y1="44" x2="540" y2="284" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="660" y1="44" x2="660" y2="284" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- HEADER ROW -->
+  <!-- France -->
+  <rect x="182" y="46" width="116" height="36" rx="4" fill="#4A90E2" fill-opacity="0.12"/>
+  <text x="240" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="currentColor">France</text>
+  <text x="240" y="76" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.55">~17M licenciés</text>
+
+  <!-- USA -->
+  <rect x="302" y="46" width="116" height="36" rx="4" fill="#E74C3C" fill-opacity="0.10"/>
+  <text x="360" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="currentColor">USA</text>
+  <text x="360" y="76" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.55">~330M hab.</text>
+
+  <!-- Chine -->
+  <rect x="422" y="46" width="116" height="36" rx="4" fill="#E67E22" fill-opacity="0.10"/>
+  <text x="480" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="currentColor">Chine</text>
+  <text x="480" y="76" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.55">~1,4Md hab.</text>
+
+  <!-- UK -->
+  <rect x="542" y="46" width="116" height="36" rx="4" fill="#27AE60" fill-opacity="0.10"/>
+  <text x="600" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="currentColor">UK</text>
+  <text x="600" y="76" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.55">~67M hab.</text>
+
+  <!-- ROW LABELS (left column) -->
+  <text x="100" y="112" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="currentColor">Densité / masse</text>
+  <text x="100" y="127" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.55">(licenciés / habitant)</text>
+
+  <text x="100" y="162" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="currentColor">Élite absolue</text>
+  <text x="100" y="177" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.55">(médailles olympiques)</text>
+
+  <text x="100" y="208" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="currentColor">Efficience</text>
+  <text x="100" y="223" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.55">(médailles per capita)</text>
+
+  <text x="100" y="255" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="currentColor">Détection proactive</text>
+  <text x="100" y="270" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.55">(système structuré)</text>
+
+  <!-- GRADE CELLS — Row 1: Densité / masse: France=A+, USA=C, Chine=F, UK=B -->
+  <!-- France A+ -->
+  <rect x="200" y="92" width="80" height="34" rx="5" fill="#27AE60" fill-opacity="0.18"/>
+  <text x="240" y="115" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#27AE60">A+</text>
+
+  <!-- USA C -->
+  <rect x="320" y="92" width="80" height="34" rx="5" fill="#E67E22" fill-opacity="0.18"/>
+  <text x="360" y="115" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#E67E22">C</text>
+
+  <!-- Chine F -->
+  <rect x="440" y="92" width="80" height="34" rx="5" fill="#C0392B" fill-opacity="0.18"/>
+  <text x="480" y="115" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#C0392B">F</text>
+
+  <!-- UK B -->
+  <rect x="560" y="92" width="80" height="34" rx="5" fill="#F39C12" fill-opacity="0.18"/>
+  <text x="600" y="115" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#F39C12">B</text>
+
+  <!-- Row 2: Élite absolue: France=A, USA=A+, Chine=A, UK=A -->
+  <!-- France A -->
+  <rect x="200" y="142" width="80" height="34" rx="5" fill="#27AE60" fill-opacity="0.14"/>
+  <text x="240" y="165" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#27AE60">A</text>
+
+  <!-- USA A+ -->
+  <rect x="320" y="142" width="80" height="34" rx="5" fill="#27AE60" fill-opacity="0.18"/>
+  <text x="360" y="165" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#27AE60">A+</text>
+
+  <!-- Chine A -->
+  <rect x="440" y="142" width="80" height="34" rx="5" fill="#27AE60" fill-opacity="0.14"/>
+  <text x="480" y="165" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#27AE60">A</text>
+
+  <!-- UK A -->
+  <rect x="560" y="142" width="80" height="34" rx="5" fill="#27AE60" fill-opacity="0.14"/>
+  <text x="600" y="165" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#27AE60">A</text>
+
+  <!-- Row 3: Efficience per capita: France=C, USA=D, Chine=B, UK=A+ -->
+  <!-- France C -->
+  <rect x="200" y="192" width="80" height="34" rx="5" fill="#E67E22" fill-opacity="0.18"/>
+  <text x="240" y="215" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#E67E22">C</text>
+
+  <!-- USA D -->
+  <rect x="320" y="192" width="80" height="34" rx="5" fill="#E74C3C" fill-opacity="0.18"/>
+  <text x="360" y="215" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#E74C3C">D</text>
+
+  <!-- Chine B -->
+  <rect x="440" y="192" width="80" height="34" rx="5" fill="#F39C12" fill-opacity="0.18"/>
+  <text x="480" y="215" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#F39C12">B</text>
+
+  <!-- UK A+ -->
+  <rect x="560" y="192" width="80" height="34" rx="5" fill="#27AE60" fill-opacity="0.18"/>
+  <text x="600" y="215" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#27AE60">A+</text>
+
+  <!-- Row 4: Détection proactive: France=D, USA=A, Chine=A+, UK=A -->
+  <!-- France D -->
+  <rect x="200" y="242" width="80" height="34" rx="5" fill="#E74C3C" fill-opacity="0.18"/>
+  <text x="240" y="265" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#E74C3C">D</text>
+
+  <!-- USA A (NCAA) -->
+  <rect x="320" y="242" width="80" height="34" rx="5" fill="#27AE60" fill-opacity="0.14"/>
+  <text x="360" y="261" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#27AE60">A</text>
+  <text x="360" y="273" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#27AE60" opacity="0.8">(NCAA)</text>
+
+  <!-- Chine A+ -->
+  <rect x="440" y="242" width="80" height="34" rx="5" fill="#27AE60" fill-opacity="0.18"/>
+  <text x="480" y="265" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#27AE60">A+</text>
+
+  <!-- UK A -->
+  <rect x="560" y="242" width="80" height="34" rx="5" fill="#27AE60" fill-opacity="0.14"/>
+  <text x="600" y="265" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#27AE60">A</text>
+
+  <!-- Footer note -->
+  <text x="340" y="305" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.45" font-style="italic">Inspiré de la grille Aspen Institute — Chapitre 1</text>
+</svg>
