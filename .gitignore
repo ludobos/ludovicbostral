@@ -44,7 +44,6 @@ build/
 
 # Dependencies (if using npm/yarn)
 node_modules/
-package-lock.json
 yarn.lock
 
 # Environment variables
@@ -56,6 +55,9 @@ yarn.lock
 # Backup files
 *.bak
 *.backup
+
+# Astro
+.astro/
 
 # Netlify
 .netlify/
