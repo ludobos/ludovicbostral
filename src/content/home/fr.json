@@ -28,7 +28,8 @@
       { "period": "2019-2021", "company": "Kessel", "url": "", "role": "CTO", "detail": "Droits audiovisuels" },
       { "period": "2017-2019", "company": "Pixagility", "url": "", "role": "VP Eng", "detail": "Transcodage cloud" },
       { "period": "2015-2017", "company": "Majelan", "url": "", "role": "CTO", "detail": "Podcasts" },
-      { "period": "2014-2015", "company": "Afrostream", "url": "", "role": "CTO", "detail": "SVOD afro" },
+      { "period": "2015", "company": "Molotov", "url": "https://molotov.tv/", "role": "Early team", "detail": "Jan-Avr, puis YC S15" },
+      { "period": "2014-2015", "company": "Afrostream", "url": "", "role": "CTO & Co-fondateur", "detail": "SVOD afro, YC S15" },
       { "period": "2001-2014", "company": "M6 Replay", "url": "", "role": "Architecte", "detail": "13 ans" }
     ],
     "also": "Essais long-form et newsletter hebdomadaire.",
