@@ -1,0 +1,39 @@
+---
+interface Props {
+  lang: 'fr' | 'en';
+}
+const { lang } = Astro.props;
+
+const content = await import(`../content/home/${lang}.json`);
+const nav = content.default?.nav || content.nav;
+const prefix = lang === 'fr' ? '' : '/en';
+---
+<header class="site-header" id="site-header">
+  <div class="container site-header__inner">
+    <a href={lang === 'fr' ? '/' : '/en/'} class="site-header__logo">LUDOVIC BOSTRAL</a>
+    <nav class="site-header__nav">
+      <a href={`${prefix}/#now`}>{nav.now}</a>
+      <a href={`${prefix}/#writing`}>{nav.writing}</a>
+      <a href={`${prefix}/#track-record`}>{nav.trackRecord}</a>
+      <a href={`${prefix}/#stack`}>{nav.stack}</a>
+      <a href={`${prefix}/#contact`}>{nav.contact}</a>
+    </nav>
+    <a href={lang === 'fr' ? '/en/' : '/'} class="site-header__lang">
+      {lang === 'fr' ? 'EN' : 'FR'}
+    </a>
+  </div>
+</header>
+
+<script is:inline>
+(function() {
+  var header = document.getElementById('site-header');
+  var scrolled = false;
+  window.addEventListener('scroll', function() {
+    var isScrolled = window.scrollY > 10;
+    if (isScrolled !== scrolled) {
+      scrolled = isScrolled;
+      header.classList.toggle('site-header--scrolled', scrolled);
+    }
+  }, { passive: true });
+})();
+</script>

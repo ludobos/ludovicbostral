@@ -1,0 +1,60 @@
+---
+interface Props {
+  lang: 'fr' | 'en';
+}
+const { lang } = Astro.props;
+const text = {
+  fr: {
+    message: "Ce site utilise Google Analytics pour mesurer l'audience.",
+    accept: 'Accepter',
+    refuse: 'Refuser',
+  },
+  en: {
+    message: 'This site uses Google Analytics to measure audience.',
+    accept: 'Accept',
+    refuse: 'Decline',
+  },
+};
+const t = text[lang];
+---
+<div id="cookie-consent" class="cookie-consent" style="display:none;">
+  <p class="cookie-consent__text">{t.message}</p>
+  <div class="cookie-consent__actions">
+    <button id="cookie-accept" class="cookie-consent__btn cookie-consent__btn--accept">{t.accept}</button>
+    <button id="cookie-refuse" class="cookie-consent__btn cookie-consent__btn--refuse">{t.refuse}</button>
+  </div>
+</div>
+
+<script is:inline>
+(function() {
+  var GA_ID = 'G-VXBFRGGZV3';
+  var consent = localStorage.getItem('analytics-consent');
+  if (consent === null) {
+    document.getElementById('cookie-consent').style.display = 'flex';
+  } else if (consent === 'accepted') {
+    loadGA();
+  }
+
+  document.getElementById('cookie-accept').addEventListener('click', function() {
+    localStorage.setItem('analytics-consent', 'accepted');
+    document.getElementById('cookie-consent').style.display = 'none';
+    loadGA();
+  });
+
+  document.getElementById('cookie-refuse').addEventListener('click', function() {
+    localStorage.setItem('analytics-consent', 'refused');
+    document.getElementById('cookie-consent').style.display = 'none';
+  });
+
+  function loadGA() {
+    var s = document.createElement('script');
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    s.async = true;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', GA_ID);
+  }
+})();
+</script>
