@@ -6,28 +6,32 @@
   },
   "hero": {
     "name": "Ludovic Bostral",
+    "subtitle": "Streaming Analyst · Fractional CTO",
     "tagline": "J'analyse les marches du streaming, je construis des playbooks a partir des donnees, et j'aide les equipes a les executer.",
-    "context": "Fondateur de Streaming Radar. 25 ans d'operationnel dans le streaming, de M6 Replay aux marches emergents.",
-    "ctaPrimary": { "text": "Voir les rapports sur Lens", "url": "https://lens.streaming-radar.com/" },
+    "context": "Fondateur de Streaming Radar. 25 ans d'operationnel, de M6 Replay aux marches emergents.",
+    "ctaPrimary": { "text": "Rapports sur Lens", "url": "https://lens.streaming-radar.com/" },
     "ctaSecondary": { "text": "Reserver un appel", "url": "/call" },
+    "linkedinUrl": "https://linkedin.com/in/ludovicbostral",
+    "email": "ludovic@streaming-radar.com",
     "location": "Nantes, France"
   },
   "profile": {
     "title": "Ce que je fais",
-    "intro": "Je publie des rapports d'intelligence sur le streaming via <a href=\"https://lens.streaming-radar.com/\">Lens</a> : <a href=\"https://lens.streaming-radar.com/vertical-invasion-2026\">Vertical Invasion</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-2026\">Africa Streaming</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-landscape\">Africa Landscape</a>, <a href=\"https://lens.streaming-radar.com/vertical-drama-market-2026\">Vertical Drama Market</a>. L'ensemble des donnees est accessible programmatiquement via le <a href=\"https://lens.streaming-radar.com/mcp\">serveur MCP</a>. Ces donnees alimentent des playbooks concrets - strategie de lancement, positionnement, pricing, distribution - que j'aide ensuite a deployer avec les equipes en place.",
-    "lensLink": { "text": "Explorer tous les rapports sur Lens", "url": "https://lens.streaming-radar.com/" },
+    "intro": "Je publie des rapports d'intelligence streaming sur <a href=\"https://lens.streaming-radar.com/\">Lens</a> : <a href=\"https://lens.streaming-radar.com/vertical-invasion-2026\">Vertical Invasion</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-2026\">Africa Streaming</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-landscape\">Africa Landscape</a>, <a href=\"https://lens.streaming-radar.com/vertical-drama-market-2026\">Vertical Drama Market</a>. Donnees accessibles via le <a href=\"https://lens.streaming-radar.com/mcp\">serveur MCP</a>. Ces donnees alimentent des playbooks concrets - strategie de lancement, positionnement, pricing, distribution - que j'aide a deployer avec les equipes en place.",
+    "lensLink": { "text": "Tous les rapports sur Lens", "url": "https://lens.streaming-radar.com/" },
     "careerTitle": "Parcours",
     "career": [
-      { "period": "2023-now", "company": "Streaming Radar", "role": "Fondateur", "detail": "Rapports, donnees, MCP, newsletter" },
+      { "period": "2023-now", "company": "Streaming Radar", "role": "Fondateur", "detail": "Rapports, donnees, MCP" },
       { "period": "2024-now", "company": "Vertical Drama", "role": "Fondateur", "detail": "verticaldrama.tv" },
-      { "period": "2021-2023", "company": "TRACE+", "role": "CTO", "detail": "SVOD afro-urbaine, 40+ pays" },
-      { "period": "2019-2021", "company": "Kessel", "role": "CTO", "detail": "Gestion de droits audiovisuels" },
-      { "period": "2017-2019", "company": "Pixagility", "role": "VP Engineering", "detail": "Transcodage et livraison video cloud" },
-      { "period": "2015-2017", "company": "Majelan", "role": "CTO", "detail": "Decouverte de podcasts" },
-      { "period": "2014-2015", "company": "Afrostream", "role": "CTO", "detail": "Premier SVOD afro francophone" },
-      { "period": "2001-2014", "company": "M6 Replay", "role": "Dev puis Architecte", "detail": "13 ans" }
+      { "period": "2025", "company": "FFMPuzzle", "role": "Createur", "detail": "ffmpuzzle.com" },
+      { "period": "2021-2023", "company": "TRACE+", "role": "CTO", "detail": "SVOD, 40+ pays" },
+      { "period": "2019-2021", "company": "Kessel", "role": "CTO", "detail": "Droits audiovisuels" },
+      { "period": "2017-2019", "company": "Pixagility", "role": "VP Eng", "detail": "Transcodage cloud" },
+      { "period": "2015-2017", "company": "Majelan", "role": "CTO", "detail": "Podcasts" },
+      { "period": "2014-2015", "company": "Afrostream", "role": "CTO", "detail": "SVOD afro" },
+      { "period": "2001-2014", "company": "M6 Replay", "role": "Architecte", "detail": "13 ans" }
     ],
-    "also": "J'ecris aussi des essais long-form et une newsletter hebdomadaire sur le streaming.",
+    "also": "Essais long-form et newsletter hebdomadaire.",
     "alsoLinks": [
       { "text": "Essais", "url": "/essais/" },
       { "text": "Newsletter", "url": "https://www.streaming-radar.com/" }

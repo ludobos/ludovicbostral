@@ -9,8 +9,9 @@ const home = defineCollection({
     lang: z.enum(['fr', 'en']),
     meta: z.object({ title: z.string(), description: z.string() }),
     hero: z.object({
-      name: z.string(), tagline: z.string(), context: z.string(),
-      ctaPrimary: linkSchema, ctaSecondary: linkSchema, location: z.string(),
+      name: z.string(), subtitle: z.string(), tagline: z.string(), context: z.string(),
+      ctaPrimary: linkSchema, ctaSecondary: linkSchema,
+      linkedinUrl: z.string(), email: z.string(), location: z.string(),
     }),
     profile: z.object({
       title: z.string(), intro: z.string(), lensLink: linkSchema,
