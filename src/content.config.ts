@@ -16,7 +16,7 @@ const home = defineCollection({
     profile: z.object({
       title: z.string(), intro: z.string(), lensLink: linkSchema,
       careerTitle: z.string(),
-      career: z.array(z.object({ period: z.string(), company: z.string(), role: z.string(), detail: z.string() })),
+      career: z.array(z.object({ period: z.string(), company: z.string(), url: z.string(), role: z.string(), detail: z.string() })),
       also: z.string(),
       alsoLinks: z.array(linkSchema),
     }),

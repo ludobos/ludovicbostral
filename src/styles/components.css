@@ -231,8 +231,8 @@
 .hero__cta-secondary {
   display: inline-block;
   padding: 12px 28px;
-  border: 1px solid var(--accent);
-  color: var(--accent);
+  background: var(--accent);
+  color: var(--cream-light);
   font-family: var(--font-sans);
   font-size: 0.875rem;
   font-weight: 500;
@@ -240,7 +240,7 @@
 }
 
 .hero__cta-secondary:hover {
-  background: var(--accent);
+  background: var(--terracotta-light);
   color: var(--cream-light);
   text-decoration: none;
 }
@@ -338,6 +338,17 @@
   font-weight: 600;
   min-width: 140px;
   flex-shrink: 0;
+  color: var(--text-primary);
+}
+
+a.profile__career-company {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+a.profile__career-company:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 .profile__career-role {
@@ -387,7 +398,7 @@
   display: inline-block;
   margin-top: 24px;
   padding: 16px 48px;
-  background: var(--navy-deep);
+  background: var(--accent);
   color: var(--cream-light);
   font-family: var(--font-sans);
   font-size: 1rem;
@@ -396,7 +407,7 @@
 }
 
 .contact__cta:hover {
-  background: var(--navy-light);
+  background: var(--terracotta-light);
   text-decoration: none;
 }
 

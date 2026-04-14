@@ -10,7 +10,7 @@
     "tagline": "I analyze streaming markets, build data-driven playbooks, and help teams execute them.",
     "context": "Founder of Streaming Radar. 25 years hands-on, from M6 Replay to emerging markets.",
     "ctaPrimary": { "text": "Reports on Lens", "url": "https://lens.streaming-radar.com/" },
-    "ctaSecondary": { "text": "Book a call", "url": "/call" },
+    "ctaSecondary": { "text": "30 min chat", "url": "/call" },
     "linkedinUrl": "https://linkedin.com/in/ludovicbostral",
     "email": "ludovic@streaming-radar.com",
     "location": "Nantes, France"
@@ -21,15 +21,15 @@
     "lensLink": { "text": "All reports on Lens", "url": "https://lens.streaming-radar.com/" },
     "careerTitle": "Track record",
     "career": [
-      { "period": "2023-now", "company": "Streaming Radar", "role": "Founder", "detail": "Reports, data, MCP" },
-      { "period": "2024-now", "company": "Vertical Drama", "role": "Founder", "detail": "verticaldrama.tv" },
-      { "period": "2025", "company": "FFMPuzzle", "role": "Creator", "detail": "ffmpuzzle.com" },
-      { "period": "2021-2023", "company": "TRACE+", "role": "CTO", "detail": "SVOD, 40+ countries" },
-      { "period": "2019-2021", "company": "Kessel", "role": "CTO", "detail": "Rights management" },
-      { "period": "2017-2019", "company": "Pixagility", "role": "VP Eng", "detail": "Cloud transcoding" },
-      { "period": "2015-2017", "company": "Majelan", "role": "CTO", "detail": "Podcasts" },
-      { "period": "2014-2015", "company": "Afrostream", "role": "CTO", "detail": "Afro SVOD" },
-      { "period": "2001-2014", "company": "M6 Replay", "role": "Architect", "detail": "13 years" }
+      { "period": "2023-now", "company": "Streaming Radar", "url": "https://www.streaming-radar.com/", "role": "Founder", "detail": "Reports, data, MCP" },
+      { "period": "2024-now", "company": "Vertical Drama", "url": "https://verticaldrama.tv/", "role": "Founder", "detail": "verticaldrama.tv" },
+      { "period": "2025", "company": "FFMPuzzle", "url": "https://ffmpuzzle.com/", "role": "Creator", "detail": "ffmpuzzle.com" },
+      { "period": "2021-2023", "company": "TRACE+", "url": "", "role": "CTO", "detail": "SVOD, 40+ countries" },
+      { "period": "2019-2021", "company": "Kessel", "url": "", "role": "CTO", "detail": "Rights management" },
+      { "period": "2017-2019", "company": "Pixagility", "url": "", "role": "VP Eng", "detail": "Cloud transcoding" },
+      { "period": "2015-2017", "company": "Majelan", "url": "", "role": "CTO", "detail": "Podcasts" },
+      { "period": "2014-2015", "company": "Afrostream", "url": "", "role": "CTO", "detail": "Afro SVOD" },
+      { "period": "2001-2014", "company": "M6 Replay", "url": "", "role": "Architect", "detail": "13 years" }
     ],
     "also": "Long-form essays and a weekly streaming newsletter.",
     "alsoLinks": [
@@ -39,7 +39,7 @@
   },
   "contact": {
     "title": "Get in touch",
-    "ctaText": "Book a call",
+    "ctaText": "30 min chat",
     "ctaUrl": "/call",
     "email": "ludovic@streaming-radar.com",
     "linkedinText": "LinkedIn",

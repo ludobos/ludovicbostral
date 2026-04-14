@@ -10,7 +10,7 @@
     "tagline": "J'analyse les marches du streaming, je construis des playbooks a partir des donnees, et j'aide les equipes a les executer.",
     "context": "Fondateur de Streaming Radar. 25 ans d'operationnel, de M6 Replay aux marches emergents.",
     "ctaPrimary": { "text": "Rapports sur Lens", "url": "https://lens.streaming-radar.com/" },
-    "ctaSecondary": { "text": "Reserver un appel", "url": "/call" },
+    "ctaSecondary": { "text": "30 min de discussion", "url": "/call" },
     "linkedinUrl": "https://linkedin.com/in/ludovicbostral",
     "email": "ludovic@streaming-radar.com",
     "location": "Nantes, France"
@@ -21,15 +21,15 @@
     "lensLink": { "text": "Tous les rapports sur Lens", "url": "https://lens.streaming-radar.com/" },
     "careerTitle": "Parcours",
     "career": [
-      { "period": "2023-now", "company": "Streaming Radar", "role": "Fondateur", "detail": "Rapports, donnees, MCP" },
-      { "period": "2024-now", "company": "Vertical Drama", "role": "Fondateur", "detail": "verticaldrama.tv" },
-      { "period": "2025", "company": "FFMPuzzle", "role": "Createur", "detail": "ffmpuzzle.com" },
-      { "period": "2021-2023", "company": "TRACE+", "role": "CTO", "detail": "SVOD, 40+ pays" },
-      { "period": "2019-2021", "company": "Kessel", "role": "CTO", "detail": "Droits audiovisuels" },
-      { "period": "2017-2019", "company": "Pixagility", "role": "VP Eng", "detail": "Transcodage cloud" },
-      { "period": "2015-2017", "company": "Majelan", "role": "CTO", "detail": "Podcasts" },
-      { "period": "2014-2015", "company": "Afrostream", "role": "CTO", "detail": "SVOD afro" },
-      { "period": "2001-2014", "company": "M6 Replay", "role": "Architecte", "detail": "13 ans" }
+      { "period": "2023-now", "company": "Streaming Radar", "url": "https://www.streaming-radar.com/", "role": "Fondateur", "detail": "Rapports, donnees, MCP" },
+      { "period": "2024-now", "company": "Vertical Drama", "url": "https://verticaldrama.tv/", "role": "Fondateur", "detail": "verticaldrama.tv" },
+      { "period": "2025", "company": "FFMPuzzle", "url": "https://ffmpuzzle.com/", "role": "Createur", "detail": "ffmpuzzle.com" },
+      { "period": "2021-2023", "company": "TRACE+", "url": "", "role": "CTO", "detail": "SVOD, 40+ pays" },
+      { "period": "2019-2021", "company": "Kessel", "url": "", "role": "CTO", "detail": "Droits audiovisuels" },
+      { "period": "2017-2019", "company": "Pixagility", "url": "", "role": "VP Eng", "detail": "Transcodage cloud" },
+      { "period": "2015-2017", "company": "Majelan", "url": "", "role": "CTO", "detail": "Podcasts" },
+      { "period": "2014-2015", "company": "Afrostream", "url": "", "role": "CTO", "detail": "SVOD afro" },
+      { "period": "2001-2014", "company": "M6 Replay", "url": "", "role": "Architecte", "detail": "13 ans" }
     ],
     "also": "Essais long-form et newsletter hebdomadaire.",
     "alsoLinks": [
@@ -39,7 +39,7 @@
   },
   "contact": {
     "title": "Contact",
-    "ctaText": "Reserver un appel",
+    "ctaText": "30 min de discussion",
     "ctaUrl": "/call",
     "email": "ludovic@streaming-radar.com",
     "linkedinText": "LinkedIn",
