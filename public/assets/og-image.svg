@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F5EDE1"/>
+  <text x="100" y="260" font-family="Space Grotesk, system-ui, sans-serif" font-size="64" font-weight="600" fill="#0F1C26">Je construis l'intelligence</text>
+  <text x="100" y="340" font-family="Space Grotesk, system-ui, sans-serif" font-size="64" font-weight="600" fill="#2A4052">du streaming.</text>
+  <rect x="100" y="370" width="80" height="3" fill="#D4A944"/>
+  <text x="100" y="540" font-family="Space Grotesk, system-ui, sans-serif" font-size="16" font-weight="500" fill="#2A4052" letter-spacing="3">LUDOVIC BOSTRAL</text>
+  <text x="100" y="570" font-family="monospace" font-size="13" fill="#2A4052" letter-spacing="1">streaming-radar.com</text>
+</svg>
