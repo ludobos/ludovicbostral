@@ -191,6 +191,20 @@
   margin-bottom: 16px;
 }
 
+.hero__yc-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.hero__yc-link:hover {
+  text-decoration: underline;
+}
+
+.hero__yc-logo {
+  vertical-align: -2px;
+  margin-right: 2px;
+}
+
 .hero__tagline {
   font-size: 1.0625rem;
   line-height: 1.6;

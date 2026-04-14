@@ -6,7 +6,7 @@
   },
   "hero": {
     "name": "Ludovic Bostral",
-    "subtitle": "Streaming Analyst · Fractional CTO",
+    "subtitle": "Streaming Analyst · Fractional CTO · <a href=\"https://www.ycombinator.com/companies/afrostream\" class=\"hero__yc-link\"><img src=\"https://www.ycombinator.com/favicon.ico\" alt=\"YC\" width=\"14\" height=\"14\" class=\"hero__yc-logo\" /> YC S15</a>",
     "tagline": "J'analyse les marches du streaming, je construis des playbooks a partir des donnees, et j'aide les equipes a les executer.",
     "context": "Fondateur de Streaming Radar. 25 ans d'operationnel, de M6 Replay aux marches emergents.",
     "ctaPrimary": { "text": "Rapports sur Lens", "url": "https://lens.streaming-radar.com/" },
@@ -28,9 +28,10 @@
       { "period": "2019-2021", "company": "Kessel", "url": "", "role": "CTO", "detail": "Droits audiovisuels" },
       { "period": "2017-2019", "company": "Pixagility", "url": "", "role": "VP Eng", "detail": "Transcodage cloud" },
       { "period": "2015-2017", "company": "Majelan", "url": "", "role": "CTO", "detail": "Podcasts" },
-      { "period": "2015", "company": "Molotov", "url": "https://molotov.tv/", "role": "Early team", "detail": "Jan-Avr, puis YC S15" },
       { "period": "2014-2015", "company": "Afrostream", "url": "", "role": "CTO & Co-fondateur", "detail": "SVOD afro, YC S15" },
-      { "period": "2001-2014", "company": "M6 Replay", "url": "", "role": "Architecte", "detail": "13 ans" }
+      { "period": "2015", "company": "Molotov", "url": "https://molotov.tv/", "role": "Early team", "detail": "Jan-Avr 2015" },
+      { "period": "2007-2014", "company": "M6 Web", "url": "", "role": "Dev puis Architecte", "detail": "M6 Replay, 6play" },
+      { "period": "2000-2007", "company": "Manreo", "url": "", "role": "Developpeur", "detail": "" }
     ],
     "also": "Essais long-form et newsletter hebdomadaire.",
     "alsoLinks": [

@@ -17,7 +17,7 @@ const { name, subtitle, tagline, context, ctaPrimary, ctaSecondary, location, li
     <div class="hero__content">
       <p class="hero__location mono">{location}</p>
       <h1 class="hero__name">{name}</h1>
-      <p class="hero__subtitle">{subtitle}</p>
+      <p class="hero__subtitle" set:html={subtitle} />
       <p class="hero__tagline">{tagline}</p>
       <p class="hero__context">{context}</p>
       <div class="hero__ctas">
