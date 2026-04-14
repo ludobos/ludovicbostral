@@ -23,7 +23,7 @@
     "career": [
       { "period": "2023-now", "company": "Streaming Radar", "url": "https://www.streaming-radar.com/", "role": "Founder", "detail": "Reports, data, MCP" },
       { "period": "2024-now", "company": "Vertical Drama", "url": "https://verticaldrama.tv/", "role": "Founder", "detail": "verticaldrama.tv" },
-      { "period": "2025", "company": "FFMPuzzle", "url": "https://ffmpuzzle.com/", "role": "Creator", "detail": "ffmpuzzle.com" },
+      { "period": "2026", "company": "FFMPuzzle", "url": "https://ffmpuzzle.com/", "role": "Creator", "detail": "ffmpuzzle.com" },
       { "period": "2021-2023", "company": "TRACE+", "url": "", "role": "CTO", "detail": "SVOD, 40+ countries" },
       { "period": "2019-2021", "company": "Kessel", "url": "", "role": "CTO", "detail": "Rights management" },
       { "period": "2015-2017", "company": "Majelan", "url": "", "role": "CTO", "detail": "Podcasts" },
