@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="680" height="420">
+  <defs>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A90E2"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#E74C3C"/>
+    </marker>
+  </defs>
+
+  <!-- LEFT COLUMN: French clubs -->
+  <text x="100" y="38" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="700" letter-spacing="2" fill="currentColor" opacity="0.6" text-transform="uppercase">CLUBS FRANÇAIS</text>
+
+  <!-- Club boxes -->
+  <rect x="20" y="52" width="160" height="36" rx="6" fill="#4A90E2" fill-opacity="0.15" stroke="#4A90E2" stroke-width="1.5"/>
+  <text x="100" y="74" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="currentColor">CN Toulouse</text>
+
+  <rect x="20" y="104" width="160" height="36" rx="6" fill="#4A90E2" fill-opacity="0.15" stroke="#4A90E2" stroke-width="1.5"/>
+  <text x="100" y="126" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="currentColor">Stade Bordelais</text>
+
+  <rect x="20" y="156" width="160" height="36" rx="6" fill="#4A90E2" fill-opacity="0.15" stroke="#4A90E2" stroke-width="1.5"/>
+  <text x="100" y="178" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="currentColor">Flash de La Courneuve</text>
+
+  <rect x="20" y="208" width="160" height="36" rx="6" fill="#4A90E2" fill-opacity="0.15" stroke="#4A90E2" stroke-width="1.5"/>
+  <text x="100" y="230" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="currentColor">CN Toulouse</text>
+
+  <rect x="20" y="260" width="160" height="36" rx="6" fill="#4A90E2" fill-opacity="0.15" stroke="#4A90E2" stroke-width="1.5"/>
+  <text x="100" y="282" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="currentColor">Pionniers de Touraine</text>
+
+  <!-- RIGHT COLUMN: Destinations -->
+  <text x="590" y="38" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="700" letter-spacing="2" fill="currentColor" opacity="0.6">DESTINATIONS</text>
+
+  <!-- NCAA box -->
+  <rect x="500" y="52" width="160" height="36" rx="6" fill="#4A90E2" fill-opacity="0.2" stroke="#4A90E2" stroke-width="1.5"/>
+  <text x="580" y="68" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="700" fill="#4A90E2">NCAA</text>
+  <text x="580" y="82" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.7">Universities américaines</text>
+
+  <!-- WorldTour box -->
+  <rect x="500" y="152" width="160" height="36" rx="6" fill="#27AE60" fill-opacity="0.15" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="580" y="168" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="700" fill="#27AE60">WorldTour</text>
+  <text x="580" y="182" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.7">Cyclisme pro européen</text>
+
+  <!-- NBA/NFL box -->
+  <rect x="500" y="214" width="160" height="36" rx="6" fill="#E67E22" fill-opacity="0.15" stroke="#E67E22" stroke-width="1.5"/>
+  <text x="580" y="230" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="700" fill="#E67E22">NBA / NFL</text>
+  <text x="580" y="244" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.7">Ligues majeures US</text>
+
+  <!-- Micro-pôles box -->
+  <rect x="500" y="276" width="160" height="36" rx="6" fill="#9B59B6" fill-opacity="0.15" stroke="#9B59B6" stroke-width="1.5"/>
+  <text x="580" y="292" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="700" fill="#9B59B6">Micro-pôles</text>
+  <text x="580" y="306" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.7">Universités NCAA spécialisées</text>
+
+  <!-- CENTER ARROWS with athlete names -->
+
+  <!-- Marchand → Arizona State (NCAA) -->
+  <path d="M 182 70 C 310 70, 310 70, 498 70" fill="none" stroke="#4A90E2" stroke-width="1.8" marker-end="url(#arrowBlue)"/>
+  <rect x="250" y="56" width="140" height="22" rx="4" fill="none"/>
+  <text x="320" y="72" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="600" fill="#E74C3C">Léon Marchand</text>
+  <text x="320" y="86" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.6">→ Arizona State (NCAA)</text>
+
+  <!-- Seremes → Texas Tech -->
+  <path d="M 182 122 C 310 122, 310 122, 498 108" fill="none" stroke="#4A90E2" stroke-width="1.8" marker-end="url(#arrowBlue)"/>
+  <text x="320" y="118" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="600" fill="#E74C3C">Seremes</text>
+  <text x="320" y="132" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.6">→ Texas Tech (NCAA)</text>
+
+  <!-- Magnier → Soudal Quick-Step -->
+  <path d="M 182 174 C 310 174, 310 170, 498 170" fill="none" stroke="#27AE60" stroke-width="1.8" marker-end="url(#arrowBlue)"/>
+  <text x="320" y="163" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="600" fill="#E74C3C">Axel Magnier</text>
+  <text x="320" y="177" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.6">→ Soudal Quick-Step (WT)</text>
+
+  <!-- Wembanyama → Spurs -->
+  <path d="M 182 226 C 310 226, 310 232, 498 232" fill="none" stroke="#E67E22" stroke-width="1.8" marker-end="url(#arrowBlue)"/>
+  <text x="320" y="218" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="600" fill="#E74C3C">V. Wembanyama</text>
+  <text x="320" y="232" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.6">→ San Antonio Spurs (NBA)</text>
+
+  <!-- Ducos → Univ. of Tennessee -->
+  <path d="M 182 278 C 310 278, 310 293, 498 293" fill="none" stroke="#9B59B6" stroke-width="1.8" marker-end="url(#arrowBlue)"/>
+  <text x="320" y="270" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="600" fill="#E74C3C">Ducos</text>
+  <text x="320" y="284" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.6">→ Univ. of Tennessee (NCAA)</text>
+
+  <!-- Footer note -->
+  <text x="340" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="currentColor" opacity="0.5" font-style="italic">La France forme, l'étranger élève — Chapitre 5</text>
+
+  <!-- Vertical separator lines -->
+  <line x1="195" y1="45" x2="195" y2="330" stroke="currentColor" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="485" y1="45" x2="485" y2="330" stroke="currentColor" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="4,4"/>
+</svg>

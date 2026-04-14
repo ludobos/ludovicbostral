@@ -1,0 +1,34 @@
+---
+interface Props {
+  name: string;
+  subtitle: string;
+  tagline: string;
+  context: string;
+  ctaPrimary: { text: string; url: string };
+  ctaSecondary: { text: string; url: string };
+  location: string;
+  linkedinUrl: string;
+  email: string;
+}
+const { name, subtitle, tagline, context, ctaPrimary, ctaSecondary, location, linkedinUrl, email } = Astro.props;
+---
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__content">
+      <p class="hero__location mono">{location}</p>
+      <h1 class="hero__name">{name}</h1>
+      <p class="hero__subtitle" set:html={subtitle} />
+      <p class="hero__tagline">{tagline}</p>
+      <p class="hero__context">{context}</p>
+      <div class="hero__ctas">
+        <a href={ctaPrimary.url} class="hero__cta-primary">{ctaPrimary.text}</a>
+        <a href={ctaSecondary.url} class="hero__cta-secondary">{ctaSecondary.text}</a>
+        <a href={linkedinUrl} class="hero__social" aria-label="LinkedIn">in</a>
+        <a href={`mailto:${email}`} class="hero__social" aria-label="Email">@</a>
+      </div>
+    </div>
+    <a href="https://www.streaming-radar.com/" class="hero__visual">
+      <img src="/assets/big.jpeg" alt="Streaming Radar" width="480" height="480" loading="eager" />
+    </a>
+  </div>
+</section>

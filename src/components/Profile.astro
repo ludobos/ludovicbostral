@@ -1,0 +1,45 @@
+---
+interface Props {
+  title: string;
+  intro: string;
+  lensLink: { text: string; url: string };
+  careerTitle: string;
+  career: Array<{ period: string; company: string; url: string; role: string; detail: string }>;
+  also: string;
+  alsoLinks: Array<{ text: string; url: string }>;
+  side?: string;
+}
+const { title, intro, lensLink, careerTitle, career, also, alsoLinks, side } = Astro.props;
+---
+<section id="profile" class="profile">
+  <div class="container container--narrow">
+    <h2>{title}</h2>
+    <p class="profile__intro" set:html={intro} />
+    <a href={lensLink.url} class="profile__lens-link">{lensLink.text} &rarr;</a>
+
+    <h3 class="profile__career-title">{careerTitle}</h3>
+    <div class="profile__career">
+      {career.map(entry => (
+        <div class="profile__career-entry">
+          <span class="profile__career-period mono">{entry.period}</span>
+          {entry.url ? (
+            <a href={entry.url} class="profile__career-company">{entry.company}</a>
+          ) : (
+            <span class="profile__career-company">{entry.company}</span>
+          )}
+          <span class="profile__career-role">{entry.role}</span>
+          <span class="profile__career-detail">{entry.detail}</span>
+        </div>
+      ))}
+    </div>
+
+    <p class="profile__also">
+      {also}
+      {alsoLinks.map((link, i) => (
+        <>{i > 0 && ' · '}<a href={link.url}>{link.text}</a></>
+      ))}
+    </p>
+
+    {side && <p class="profile__side" set:html={side} />}
+  </div>
+</section>

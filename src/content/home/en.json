@@ -1,0 +1,64 @@
+{
+  "lang": "en",
+  "meta": {
+    "title": "Ludovic Bostral - Streaming intelligence & advisory",
+    "description": "Streaming analyst. Intelligence reports, data-driven playbooks and operational execution."
+  },
+  "hero": {
+    "name": "Ludovic Bostral",
+    "subtitle": "Streaming Analyst · Fractional CTO · <a href=\"https://www.ycombinator.com/companies/afrostream\" class=\"hero__yc-link\"><img src=\"https://www.ycombinator.com/favicon.ico\" alt=\"YC\" width=\"14\" height=\"14\" class=\"hero__yc-logo\" /> YC S15</a>",
+    "tagline": "I analyze streaming markets, build data-driven playbooks, and help teams execute them.",
+    "context": "Founder of Streaming Radar. 25 years hands-on, from M6 Replay to emerging markets.",
+    "ctaPrimary": { "text": "Reports on Lens", "url": "https://lens.streaming-radar.com/" },
+    "ctaSecondary": { "text": "30 min chat", "url": "/call" },
+    "linkedinUrl": "https://linkedin.com/in/ludovicbostral",
+    "email": "ludovic@streaming-radar.com",
+    "location": "Nantes, France"
+  },
+  "profile": {
+    "title": "What I do",
+    "intro": "I publish streaming intelligence reports on <a href=\"https://lens.streaming-radar.com/\">Lens</a>: <a href=\"https://lens.streaming-radar.com/vertical-invasion-2026\">Vertical Invasion</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-2026\">Africa Streaming</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-landscape\">Africa Landscape</a>, <a href=\"https://lens.streaming-radar.com/vertical-drama-market-2026\">Vertical Drama Market</a>. All data accessible via the <a href=\"https://lens.streaming-radar.com/mcp\">MCP server</a>. This data feeds into concrete playbooks - launch strategy, positioning, pricing, distribution - that I help teams deploy on the ground.",
+    "lensLink": { "text": "All reports on Lens", "url": "https://lens.streaming-radar.com/" },
+    "careerTitle": "Track record",
+    "career": [
+      { "period": "2023-now", "company": "Streaming Radar", "url": "https://www.streaming-radar.com/", "role": "Founder", "detail": "Reports, data, MCP" },
+      { "period": "2024-now", "company": "Vertical Drama", "url": "https://verticaldrama.tv/", "role": "Founder", "detail": "Vertical shows coverage" },
+      { "period": "2026", "company": "FFMPuzzle", "url": "https://ffmpuzzle.com/", "role": "Creator", "detail": "ffmpuzzle.com" },
+      { "period": "2021-2023", "company": "TRACE+", "url": "", "role": "Platform Manager", "detail": "SVOD, 40+ countries" },
+      { "period": "2019-2021", "company": "Kessel", "url": "", "role": "CTO", "detail": "French Substack, newsletters" },
+      { "period": "2015-2017", "company": "Majelan", "url": "", "role": "CTO", "detail": "Podcasts" },
+      { "period": "2017-2019", "company": "Pixagility", "url": "", "role": "VP Eng", "detail": "OTT platforms, TV over IP" },
+      { "period": "2014-2015", "company": "Afrostream", "url": "", "role": "CTO & Co-founder", "detail": "Afro SVOD, YC S15" },
+      { "period": "2015", "company": "Molotov", "url": "https://molotov.tv/", "role": "Early team", "detail": "Live + replay video" },
+      { "period": "2007-2014", "company": "M6 Web", "url": "", "role": "Dev then Architect", "detail": "M6 Replay, 6play" },
+      { "period": "2000-2007", "company": "Manreo", "url": "", "role": "Dev then Lead Dev", "detail": "" }
+    ],
+    "also": "Long-form essays and a weekly streaming newsletter.",
+    "alsoLinks": [
+      { "text": "Essays", "url": "/essais/" },
+      { "text": "Books", "url": "https://www.amazon.fr/stores/Ludovic-Bostral/author/B0F72QFZLY" },
+      { "text": "Newsletter", "url": "https://www.streaming-radar.com/" }
+    ],
+    "side": "Since February 2026, I also run <a href=\"https://www.lewagon-nantes.com/\">Le Wagon</a>, a bar on quai de la Fosse in Nantes. I build AI tools for bar management there. If you're in hospitality in Nantes, let's talk."
+  },
+  "contact": {
+    "title": "Get in touch",
+    "ctaText": "30 min chat",
+    "ctaUrl": "/call",
+    "email": "ludovic@streaming-radar.com",
+    "linkedinText": "LinkedIn",
+    "linkedinUrl": "https://linkedin.com/in/ludovicbostral",
+    "location": "Nantes, France"
+  },
+  "nav": {
+    "reports": "Reports",
+    "reportsUrl": "https://lens.streaming-radar.com/",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "2026 Ludovic Bostral",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "essais": "Essays"
+  }
+}

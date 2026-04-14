@@ -1,0 +1,47 @@
+---
+interface Props {
+  title: string;
+  essays: {
+    label: string;
+    items: Array<{ title: string; readUrl: string; pdfUrl: string; epubUrl: string }>;
+  };
+  newsletter: { label: string; text: string; ctaText: string; ctaUrl: string };
+  ludoTries: { label: string; text: string; ctaText: string; ctaUrl: string };
+}
+const { title, essays, newsletter, ludoTries } = Astro.props;
+---
+<section id="writing" class="writing">
+  <div class="container container--narrow">
+    <h2>{title}</h2>
+
+    <div class="writing__block">
+      <p class="writing__label mono">{essays.label}</p>
+      {essays.items.map(item => (
+        <div class="writing__essay">
+          <h3>{item.title}</h3>
+          <div class="writing__essay-links">
+            <a href={item.readUrl}>Read</a>
+            <a href={item.pdfUrl}>PDF</a>
+            <a href={item.epubUrl}>ePub</a>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="writing__block">
+      <p class="writing__label mono">{newsletter.label}</p>
+      <p>{newsletter.text}</p>
+      <a href={newsletter.ctaUrl} class="writing__cta">{newsletter.ctaText} &rarr;</a>
+    </div>
+
+    <div class="writing__block">
+      <p class="writing__label mono">{ludoTries.label}</p>
+      <p>{ludoTries.text}</p>
+      {ludoTries.ctaUrl !== 'TODO_LUDO_TRIES_THINGS_URL' ? (
+        <a href={ludoTries.ctaUrl} class="writing__cta">{ludoTries.ctaText} &rarr;</a>
+      ) : (
+        <span class="writing__cta mono" style="color: var(--text-secondary)">{ludoTries.ctaText}</span>
+      )}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting to booking...</title>
+    <script>
+        (function() {
+            var base = 'https://cal.com/ludovic-bostral-ludobos-idg16l';
+            var slugMap = { en: '30min-en', fr: '30min-fr', zh: '30min-zh', es: '30min-es' };
+            var localeMap = { en: 'en', fr: 'fr', zh: 'zh-CN', es: 'es' };
+
+            // 1. Check URL param ?lang=xx
+            var params = new URLSearchParams(window.location.search);
+            var lang = params.get('lang');
+
+            // 2. Check localStorage (same key as main site)
+            if (!lang) {
+                try { lang = localStorage.getItem('preferredLanguage'); } catch(e) {}
+            }
+
+            // 3. Detect from browser
+            if (!lang) {
+                var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+                if (browserLang.startsWith('fr')) lang = 'fr';
+                else if (browserLang.startsWith('zh')) lang = 'zh';
+                else if (browserLang.startsWith('es')) lang = 'es';
+                else lang = 'en';
+            }
+
+            // Normalize
+            if (!slugMap[lang]) lang = 'en';
+
+            var url = base + '/' + slugMap[lang] + '?locale=' + localeMap[lang];
+            window.location.replace(url);
+        })();
+    </script>
+</head>
+<body>
+    <p>Redirecting to booking page...</p>
+</body>
+</html>

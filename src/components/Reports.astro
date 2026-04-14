@@ -1,0 +1,45 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  subtitleLink: string;
+  ctaText: string;
+  ctaUrl: string;
+  cards: Array<{
+    status: string;
+    title: string;
+    pitch: string;
+    meta: string;
+    url: string;
+  }>;
+}
+const { title, subtitle, subtitleLink, ctaText, ctaUrl, cards } = Astro.props;
+
+function statusClass(status: string) {
+  if (status === 'LIVE') return 'status--live';
+  if (status === 'IN UPDATE') return 'status--update';
+  return 'status--pipeline';
+}
+---
+<section id="reports" class="reports">
+  <div class="container">
+    <h2>{title}</h2>
+    <p class="reports__subtitle">
+      {subtitle} <a href={ctaUrl}>{subtitleLink}</a>
+    </p>
+    <div class="reports__grid">
+      {cards.map(card => (
+        <article class="report-card">
+          <span class={`report-card__status mono ${statusClass(card.status)}`}>{card.status}</span>
+          <h3 class="report-card__title">{card.title}</h3>
+          <p class="report-card__pitch">{card.pitch}</p>
+          <p class="report-card__meta mono">{card.meta}</p>
+          <a href={card.url} class="report-card__link">Read on Lens &rarr;</a>
+        </article>
+      ))}
+    </div>
+    <div class="reports__cta">
+      <a href={ctaUrl} class="btn-outline">{ctaText}</a>
+    </div>
+  </div>
+</section>

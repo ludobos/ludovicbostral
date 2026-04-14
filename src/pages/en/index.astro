@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import Profile from '../../components/Profile.astro';
+import Contact from '../../components/Contact.astro';
+import { getHomeContent } from '../../utils/i18n';
+
+const lang = 'en';
+const c = getHomeContent(lang);
+---
+<Base title={c.meta.title} description={c.meta.description} lang={lang}>
+  <Hero name={c.hero.name} subtitle={c.hero.subtitle} tagline={c.hero.tagline} context={c.hero.context} ctaPrimary={c.hero.ctaPrimary} ctaSecondary={c.hero.ctaSecondary} location={c.hero.location} linkedinUrl={c.hero.linkedinUrl} email={c.hero.email} />
+  <a href="https://lens.streaming-radar.com/" class="sr-banner">
+    <img src="/assets/streaming-radar-banner.png" alt="Streaming Radar - Independent, Sourced, Opinionated" width="1200" height="200" loading="eager" />
+  </a>
+  <Profile title={c.profile.title} intro={c.profile.intro} lensLink={c.profile.lensLink} careerTitle={c.profile.careerTitle} career={c.profile.career} also={c.profile.also} alsoLinks={c.profile.alsoLinks} side={c.profile.side} />
+  <Contact title={c.contact.title} ctaText={c.contact.ctaText} ctaUrl={c.contact.ctaUrl} email={c.contact.email} linkedinText={c.contact.linkedinText} linkedinUrl={c.contact.linkedinUrl} location={c.contact.location} />
+</Base>

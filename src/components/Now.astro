@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  lastUpdated: string;
+  items: Array<{ text: string; date: string }>;
+}
+const { title, subtitle, lastUpdated, items } = Astro.props;
+---
+<section id="now" class="now">
+  <div class="container container--narrow">
+    <h2>{title}</h2>
+    <p class="now__subtitle">{subtitle}</p>
+    <ul class="now__list">
+      {items.map(item => (
+        <li class="now__item">
+          <span class="now__item-text">{item.text}</span>
+          <span class="now__item-date mono">{item.date}</span>
+        </li>
+      ))}
+    </ul>
+    <p class="now__updated mono">{lastUpdated}</p>
+  </div>
+</section>

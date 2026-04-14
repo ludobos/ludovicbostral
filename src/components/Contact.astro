@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  ctaText: string;
+  ctaUrl: string;
+  email: string;
+  linkedinText: string;
+  linkedinUrl: string;
+  location: string;
+}
+const props = Astro.props;
+---
+<section id="contact" class="contact">
+  <div class="container container--narrow" style="text-align: center;">
+    <h2>{props.title}</h2>
+    <a href={props.ctaUrl} class="contact__cta">{props.ctaText}</a>
+    <div class="contact__links">
+      <a href={`mailto:${props.email}`}>{props.email}</a>
+      <a href={props.linkedinUrl}>{props.linkedinText}</a>
+      <a href="https://www.linkedin.com/company/streaming-radar/">Streaming Radar LinkedIn</a>
+    </div>
+    <p class="contact__location mono">{props.location}</p>
+  </div>
+</section>

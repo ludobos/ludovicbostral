@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+  pillars: Array<{ label: string; text: string }>;
+  closing: string;
+}
+const { title, pillars, closing } = Astro.props;
+---
+<section id="advisory" class="advisory">
+  <div class="container container--narrow">
+    <h2>{title}</h2>
+    {pillars.map(pillar => (
+      <div class="advisory__pillar">
+        <p class="advisory__label mono">{pillar.label}</p>
+        <p class="advisory__text">{pillar.text}</p>
+      </div>
+    ))}
+    <p class="advisory__closing">
+      {closing.split('/call')[0]}<a href="/call">/call</a>{closing.split('/call')[1] || ''}
+    </p>
+  </div>
+</section>
