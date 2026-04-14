@@ -36,6 +36,7 @@
     "also": "Long-form essays and a weekly streaming newsletter.",
     "alsoLinks": [
       { "text": "Essays", "url": "/essais/" },
+      { "text": "Books", "url": "https://www.amazon.fr/stores/Ludovic-Bostral/author/B0F72QFZLY" },
       { "text": "Newsletter", "url": "https://www.streaming-radar.com/" }
     ],
     "side": "Since February 2026, I also run <a href=\"https://www.lewagon-nantes.com/\">Le Wagon</a>, a bar on quai de la Fosse in Nantes. I build AI tools for bar management there. If you're in hospitality in Nantes, let's talk."
