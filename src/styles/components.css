@@ -311,6 +311,25 @@
   }
 }
 
+/* ==================== BANNER ==================== */
+.sr-banner {
+  display: block;
+  max-width: var(--max-width-grid);
+  margin: 0 auto;
+  padding: 0 24px;
+  text-decoration: none;
+}
+
+.sr-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sr-banner:hover {
+  opacity: 0.95;
+}
+
 /* ==================== PROFILE ==================== */
 .profile__intro {
   color: var(--text-secondary);
