@@ -380,6 +380,14 @@ a.profile__career-company:hover {
   margin-left: 4px;
 }
 
+.profile__side {
+  margin-top: 16px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  padding-top: 16px;
+  border-top: 1px solid var(--border-light);
+}
+
 @media (max-width: 768px) {
   .profile__career-entry {
     flex-direction: column;
