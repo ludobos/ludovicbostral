@@ -22,16 +22,16 @@
     "careerTitle": "Track record",
     "career": [
       { "period": "2023-now", "company": "Streaming Radar", "url": "https://www.streaming-radar.com/", "role": "Founder", "detail": "Reports, data, MCP" },
-      { "period": "2024-now", "company": "Vertical Drama", "url": "https://verticaldrama.tv/", "role": "Founder", "detail": "verticaldrama.tv" },
+      { "period": "2024-now", "company": "Vertical Drama", "url": "https://verticaldrama.tv/", "role": "Founder", "detail": "Vertical shows coverage" },
       { "period": "2026", "company": "FFMPuzzle", "url": "https://ffmpuzzle.com/", "role": "Creator", "detail": "ffmpuzzle.com" },
-      { "period": "2021-2023", "company": "TRACE+", "url": "", "role": "CTO", "detail": "SVOD, 40+ countries" },
-      { "period": "2019-2021", "company": "Kessel", "url": "", "role": "CTO", "detail": "Rights management" },
+      { "period": "2021-2023", "company": "TRACE+", "url": "", "role": "Platform Manager", "detail": "SVOD, 40+ countries" },
+      { "period": "2019-2021", "company": "Kessel", "url": "", "role": "CTO", "detail": "French Substack, newsletters" },
       { "period": "2015-2017", "company": "Majelan", "url": "", "role": "CTO", "detail": "Podcasts" },
-      { "period": "2017-2019", "company": "Pixagility", "url": "", "role": "VP Eng", "detail": "Cloud transcoding" },
+      { "period": "2017-2019", "company": "Pixagility", "url": "", "role": "VP Eng", "detail": "OTT platforms, TV over IP" },
       { "period": "2014-2015", "company": "Afrostream", "url": "", "role": "CTO & Co-founder", "detail": "Afro SVOD, YC S15" },
-      { "period": "2015", "company": "Molotov", "url": "https://molotov.tv/", "role": "Early team", "detail": "Jan-Apr 2015" },
+      { "period": "2015", "company": "Molotov", "url": "https://molotov.tv/", "role": "Early team", "detail": "Live + replay video" },
       { "period": "2007-2014", "company": "M6 Web", "url": "", "role": "Dev then Architect", "detail": "M6 Replay, 6play" },
-      { "period": "2000-2007", "company": "Manreo", "url": "", "role": "Developer", "detail": "" }
+      { "period": "2000-2007", "company": "Manreo", "url": "", "role": "Dev then Lead Dev", "detail": "" }
     ],
     "also": "Long-form essays and a weekly streaming newsletter.",
     "alsoLinks": [
