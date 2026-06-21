@@ -13,6 +13,25 @@ interface Props {
 }
 
 const { title, description, lang, canonical } = Astro.props;
+
+const personLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://ludovic.bostral.com/#person",
+  name: "Ludovic Bostral",
+  url: "https://ludovic.bostral.com/",
+  jobTitle: "Founder & Analyst",
+  description: "Founder and analyst — Streaming Lens, verticaldrama.tv and Streaming Radar. Vertical drama, micro-drama and streaming intelligence.",
+  knowsAbout: ["Vertical drama", "Micro-drama", "Streaming", "OTT Africa", "Generative AI video", "Media analysis"],
+  sameAs: [
+    "https://x.com/ludobos",
+    "https://www.linkedin.com/in/ludovicbostral/",
+    "https://www.crunchbase.com/person/ludovic-bostral",
+    "https://lens.streaming-radar.com/about",
+    "https://verticaldrama.tv/about/",
+    "https://www.streaming-radar.com"
+  ]
+};
 const canonicalUrl = canonical || new URL(Astro.url.pathname, Astro.site).href;
 ---
 <!DOCTYPE html>
@@ -49,6 +68,17 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, Astro.site).href;
     <link rel="alternate" hreflang="fr" href={new URL('/', Astro.site).href}>
     <link rel="alternate" hreflang="en" href={canonicalUrl}>
   )}
+
+  <meta name="twitter:creator" content="@ludobos">
+
+  <link rel="me" href="https://x.com/ludobos">
+  <link rel="me" href="https://www.linkedin.com/in/ludovicbostral/">
+  <link rel="me" href="https://www.crunchbase.com/person/ludovic-bostral">
+  <link rel="me" href="https://lens.streaming-radar.com/about">
+  <link rel="me" href="https://verticaldrama.tv/about/">
+  <link rel="me" href="https://www.streaming-radar.com">
+
+  <script type="application/ld+json" set:html={JSON.stringify(personLd)} />
 </head>
 <body>
   <Header lang={lang} />
