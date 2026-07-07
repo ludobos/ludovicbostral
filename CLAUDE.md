@@ -2,8 +2,10 @@
 
 ## Project Overview
 Personal site for Ludovic Bostral, founder of Streaming Radar.
-Hub showcasing intelligence reports (Lens), essays, MCP infrastructure, and inbound advisory.
+Compact one-pager (Hero + Profile + Contact) plus an About page, essays, and legal pages.
+Positioning: personal brand / entity SEO hub — traffic destination is Lens and Streaming Radar.
 Two languages: FR (default at /) and EN (at /en/).
+Canonical host: https://www.bostral.com (bostral.com and ludovic.bostral.com redirect to it).
 
 ## Tech Stack
 - **Framework**: Astro 5 (static output)
@@ -24,25 +26,22 @@ Two languages: FR (default at /) and EN (at /en/).
 │   │       └── en.json    # All EN text content
 │   ├── content.config.ts  # Content collection schema
 │   ├── layouts/
-│   │   └── Base.astro     # HTML shell, meta, fonts, analytics, consent
+│   │   └── Base.astro     # HTML shell, meta/OG/hreflang, Person+WebSite JSON-LD
 │   ├── components/        # One .astro file per section
 │   │   ├── Header.astro   # Sticky header with nav + FR/EN switch
 │   │   ├── Footer.astro   # Single-line footer
 │   │   ├── Hero.astro
-│   │   ├── Now.astro
-│   │   ├── Reports.astro
-│   │   ├── Writing.astro
-│   │   ├── TrackRecord.astro
-│   │   ├── Stack.astro
-│   │   ├── Advisory.astro
+│   │   ├── Profile.astro  # Intro, career timeline, award line, side notes
 │   │   ├── Contact.astro
 │   │   └── CookieConsent.astro
 │   ├── pages/
-│   │   ├── index.astro    # FR home
+│   │   ├── index.astro      # FR home
+│   │   ├── a-propos.astro   # FR about (bio, distinctions, publications) + ProfilePage JSON-LD
 │   │   ├── privacy.astro
 │   │   ├── terms.astro
 │   │   └── en/
 │   │       ├── index.astro  # EN home
+│   │       ├── about.astro  # EN about
 │   │       ├── privacy.astro
 │   │       └── terms.astro
 │   ├── styles/
@@ -79,14 +78,18 @@ All text is in JSON data files, not in components:
 ```
 
 ### Sections Order (home page)
-1. Hero (70vh, two-line H1)
-2. Now (current activities)
-3. Reports (5 Lens report cards)
-4. Writing (essays, newsletter, Ludo Tries Things)
-5. Track Record (timeline, 7 entries)
-6. Stack (tools powering Streaming Radar)
-7. Advisory (3 pillars, prose only)
-8. Contact (CTA + secondary links)
+1. Hero (name, tagline, CTAs)
+2. Streaming Radar banner (link to Lens)
+3. Profile (intro, career timeline, literary award line, side notes)
+4. Contact (CTA + secondary links)
+
+### SEO Invariants (do not regress)
+- Canonical host everywhere: `https://www.bostral.com` (astro.config `site`, canonicals, JSON-LD `@id`s).
+- `Base.astro` emits Person (`#person`, with `award`) + WebSite (`#website`) JSON-LD on every page.
+- Subpages pass `alternateUrl` (cross-language hreflang) and optionally `extraLd` (page-level JSON-LD, e.g. ProfilePage on about pages) to `Base.astro`.
+- `og:image` is `/assets/og-image.png` (1200×630 PNG — social crawlers don't render SVG). Regenerate from `og-image.svg` if the design changes.
+- Sitemap is `sitemap-index.xml` (referenced in robots.txt); static essay URLs are listed in `customPages` in astro.config — add new essays there too.
+- FR copy must be fully accented French.
 
 ## Common Tasks
 
@@ -100,8 +103,9 @@ Edit the corresponding JSON file in `src/content/home/`. No need to touch compon
 4. Import and place in both `src/pages/index.astro` and `src/pages/en/index.astro`
 
 ### Add a New Essay
-1. Place essay HTML/assets in `public/essais/[slug]/`
-2. Add entry to the `writing.essays.items` array in both JSON files
+1. Place essay HTML/assets in `public/essais/[slug]/` (head must include title, description, canonical, OG + Twitter tags)
+2. Link it from `public/essais/index.html`
+3. Add its URL to sitemap `customPages` in `astro.config.mjs`
 
 ## Development
 ```bash
@@ -113,6 +117,41 @@ npm run preview    # Preview build locally
 
 ## Deployment
 Auto-deployed on Vercel on push to main. Static output to `.vercel/output/static/`.
+
+## Behavioral Guidelines
+
+### 1. Think Before Coding
+Don't assume. Don't hide confusion. Surface tradeoffs.
+
+- State assumptions explicitly. If uncertain, ask.
+- If multiple interpretations exist, present them — don't pick silently.
+- If a simpler approach exists, say so. Push back when warranted.
+- If something is unclear, stop. Name what's confusing. Ask.
+
+### 2. Simplicity First
+Minimum code that solves the problem. Nothing speculative.
+
+- No features beyond what was asked.
+- No abstractions for single-use code.
+- No "flexibility" or "configurability" that wasn't requested.
+- No error handling for impossible scenarios.
+- If you write 200 lines and it could be 50, rewrite it.
+
+### 3. Surgical Changes
+Touch only what you must. Clean up only your own mess.
+
+- Don't "improve" adjacent code, comments, or formatting.
+- Don't refactor things that aren't broken.
+- Match existing style, even if you'd do it differently.
+- Remove imports/variables/functions that YOUR changes made unused.
+- Every changed line should trace directly to the user's request.
+
+### 4. Goal-Driven Execution
+Define success criteria. Loop until verified.
+
+- Transform tasks into verifiable goals with concrete checks.
+- For multi-step tasks, state a brief plan with verification steps.
+- Strong success criteria let you loop independently. Weak criteria require clarification — ask upfront.
 
 ## External Links
 - Lens: https://lens.streaming-radar.com

@@ -10,19 +10,28 @@ interface Props {
   description: string;
   lang: 'fr' | 'en';
   canonical?: string;
+  alternateUrl?: string;
+  extraLd?: Record<string, unknown>;
 }
 
-const { title, description, lang, canonical } = Astro.props;
+const { title, description, lang, canonical, alternateUrl, extraLd } = Astro.props;
 
 const personLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "@id": "https://ludovic.bostral.com/#person",
+  "@id": "https://www.bostral.com/#person",
   name: "Ludovic Bostral",
-  url: "https://ludovic.bostral.com/",
+  url: "https://www.bostral.com/",
   jobTitle: "Founder & Analyst",
   description: "Founder and analyst — Streaming Lens, verticaldrama.tv and Streaming Radar. Vertical drama, micro-drama and streaming intelligence.",
   knowsAbout: ["Vertical drama", "Micro-drama", "Streaming", "OTT Africa", "Generative AI video", "Media analysis"],
+  award: ["Prix Alain le Bussy 2026 (ex aequo) — nouvelle « Lume-saudade », revue Galaxies"],
+  knowsLanguage: ["fr", "en"],
+  worksFor: {
+    "@type": "Organization",
+    name: "Streaming Radar",
+    url: "https://www.streaming-radar.com"
+  },
   sameAs: [
     "https://x.com/ludobos",
     "https://www.linkedin.com/in/ludovicbostral/",
@@ -32,7 +41,21 @@ const personLd = {
     "https://www.streaming-radar.com"
   ]
 };
+const websiteLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://www.bostral.com/#website",
+  name: "Ludovic Bostral",
+  url: "https://www.bostral.com/",
+  inLanguage: ["fr", "en"],
+  publisher: { "@id": "https://www.bostral.com/#person" }
+};
 const canonicalUrl = canonical || new URL(Astro.url.pathname, Astro.site).href;
+const alternateHref = alternateUrl
+  ? new URL(alternateUrl, Astro.site).href
+  : new URL(lang === 'fr' ? '/en/' : '/', Astro.site).href;
+const ogLocale = lang === 'fr' ? 'fr_FR' : 'en_US';
+const ogLocaleAlternate = lang === 'fr' ? 'en_US' : 'fr_FR';
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -51,22 +74,29 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, Astro.site).href;
   <meta property="og:description" content={description}>
   <meta property="og:url" content={canonicalUrl}>
   <meta property="og:site_name" content="Ludovic Bostral">
-  <meta property="og:image" content={new URL('/assets/og-image.svg', Astro.site).href}>
+  <meta property="og:image" content={new URL('/assets/og-image.png', Astro.site).href}>
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content={title}>
+  <meta property="og:locale" content={ogLocale}>
+  <meta property="og:locale:alternate" content={ogLocaleAlternate}>
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content={title}>
   <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={new URL('/assets/og-image.png', Astro.site).href}>
 
   <link rel="icon" href="/favicon.ico">
 
   {lang === 'fr' ? (
-    <link rel="alternate" hreflang="en" href={new URL('/en/' , Astro.site).href}>
+    <link rel="alternate" hreflang="en" href={alternateHref}>
     <link rel="alternate" hreflang="fr" href={canonicalUrl}>
+    <link rel="alternate" hreflang="x-default" href="https://www.bostral.com/">
   ) : (
-    <link rel="alternate" hreflang="fr" href={new URL('/', Astro.site).href}>
+    <link rel="alternate" hreflang="fr" href={alternateHref}>
     <link rel="alternate" hreflang="en" href={canonicalUrl}>
+    <link rel="alternate" hreflang="x-default" href="https://www.bostral.com/">
   )}
 
   <meta name="twitter:creator" content="@ludobos">
@@ -79,6 +109,8 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, Astro.site).href;
   <link rel="me" href="https://www.streaming-radar.com">
 
   <script type="application/ld+json" set:html={JSON.stringify(personLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(websiteLd)} />
+  {extraLd && <script type="application/ld+json" set:html={JSON.stringify(extraLd)} />}
 </head>
 <body>
   <Header lang={lang} />

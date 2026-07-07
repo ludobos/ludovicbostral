@@ -2,13 +2,13 @@
   "lang": "fr",
   "meta": {
     "title": "Ludovic Bostral - Streaming intelligence & advisory",
-    "description": "Analyste streaming. Rapports d'intelligence, playbooks data-driven et execution operationnelle."
+    "description": "Analyste streaming. Rapports d'intelligence, playbooks data-driven et exécution opérationnelle."
   },
   "hero": {
     "name": "Ludovic Bostral",
     "subtitle": "Streaming Analyst · Fractional CTO · <a href=\"https://www.ycombinator.com/companies/afrostream\" class=\"hero__yc-link\"><img src=\"https://www.ycombinator.com/favicon.ico\" alt=\"YC\" width=\"14\" height=\"14\" class=\"hero__yc-logo\" /> YC S15</a>",
-    "tagline": "J'analyse les marches du streaming, je construis des playbooks a partir des donnees, et j'aide les equipes a les executer.",
-    "context": "Fondateur de Streaming Radar. 25 ans d'operationnel, de M6 Replay aux marches emergents.",
+    "tagline": "J'analyse les marchés du streaming, je construis des playbooks à partir des données, et j'aide les équipes à les exécuter.",
+    "context": "Fondateur de Streaming Radar. 25 ans d'opérationnel, de M6 Replay aux marchés émergents.",
     "ctaPrimary": { "text": "Rapports sur Lens", "url": "https://lens.streaming-radar.com/" },
     "ctaSecondary": { "text": "30 min de discussion", "url": "/call" },
     "linkedinUrl": "https://linkedin.com/in/ludovicbostral",
@@ -17,19 +17,19 @@
   },
   "profile": {
     "title": "Ce que je fais",
-    "intro": "Je publie des rapports d'intelligence streaming sur <a href=\"https://lens.streaming-radar.com/\">Lens</a> : <a href=\"https://lens.streaming-radar.com/vertical-invasion-2026\">Vertical Invasion</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-2026\">Africa Streaming</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-landscape\">Africa Landscape</a>, <a href=\"https://lens.streaming-radar.com/vertical-drama-market-2026\">Vertical Drama Market</a>. Donnees accessibles via le <a href=\"https://lens.streaming-radar.com/mcp\">serveur MCP</a>. Ces donnees alimentent des playbooks concrets - strategie de lancement, positionnement, pricing, distribution - que j'aide a deployer avec les equipes en place.",
+    "intro": "Je publie des rapports d'intelligence streaming sur <a href=\"https://lens.streaming-radar.com/\">Lens</a> : <a href=\"https://lens.streaming-radar.com/vertical-invasion-2026\">Vertical Invasion</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-2026\">Africa Streaming</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-landscape\">Africa Landscape</a>, <a href=\"https://lens.streaming-radar.com/vertical-drama-market-2026\">Vertical Drama Market</a>. Données accessibles via le <a href=\"https://lens.streaming-radar.com/mcp\">serveur MCP</a>. Ces données alimentent des playbooks concrets - stratégie de lancement, positionnement, pricing, distribution - que j'aide à déployer avec les équipes en place.",
     "lensLink": { "text": "Tous les rapports sur Lens", "url": "https://lens.streaming-radar.com/" },
     "careerTitle": "Parcours",
     "career": [
-      { "period": "2023-now", "company": "Streaming Radar", "url": "https://www.streaming-radar.com/", "role": "Fondateur", "detail": "Rapports, donnees, MCP" },
+      { "period": "2023-now", "company": "Streaming Radar", "url": "https://www.streaming-radar.com/", "role": "Fondateur", "detail": "Rapports, données, MCP" },
       { "period": "2024-now", "company": "Vertical Drama", "url": "https://verticaldrama.tv/", "role": "Fondateur", "detail": "Infos sur les shows verticaux" },
-      { "period": "2026", "company": "FFMPuzzle", "url": "https://ffmpuzzle.com/", "role": "Createur", "detail": "ffmpuzzle.com" },
+      { "period": "2026", "company": "FFMPuzzle", "url": "https://ffmpuzzle.com/", "role": "Créateur", "detail": "ffmpuzzle.com" },
       { "period": "2021-2023", "company": "TRACE+", "url": "", "role": "Platform Manager", "detail": "SVOD, 40+ pays" },
-      { "period": "2019-2021", "company": "Kessel", "url": "", "role": "CTO", "detail": "Substack francais, newsletters" },
+      { "period": "2019-2021", "company": "Kessel", "url": "", "role": "CTO", "detail": "Substack français, newsletters" },
       { "period": "2015-2017", "company": "Majelan", "url": "", "role": "CTO", "detail": "Podcasts" },
       { "period": "2017-2019", "company": "Pixagility", "url": "", "role": "VP Eng", "detail": "OTT, TV sur IP" },
       { "period": "2014-2015", "company": "Afrostream", "url": "", "role": "CTO & Co-fondateur", "detail": "SVOD afro, YC S15" },
-      { "period": "2015", "company": "Molotov", "url": "https://molotov.tv/", "role": "Early team", "detail": "Video live + replay" },
+      { "period": "2015", "company": "Molotov", "url": "https://molotov.tv/", "role": "Early team", "detail": "Vidéo live + replay" },
       { "period": "2007-2014", "company": "M6 Web", "url": "", "role": "Dev puis Architecte", "detail": "M6 Replay, 6play" },
       { "period": "2000-2007", "company": "Manreo", "url": "", "role": "Dev puis Lead Dev", "detail": "" }
     ],
@@ -39,7 +39,8 @@
       { "text": "Livres", "url": "https://www.amazon.fr/stores/Ludovic-Bostral/author/B0F72QFZLY" },
       { "text": "Newsletter", "url": "https://www.streaming-radar.com/" }
     ],
-    "side": "Depuis fevrier 2026, je tiens aussi <a href=\"https://www.lewagon-nantes.com/\">Le Wagon</a>, quai de la Fosse a Nantes. J'y developpe des outils IA pour la gestion de bar. Si vous etes dans la restauration a Nantes, on peut en parler."
+    "award": "Prix Alain le Bussy 2026 (ex aequo) pour la nouvelle « Lume-saudade ». <a href=\"/a-propos/\">En savoir plus</a>",
+    "side": "Depuis février 2026, je tiens aussi <a href=\"https://www.lewagon-nantes.com/\">Le Wagon</a>, quai de la Fosse à Nantes. J'y développe des outils IA pour la gestion de bar. Si vous êtes dans la restauration à Nantes, on peut en parler."
   },
   "contact": {
     "title": "Contact",
@@ -53,12 +54,53 @@
   "nav": {
     "reports": "Rapports",
     "reportsUrl": "https://lens.streaming-radar.com/",
+    "about": "À propos",
+    "aboutUrl": "/a-propos/",
     "contact": "Contact"
+  },
+  "about": {
+    "meta": {
+      "title": "À propos - Ludovic Bostral",
+      "description": "Parcours de Ludovic Bostral : 25 ans dans le streaming, de M6 Replay à Streaming Radar. Distinctions, publications et profils."
+    },
+    "title": "À propos",
+    "bio": [
+      "Je suis Ludovic Bostral, analyste streaming et fondateur de <a href=\"https://www.streaming-radar.com/\">Streaming Radar</a>, basé à Nantes. Depuis 25 ans, je construis et j'analyse des plateformes de streaming, de M6 Replay aux marchés émergents.",
+      "J'ai commencé comme développeur puis lead développeur chez Manreo (2000-2007), avant de rejoindre M6 Web (2007-2014) comme développeur puis architecte, où j'ai travaillé sur M6 Replay et 6play. En 2014, j'ai cofondé Afrostream, un service de SVOD dédié aux contenus afro passé par Y Combinator (batch S15), en tant que CTO. En 2015, j'ai fait partie de l'équipe initiale de <a href=\"https://molotov.tv/\">Molotov</a>, sur la vidéo live et le replay.",
+      "J'ai ensuite été CTO de Majelan (podcasts), VP Engineering chez Pixagility (plateformes OTT, TV sur IP), CTO de Kessel (le Substack français, dédié aux newsletters), puis Platform Manager de TRACE+, un service de SVOD présent dans plus de 40 pays.",
+      "Depuis 2023, je publie des rapports d'intelligence streaming sur <a href=\"https://lens.streaming-radar.com/\">Lens</a> via Streaming Radar : données, playbooks et serveur MCP. J'ai aussi fondé <a href=\"https://verticaldrama.tv/\">Vertical Drama</a>, qui couvre les shows verticaux, et créé <a href=\"https://ffmpuzzle.com/\">FFMPuzzle</a> en 2026."
+    ],
+    "distinctions": {
+      "title": "Distinctions",
+      "items": [
+        "Prix Alain le Bussy 2026 (ex aequo) pour la nouvelle « Lume-saudade », parmi 255 nouvelles soumises. À paraître dans la revue Galaxies n°96, octobre 2026. <a href=\"https://archivesprixlebussy.yolasite.com/PALB-2026.php\">Palmarès officiel</a>."
+      ]
+    },
+    "publications": {
+      "title": "Publications",
+      "items": [
+        { "text": "Vertical Invasion (Lens)", "url": "https://lens.streaming-radar.com/vertical-invasion-2026" },
+        { "text": "Africa Streaming (Lens)", "url": "https://lens.streaming-radar.com/africa-streaming-2026" },
+        { "text": "Africa Landscape (Lens)", "url": "https://lens.streaming-radar.com/africa-streaming-landscape" },
+        { "text": "Vertical Drama Market (Lens)", "url": "https://lens.streaming-radar.com/vertical-drama-market-2026" },
+        { "text": "Essais", "url": "/essais/" }
+      ]
+    },
+    "links": {
+      "title": "Profils",
+      "items": [
+        { "text": "LinkedIn", "url": "https://www.linkedin.com/in/ludovicbostral/" },
+        { "text": "X (@ludobos)", "url": "https://x.com/ludobos" },
+        { "text": "Crunchbase", "url": "https://www.crunchbase.com/person/ludovic-bostral" },
+        { "text": "Streaming Radar", "url": "https://www.streaming-radar.com" },
+        { "text": "verticaldrama.tv", "url": "https://verticaldrama.tv/about/" }
+      ]
+    }
   },
   "footer": {
     "copyright": "2026 Ludovic Bostral",
-    "privacy": "Confidentialite",
-    "terms": "Mentions legales",
+    "privacy": "Confidentialité",
+    "terms": "Mentions légales",
     "essais": "Essais"
   }
 }

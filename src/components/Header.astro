@@ -12,6 +12,7 @@ const nav = content.default?.nav || content.nav;
     <a href={lang === 'fr' ? '/' : '/en/'} class="site-header__logo">LUDOVIC BOSTRAL</a>
     <nav class="site-header__nav">
       <a href={nav.reportsUrl}>{nav.reports}</a>
+      <a href={nav.aboutUrl}>{nav.about}</a>
       <a href="#contact">{nav.contact}</a>
       <a href="/call" class="site-header__cta">{lang === 'fr' ? 'Book a Call' : 'Book a Call'}</a>
     </nav>

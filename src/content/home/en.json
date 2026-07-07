@@ -39,6 +39,7 @@
       { "text": "Books", "url": "https://www.amazon.fr/stores/Ludovic-Bostral/author/B0F72QFZLY" },
       { "text": "Newsletter", "url": "https://www.streaming-radar.com/" }
     ],
+    "award": "Alain le Bussy Award 2026 (joint first prize) for the short story \"Lume-saudade\". <a href=\"/en/about/\">Learn more</a>",
     "side": "Since February 2026, I also run <a href=\"https://www.lewagon-nantes.com/\">Le Wagon</a>, a bar on quai de la Fosse in Nantes. I build AI tools for bar management there. If you're in hospitality in Nantes, let's talk."
   },
   "contact": {
@@ -53,7 +54,48 @@
   "nav": {
     "reports": "Reports",
     "reportsUrl": "https://lens.streaming-radar.com/",
+    "about": "About",
+    "aboutUrl": "/en/about/",
     "contact": "Contact"
+  },
+  "about": {
+    "meta": {
+      "title": "About - Ludovic Bostral",
+      "description": "Ludovic Bostral's background: 25 years in streaming, from M6 Replay to Streaming Radar. Awards, publications and profiles."
+    },
+    "title": "About",
+    "bio": [
+      "I'm Ludovic Bostral, a streaming analyst and the founder of <a href=\"https://www.streaming-radar.com/\">Streaming Radar</a>, based in Nantes, France. For 25 years I've been building and analyzing streaming platforms, from M6 Replay to emerging markets.",
+      "I started as a developer, then lead developer, at Manreo (2000-2007), before joining M6 Web (2007-2014) as a developer then architect, working on M6 Replay and 6play. In 2014 I co-founded Afrostream, an Afro-focused SVOD service that went through Y Combinator (S15 batch), as CTO. In 2015 I was part of the early team at <a href=\"https://molotov.tv/\">Molotov</a>, working on live and replay video.",
+      "I then served as CTO of Majelan (podcasts), VP Engineering at Pixagility (OTT platforms, TV over IP), CTO of Kessel (the French Substack, dedicated to newsletters), and Platform Manager at TRACE+, an SVOD service available in 40+ countries.",
+      "Since 2023 I publish streaming intelligence reports on <a href=\"https://lens.streaming-radar.com/\">Lens</a> through Streaming Radar: data, playbooks and an MCP server. I also founded <a href=\"https://verticaldrama.tv/\">Vertical Drama</a>, covering vertical shows, and created <a href=\"https://ffmpuzzle.com/\">FFMPuzzle</a> in 2026."
+    ],
+    "distinctions": {
+      "title": "Awards",
+      "items": [
+        "Alain le Bussy Award 2026 (joint first prize) for the science-fiction short story \"Lume-saudade\", out of 255 submissions. To be published in Galaxies #96, October 2026. <a href=\"https://archivesprixlebussy.yolasite.com/PALB-2026.php\">Official results</a>."
+      ]
+    },
+    "publications": {
+      "title": "Publications",
+      "items": [
+        { "text": "Vertical Invasion (Lens)", "url": "https://lens.streaming-radar.com/vertical-invasion-2026" },
+        { "text": "Africa Streaming (Lens)", "url": "https://lens.streaming-radar.com/africa-streaming-2026" },
+        { "text": "Africa Landscape (Lens)", "url": "https://lens.streaming-radar.com/africa-streaming-landscape" },
+        { "text": "Vertical Drama Market (Lens)", "url": "https://lens.streaming-radar.com/vertical-drama-market-2026" },
+        { "text": "Essays", "url": "/essais/" }
+      ]
+    },
+    "links": {
+      "title": "Profiles",
+      "items": [
+        { "text": "LinkedIn", "url": "https://www.linkedin.com/in/ludovicbostral/" },
+        { "text": "X (@ludobos)", "url": "https://x.com/ludobos" },
+        { "text": "Crunchbase", "url": "https://www.crunchbase.com/person/ludovic-bostral" },
+        { "text": "Streaming Radar", "url": "https://www.streaming-radar.com" },
+        { "text": "verticaldrama.tv", "url": "https://verticaldrama.tv/about/" }
+      ]
+    }
   },
   "footer": {
     "copyright": "2026 Ludovic Bostral",

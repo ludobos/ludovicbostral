@@ -6,7 +6,14 @@ export default defineConfig({
   site: 'https://www.bostral.com',
   output: 'static',
   adapter: vercel(),
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      customPages: [
+        'https://www.bostral.com/essais/',
+        'https://www.bostral.com/essais/la-france-est-elle-un-pays-de-sport/',
+      ],
+    }),
+  ],
   i18n: {
     defaultLocale: 'fr',
     locales: ['fr', 'en'],

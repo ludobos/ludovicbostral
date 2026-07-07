@@ -7,9 +7,10 @@ interface Props {
   career: Array<{ period: string; company: string; url: string; role: string; detail: string }>;
   also: string;
   alsoLinks: Array<{ text: string; url: string }>;
+  award?: string;
   side?: string;
 }
-const { title, intro, lensLink, careerTitle, career, also, alsoLinks, side } = Astro.props;
+const { title, intro, lensLink, careerTitle, career, also, alsoLinks, award, side } = Astro.props;
 ---
 <section id="profile" class="profile">
   <div class="container container--narrow">
@@ -39,6 +40,8 @@ const { title, intro, lensLink, careerTitle, career, also, alsoLinks, side } = A
         <>{i > 0 && ' · '}<a href={link.url}>{link.text}</a></>
       ))}
     </p>
+
+    {award && <p class="profile__award" set:html={award} />}
 
     {side && <p class="profile__side" set:html={side} />}
   </div>

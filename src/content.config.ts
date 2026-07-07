@@ -19,12 +19,21 @@ const home = defineCollection({
       career: z.array(z.object({ period: z.string(), company: z.string(), url: z.string(), role: z.string(), detail: z.string() })),
       also: z.string(),
       alsoLinks: z.array(linkSchema),
+      award: z.string(),
     }),
     contact: z.object({
       title: z.string(), ctaText: z.string(), ctaUrl: z.string(),
       email: z.string(), linkedinText: z.string(), linkedinUrl: z.string(), location: z.string(),
     }),
-    nav: z.object({ reports: z.string(), reportsUrl: z.string(), contact: z.string() }),
+    nav: z.object({ reports: z.string(), reportsUrl: z.string(), about: z.string(), aboutUrl: z.string(), contact: z.string() }),
+    about: z.object({
+      meta: z.object({ title: z.string(), description: z.string() }),
+      title: z.string(),
+      bio: z.array(z.string()),
+      distinctions: z.object({ title: z.string(), items: z.array(z.string()) }),
+      publications: z.object({ title: z.string(), items: z.array(linkSchema) }),
+      links: z.object({ title: z.string(), items: z.array(linkSchema) }),
+    }),
     footer: z.object({ copyright: z.string(), privacy: z.string(), terms: z.string(), essais: z.string() }),
   }),
 });

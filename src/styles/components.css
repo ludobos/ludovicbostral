@@ -413,6 +413,12 @@ a.profile__career-company:hover {
   margin-left: 4px;
 }
 
+.profile__award {
+  margin-top: 12px;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+}
+
 .profile__side {
   margin-top: 16px;
   font-size: 0.875rem;
@@ -433,6 +439,31 @@ a.profile__career-company:hover {
   .profile__career-role {
     min-width: auto;
   }
+}
+
+/* ==================== ABOUT ==================== */
+.about__title {
+  margin-bottom: 24px;
+}
+
+.about__bio {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.about__subtitle {
+  margin-top: 40px;
+}
+
+.about__list {
+  list-style: none;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.about__list li {
+  padding: 4px 0;
 }
 
 /* ==================== CONTACT ==================== */

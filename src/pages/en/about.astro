@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getHomeContent } from '../../utils/i18n';
+
+const lang = 'en';
+const a = getHomeContent(lang).about;
+
+const profilePageLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://www.bostral.com/en/about/#profilepage",
+  url: "https://www.bostral.com/en/about/",
+  inLanguage: "en",
+  dateModified: "2026-07-07",
+  mainEntity: { "@id": "https://www.bostral.com/#person" }
+};
+---
+<Base title={a.meta.title} description={a.meta.description} lang={lang} alternateUrl="/a-propos/" extraLd={profilePageLd}>
+  <section class="about">
+    <div class="container container--narrow">
+      <h1 class="about__title">{a.title}</h1>
+      {a.bio.map(paragraph => <p class="about__bio" set:html={paragraph} />)}
+
+      <h2 class="about__subtitle">{a.distinctions.title}</h2>
+      <ul class="about__list">
+        {a.distinctions.items.map(item => <li set:html={item} />)}
+      </ul>
+
+      <h2 class="about__subtitle">{a.publications.title}</h2>
+      <ul class="about__list">
+        {a.publications.items.map(item => <li><a href={item.url}>{item.text}</a></li>)}
+      </ul>
+
+      <h2 class="about__subtitle">{a.links.title}</h2>
+      <ul class="about__list">
+        {a.links.items.map(item => <li><a href={item.url}>{item.text}</a></li>)}
+      </ul>
+    </div>
+  </section>
+</Base>
