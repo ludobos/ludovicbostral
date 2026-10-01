@@ -22,9 +22,10 @@ const personLd = {
   "@id": "https://www.bostral.com/#person",
   name: "Ludovic Bostral",
   url: "https://www.bostral.com/",
-  jobTitle: "Founder & Analyst",
+  jobTitle: "Streaming analyst, founder of Streaming Radar",
+  homeLocation: { "@type": "Place", name: "Nantes, France" },
   description: "Founder and analyst — Streaming Lens, verticaldrama.tv and Streaming Radar. Vertical drama, micro-drama and streaming intelligence.",
-  knowsAbout: ["Vertical drama", "Micro-drama", "Streaming", "OTT Africa", "Generative AI video", "Media analysis"],
+  knowsAbout: ["Vertical drama", "Micro-drama", "Streaming", "OTT Africa", "Media analysis", "Fractional CTO"],
   award: ["Prix Alain le Bussy 2026 (ex aequo) — nouvelle « Lume-saudade », revue Galaxies"],
   knowsLanguage: ["fr", "en"],
   worksFor: {
@@ -87,7 +88,10 @@ const ogLocaleAlternate = lang === 'fr' ? 'en_US' : 'fr_FR';
   <meta name="twitter:description" content={description}>
   <meta name="twitter:image" content={new URL('/assets/og-image.png', Astro.site).href}>
 
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
 
   {lang === 'fr' ? (
     <link rel="alternate" hreflang="en" href={alternateHref}>

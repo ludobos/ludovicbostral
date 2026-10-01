@@ -47,7 +47,7 @@
 }
 
 .site-header__nav a:hover {
-  color: var(--accent);
+  color: var(--accent-text);
   text-decoration: underline;
 }
 
@@ -64,8 +64,8 @@
 }
 
 .site-header__lang:hover {
-  color: var(--accent);
-  border-color: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent-text);
   text-decoration: none;
 }
 
@@ -104,7 +104,7 @@
 }
 
 .site-footer a:hover {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 /* ==================== COOKIE CONSENT ==================== */
@@ -185,14 +185,14 @@
   font-family: var(--font-mono);
   font-size: 0.875rem;
   font-weight: 400;
-  color: var(--accent);
+  color: var(--accent-text);
   text-transform: uppercase;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
 
 .hero__yc-link {
-  color: var(--accent);
+  color: var(--accent-text);
   text-decoration: none;
 }
 
@@ -245,7 +245,7 @@
 .hero__cta-secondary {
   display: inline-block;
   padding: 12px 28px;
-  background: var(--accent);
+  background: var(--accent-text);
   color: var(--cream-light);
   font-family: var(--font-sans);
   font-size: 0.875rem;
@@ -254,7 +254,7 @@
 }
 
 .hero__cta-secondary:hover {
-  background: var(--terracotta-light);
+  background: var(--accent);
   color: var(--cream-light);
   text-decoration: none;
 }
@@ -274,8 +274,8 @@
 }
 
 .hero__social:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--accent-text);
+  color: var(--accent-text);
   text-decoration: none;
 }
 
@@ -386,7 +386,7 @@ a.profile__career-company {
 }
 
 a.profile__career-company:hover {
-  color: var(--accent);
+  color: var(--accent-text);
   text-decoration: underline;
 }
 

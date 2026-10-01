@@ -41,7 +41,7 @@ h3 {
 }
 
 a {
-  color: var(--accent);
+  color: var(--accent-text);
   text-decoration: none;
 }
 
@@ -82,4 +82,10 @@ section {
   section {
     padding: var(--section-padding-mobile) 0;
   }
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-text);
+  outline-offset: 2px;
 }

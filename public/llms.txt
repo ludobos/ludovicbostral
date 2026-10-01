@@ -1,0 +1,11 @@
+# Ludovic Bostral
+
+> Analyste streaming français, fondateur de Streaming Radar et de Vertical Drama, basé à Nantes. Ce site est la page de référence sur la personne. Les rapports et les données sont sur Streaming Lens.
+
+- [Accueil](https://www.bostral.com/): parcours, activités, contact
+- [À propos](https://www.bostral.com/a-propos/): biographie, distinctions, profils
+- [About (EN)](https://www.bostral.com/en/about/): biography, awards, profiles
+- [Essais](https://www.bostral.com/essais/): essais long format
+- [Streaming Lens](https://lens.streaming-radar.com/): rapports et données de marché, serveur MCP
+- [Streaming Radar](https://www.streaming-radar.com/): newsletter hebdomadaire
+- [Vertical Drama](https://verticaldrama.tv/): couverture des shows verticaux

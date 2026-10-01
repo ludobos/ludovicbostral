@@ -21,7 +21,7 @@ TOTAL_CHAPTERS = 8
 PANDOC = "/opt/homebrew/bin/pandoc"
 
 SOURCE_DIR = Path("/Users/ludovicbostral/france-sport-data/output/essai")
-OUTPUT_DIR = Path("/Users/ludovicbostral/ludovicbostral/essais/la-france-est-elle-un-pays-de-sport")
+OUTPUT_DIR = Path("/Users/ludovicbostral/ludovicbostral/public/essais/la-france-est-elle-un-pays-de-sport")
 
 # ─── Chapter Configuration ────────────────────────────────────────────────────
 
@@ -208,11 +208,7 @@ def schema_article(ch: dict, chapter_url: str, description: str) -> str:
   "@type": "Article",
   "headline": "{escaped_title}",
   "description": "{escaped_desc}",
-  "author": {{
-    "@type": "Person",
-    "name": "{AUTHOR}",
-    "url": "https://www.linkedin.com/in/ludovicbostral"
-  }},
+  "author": {{ "@id": "https://www.bostral.com/#person" }},
   "datePublished": "{DATE}",
   "inLanguage": "fr-FR",
   "url": "{chapter_url}",

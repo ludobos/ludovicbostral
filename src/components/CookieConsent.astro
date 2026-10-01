@@ -28,7 +28,8 @@ const t = text[lang];
 <script is:inline>
 (function() {
   var GA_ID = 'G-VXBFRGGZV3';
-  var consent = localStorage.getItem('analytics-consent');
+  var consent = null;
+  try { consent = localStorage.getItem('analytics-consent'); } catch (e) {}
   if (consent === null) {
     document.getElementById('cookie-consent').style.display = 'flex';
   } else if (consent === 'accepted') {
@@ -36,13 +37,13 @@ const t = text[lang];
   }
 
   document.getElementById('cookie-accept').addEventListener('click', function() {
-    localStorage.setItem('analytics-consent', 'accepted');
+    try { localStorage.setItem('analytics-consent', 'accepted'); } catch (e) {}
     document.getElementById('cookie-consent').style.display = 'none';
     loadGA();
   });
 
   document.getElementById('cookie-refuse').addEventListener('click', function() {
-    localStorage.setItem('analytics-consent', 'refused');
+    try { localStorage.setItem('analytics-consent', 'refused'); } catch (e) {}
     document.getElementById('cookie-consent').style.display = 'none';
   });
 

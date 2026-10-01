@@ -6,7 +6,7 @@
   },
   "hero": {
     "name": "Ludovic Bostral",
-    "subtitle": "Streaming Analyst · Fractional CTO · <a href=\"https://www.ycombinator.com/companies/afrostream\" class=\"hero__yc-link\"><img src=\"https://www.ycombinator.com/favicon.ico\" alt=\"YC\" width=\"14\" height=\"14\" class=\"hero__yc-logo\" /> YC S15</a>",
+    "subtitle": "Streaming Analyst · Fractional CTO · <a href=\"https://www.ycombinator.com/companies/afrostream\" class=\"hero__yc-link\"><img src=\"/assets/yc-favicon.ico\" alt=\"YC\" width=\"14\" height=\"14\" class=\"hero__yc-logo\" /> YC S15</a>",
     "tagline": "I analyze streaming markets, build data-driven playbooks, and help teams execute them.",
     "context": "Founder of Streaming Radar. 25 years hands-on, from M6 Replay to emerging markets.",
     "ctaPrimary": { "text": "Reports on Lens", "url": "https://lens.streaming-radar.com/" },
@@ -17,7 +17,7 @@
   },
   "profile": {
     "title": "What I do",
-    "intro": "I publish streaming intelligence reports on <a href=\"https://lens.streaming-radar.com/\">Lens</a>: <a href=\"https://lens.streaming-radar.com/vertical-invasion-2026\">Vertical Invasion</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-2026\">Africa Streaming</a>, <a href=\"https://lens.streaming-radar.com/africa-streaming-landscape\">Africa Landscape</a>, <a href=\"https://lens.streaming-radar.com/vertical-drama-market-2026\">Vertical Drama Market</a>. All data accessible via the <a href=\"https://lens.streaming-radar.com/mcp\">MCP server</a>. This data feeds into concrete playbooks - launch strategy, positioning, pricing, distribution - that I help teams deploy on the ground.",
+    "intro": "I publish streaming intelligence reports on <a href=\"https://lens.streaming-radar.com/\">Lens</a>. All data accessible via the <a href=\"https://lens.streaming-radar.com/mcp\">MCP server</a>. This data feeds into concrete playbooks - launch strategy, positioning, pricing, distribution - that I help teams deploy on the ground.",
     "lensLink": { "text": "All reports on Lens", "url": "https://lens.streaming-radar.com/" },
     "careerTitle": "Track record",
     "career": [
@@ -26,10 +26,10 @@
       { "period": "2026", "company": "FFMPuzzle", "url": "https://ffmpuzzle.com/", "role": "Creator", "detail": "ffmpuzzle.com" },
       { "period": "2021-2023", "company": "TRACE+", "url": "", "role": "Platform Manager", "detail": "SVOD, 40+ countries" },
       { "period": "2019-2021", "company": "Kessel", "url": "", "role": "CTO", "detail": "French Substack, newsletters" },
-      { "period": "2015-2017", "company": "Majelan", "url": "", "role": "CTO", "detail": "Podcasts" },
       { "period": "2017-2019", "company": "Pixagility", "url": "", "role": "VP Eng", "detail": "OTT platforms, TV over IP" },
-      { "period": "2014-2015", "company": "Afrostream", "url": "", "role": "CTO & Co-founder", "detail": "Afro SVOD, YC S15" },
+      { "period": "2015-2017", "company": "Majelan", "url": "", "role": "CTO", "detail": "Podcasts" },
       { "period": "2015", "company": "Molotov", "url": "https://molotov.tv/", "role": "Early team", "detail": "Live + replay video" },
+      { "period": "2014-2015", "company": "Afrostream", "url": "", "role": "CTO & Co-founder", "detail": "Afro SVOD, YC S15" },
       { "period": "2007-2014", "company": "M6 Web", "url": "", "role": "Dev then Architect", "detail": "M6 Replay, 6play" },
       { "period": "2000-2007", "company": "Manreo", "url": "", "role": "Dev then Lead Dev", "detail": "" }
     ],
@@ -40,7 +40,7 @@
       { "text": "Newsletter", "url": "https://www.streaming-radar.com/" }
     ],
     "award": "Alain le Bussy Award 2026 (joint first prize) for the short story \"Lume-saudade\". <a href=\"/en/about/\">Learn more</a>",
-    "side": "Since February 2026, I also run <a href=\"https://www.lewagon-nantes.com/\">Le Wagon</a>, a bar on quai de la Fosse in Nantes. I build AI tools for bar management there. If you're in hospitality in Nantes, let's talk."
+    "side": "Since February 2026, I am also a non-executive investor in <a href=\"https://www.lewagon-nantes.com/\">Le Wagon</a>, a bar on quai de la Fosse in Nantes. I build AI tools for bar management there. If you're in hospitality in Nantes, let's talk."
   },
   "contact": {
     "title": "Get in touch",
@@ -65,6 +65,7 @@
     },
     "title": "About",
     "bio": [
+      "Ludovic Bostral is a French streaming analyst, founder of <a href=\"https://www.streaming-radar.com/\">Streaming Radar</a> and <a href=\"https://verticaldrama.tv/\">Vertical Drama</a>, based in Nantes.",
       "I'm Ludovic Bostral, a streaming analyst and the founder of <a href=\"https://www.streaming-radar.com/\">Streaming Radar</a>, based in Nantes, France. For 25 years I've been building and analyzing streaming platforms, from M6 Replay to emerging markets.",
       "I started as a developer, then lead developer, at Manreo (2000-2007), before joining M6 Web (2007-2014) as a developer then architect, working on M6 Replay and 6play. In 2014 I co-founded Afrostream, an Afro-focused SVOD service that went through Y Combinator (S15 batch), as CTO. In 2015 I was part of the early team at <a href=\"https://molotov.tv/\">Molotov</a>, working on live and replay video.",
       "I then served as CTO of Majelan (podcasts), VP Engineering at Pixagility (OTT platforms, TV over IP), CTO of Kessel (the French Substack, dedicated to newsletters), and Platform Manager at TRACE+, an SVOD service available in 40+ countries.",
@@ -73,16 +74,15 @@
     "distinctions": {
       "title": "Awards",
       "items": [
-        "Alain le Bussy Award 2026 (joint first prize) for the science-fiction short story \"Lume-saudade\", out of 255 submissions. To be published in Galaxies #96, October 2026. <a href=\"https://archivesprixlebussy.yolasite.com/PALB-2026.php\">Official results</a>."
+        "Alain le Bussy Award 2026 (joint first prize) for the science-fiction short story \"Lume-saudade\", out of 255 submissions. Published in Galaxies #96, October 2026. <a href=\"https://archivesprixlebussy.yolasite.com/PALB-2026.php\">Official results</a>.",
+        "<a href=\"https://claude.ai/directory/streaming-radar\">Streaming Radar</a> MCP server listed in the Claude connectors directory."
       ]
     },
     "publications": {
       "title": "Publications",
       "items": [
-        { "text": "Vertical Invasion (Lens)", "url": "https://lens.streaming-radar.com/vertical-invasion-2026" },
-        { "text": "Africa Streaming (Lens)", "url": "https://lens.streaming-radar.com/africa-streaming-2026" },
-        { "text": "Africa Landscape (Lens)", "url": "https://lens.streaming-radar.com/africa-streaming-landscape" },
-        { "text": "Vertical Drama Market (Lens)", "url": "https://lens.streaming-radar.com/vertical-drama-market-2026" },
+        { "text": "Reports on Lens", "url": "https://lens.streaming-radar.com/" },
+        { "text": "Vertical What? Episode 1: Twist (YouTube Short)", "url": "https://www.youtube.com/shorts/kcNa8EsPXOI" },
         { "text": "Essays", "url": "/essais/" }
       ]
     },

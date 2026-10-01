@@ -20,6 +20,7 @@
   --text-primary: var(--navy-deep);
   --text-secondary: var(--navy-light);
   --accent: var(--terracotta);
+  --accent-text: #8F4A24;
   --accent-secondary: var(--gold);
   --border: rgba(15, 28, 38, 0.12);
   --border-light: rgba(15, 28, 38, 0.08);
