@@ -373,10 +373,6 @@ def render_page(ch: dict, body_html: str, reading_times: dict) -> str:
 {prev_link}
 {next_link}
 
-  <!-- GEO meta -->
-  <meta name="geo.region" content="FR">
-  <meta name="geo.placename" content="France">
-
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:title" content="{escaped_essay_title}">

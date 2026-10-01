@@ -17,7 +17,7 @@
   },
   "profile": {
     "title": "Ce que je fais",
-    "intro": "Je publie des rapports d'intelligence streaming sur <a href=\"https://lens.streaming-radar.com/\">Lens</a>. Données accessibles via le <a href=\"https://lens.streaming-radar.com/mcp\">serveur MCP</a>. Ces données alimentent des playbooks concrets - stratégie de lancement, positionnement, pricing, distribution - que j'aide à déployer avec les équipes en place.",
+    "intro": "Je publie des rapports d'intelligence streaming sur <a href=\"https://lens.streaming-radar.com/\">Lens</a>. Données accessibles via le <a href=\"https://lens.streaming-radar.com/mcp\">serveur MCP</a>. Je tiens aussi <a href=\"https://verticaldrama.tv/\">verticaldrama.tv</a>, l'index éditorial indépendant du vertical drama. Ces données alimentent des playbooks concrets - stratégie de lancement, positionnement, pricing, distribution - que j'aide à déployer avec les équipes en place.",
     "lensLink": { "text": "Tous les rapports sur Lens", "url": "https://lens.streaming-radar.com/" },
     "careerTitle": "Parcours",
     "career": [
@@ -37,6 +37,7 @@
     "alsoLinks": [
       { "text": "Essais", "url": "/essais/" },
       { "text": "Livres", "url": "https://www.amazon.fr/stores/Ludovic-Bostral/author/B0F72QFZLY" },
+      { "text": "Vertical Drama", "url": "https://verticaldrama.tv/" },
       { "text": "Newsletter", "url": "https://www.streaming-radar.com/" }
     ],
     "award": "Prix Alain le Bussy 2026 (ex aequo) pour la nouvelle « Lume-saudade ». <a href=\"/a-propos/\">En savoir plus</a>",
