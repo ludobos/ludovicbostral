@@ -6,8 +6,14 @@
     <script>
         (function() {
             var base = 'https://cal.com/ludovic-bostral-ludobos-idg16l';
-            var slugMap = { en: '30min-en', fr: '30min-fr', zh: '30min-zh', es: '30min-es' };
-            var localeMap = { en: 'en', fr: 'fr', zh: 'zh-CN', es: 'es' };
+            // Deux langues, comme le site. Les slugs zh et es renvoyaient 404 sur cal.com.
+            var slugs = {
+                consultation: { en: '30min-en', fr: '30min-fr' },
+                rapport: {
+                    en: 'vertical-invasion-2026-report-discussion',
+                    fr: 'vertical-invasion-2026-discussion-rapport-fr'
+                }
+            };
 
             // 1. Check URL param ?lang=xx
             var params = new URLSearchParams(window.location.search);
@@ -21,17 +27,28 @@
             // 3. Detect from browser
             if (!lang) {
                 var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-                if (browserLang.startsWith('fr')) lang = 'fr';
-                else if (browserLang.startsWith('zh')) lang = 'zh';
-                else if (browserLang.startsWith('es')) lang = 'es';
-                else lang = 'en';
+                lang = browserLang.startsWith('fr') ? 'fr' : 'en';
             }
 
-            // Normalize
-            if (!slugMap[lang]) lang = 'en';
+            // Normalize : tout ce qui n'est pas fr part sur l'evenement anglais
+            if (lang !== 'fr') lang = 'en';
 
-            var url = base + '/' + slugMap[lang] + '?locale=' + localeMap[lang];
-            window.location.replace(url);
+            // ?t=rapport : discussion du rapport ; sinon consultation generique
+            var type = params.get('t') === 'rapport' ? 'rapport' : 'consultation';
+
+            // Origine lue par le webhook du Worker (metadata[...], jamais utm_* simples).
+            // Les crochets restent litteraux : c'est la forme testee contre cal.com.
+            function meta(key, value) { return 'metadata[' + key + ']=' + encodeURIComponent(value); }
+            var query = ['locale=' + lang];
+            ['name', 'email'].forEach(function(k) {
+                if (params.get(k)) query.push(k + '=' + encodeURIComponent(params.get(k)));
+            });
+            query.push(meta('utm_source', params.get('utm_source') || 'bostral'));
+            query.push(meta('utm_medium', params.get('utm_medium') || 'call'));
+            if (params.get('utm_campaign')) query.push(meta('utm_campaign', params.get('utm_campaign')));
+            if (params.get('lead_id')) query.push(meta('lead_id', params.get('lead_id')));
+
+            window.location.replace(base + '/' + slugs[type][lang] + '?' + query.join('&'));
         })();
     </script>
 </head>
