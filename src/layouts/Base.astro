@@ -22,7 +22,7 @@ const personLd = {
   "@id": "https://www.bostral.com/#person",
   name: "Ludovic Bostral",
   url: "https://www.bostral.com/",
-  jobTitle: "Streaming analyst, founder of Streaming Radar",
+  jobTitle: "Streaming and vertical drama analyst, founder of Streaming Radar",
   homeLocation: { "@type": "Place", name: "Nantes, France" },
   description: "Founder and analyst — Streaming Lens, verticaldrama.tv and Streaming Radar. Vertical drama, micro-drama and streaming intelligence.",
   knowsAbout: ["Vertical drama", "Micro-drama", "Streaming", "OTT Africa", "Media analysis", "Fractional CTO"],
@@ -31,12 +31,17 @@ const personLd = {
   worksFor: {
     "@type": "Organization",
     name: "Streaming Radar",
-    url: "https://www.streaming-radar.com"
+    legalName: "Ludovic Bostral (Bostral and C.)",
+    url: "https://www.streaming-radar.com",
+    foundingDate: "2025",
+    identifier: { "@type": "PropertyValue", propertyID: "SIREN", value: "797572559" },
+    sameAs: ["https://www.youtube.com/@streamingradar"]
   },
   sameAs: [
     "https://x.com/ludobos",
     "https://www.linkedin.com/in/ludovicbostral/",
-    "https://www.crunchbase.com/person/ludovic-bostral",
+    "https://substack.com/@ludobos",
+    "https://medium.com/@ludobos",
     "https://lens.streaming-radar.com/about",
     "https://verticaldrama.tv/about/",
     "https://www.streaming-radar.com"
@@ -107,7 +112,8 @@ const ogLocaleAlternate = lang === 'fr' ? 'en_US' : 'fr_FR';
 
   <link rel="me" href="https://x.com/ludobos">
   <link rel="me" href="https://www.linkedin.com/in/ludovicbostral/">
-  <link rel="me" href="https://www.crunchbase.com/person/ludovic-bostral">
+  <link rel="me" href="https://substack.com/@ludobos">
+  <link rel="me" href="https://medium.com/@ludobos">
   <link rel="me" href="https://lens.streaming-radar.com/about">
   <link rel="me" href="https://verticaldrama.tv/about/">
   <link rel="me" href="https://www.streaming-radar.com">

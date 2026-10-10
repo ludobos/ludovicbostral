@@ -92,7 +92,8 @@
       "items": [
         { "text": "LinkedIn", "url": "https://www.linkedin.com/in/ludovicbostral/" },
         { "text": "X (@ludobos)", "url": "https://x.com/ludobos" },
-        { "text": "Crunchbase", "url": "https://www.crunchbase.com/person/ludovic-bostral" },
+        { "text": "Substack (@ludobos)", "url": "https://substack.com/@ludobos" },
+        { "text": "Medium (@ludobos)", "url": "https://medium.com/@ludobos" },
         { "text": "Streaming Radar", "url": "https://www.streaming-radar.com" },
         { "text": "verticaldrama.tv", "url": "https://verticaldrama.tv/about/" }
       ]
