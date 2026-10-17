@@ -11,13 +11,14 @@
     "context": "Fondateur de Streaming Radar. 25 ans d'opérationnel, de M6 Replay aux marchés émergents.",
     "ctaPrimary": { "text": "Rapports sur Lens", "url": "https://lens.streaming-radar.com/" },
     "ctaSecondary": { "text": "30 min de discussion", "url": "/call" },
+    "booklet": { "text": "Livret gratuit : Creator economy, qui paie les créateurs, et pour quoi →", "url": "https://lens.streaming-radar.com/livret-creator-economy" },
     "linkedinUrl": "https://linkedin.com/in/ludovicbostral",
     "email": "ludovic@streaming-radar.com",
     "location": "Nantes, France"
   },
   "profile": {
     "title": "Ce que je fais",
-    "intro": "Je publie des rapports d'intelligence streaming sur <a href=\"https://lens.streaming-radar.com/\">Lens</a>. Données accessibles via le <a href=\"https://lens.streaming-radar.com/mcp\">serveur MCP</a>. Je tiens aussi <a href=\"https://verticaldrama.tv/\">verticaldrama.tv</a>, l'index éditorial indépendant du vertical drama. Ces données alimentent des playbooks concrets - stratégie de lancement, positionnement, pricing, distribution - que j'aide à déployer avec les équipes en place.",
+    "intro": "Je publie des rapports d'intelligence streaming sur <a href=\"https://lens.streaming-radar.com/\">Lens</a>. Données accessibles via le <a href=\"https://lens.streaming-radar.com/mcp\">serveur MCP</a>. Je tiens aussi <a href=\"https://verticaldrama.tv/\">verticaldrama.tv</a>, l'index éditorial indépendant du vertical drama. Le livret gratuit <a href=\"https://lens.streaming-radar.com/livret-creator-economy\">Creator economy : qui paie les créateurs, et pour quoi</a> décrit huit façons de payer un créateur, chacune sur un cas. Ces données alimentent des playbooks concrets - stratégie de lancement, positionnement, pricing, distribution - que j'aide à déployer avec les équipes en place.",
     "lensLink": { "text": "Tous les rapports sur Lens", "url": "https://lens.streaming-radar.com/" },
     "careerTitle": "Parcours",
     "career": [
@@ -55,6 +56,8 @@
   "nav": {
     "reports": "Rapports",
     "reportsUrl": "https://lens.streaming-radar.com/",
+    "booklet": "Livret",
+    "bookletUrl": "https://lens.streaming-radar.com/livret-creator-economy",
     "about": "À propos",
     "aboutUrl": "/a-propos/",
     "contact": "Contact"

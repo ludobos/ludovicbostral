@@ -6,11 +6,12 @@ interface Props {
   context: string;
   ctaPrimary: { text: string; url: string };
   ctaSecondary: { text: string; url: string };
+  booklet: { text: string; url: string };
   location: string;
   linkedinUrl: string;
   email: string;
 }
-const { name, subtitle, tagline, context, ctaPrimary, ctaSecondary, location, linkedinUrl, email } = Astro.props;
+const { name, subtitle, tagline, context, ctaPrimary, ctaSecondary, booklet, location, linkedinUrl, email } = Astro.props;
 ---
 <section class="hero">
   <div class="container hero__grid">
@@ -26,6 +27,7 @@ const { name, subtitle, tagline, context, ctaPrimary, ctaSecondary, location, li
         <a href={linkedinUrl} class="hero__social" aria-label="LinkedIn">in</a>
         <a href={`mailto:${email}`} class="hero__social" aria-label="Email">@</a>
       </div>
+      <p class="hero__booklet"><a href={booklet.url}>{booklet.text}</a></p>
     </div>
     <a href="https://www.streaming-radar.com/" class="hero__visual">
       <img src="/assets/hero-480.webp" srcset="/assets/hero-480.webp 480w, /assets/hero-960.webp 960w" sizes="(max-width: 768px) 100vw, 480px" alt="Streaming Radar" width="480" height="480" loading="eager" fetchpriority="high" />

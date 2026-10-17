@@ -11,13 +11,14 @@
     "context": "Founder of Streaming Radar. 25 years hands-on, from M6 Replay to emerging markets.",
     "ctaPrimary": { "text": "Reports on Lens", "url": "https://lens.streaming-radar.com/" },
     "ctaSecondary": { "text": "30 min chat", "url": "/call" },
+    "booklet": { "text": "Free booklet: Creator Economy, who pays creators, and for what →", "url": "https://lens.streaming-radar.com/creator-economy-booklet" },
     "linkedinUrl": "https://linkedin.com/in/ludovicbostral",
     "email": "ludovic@streaming-radar.com",
     "location": "Nantes, France"
   },
   "profile": {
     "title": "What I do",
-    "intro": "I publish streaming intelligence reports on <a href=\"https://lens.streaming-radar.com/\">Lens</a>. All data accessible via the <a href=\"https://lens.streaming-radar.com/mcp\">MCP server</a>. I also run <a href=\"https://verticaldrama.tv/\">verticaldrama.tv</a>, the independent editorial index of vertical drama. This data feeds into concrete playbooks - launch strategy, positioning, pricing, distribution - that I help teams deploy on the ground.",
+    "intro": "I publish streaming intelligence reports on <a href=\"https://lens.streaming-radar.com/\">Lens</a>. All data accessible via the <a href=\"https://lens.streaming-radar.com/mcp\">MCP server</a>. I also run <a href=\"https://verticaldrama.tv/\">verticaldrama.tv</a>, the independent editorial index of vertical drama. The free booklet <a href=\"https://lens.streaming-radar.com/creator-economy-booklet\">Creator Economy: who pays creators, and for what</a> describes eight ways to pay a creator, each through one case. This data feeds into concrete playbooks - launch strategy, positioning, pricing, distribution - that I help teams deploy on the ground.",
     "lensLink": { "text": "All reports on Lens", "url": "https://lens.streaming-radar.com/" },
     "careerTitle": "Track record",
     "career": [
@@ -55,6 +56,8 @@
   "nav": {
     "reports": "Reports",
     "reportsUrl": "https://lens.streaming-radar.com/",
+    "booklet": "Booklet",
+    "bookletUrl": "https://lens.streaming-radar.com/creator-economy-booklet",
     "about": "About",
     "aboutUrl": "/en/about/",
     "contact": "Contact"

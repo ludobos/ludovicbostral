@@ -259,6 +259,15 @@
   text-decoration: none;
 }
 
+.hero__booklet {
+  margin-top: 16px;
+  font-size: 0.9375rem;
+}
+
+.hero__booklet a {
+  color: var(--accent-text);
+}
+
 .hero__social {
   display: inline-flex;
   align-items: center;

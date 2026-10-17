@@ -10,7 +10,7 @@ const home = defineCollection({
     meta: z.object({ title: z.string(), description: z.string() }),
     hero: z.object({
       name: z.string(), subtitle: z.string(), tagline: z.string(), context: z.string(),
-      ctaPrimary: linkSchema, ctaSecondary: linkSchema,
+      ctaPrimary: linkSchema, ctaSecondary: linkSchema, booklet: linkSchema,
       linkedinUrl: z.string(), email: z.string(), location: z.string(),
     }),
     profile: z.object({
@@ -25,7 +25,7 @@ const home = defineCollection({
       title: z.string(), ctaText: z.string(), ctaUrl: z.string(),
       email: z.string(), linkedinText: z.string(), linkedinUrl: z.string(), location: z.string(),
     }),
-    nav: z.object({ reports: z.string(), reportsUrl: z.string(), about: z.string(), aboutUrl: z.string(), contact: z.string() }),
+    nav: z.object({ reports: z.string(), reportsUrl: z.string(), booklet: z.string(), bookletUrl: z.string(), about: z.string(), aboutUrl: z.string(), contact: z.string() }),
     about: z.object({
       meta: z.object({ title: z.string(), description: z.string() }),
       title: z.string(),
